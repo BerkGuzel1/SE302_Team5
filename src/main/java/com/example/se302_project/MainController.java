@@ -1,4 +1,4 @@
-package com.example.ce316_project;
+package com.example.se302_project;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

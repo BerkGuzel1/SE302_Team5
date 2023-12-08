@@ -1,4 +1,4 @@
-package com.example.ce316_project;
+package com.example.se302_project;
 
 import java.io.File;
 import java.io.IOException;

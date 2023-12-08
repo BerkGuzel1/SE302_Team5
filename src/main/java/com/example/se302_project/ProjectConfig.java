@@ -1,6 +1,4 @@
-package com.example.ce316_project;
-
-import javafx.scene.image.ImageView;
+package com.example.se302_project;
 
 import java.util.ArrayList;
 

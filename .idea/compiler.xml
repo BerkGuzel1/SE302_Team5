@@ -9,5 +9,8 @@
         <module name="ce316_project" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SE302_Syllabus_Project_new" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>

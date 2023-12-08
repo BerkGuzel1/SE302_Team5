@@ -1,4 +1,4 @@
-package com.example.ce316_project;
+package com.example.se302_project;
 
 import javafx.scene.image.ImageView;
 

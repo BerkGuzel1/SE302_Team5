@@ -1,4 +1,4 @@
-package com.example.ce316_project;
+package com.example.se302_project;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,9 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.sql.SQLException;
-
-
 
 
 public class App extends Application {

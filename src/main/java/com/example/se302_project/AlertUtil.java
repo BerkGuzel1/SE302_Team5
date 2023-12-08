@@ -1,7 +1,4 @@
-package com.example.ce316_project;
-
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
+package com.example.se302_project;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
