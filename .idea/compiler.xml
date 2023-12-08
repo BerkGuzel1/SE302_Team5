@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ce316_project" />
+        <module name="se302_project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
