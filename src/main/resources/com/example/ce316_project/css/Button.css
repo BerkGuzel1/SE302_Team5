@@ -1,0 +1,39 @@
+
+    .button {
+    -fx-background-color: transparent;
+    -fx-border-radius:50%;
+    -fx-text-overrun: clip;
+
+
+
+
+    }
+    .button:hover {
+     -fx-background-color: #c5d6f5 ;
+    }
+    .button:pressed{
+     -fx-background-color: #90bbff;
+        }
+     .button2{
+     -fx-background-color: #83cbff;
+
+         -fx-text-overrun: clip;
+         -fx-background-radius: 20px;
+         -fx-border-radius:20px;
+
+         -fx-border-width:5px;
+         -fx-border-color:blue;
+     }
+     .button2:hover {
+          -fx-background-color: #c5d6f5 ;
+         }
+
+         .button2:pressed{
+              -fx-background-color: #90bbff;
+                 }
+
+
+
+
+
+

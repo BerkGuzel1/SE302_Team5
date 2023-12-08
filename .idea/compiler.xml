@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SE302_Syllabus_Project_new" />
+        <module name="ce316_project" />
       </profile>
     </annotationProcessing>
   </component>
