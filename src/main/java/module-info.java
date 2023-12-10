@@ -1,4 +1,4 @@
-module com.example.ce316_project {
+module com.example.ce302_project {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
