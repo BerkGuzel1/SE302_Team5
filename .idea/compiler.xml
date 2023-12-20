@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SE302_Syllabus_Project_new" target="21" />
+      <module name="SE302_Syllabus_Project_new" target="20" />
     </bytecodeTargetLevel>
   </component>
 </project>

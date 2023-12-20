@@ -98,7 +98,7 @@
                                             <graphic>
                                                 <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@images/programming.png" />
+                                                        <Image url="@images/3297265.png" />
                                                     </image>
                                                 </ImageView>
                                             </graphic>
@@ -122,7 +122,7 @@
                                  <graphic>
                                               <ImageView fitHeight="52.0" fitWidth="54.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                                                   <image>
-                                                      <Image url="@images/programming-language-icon.png" />
+                                                      <Image url="@images/Compare.png" />
                                                   </image>
                                               </ImageView>
                                  </graphic>
@@ -222,7 +222,7 @@
                                     <children>
                                           <ImageView fitHeight="69.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
                                               <image>
-                                                  <Image url="@images/programming.png" />
+                                                  <Image url="@images/3297265.png" />
                                               </image>
                                  <HBox.margin>
                                     <Insets left="20.0" top="15.0" />
@@ -239,7 +239,7 @@
                                             <graphic>
                                                 <ImageView fitHeight="56.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@images/programming-language-icon.png" />
+                                                        <Image url="@images/Compare.png" />
                                                     </image>
                                                 </ImageView>
                                             </graphic>
@@ -258,7 +258,7 @@
                                             <graphic>
                                                 <ImageView fitHeight="56.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@images/template.png" />
+                                                        <Image url="@images/Syllabus-Button.png" />
                                                     </image>
                                                 </ImageView>
                                             </graphic>
@@ -329,7 +329,7 @@
                                                     <children>
                                                         <HBox alignment="CENTER" prefHeight="26.0" prefWidth="500.0" spacing="40.0" VBox.vgrow="NEVER">
                                                             <children>
-                                                                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="25.0" prefWidth="337.0" style="-fx-font-size: 24;" text=" Lectures" textFill="#070707">
+                                                                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="25.0" prefWidth="337.0" style="-fx-font-size: 24;" text=" Sylabusses" textFill="#070707">
                                                    <font>
                                                       <Font name="System Bold" size="14.0" />
                                                    </font>
