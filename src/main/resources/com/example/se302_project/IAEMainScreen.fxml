@@ -18,71 +18,29 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<StackPane alignment="TOP_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.se302_project.MainController">
+<StackPane alignment="TOP_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.se302_project.MainController">
     <children>
         <HBox fx:id="firstEllipses" prefHeight="100.0" prefWidth="200.0" visible="false">
             <children>
                 <VBox alignment="TOP_RIGHT" minHeight="-Infinity" prefHeight="700.0" prefWidth="225.0" HBox.hgrow="ALWAYS">
-                    <children>
-                        <ImageView fx:id="ellipse1" fitHeight="91.0" fitWidth="371.0" pickOnBounds="true">
-                            <image>
-                                <Image url="@images/ellipse1.png" />
-                            </image>
-                        </ImageView>
-                    </children>
                 </VBox>
                 <VBox fx:id="generatedResumeBox" alignment="BOTTOM_RIGHT" minHeight="-Infinity" prefHeight="700.0" prefWidth="271.0" HBox.hgrow="ALWAYS">
-                    <children>
-                        <ImageView fx:id="ellipse2" fitHeight="722.0" fitWidth="371.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@images/ellipse2.png" />
-                            </image>
-                        </ImageView>
-                    </children>
                 </VBox>
             </children>
         </HBox>
         <HBox fx:id="secondEllipses" minHeight="-Infinity" prefHeight="700.0" visible="false">
             <children>
                 <VBox alignment="BOTTOM_LEFT" prefHeight="700.0" HBox.hgrow="ALWAYS">
-                    <children>
-                        <ImageView fitHeight="140.0" fitWidth="555.0" pickOnBounds="true" smooth="false">
-                            <image>
-                                <Image url="@images/ellipse3.png" />
-                            </image>
-                        </ImageView>
-                    </children>
                 </VBox>
                 <VBox alignment="BOTTOM_RIGHT" prefHeight="700.0" HBox.hgrow="ALWAYS">
-                    <children>
-                        <ImageView fitHeight="668.0" fitWidth="386.0" pickOnBounds="true">
-                            <image>
-                                <Image url="@images/ellipse4.png" />
-                            </image>
-                        </ImageView>
-                    </children>
                 </VBox>
             </children>
         </HBox>
         <HBox fx:id="thirdEllipses" prefHeight="100.0" prefWidth="200.0" visible="false">
             <children>
                 <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
-                    <children>
-                        <ImageView fitHeight="81.0" fitWidth="396.0" pickOnBounds="true">
-                            <image>
-                                <Image url="@images/ellipse5.png" />
-                            </image>
-                        </ImageView>
-                    </children>
                 </VBox>
                 <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
-                    <children>
-                        <ImageView fitHeight="339.0" fitWidth="479.0" pickOnBounds="true">
-                            <image>
-                                <Image url="@images/ellipse6.png" />
-                            </image>
-                        </ImageView>
-                    </children>
                 </VBox>
             </children>
         </HBox>
@@ -103,7 +61,7 @@
                                                 </ImageView>
                                             </graphic>
                                         </Button>
-                                        <Label prefHeight="60.0" prefWidth="283.0" text="IAE" textFill="#2200ff" wrapText="true" HBox.hgrow="ALWAYS">
+                                        <Label prefHeight="60.0" prefWidth="283.0" text="SMS" textFill="#2200ff" wrapText="true" HBox.hgrow="ALWAYS">
                                             <font>
                                                 <Font size="36.0" />
                                             </font>
@@ -118,7 +76,7 @@
                                         <Insets />
                                     </VBox.margin>
                            <children>
-                              <Button fx:id="ProgrammingLanguageButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#openPLScreen" prefHeight="85.0" prefWidth="276.0" styleClass="button" stylesheets="@css/Button.css" text="Programming Languages" textFill="#000fff">
+                              <Button fx:id="ProgrammingLanguageButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#openPLScreen" prefHeight="85.0" prefWidth="276.0" styleClass="button" stylesheets="@css/Button.css" text="Comparator" textFill="#000fff">
                                  <graphic>
                                               <ImageView fitHeight="52.0" fitWidth="54.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                                                   <image>
@@ -137,7 +95,7 @@
                                 </HBox>
                                 <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="350.0" spacing="20.0" VBox.vgrow="NEVER">
                            <children>
-                              <Button fx:id="LectureButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#openLectureScreen" prefHeight="93.0" prefWidth="278.0" stylesheets="@css/Button.css" text="Lectures" textFill="#000fff">
+                              <Button fx:id="LectureButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#openLectureScreen" prefHeight="93.0" prefWidth="278.0" stylesheets="@css/Button.css" text="Syllabuses" textFill="#000fff">
                                  <graphic>
                                               <ImageView fitHeight="50.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                                                   <image>
@@ -1177,22 +1135,7 @@
                                        <children>
                                           <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="500.0">
                                              <children>
-                                                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="35.0" prefWidth="321.0" style="-fx-font-size: 24;" text="Student Performance Analysis" textFill="#070707">
-                                                   <font>
-                                                      <Font name="System Bold" size="14.0" />
-                                                   </font>
-                                                   <HBox.margin>
-                                                      <Insets />
-                                                   </HBox.margin>
-                                                </Label>
-                                             </children>
-                                             <VBox.margin>
-                                                <Insets top="20.0" />
-                                             </VBox.margin>
-                                          </HBox>
-                                          <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="500.0">
-                                             <children>
-                                                <Label fx:id="StudentIDLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="375.0" style="-fx-font-size: 24;" text="student ıd : 20200602025" textFill="#070707">
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="35.0" prefWidth="321.0" style="-fx-font-size: 24;" text="Syllabus Management System" textFill="#070707">
                                                    <font>
                                                       <Font name="System Bold" size="14.0" />
                                                    </font>
