@@ -356,7 +356,7 @@ public class MainController {
                                 mediaHbox.setVisible(true);
                                 allHbox.setVisible(false);
 
-                                String file_path = "images/team3.mp4";
+                                String file_path = "images/team5.mp4";
                                 media = new Media(getClass().getResource(file_path).toExternalForm());
                                 mediaPlayer = new MediaPlayer(media);
 
