@@ -529,6 +529,104 @@ public class MainController {
                 Label course_CategoryLabel = new Label("Lecture Category:");
                 AddLectureGrid.add(course_CategoryLabel, 0, 19);
 
+                Label week1SubjectsLabel = new Label("Week 1 Subjects:");
+                AddLectureGrid.add(week1SubjectsLabel, 0, 20);
+
+                Label week2SubjectsLabel = new Label("Week 2 Subjects:");
+                AddLectureGrid.add(week2SubjectsLabel, 0, 21);
+
+                Label week3SubjectsLabel = new Label("Week 3 Subjects:");
+                AddLectureGrid.add(week3SubjectsLabel, 0, 22);
+
+                Label week4SubjectsLabel = new Label("Week 4 Subjects:");
+                AddLectureGrid.add(week4SubjectsLabel, 0, 23);
+
+                Label week5SubjectsLabel = new Label("Week 5 Subjects:");
+                AddLectureGrid.add(week5SubjectsLabel, 0, 24);
+
+                Label week6SubjectsLabel = new Label("Week 6 Subjects:");
+                AddLectureGrid.add(week6SubjectsLabel, 0, 25);
+
+                Label week7SubjectsLabel = new Label("Week 7 Subjects:");
+                AddLectureGrid.add(week7SubjectsLabel, 0, 26);
+
+                Label week8SubjectsLabel = new Label("Week 8 Subjects:");
+                AddLectureGrid.add(week8SubjectsLabel, 0, 27);
+
+                Label week9SubjectsLabel = new Label("Week 9 Subjects:");
+                AddLectureGrid.add(week9SubjectsLabel, 0, 28);
+
+                Label week10SubjectsLabel = new Label("Week 10 Subjects:");
+                AddLectureGrid.add(week10SubjectsLabel, 0, 29);
+
+                Label week11SubjectsLabel = new Label("Week 11 Subjects:");
+                AddLectureGrid.add(week11SubjectsLabel, 0, 30);
+
+                Label week12SubjectsLabel = new Label("Week 12 Subjects:");
+                AddLectureGrid.add(week12SubjectsLabel, 0, 31);
+
+                Label week13SubjectsLabel = new Label("Week 13 Subjects:");
+                AddLectureGrid.add(week13SubjectsLabel, 0, 32);
+
+                Label week14SubjectsLabel = new Label("Week 14 Subjects:");
+                AddLectureGrid.add(week14SubjectsLabel, 0, 33);
+
+                Label week15SubjectsLabel = new Label("Week 15 Subjects:");
+                AddLectureGrid.add(week15SubjectsLabel, 0, 34);
+
+                Label week1ReqMatLabel = new Label("Week 1 Required Materials:");
+                AddLectureGrid.add(week1ReqMatLabel, 0, 35);
+
+                Label week2ReqMatLabel = new Label("Week 2 Required Materials:");
+                AddLectureGrid.add(week2ReqMatLabel, 0, 36);
+
+                Label week3ReqMatLabel = new Label("Week 3 Required Materials:");
+                AddLectureGrid.add(week3ReqMatLabel, 0, 37);
+
+                Label week4ReqMatLabel = new Label("Week 4 Required Materials:");
+                AddLectureGrid.add(week4ReqMatLabel, 0, 38);
+
+                Label week5ReqMatLabel = new Label("Week 5 Required Materials:");
+                AddLectureGrid.add(week5ReqMatLabel, 0, 39);
+
+                Label week6ReqMatLabel = new Label("Week 6 Required Materials:");
+                AddLectureGrid.add(week6ReqMatLabel, 0, 40);
+
+                Label week7ReqMatLabel = new Label("Week 7 Required Materials:");
+                AddLectureGrid.add(week7ReqMatLabel, 0, 41);
+
+                Label week8ReqMatLabel = new Label("Week 8 Required Materials:");
+                AddLectureGrid.add(week8ReqMatLabel, 0, 42);
+
+                Label week9ReqMatLabel = new Label("Week 9 Required Materials:");
+                AddLectureGrid.add(week9ReqMatLabel, 0, 43);
+
+                Label week10ReqMatLabel = new Label("Week 10 Required Materials:");
+                AddLectureGrid.add(week10ReqMatLabel, 0, 44);
+
+                Label week11ReqMatLabel = new Label("Week 11 Required Materials:");
+                AddLectureGrid.add(week11ReqMatLabel, 0, 45);
+
+                Label week12ReqMatLabel = new Label("Week 12 Required Materials:");
+                AddLectureGrid.add(week12ReqMatLabel, 0, 46);
+
+                Label week13ReqMatLabel = new Label("Week 13 Required Materials:");
+                AddLectureGrid.add(week13ReqMatLabel, 0, 47);
+
+                Label week14ReqMatLabel = new Label("Week 14 Required Materials:");
+                AddLectureGrid.add(week14ReqMatLabel, 0, 48);
+
+                Label week15ReqMatLabel = new Label("Week 15 Required Materials:");
+                AddLectureGrid.add(week15ReqMatLabel, 0, 49);
+
+                Label courseNotesAndTextBooksLabel = new Label("Course Notes and Textbooks:");
+                AddLectureGrid.add(courseNotesAndTextBooksLabel, 0, 50);
+
+                Label suggestedReadingsAndMaterialsLabel = new Label("Suggested Readings and Materials:");
+                AddLectureGrid.add(suggestedReadingsAndMaterialsLabel, 0, 51);
+
+
+
                 ObservableList<TableShow> dataList = LectureTableView.getItems();
 
 
@@ -615,6 +713,101 @@ public class MainController {
                 TextField LectureCategoryText = new TextField();
                 AddLectureGrid.add(LectureCategoryText, 1, 19);
 
+                TextField week1SubjectsText = new TextField();
+                AddLectureGrid.add(week1SubjectsText, 1, 20);
+
+                TextField week2SubjectsText = new TextField();
+                AddLectureGrid.add(week2SubjectsText, 1, 21);
+
+                TextField week3SubjectsText = new TextField();
+                AddLectureGrid.add(week3SubjectsText, 1, 22);
+
+                TextField week4SubjectsText = new TextField();
+                AddLectureGrid.add(week4SubjectsText, 1, 23);
+
+                TextField week5SubjectsText = new TextField();
+                AddLectureGrid.add(week5SubjectsText, 1, 24);
+
+                TextField week6SubjectsText = new TextField();
+                AddLectureGrid.add(week6SubjectsText, 1, 25);
+
+                TextField week7SubjectsText = new TextField();
+                AddLectureGrid.add(week7SubjectsText, 1, 26);
+
+                TextField week8SubjectsText = new TextField();
+                AddLectureGrid.add(week8SubjectsText, 1, 27);
+
+                TextField week9SubjectsText = new TextField();
+                AddLectureGrid.add(week9SubjectsText, 1, 28);
+
+                TextField week10SubjectsText = new TextField();
+                AddLectureGrid.add(week10SubjectsText, 1, 29);
+
+                TextField week11SubjectsText = new TextField();
+                AddLectureGrid.add(week11SubjectsText, 1, 30);
+
+                TextField week12SubjectsText = new TextField();
+                AddLectureGrid.add(week12SubjectsText, 1, 31);
+
+                TextField week13SubjectsText = new TextField();
+                AddLectureGrid.add(week13SubjectsText, 1, 32);
+
+                TextField week14SubjectsText = new TextField();
+                AddLectureGrid.add(week14SubjectsText, 1, 33);
+
+                TextField week15SubjectsText = new TextField();
+                AddLectureGrid.add(week15SubjectsText, 1, 34);
+
+                TextField week1ReqMatText = new TextField();
+                AddLectureGrid.add(week1ReqMatText, 1, 35);
+
+                TextField week2ReqMatText = new TextField();
+                AddLectureGrid.add(week2ReqMatText, 1, 36);
+
+                TextField week3ReqMatText = new TextField();
+                AddLectureGrid.add(week3ReqMatText, 1, 37);
+
+                TextField week4ReqMatText = new TextField();
+                AddLectureGrid.add(week4ReqMatText, 1, 38);
+
+                TextField week5ReqMatText = new TextField();
+                AddLectureGrid.add(week5ReqMatText, 1, 39);
+
+                TextField week6ReqMatText = new TextField();
+                AddLectureGrid.add(week6ReqMatText ,1, 40);
+
+                TextField week7ReqMatText = new TextField();
+                AddLectureGrid.add(week7ReqMatText, 1, 41);
+
+                TextField week8ReqMatText = new TextField();
+                AddLectureGrid.add(week8ReqMatText, 1, 42);
+
+                TextField week9ReqMatText = new TextField();
+                AddLectureGrid.add(week9ReqMatText, 1, 43);
+
+                TextField week10ReqMatText = new TextField();
+                AddLectureGrid.add(week10ReqMatText, 1, 44);
+
+                TextField week11ReqMatText = new TextField();
+                AddLectureGrid.add(week11ReqMatText, 1, 45);
+
+                TextField week12ReqMatText = new TextField();
+                AddLectureGrid.add(week12ReqMatText, 1, 46);
+
+                TextField week13ReqMatText = new TextField();
+                AddLectureGrid.add(week13ReqMatText, 1, 47);
+
+                TextField week14ReqMatText = new TextField();
+                AddLectureGrid.add(week14ReqMatText, 1, 48);
+
+                TextField week15ReqMatText = new TextField();
+                AddLectureGrid.add(week15ReqMatText, 1, 49);
+
+                TextField courseNotesAndTextBooksText = new TextField();
+                AddLectureGrid.add(courseNotesAndTextBooksText, 1, 50);
+
+                TextField suggestedReadingsAndMaterialsText = new TextField();
+                AddLectureGrid.add(suggestedReadingsAndMaterialsText, 1, 51);
 
                 AddLectureButton.setOnAction(event -> {
                         String TempName = LectureNameText.getText();
@@ -636,10 +829,45 @@ public class MainController {
                         String TempLOutcome = LearningOutcomeText.getText();
                         String TempLDescription = LectureDescriptionText.getText();
                         String TempLCategory = LectureCategoryText.getText();
+                        String TempW1sub = week1SubjectsText.getText();
+                        String TempW2sub = week2SubjectsText.getText();
+                        String TempW3sub = week3SubjectsText.getText();
+                        String TempW4sub = week4SubjectsText.getText();
+                        String TempW5sub = week5SubjectsText.getText();
+                        String TempW6sub = week6SubjectsText.getText();
+                        String TempW7sub = week7SubjectsText.getText();
+                        String TempW8sub = week8SubjectsText.getText();
+                        String TempW9sub = week9SubjectsText.getText();
+                        String TempW10sub = week10SubjectsText.getText();
+                        String TempW11sub = week11SubjectsText.getText();
+                        String TempW12sub = week12SubjectsText.getText();
+                        String TempW13sub = week13SubjectsText.getText();
+                        String TempW14sub = week14SubjectsText.getText();
+                        String TempW15sub = week15SubjectsText.getText();
+                        String TempW1req = week1ReqMatText.getText();
+                        String TempW2req = week2ReqMatText.getText();
+                        String TempW3req = week3ReqMatText.getText();
+                        String TempW4req = week4ReqMatText.getText();
+                        String TempW5req = week5ReqMatText.getText();
+                        String TempW6req = week6ReqMatText.getText();
+                        String TempW7req = week7ReqMatText.getText();
+                        String TempW8req = week8ReqMatText.getText();
+                        String TempW9req = week9ReqMatText.getText();
+                        String TempW10req = week10ReqMatText.getText();
+                        String TempW11req = week11ReqMatText.getText();
+                        String TempW12req = week12ReqMatText.getText();
+                        String TempW13req = week13ReqMatText.getText();
+                        String TempW14req = week14ReqMatText.getText();
+                        String TempW15req = week15ReqMatText.getText();
+                        String TempCourseNotes = courseNotesAndTextBooksText.getText();
+                        String TempSuggested = suggestedReadingsAndMaterialsText.getText();
 
                         LectureConfig Lecture = new LectureConfig(lecture_id, TempName, TempLName, TempLCode, TempSemester, TempTHour, TempLHour, TempLCredit,
                                 TempEcts, TempPrereq, TempLLang, TempLType, TempLLevel, TempTMethod, TempLCoordinator, TempAssistant, TempLObjective,
-                                TempLOutcome, TempLDescription, TempLCategory);
+                                TempLOutcome, TempLDescription, TempLCategory,TempW1sub, TempW2sub, TempW3sub, TempW4sub, TempW5sub, TempW6sub,
+                                TempW7sub, TempW8sub, TempW9sub, TempW10sub, TempW11sub, TempW12sub, TempW13sub, TempW14sub, TempW15sub, TempW1req,
+                                TempW2req, TempW3req, TempW4req, TempW5req, TempW6req, TempW7req, TempW8req, TempW9req, TempW10req, TempW11req,
+                                TempW12req, TempW13req, TempW14req, TempW15req, TempCourseNotes, TempSuggested);
                         DBConnector.getInstance().addLecture(Lecture);
 
                         LecturesHBox.setEffect(null);
@@ -698,6 +926,38 @@ public class MainController {
                         String TempLOutcome = Lecture.getLearning_Outcomes();
                         String TempLDescription = Lecture.getCourse_Description();
                         String TempLCategory = Lecture.getCourse_Category();
+                        String TempW1sub = Lecture.getWeek1Subjects();
+                        String TempW2sub = Lecture.getWeek2Subjects();
+                        String TempW3sub = Lecture.getWeek3Subjects();
+                        String TempW4sub = Lecture.getWeek4Subjects();
+                        String TempW5sub = Lecture.getWeek5Subjects();
+                        String TempW6sub = Lecture.getWeek6Subjects();
+                        String TempW7sub = Lecture.getWeek7Subjects();
+                        String TempW8sub = Lecture.getWeek8Subjects();
+                        String TempW9sub = Lecture.getWeek9Subjects();
+                        String TempW10sub = Lecture.getWeek10Subjects();
+                        String TempW11sub = Lecture.getWeek11Subjects();
+                        String TempW12sub = Lecture.getWeek12Subjects();
+                        String TempW13sub = Lecture.getWeek13Subjects();
+                        String TempW14sub = Lecture.getWeek14Subjects();
+                        String TempW15sub = Lecture.getWeek15Subjects();
+                        String TempW1req = Lecture.getWeek1ReqMat();
+                        String TempW2req = Lecture.getWeek2ReqMat();
+                        String TempW3req = Lecture.getWeek3ReqMat();
+                        String TempW4req = Lecture.getWeek4ReqMat();
+                        String TempW5req = Lecture.getWeek5ReqMat();
+                        String TempW6req = Lecture.getWeek6ReqMat();
+                        String TempW7req = Lecture.getWeek7ReqMat();
+                        String TempW8req = Lecture.getWeek8ReqMat();
+                        String TempW9req = Lecture.getWeek9ReqMat();
+                        String TempW10req = Lecture.getWeek10ReqMat();
+                        String TempW11req = Lecture.getWeek11ReqMat();
+                        String TempW12req = Lecture.getWeek12ReqMat();
+                        String TempW13req = Lecture.getWeek13ReqMat();
+                        String TempW14req = Lecture.getWeek14ReqMat();
+                        String TempW15req = Lecture.getWeek15ReqMat();
+                        String TempCourseNotes = Lecture.getCourseNotesAndTextBooks();
+                        String TempSuggested = Lecture.getSuggestedReadingsAndMaterials();
 
                         Label LectureID = new Label("Lecture ID :");
                         LectureGrid.add(LectureID, 0, 0);
@@ -759,6 +1019,102 @@ public class MainController {
                         Label course_CategoryLabel = new Label("Lecture Category:");
                         LectureGrid.add(course_CategoryLabel, 0, 19);
 
+                        Label week1SubjectsLabel = new Label("Week 1 Subjects:");
+                        LectureGrid.add(week1SubjectsLabel, 0, 20);
+
+                        Label week2SubjectsLabel = new Label("Week 2 Subjects:");
+                        LectureGrid.add(week2SubjectsLabel, 0, 21);
+
+                        Label week3SubjectsLabel = new Label("Week 3 Subjects:");
+                        LectureGrid.add(week3SubjectsLabel, 0, 22);
+
+                        Label week4SubjectsLabel = new Label("Week 4 Subjects:");
+                        LectureGrid.add(week4SubjectsLabel, 0, 23);
+
+                        Label week5SubjectsLabel = new Label("Week 5 Subjects:");
+                        LectureGrid.add(week5SubjectsLabel, 0, 24);
+
+                        Label week6SubjectsLabel = new Label("Week 6 Subjects:");
+                        LectureGrid.add(week6SubjectsLabel, 0, 25);
+
+                        Label week7SubjectsLabel = new Label("Week 7 Subjects:");
+                        LectureGrid.add(week7SubjectsLabel, 0, 26);
+
+                        Label week8SubjectsLabel = new Label("Week 8 Subjects:");
+                        LectureGrid.add(week8SubjectsLabel, 0, 27);
+
+                        Label week9SubjectsLabel = new Label("Week 9 Subjects:");
+                        LectureGrid.add(week9SubjectsLabel, 0, 28);
+
+                        Label week10SubjectsLabel = new Label("Week 10 Subjects:");
+                        LectureGrid.add(week10SubjectsLabel, 0, 29);
+
+                        Label week11SubjectsLabel = new Label("Week 11 Subjects:");
+                        LectureGrid.add(week11SubjectsLabel, 0, 30);
+
+                        Label week12SubjectsLabel = new Label("Week 12 Subjects:");
+                        LectureGrid.add(week12SubjectsLabel, 0, 31);
+
+                        Label week13SubjectsLabel = new Label("Week 13 Subjects:");
+                        LectureGrid.add(week13SubjectsLabel, 0, 32);
+
+                        Label week14SubjectsLabel = new Label("Week 14 Subjects:");
+                        LectureGrid.add(week14SubjectsLabel, 0, 33);
+
+                        Label week15SubjectsLabel = new Label("Week 15 Subjects:");
+                        LectureGrid.add(week15SubjectsLabel, 0, 34);
+
+                        Label week1ReqMatLabel = new Label("Week 1 Required Materials:");
+                        LectureGrid.add(week1ReqMatLabel, 0, 35);
+
+                        Label week2ReqMatLabel = new Label("Week 2 Required Materials:");
+                        LectureGrid.add(week2ReqMatLabel, 0, 36);
+
+                        Label week3ReqMatLabel = new Label("Week 3 Required Materials:");
+                        LectureGrid.add(week3ReqMatLabel, 0, 37);
+
+                        Label week4ReqMatLabel = new Label("Week 4 Required Materials:");
+                        LectureGrid.add(week4ReqMatLabel, 0, 38);
+
+                        Label week5ReqMatLabel = new Label("Week 5 Required Materials:");
+                        LectureGrid.add(week5ReqMatLabel, 0, 39);
+
+                        Label week6ReqMatLabel = new Label("Week 6 Required Materials:");
+                        LectureGrid.add(week6ReqMatLabel, 0, 40);
+
+                        Label week7ReqMatLabel = new Label("Week 7 Required Materials:");
+                        LectureGrid.add(week7ReqMatLabel, 0, 41);
+
+                        Label week8ReqMatLabel = new Label("Week 8 Required Materials:");
+                        LectureGrid.add(week8ReqMatLabel, 0, 42);
+
+                        Label week9ReqMatLabel = new Label("Week 9 Required Materials:");
+                        LectureGrid.add(week9ReqMatLabel, 0, 43);
+
+                        Label week10ReqMatLabel = new Label("Week 10 Required Materials:");
+                        LectureGrid.add(week10ReqMatLabel, 0, 44);
+
+                        Label week11ReqMatLabel = new Label("Week 11 Required Materials:");
+                        LectureGrid.add(week11ReqMatLabel, 0, 45);
+
+                        Label week12ReqMatLabel = new Label("Week 12 Required Materials:");
+                        LectureGrid.add(week12ReqMatLabel, 0, 46);
+
+                        Label week13ReqMatLabel = new Label("Week 13 Required Materials:");
+                        LectureGrid.add(week13ReqMatLabel, 0, 47);
+
+                        Label week14ReqMatLabel = new Label("Week 14 Required Materials:");
+                        LectureGrid.add(week14ReqMatLabel, 0, 48);
+
+                        Label week15ReqMatLabel = new Label("Week 15 Required Materials:");
+                        LectureGrid.add(week15ReqMatLabel, 0, 49);
+
+                        Label courseNotesAndTextBooksLabel = new Label("Course Notes and Textbooks:");
+                        LectureGrid.add(courseNotesAndTextBooksLabel, 0, 50);
+
+                        Label suggestedReadingsAndMaterialsLabel = new Label("Suggested Readings and Materials:");
+                        LectureGrid.add(suggestedReadingsAndMaterialsLabel, 0, 51);
+
                         Label LectureIDtext = new Label(TempID);
                         LectureGrid.add(LectureIDtext, 1, 0);
 
@@ -818,6 +1174,102 @@ public class MainController {
 
                         Label course_CategoryText = new Label(TempLCategory);
                         LectureGrid.add(course_CategoryText, 1, 19);
+
+                        Label week1SubjectsText = new Label(TempW1sub);
+                        LectureGrid.add(week1SubjectsText, 1, 20);
+
+                        Label week2SubjectsText = new Label(TempW2sub);
+                        LectureGrid.add(week2SubjectsText, 1, 21);
+
+                        Label week3SubjectsText = new Label(TempW3sub);
+                        LectureGrid.add(week3SubjectsText, 1, 22);
+
+                        Label week4SubjectsText = new Label(TempW4sub);
+                        LectureGrid.add(week4SubjectsText, 1, 23);
+
+                        Label week5SubjectsText = new Label(TempW5sub);
+                        LectureGrid.add(week5SubjectsText, 1, 24);
+
+                        Label week6SubjectsText = new Label(TempW6sub);
+                        LectureGrid.add(week6SubjectsText, 1, 25);
+
+                        Label week7SubjectsText = new Label(TempW7sub);
+                        LectureGrid.add(week7SubjectsText, 1, 26);
+
+                        Label week8SubjectsText = new Label(TempW8sub);
+                        LectureGrid.add(week8SubjectsText, 1, 27);
+
+                        Label week9SubjectsText = new Label(TempW9sub);
+                        LectureGrid.add(week9SubjectsText, 1, 28);
+
+                        Label week10SubjectsText = new Label(TempW10sub);
+                        LectureGrid.add(week10SubjectsText, 1, 29);
+
+                        Label week11SubjectsText =new Label(TempW11sub);
+                        LectureGrid.add(week11SubjectsText, 1, 30);
+
+                        Label week12SubjectsText = new Label(TempW12sub);
+                        LectureGrid.add(week12SubjectsText, 1, 31);
+
+                        Label week13SubjectsText = new Label(TempW13sub);
+                        LectureGrid.add(week13SubjectsText, 1, 32);
+
+                        Label week14SubjectsText = new Label(TempW14sub);
+                        LectureGrid.add(week14SubjectsText, 1, 33);
+
+                        Label week15SubjectsText =new Label(TempW15sub);
+                        LectureGrid.add(week15SubjectsText, 1, 34);
+
+                        Label week1ReqMatText = new Label(TempW1req);
+                        LectureGrid.add(week1ReqMatText, 1, 35);
+
+                        Label week2ReqMatText = new Label(TempW2req);
+                        LectureGrid.add(week2ReqMatText, 1, 36);
+
+                        Label week3ReqMatText = new Label(TempW3req);
+                        LectureGrid.add(week3ReqMatText, 1, 37);
+
+                        Label week4ReqMatText = new Label(TempW4req);
+                        LectureGrid.add(week4ReqMatText, 1, 38);
+
+                        Label week5ReqMatText = new Label(TempW5req);
+                        LectureGrid.add(week5ReqMatText, 1, 39);
+
+                        Label week6ReqMatText = new Label(TempW6req);
+                        LectureGrid.add(week6ReqMatText, 1, 40);
+
+                        Label week7ReqMatText = new Label(TempW7req);
+                        LectureGrid.add(week7ReqMatText, 1, 41);
+
+                        Label week8ReqMatText = new Label(TempW8req);
+                        LectureGrid.add(week8ReqMatText, 1, 42);
+
+                        Label week9ReqMatText = new Label(TempW9req);
+                        LectureGrid.add(week9ReqMatText, 1, 43);
+
+                        Label week10ReqMatText = new Label(TempW10req);
+                        LectureGrid.add(week10ReqMatText, 1, 44);
+
+                        Label week11ReqMatText = new Label(TempW11req);
+                        LectureGrid.add(week11ReqMatText, 1, 45);
+
+                        Label week12ReqMatText = new Label(TempW12req);
+                        LectureGrid.add(week12ReqMatText, 1, 46);
+
+                        Label week13ReqMatText = new Label(TempW13req);
+                        LectureGrid.add(week13ReqMatText, 1, 47);
+
+                        Label week14ReqMatText = new Label(TempW14req);
+                        LectureGrid.add(week14ReqMatText, 1, 48);
+
+                        Label week15ReqMatText = new Label(TempW15req);
+                        LectureGrid.add(week15ReqMatText, 1, 49);
+
+                        Label courseNotesAndTextBooksText = new Label(TempCourseNotes);
+                        LectureGrid.add(courseNotesAndTextBooksText, 1, 50);
+
+                        Label suggestedReadingsAndMaterialsText = new Label(TempSuggested);
+                        LectureGrid.add(suggestedReadingsAndMaterialsText, 1, 51);
 
                 }
         }

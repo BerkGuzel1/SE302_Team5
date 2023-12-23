@@ -23,12 +23,41 @@ public class LectureConfig {
     private String learning_Outcomes;
     private String course_Description;
     private String course_Category;
-  /* private Integer week;
-    private String subjects;
-   private String required_Material;
-    private String course_Notes_or_Textbooks;
-    private String suggested_Readings_or_Materials;
-   private String assesment_Semester_Activities;
+    private String week1Subjects;
+    private String week2Subjects;
+    private String week3Subjects;
+    private String week4Subjects;
+    private String week5Subjects;
+    private String week6Subjects;
+    private String week7Subjects;
+    private String week8Subjects;
+    private String week9Subjects;
+    private String week10Subjects;
+    private String week11Subjects;
+    private String week12Subjects;
+    private String week13Subjects;
+    private String week14Subjects;
+    private String week15Subjects;
+
+    private String week1ReqMat;
+    private String week2ReqMat;
+    private String week3ReqMat;
+    private String week4ReqMat;
+    private String week5ReqMat;
+    private String week6ReqMat;
+    private String week7ReqMat;
+    private String week8ReqMat;
+    private String week9ReqMat;
+    private String week10ReqMat;
+    private String week11ReqMat;
+    private String week12ReqMat;
+    private String week13ReqMat;
+    private String week14ReqMat;
+    private String week15ReqMat;
+
+    private String courseNotesAndTextBooks;
+    private String suggestedReadingsAndMaterials;
+  /*private String assesment_Semester_Activities;
     private Integer assesment_Number;
     private Integer weigthing;
     private Integer LO1;
@@ -223,7 +252,263 @@ public class LectureConfig {
         }
     }
 
-    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name,String lecture_Code, String semester, String theory_Hour_In_Week,
+    public String getWeek1Subjects() {
+        return week1Subjects;
+    }
+
+    public void setWeek1Subjects(String week1Subjects) {
+        this.week1Subjects = week1Subjects;
+    }
+
+    public String getWeek2Subjects() {
+        return week2Subjects;
+    }
+
+    public void setWeek2Subjects(String week2Subjects) {
+        this.week2Subjects = week2Subjects;
+    }
+
+    public String getWeek3Subjects() {
+        return week3Subjects;
+    }
+
+    public void setWeek3Subjects(String week3Subjects) {
+        this.week3Subjects = week3Subjects;
+    }
+
+    public String getWeek4Subjects() {
+        return week4Subjects;
+    }
+
+    public void setWeek4Subjects(String week4Subjects) {
+        this.week4Subjects = week4Subjects;
+    }
+
+    public String getWeek5Subjects() {
+        return week5Subjects;
+    }
+
+    public void setWeek5Subjects(String week5Subjects) {
+        this.week5Subjects = week5Subjects;
+    }
+
+    public String getWeek6Subjects() {
+        return week6Subjects;
+    }
+
+    public void setWeek6Subjects(String week6Subjects) {
+        this.week6Subjects = week6Subjects;
+    }
+
+    public String getWeek7Subjects() {
+        return week7Subjects;
+    }
+
+    public void setWeek7Subjects(String week7Subjects) {
+        this.week7Subjects = week7Subjects;
+    }
+
+    public String getWeek8Subjects() {
+        return week8Subjects;
+    }
+
+    public void setWeek8Subjects(String week8Subjects) {
+        this.week8Subjects = week8Subjects;
+    }
+
+    public String getWeek9Subjects() {
+        return week9Subjects;
+    }
+
+    public void setWeek9Subjects(String week9Subjects) {
+        this.week9Subjects = week9Subjects;
+    }
+
+    public String getWeek10Subjects() {
+        return week10Subjects;
+    }
+
+    public void setWeek10Subjects(String week10Subjects) {
+        this.week10Subjects = week10Subjects;
+    }
+
+    public String getWeek11Subjects() {
+        return week11Subjects;
+    }
+
+    public void setWeek11Subjects(String week11Subjects) {
+        this.week11Subjects = week11Subjects;
+    }
+
+    public String getWeek12Subjects() {
+        return week12Subjects;
+    }
+
+    public void setWeek12Subjects(String week12Subjects) {
+        this.week12Subjects = week12Subjects;
+    }
+
+    public String getWeek13Subjects() {
+        return week13Subjects;
+    }
+
+    public void setWeek13Subjects(String week13Subjects) {
+        this.week13Subjects = week13Subjects;
+    }
+
+    public String getWeek14Subjects() {
+        return week14Subjects;
+    }
+
+    public void setWeek14Subjects(String week14Subjects) {
+        this.week14Subjects = week14Subjects;
+    }
+
+    public String getWeek15Subjects() {
+        return week15Subjects;
+    }
+
+    public void setWeek15Subjects(String week15Subjects) {
+        this.week15Subjects = week15Subjects;
+    }
+
+    public String getWeek1ReqMat() {
+        return week1ReqMat;
+    }
+
+    public void setWeek1ReqMat(String week1ReqMat) {
+        this.week1ReqMat = week1ReqMat;
+    }
+
+    public String getWeek2ReqMat() {
+        return week2ReqMat;
+    }
+
+    public void setWeek2ReqMat(String week2ReqMat) {
+        this.week2ReqMat = week2ReqMat;
+    }
+
+    public String getWeek3ReqMat() {
+        return week3ReqMat;
+    }
+
+    public void setWeek3ReqMat(String week3ReqMat) {
+        this.week3ReqMat = week3ReqMat;
+    }
+
+    public String getWeek4ReqMat() {
+        return week4ReqMat;
+    }
+
+    public void setWeek4ReqMat(String week4ReqMat) {
+        this.week4ReqMat = week4ReqMat;
+    }
+
+    public String getWeek5ReqMat() {
+        return week5ReqMat;
+    }
+
+    public void setWeek5ReqMat(String week5ReqMat) {
+        this.week5ReqMat = week5ReqMat;
+    }
+
+    public String getWeek6ReqMat() {
+        return week6ReqMat;
+    }
+
+    public void setWeek6ReqMat(String week6ReqMat) {
+        this.week6ReqMat = week6ReqMat;
+    }
+
+    public String getWeek7ReqMat() {
+        return week7ReqMat;
+    }
+
+    public void setWeek7ReqMat(String week7ReqMat) {
+        this.week7ReqMat = week7ReqMat;
+    }
+
+    public String getWeek8ReqMat() {
+        return week8ReqMat;
+    }
+
+    public void setWeek8ReqMat(String week8ReqMat) {
+        this.week8ReqMat = week8ReqMat;
+    }
+
+    public String getWeek9ReqMat() {
+        return week9ReqMat;
+    }
+
+    public void setWeek9ReqMat(String week9ReqMat) {
+        this.week9ReqMat = week9ReqMat;
+    }
+
+    public String getWeek10ReqMat() {
+        return week10ReqMat;
+    }
+
+    public void setWeek10ReqMat(String week10ReqMat) {
+        this.week10ReqMat = week10ReqMat;
+    }
+
+    public String getWeek11ReqMat() {
+        return week11ReqMat;
+    }
+
+    public void setWeek11ReqMat(String week11ReqMat) {
+        this.week11ReqMat = week11ReqMat;
+    }
+
+    public String getWeek12ReqMat() {
+        return week12ReqMat;
+    }
+
+    public void setWeek12ReqMat(String week12ReqMat) {
+        this.week12ReqMat = week12ReqMat;
+    }
+
+    public String getWeek13ReqMat() {
+        return week13ReqMat;
+    }
+
+    public void setWeek13ReqMat(String week13ReqMat) {
+        this.week13ReqMat = week13ReqMat;
+    }
+
+    public String getWeek14ReqMat() {
+        return week14ReqMat;
+    }
+
+    public void setWeek14ReqMat(String week14ReqMat) {
+        this.week14ReqMat = week14ReqMat;
+    }
+
+    public String getWeek15ReqMat() {
+        return week15ReqMat;
+    }
+
+    public void setWeek15ReqMat(String week15ReqMat) {
+        this.week15ReqMat = week15ReqMat;
+    }
+
+    public String getCourseNotesAndTextBooks() {
+        return courseNotesAndTextBooks;
+    }
+
+    public void setCourseNotesAndTextBooks(String courseNotesAndTextBooks) {
+        this.courseNotesAndTextBooks = courseNotesAndTextBooks;
+    }
+
+    public String getSuggestedReadingsAndMaterials() {
+        return suggestedReadingsAndMaterials;
+    }
+
+    public void setSuggestedReadingsAndMaterials(String suggestedReadingsAndMaterials) {
+        this.suggestedReadingsAndMaterials = suggestedReadingsAndMaterials;
+    }
+
+    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name, String lecture_Code, String semester, String theory_Hour_In_Week,
                          String application_or_Lab_Hour_In_Week, String local_Credits, String ECTS,
                          String prerequisites, String course_Language, String course_Type,
                          String course_Level, String teaching_Methods_and_Techniques,
@@ -252,17 +537,65 @@ public class LectureConfig {
         this.lecturer_Name = lecturer_Name;
     }
 
-    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name) {
-        this.lecture_id = lecture_id;
-        this.lecture_Name = lecture_Name;
-        this.lecturer_Name = lecturer_Name;
-    }
-
-    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name,String lecture_Code) {
+    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name, String lecture_Code, String semester, String theory_Hour_In_Week, String application_or_Lab_Hour_In_Week, String local_Credits, String ECTS, String prerequisites, String course_Language, String course_Type, String course_Level, String teaching_Methods_and_Techniques, String course_Coordinator, String assistant, String course_Objectives, String learning_Outcomes, String course_Description, String course_Category, String week1Subjects, String week2Subjects, String week3Subjects, String week4Subjects, String week5Subjects, String week6Subjects, String week7Subjects, String week8Subjects, String week9Subjects, String week10Subjects, String week11Subjects, String week12Subjects, String week13Subjects, String week14Subjects, String week15Subjects, String week1ReqMat, String week2ReqMat, String week3ReqMat, String week4ReqMat, String week5ReqMat, String week6ReqMat, String week7ReqMat, String week8ReqMat, String week9ReqMat, String week10ReqMat, String week11ReqMat, String week12ReqMat, String week13ReqMat, String week14ReqMat, String week15ReqMat, String courseNotesAndTextBooks, String suggestedReadingsAndMaterials) {
         this.lecture_id = lecture_id;
         this.lecture_Name = lecture_Name;
         this.lecturer_Name = lecturer_Name;
         this.lecture_Code = lecture_Code;
+        this.semester = semester;
+        this.theory_Hour_In_Week = theory_Hour_In_Week;
+        this.application_or_Lab_Hour_In_Week = application_or_Lab_Hour_In_Week;
+        this.local_Credits = local_Credits;
+        this.ECTS = ECTS;
+        this.prerequisites = prerequisites;
+        this.course_Language = course_Language;
+        this.course_Type = course_Type;
+        this.course_Level = course_Level;
+        this.teaching_Methods_and_Techniques = teaching_Methods_and_Techniques;
+        this.course_Coordinator = course_Coordinator;
+        this.assistant = assistant;
+        this.course_Objectives = course_Objectives;
+        this.learning_Outcomes = learning_Outcomes;
+        this.course_Description = course_Description;
+        this.course_Category = course_Category;
+        this.week1Subjects = week1Subjects;
+        this.week2Subjects = week2Subjects;
+        this.week3Subjects = week3Subjects;
+        this.week4Subjects = week4Subjects;
+        this.week5Subjects = week5Subjects;
+        this.week6Subjects = week6Subjects;
+        this.week7Subjects = week7Subjects;
+        this.week8Subjects = week8Subjects;
+        this.week9Subjects = week9Subjects;
+        this.week10Subjects = week10Subjects;
+        this.week11Subjects = week11Subjects;
+        this.week12Subjects = week12Subjects;
+        this.week13Subjects = week13Subjects;
+        this.week14Subjects = week14Subjects;
+        this.week15Subjects = week15Subjects;
+        this.week1ReqMat = week1ReqMat;
+        this.week2ReqMat = week2ReqMat;
+        this.week3ReqMat = week3ReqMat;
+        this.week4ReqMat = week4ReqMat;
+        this.week5ReqMat = week5ReqMat;
+        this.week6ReqMat = week6ReqMat;
+        this.week7ReqMat = week7ReqMat;
+        this.week8ReqMat = week8ReqMat;
+        this.week9ReqMat = week9ReqMat;
+        this.week10ReqMat = week10ReqMat;
+        this.week11ReqMat = week11ReqMat;
+        this.week12ReqMat = week12ReqMat;
+        this.week13ReqMat = week13ReqMat;
+        this.week14ReqMat = week14ReqMat;
+        this.week15ReqMat = week15ReqMat;
+        this.courseNotesAndTextBooks = courseNotesAndTextBooks;
+        this.suggestedReadingsAndMaterials = suggestedReadingsAndMaterials;
+    }
+
+    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name) {
+        this.lecture_id = lecture_id;
+        this.lecture_Name = lecture_Name;
+        this.lecturer_Name = lecturer_Name;
     }
 
     public int getLecture_id() {
