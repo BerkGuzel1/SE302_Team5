@@ -80,7 +80,40 @@ public class DBConnector {
                         "week14ReqMat TEXT," +
                         "week15ReqMat TEXT," +
                         "courseNotesAndTextBooks TEXT," +
-                        "suggestedReadingsAndMaterials TEXT)");
+                        "suggestedReadingsAndMaterials TEXT," +
+                        "STUDY_HOURS_OUT_OF_CLASS_NUM TEXT," +
+                        "STUDY_HOURS_OUT_OF_CLASS_DUR TEXT," +
+                        "STUDY_HOURS_OUT_OF_CLASS_WORK TEXT," +
+                        "FIELD_WORK_NUM TEXT," +
+                        "FIELD_WORK_DUR TEXT," +
+                        "FIELD_WORK_WORK TEXT," +
+                        "QUIZ_NUM TEXT," +
+                        "QUIZ_DUR TEXT," +
+                        "QUIZ_WORK TEXT," +
+                        "HOMEWORK_NUM TEXT," +
+                        "HOMEWORK_DUR TEXT," +
+                        "HOMEWORK_WORK TEXT," +
+                        "PRESENTATION_NUM TEXT," +
+                        "PRESENTATION_DUR TEXT," +
+                        "PRESENTATION_WORK TEXT," +
+                        "PROJECT_NUM TEXT," +
+                        "PROJECT_DUR TEXT," +
+                        "PROJECT_WORK TEXT," +
+                        "PORTFOLIO_NUM TEXT," +
+                        "PORTFOLIO_DUR TEXT," +
+                        "PORTFOLIO_WORK TEXT," +
+                        "SEMINAR_NUM TEXT," +
+                        "SEMINAR_DUR TEXT," +
+                        "SEMINAR_WORK TEXT," +
+                        "ORAL_EXAM_NUM TEXT," +
+                        "ORAL_EXAM_DUR TEXT," +
+                        "ORAL_EXAM_WORK TEXT," +
+                        "MIDTERM_NUM TEXT," +
+                        "MIDTERM_DUR TEXT," +
+                        "MIDTERM_WORK TEXT," +
+                        "FINAL_EXAM_NUM TEXT," +
+                        "FINAL_EXAM_DUR TEXT," +
+                        "FINAL_EXAM_WORK TEXT)");
 
 
 
@@ -112,7 +145,7 @@ public class DBConnector {
                     "week11Subjects,week12Subjects,week13Subjects,week14Subjects,week15Subjects," +
                     "week1ReqMat,week2ReqMat,week3ReqMat,week4ReqMat,week5ReqMat,week6ReqMat,week7ReqMat,week8ReqMat,week9ReqMat,week10ReqMat," +
                     "week11ReqMat,week12ReqMat,week13ReqMat,week14ReqMat,week15ReqMat," +
-                    "courseNotesAndTextBooks,suggestedReadingsAndMaterials) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+                    "courseNotesAndTextBooks,suggestedReadingsAndMaterials,STUDY_HOURS_OUT_OF_CLASS_NUM, STUDY_HOURS_OUT_OF_CLASS_DUR, STUDY_HOURS_OUT_OF_CLASS_WORK, FIELD_WORK_NUM, FIELD_WORK_DUR, FIELD_WORK_WORK, QUIZ_NUM, QUIZ_DUR, QUIZ_WORK, HOMEWORK_NUM, HOMEWORK_DUR, HOMEWORK_WORK, PRESENTATION_NUM, PRESENTATION_DUR, PRESENTATION_WORK, PROJECT_NUM, PROJECT_DUR, PROJECT_WORK, PORTFOLIO_NUM, PORTFOLIO_DUR, PORTFOLIO_WORK, SEMINAR_NUM, SEMINAR_DUR, SEMINAR_WORK, ORAL_EXAM_NUM, ORAL_EXAM_DUR, ORAL_EXAM_WORK, MIDTERM_NUM, MIDTERM_DUR, MIDTERM_WORK, FINAL_EXAM_NUM, FINAL_EXAM_DUR, FINAL_EXAM_WORK) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
          /*   insertEvaluation = connection.prepareStatement("INSERT INTO Evaluation_Table (PROJECT_ID, P_INPUT, P_OUTPUT) VALUES (?,?,?)");
             insertDetailedEvaluation = connection.prepareStatement("INSERT INTO Detailed_Evaluation_Table(EVALUATION_ID, RUN_STATUS, RUN_OUTPUT, STUDENT_ID) VALUES (?,?,?,?)");
 */
@@ -187,7 +220,6 @@ public class DBConnector {
             String week13Subjects= lecture.getWeek13Subjects();
             String week14Subjects= lecture.getWeek14Subjects();
             String week15Subjects= lecture.getWeek15Subjects();
-
             String week1ReqMat= lecture.getWeek1ReqMat();
             String week2ReqMat= lecture.getWeek2ReqMat();
             String week3ReqMat= lecture.getWeek3ReqMat();
@@ -203,9 +235,42 @@ public class DBConnector {
             String week13ReqMat= lecture.getWeek13ReqMat();
             String week14ReqMat= lecture.getWeek14ReqMat();
             String week15ReqMat= lecture.getWeek15ReqMat();
-
             String courseNotesAndTextBooks= lecture.getCourseNotesAndTextBooks();
             String suggestedReadingsAndMaterials= lecture.getSuggestedReadingsAndMaterials();
+            String SHOOCNum = lecture.getStudyHoursoutofClassNum();
+            String SHOOCDur = lecture.getStudyHoursoutofClassDur();
+            String SHOOCWork = lecture.getStudyHoursoutofClassWork();
+            String FWNum = lecture.getFieldWorkNum();
+            String FWDur = lecture.getFieldWorkDur();
+            String FWWork = lecture.getFieldWorkWork();
+            String QuizNum = lecture.getQuizNum();
+            String QuizDur = lecture.getQuizDur();
+            String QuizWork =  lecture.getQuizWork();
+            String HWNum = lecture.getHWNum();
+            String HWDur = lecture.getHWDur();
+            String HWWork = lecture.getHWWork();
+            String PresentationNum = lecture.getPresentationNum();
+            String PresentationDur = lecture.getPresentationDur();
+            String PresentationWork = lecture.getPresentationWork();
+            String ProjectNum = lecture.getProjectNum();
+            String ProjectDur = lecture.getProjectDur();
+            String ProjectWork = lecture.getProjectWork();
+            String PortfolioNum = lecture.getPortfolioNum();
+            String PortfolioDur = lecture.getPortfolioDur();
+            String PortfolioWork= lecture.getPortfolioWork();
+            String SeminarNum = lecture.getSeminarNum();
+            String SeminarDur = lecture.getSeminarDur();
+            String SeminarWork = lecture.getSeminarWork();
+            String OralNum = lecture.getOralExamNum();
+            String OralDur = lecture.getOralExamDur();
+            String OralWork = lecture.getOralExamWork();
+            String MidtermNum = lecture.getMidtermNum();
+            String MidtermDur = lecture.getMidterDur();
+            String MidtermWork = lecture.getMidterWork();
+            String FinalNum = lecture.getFinalExamNum();
+            String FinalDur = lecture.getFinalExamDur();
+            String FinalWork = lecture.getFinalExamWork();
+
 
             insertLecture.setInt(1, lecture_id);
             insertLecture.setString(2, lecture_name);
@@ -259,6 +324,39 @@ public class DBConnector {
             insertLecture.setString(50, week15ReqMat);
             insertLecture.setString(51, courseNotesAndTextBooks);
             insertLecture.setString(52, suggestedReadingsAndMaterials);
+            insertLecture.setString(53, SHOOCNum);
+            insertLecture.setString(54, SHOOCDur);
+            insertLecture.setString(55, SHOOCWork);
+            insertLecture.setString(56, FWNum);
+            insertLecture.setString(57, FWDur);
+            insertLecture.setString(58, FWWork);
+            insertLecture.setString(59, QuizNum);
+            insertLecture.setString(60, QuizDur);
+            insertLecture.setString(61, QuizWork);
+            insertLecture.setString(62, HWNum);
+            insertLecture.setString(63, HWDur);
+            insertLecture.setString(64, HWWork);
+            insertLecture.setString(65, PresentationNum);
+            insertLecture.setString(66, PresentationDur);
+            insertLecture.setString(67, PresentationWork);
+            insertLecture.setString(68, ProjectNum);
+            insertLecture.setString(69, ProjectDur);
+            insertLecture.setString(70, ProjectWork);
+            insertLecture.setString(71, PortfolioNum);
+            insertLecture.setString(72, PortfolioDur);
+            insertLecture.setString(73, PortfolioWork);
+            insertLecture.setString(74, SeminarNum);
+            insertLecture.setString(75, SeminarDur);
+            insertLecture.setString(76, SeminarWork);
+            insertLecture.setString(77, OralNum);
+            insertLecture.setString(78, OralDur);
+            insertLecture.setString(79, OralWork);
+            insertLecture.setString(80, MidtermNum);
+            insertLecture.setString(81, MidtermDur);
+            insertLecture.setString(82, MidtermWork);
+            insertLecture.setString(83, FinalNum);
+            insertLecture.setString(84, FinalDur);
+            insertLecture.setString(85, FinalWork);
 
             insertLecture.execute();
 
@@ -326,10 +424,44 @@ public class DBConnector {
             String week15ReqMat= rs.getString(50);
             String courseNotesAndTextBooks= rs.getString(51);
             String suggestedReadingsAndMaterials= rs.getString(52);
+            String SHOOCNum = rs.getString(53);
+            String SHOOCDur = rs.getString(54);
+            String SHOOCWork = rs.getString(55);
+            String FWNum = rs.getString(56);
+            String FWDur = rs.getString(57);
+            String FWWork = rs.getString(58);
+            String QuizNum = rs.getString(59);
+            String QuizDur = rs.getString(60);
+            String QuizWork =  rs.getString(61);
+            String HWNum = rs.getString(62);
+            String HWDur = rs.getString(63);
+            String HWWork = rs.getString(64);
+            String PresentationNum = rs.getString(65);
+            String PresentationDur = rs.getString(66);
+            String PresentationWork = rs.getString(67);
+            String ProjectNum = rs.getString(68);
+            String ProjectDur = rs.getString(69);
+            String ProjectWork = rs.getString(70);
+            String PortfolioNum = rs.getString(71);
+            String PortfolioDur = rs.getString(72);
+            String PortfolioWork= rs.getString(73);
+            String SeminarNum = rs.getString(74);
+            String SeminarDur = rs.getString(75);
+            String SeminarWork = rs.getString(76);
+            String OralNum = rs.getString(77);
+            String OralDur = rs.getString(78);
+            String OralWork = rs.getString(79);
+            String MidtermNum = rs.getString(80);
+            String MidtermDur = rs.getString(81);
+            String MidtermWork = rs.getString(82);
+            String FinalNum = rs.getString(83);
+            String FinalDur = rs.getString(84);
+            String FinalWork = rs.getString(85);
 
 
             LectureConfig config = new LectureConfig(id, Lecturename, Lecturername, LectureCode, Semester, TheoryHour, LabHour, LocalCredit, Ects, Prereq, LectureLang, LectureType, LectureLevel, TMethod, LecturCoordinator, Assistant, LectureObjective, LectureOutcome, LectureDescription, LectureCategory,week1Subjects,week2Subjects,week3Subjects,week4Subjects,week5Subjects,week6Subjects,week7Subjects,week8Subjects,week9Subjects,week10Subjects, week11Subjects,week12Subjects,week13Subjects,week14Subjects,week15Subjects,
-                    week1ReqMat,week2ReqMat,week3ReqMat,week4ReqMat,week5ReqMat,week6ReqMat,week7ReqMat,week8ReqMat,week9ReqMat,week10ReqMat,week11ReqMat,week12ReqMat,week13ReqMat,week14ReqMat,week15ReqMat, courseNotesAndTextBooks,suggestedReadingsAndMaterials);
+                    week1ReqMat,week2ReqMat,week3ReqMat,week4ReqMat,week5ReqMat,week6ReqMat,week7ReqMat,week8ReqMat,week9ReqMat,week10ReqMat,week11ReqMat,week12ReqMat,week13ReqMat,week14ReqMat,week15ReqMat, courseNotesAndTextBooks,suggestedReadingsAndMaterials, SHOOCNum, SHOOCDur, SHOOCWork, FWNum, FWDur, FWWork, QuizNum, QuizDur, QuizWork, HWNum, HWDur, HWWork, PresentationNum, PresentationDur, PresentationWork, ProjectNum, ProjectDur, ProjectWork, PortfolioNum, PortfolioDur, PortfolioWork, SeminarNum,
+                    SeminarDur, SeminarWork, OralNum, OralDur, OralWork, MidtermNum, MidtermDur, MidtermWork, FinalNum, FinalDur, FinalWork);
 
             return config;
 
