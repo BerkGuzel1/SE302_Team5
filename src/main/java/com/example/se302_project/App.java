@@ -11,7 +11,7 @@ import java.io.IOException;
 public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException, ClassNotFoundException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("IAEMainScreen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("SMSMainScreen.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         String path = "images/paintedLogo.png";
         Image image = new Image(getClass().getResource(path).toExternalForm());

@@ -639,66 +639,126 @@ public class MainController {
                 ASSESMENT.setStyle("-fx-background-color: orange; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 15px;");
                 AddLectureGrid.add(ASSESMENT,0,38);
 
-                Label ECTSWORKLOADTABLE = new Label("4.ECTS / WORKLOAD TABLE");
-                ECTSWORKLOADTABLE.setStyle("-fx-background-color: orange; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 15px;");
-                AddLectureGrid.add(ECTSWORKLOADTABLE,0,110);
-
                 Label numberLabel = new Label("NUMBER");
                 numberLabel.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
-                AddLectureGrid.add(numberLabel, 1, 110);
+                AddLectureGrid.add(numberLabel, 1, 38);
 
-                Label durationLabel = new Label("DURATION (HOURS)");
+                Label durationLabel = new Label("WEIGHTING");
                 durationLabel.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
-                AddLectureGrid.add(durationLabel, 2, 110);
+                AddLectureGrid.add(durationLabel, 2, 38);
+
+                Label lo1 = new Label("LO1");
+                lo1.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(lo1, 3, 38);
+
+                Label lo2 = new Label("LO2");
+                lo2.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(lo2, 4, 38);
+
+                Label lo3 = new Label("LO3");
+                lo3.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(lo3, 5, 38);
+
+                Label lo4 = new Label("LO4");
+                lo4.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(lo4, 6, 38);
+
+                Label participationNumberLabel = new Label("Participation:");
+                AddLectureGrid.add(participationNumberLabel, 0, 39);
+
+                Label labOrApplicationNumberLabel = new Label("Laboratory or Application:");
+                AddLectureGrid.add(labOrApplicationNumberLabel, 0, 40);
+
+                Label fieldWorkNumberLabel = new Label("Field Work:");
+                AddLectureGrid.add(fieldWorkNumberLabel, 0, 41);
+
+                Label quizOrStudioCritiqueNumberLabel = new Label("Quiz or Studio Critique:");
+                AddLectureGrid.add(quizOrStudioCritiqueNumberLabel, 0, 42);
+
+                Label homeworkOrAssignmentNumberLabel = new Label("Homework or Assignment:");
+                AddLectureGrid.add(homeworkOrAssignmentNumberLabel, 0, 43);
+
+                Label presentationOrJuryNumberLabel = new Label("Presentation or Jury:");
+                AddLectureGrid.add(presentationOrJuryNumberLabel, 0, 44);
+
+                Label projectNumberLabel = new Label("Project:");
+                AddLectureGrid.add(projectNumberLabel, 0, 45);
+
+                Label portfolioNumberLabel = new Label("Portfolio:");
+                AddLectureGrid.add(portfolioNumberLabel, 0, 46);
+
+                Label seminarOrWorkshopNumberLabel = new Label("Seminar or Workshop:");
+                AddLectureGrid.add(seminarOrWorkshopNumberLabel, 0, 47);
+
+                Label oralExamNumberLabel = new Label("Oral Exam:");
+                AddLectureGrid.add(oralExamNumberLabel, 0, 48);
+
+                Label midtermNumberLabel = new Label("Midterm:");
+                AddLectureGrid.add(midtermNumberLabel, 0, 49);
+
+                Label finalExamNumberLabel = new Label("Final Exam:");
+                AddLectureGrid.add(finalExamNumberLabel, 0, 50);
+
+                Label ECTSWORKLOADTABLE = new Label("4.ECTS / WORKLOAD TABLE");
+                ECTSWORKLOADTABLE.setStyle("-fx-background-color: orange; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 15px;");
+                AddLectureGrid.add(ECTSWORKLOADTABLE,0,51);
+
+                Label numberLabel1 = new Label("NUMBER");
+                numberLabel1.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(numberLabel1, 1, 51);
+
+                Label durationLabel1 = new Label("DURATION (HOURS)");
+                durationLabel1.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(durationLabel1, 2, 51);
 
                 Label workloadLabel = new Label("WORKLOAD");
                 workloadLabel.setStyle("-fx-background-color: grey; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
-                AddLectureGrid.add(workloadLabel, 3, 110);
+                AddLectureGrid.add(workloadLabel, 3, 51);
 
                 Label CourseHoursLabel = new Label("Course Hours\n(Including exam week: 16 x total hours):");
-                AddLectureGrid.add(CourseHoursLabel, 0, 111);
+                AddLectureGrid.add(CourseHoursLabel, 0, 52);
 
                 Label CourseHours16= new Label("16");
-                AddLectureGrid.add(CourseHours16, 1, 111);
+                AddLectureGrid.add(CourseHours16, 1, 52);
 
                 Label LabAppHoursLabel = new Label("Laboratory/Application Hours\n(Including exam week: 16 x total hours)\n");
-                AddLectureGrid.add(LabAppHoursLabel, 0, 112);
+                AddLectureGrid.add(LabAppHoursLabel, 0, 53);
 
                 Label LabHours16= new Label("16");
-                AddLectureGrid.add(LabHours16, 1, 112);
+                AddLectureGrid.add(LabHours16, 1, 53);
 
                 Label StudyHoursoutofClassNumLabel = new Label("Study Hours out of Class:");
-                AddLectureGrid.add(StudyHoursoutofClassNumLabel, 0, 113);
+                AddLectureGrid.add(StudyHoursoutofClassNumLabel, 0, 54);
 
                 Label FieldWorkLabel = new Label("Field Work");
-                AddLectureGrid.add(FieldWorkLabel, 0, 114);
+                AddLectureGrid.add(FieldWorkLabel, 0, 55);
 
                 Label QuizLabel = new Label("Quiz/Studio Critique:");
-                AddLectureGrid.add(QuizLabel, 0, 115);
+                AddLectureGrid.add(QuizLabel, 0, 56);
 
                 Label HWLabel = new Label("Homework/Assignments:");
-                AddLectureGrid.add(HWLabel, 0, 116);
+                AddLectureGrid.add(HWLabel, 0, 57);
 
                 Label PresentationLabel = new Label("Presentation/Jury::");
-                AddLectureGrid.add(PresentationLabel, 0, 117);
+                AddLectureGrid.add(PresentationLabel, 0, 58);
 
                 Label ProjectLabel = new Label("Project:");
-                AddLectureGrid.add(ProjectLabel, 0, 118);
+                AddLectureGrid.add(ProjectLabel, 0, 59);
 
                 Label PortfolioLabel = new Label("Portfolio:");
-                AddLectureGrid.add(PortfolioLabel, 0, 119);
+                AddLectureGrid.add(PortfolioLabel, 0, 60);
 
                 Label SeminarLabel = new Label("Seminar/Workshop:");
-                AddLectureGrid.add(SeminarLabel, 0,120);
+                AddLectureGrid.add(SeminarLabel, 0,61);
 
                 Label OralExamLabel = new Label("Oral Exam:");
-                AddLectureGrid.add(OralExamLabel, 0, 121);
+                AddLectureGrid.add(OralExamLabel, 0, 62);
 
                 Label MidtermLabel = new Label("Midterm:");
-                AddLectureGrid.add(MidtermLabel, 0, 122);
+                AddLectureGrid.add(MidtermLabel, 0, 63);
 
                 Label FinalLabel = new Label("Final Exam:");
-                AddLectureGrid.add(FinalLabel, 0, 123);
+                AddLectureGrid.add(FinalLabel, 0, 64);
 
                 ObservableList<TableShow> dataList = LectureTableView.getItems();
 
@@ -882,116 +942,332 @@ public class MainController {
                 TextField suggestedReadingsAndMaterialsText = new TextField();
                 AddLectureGrid.add(suggestedReadingsAndMaterialsText, 1, 37);
 
+                TextField partNumText = new TextField();
+                AddLectureGrid.add(partNumText, 1, 39);
+
+                TextField partWeiText = new TextField();
+                AddLectureGrid.add(partWeiText, 2, 39);
+
+                TextField partL01Text = new TextField();
+                AddLectureGrid.add(partL01Text, 3, 39);
+
+                TextField partL02Text = new TextField();
+                AddLectureGrid.add(partL02Text, 4, 39);
+
+                TextField partL03Text = new TextField();
+                AddLectureGrid.add(partL03Text, 5, 39);
+
+                TextField partL04Text = new TextField();
+                AddLectureGrid.add(partL04Text, 6, 39);
+
+                TextField labNumbText = new TextField();
+                AddLectureGrid.add(labNumbText, 1, 40);
+
+                TextField labWeiText = new TextField();
+                AddLectureGrid.add(labWeiText, 2, 40);
+
+                TextField labL01Text = new TextField();
+                AddLectureGrid.add(labL01Text, 3, 40);
+
+                TextField labL02Text = new TextField();
+                AddLectureGrid.add(labL02Text, 4, 40);
+
+                TextField labL03Text = new TextField();
+                AddLectureGrid.add(labL03Text, 5, 40);
+
+                TextField labL04Text = new TextField();
+                AddLectureGrid.add(labL04Text, 6, 40);
+
+                TextField fwNumbText = new TextField();
+                AddLectureGrid.add(fwNumbText, 1, 41);
+
+                TextField fwWeiText = new TextField();
+                AddLectureGrid.add(fwWeiText, 2, 41);
+
+                TextField fwL01Text = new TextField();
+                AddLectureGrid.add(fwL01Text, 3, 41);
+
+                TextField fwL02Text = new TextField();
+                AddLectureGrid.add(fwL02Text, 4, 41);
+
+                TextField fwL03Text = new TextField();
+                AddLectureGrid.add(fwL03Text, 5, 41);
+
+                TextField fwL04Text = new TextField();
+                AddLectureGrid.add(fwL04Text, 6, 41);
+
+                TextField quizNumbText = new TextField();
+                AddLectureGrid.add(quizNumbText, 1, 42);
+
+                TextField quizWeiText = new TextField();
+                AddLectureGrid.add(quizWeiText, 2, 42);
+
+                TextField quizL01Text = new TextField();
+                AddLectureGrid.add(quizL01Text, 3, 42);
+
+                TextField quizL02Text = new TextField();
+                AddLectureGrid.add(quizL02Text, 4, 42);
+
+                TextField quizL03Text = new TextField();
+                AddLectureGrid.add(quizL03Text, 5, 42);
+
+                TextField quizL04Text = new TextField();
+                AddLectureGrid.add(quizL04Text, 6, 42);
+
+                TextField HWNumbText = new TextField();
+                AddLectureGrid.add(HWNumbText, 1, 43);
+
+                TextField HWWeiText = new TextField();
+                AddLectureGrid.add(HWWeiText, 2, 43);
+
+                TextField HWL01Text = new TextField();
+                AddLectureGrid.add(HWL01Text, 3, 43);
+
+                TextField HWL02Text = new TextField();
+                AddLectureGrid.add(HWL02Text, 4, 43);
+
+                TextField HWL03Text = new TextField();
+                AddLectureGrid.add(HWL03Text, 5, 43);
+
+                TextField HWL04Text = new TextField();
+                AddLectureGrid.add(HWL04Text, 6, 43);
+
+                TextField PresNumbText = new TextField();
+                AddLectureGrid.add(PresNumbText, 1, 44);
+
+                TextField PresWeiText = new TextField();
+                AddLectureGrid.add(PresWeiText, 2, 44);
+
+                TextField PresL01Text = new TextField();
+                AddLectureGrid.add(PresL01Text, 3, 44);
+
+                TextField PresL02Text = new TextField();
+                AddLectureGrid.add(PresL02Text, 4, 44);
+
+                TextField PresL03Text = new TextField();
+                AddLectureGrid.add(PresL03Text, 5, 44);
+
+                TextField PresL04Text = new TextField();
+                AddLectureGrid.add(PresL04Text, 6, 44);
+
+                TextField ProjNumbText = new TextField();
+                AddLectureGrid.add (ProjNumbText, 1, 45);
+
+                TextField ProjWeiText = new TextField();
+                AddLectureGrid.add(ProjWeiText, 2, 45);
+
+                TextField ProjL01Text = new TextField();
+                AddLectureGrid.add(ProjL01Text, 3, 45);
+
+                TextField ProjL02Text = new TextField();
+                AddLectureGrid.add(ProjL02Text, 4, 45);
+
+                TextField ProjL03Text = new TextField();
+                AddLectureGrid.add(ProjL03Text, 5, 45);
+
+                TextField ProjL04Text = new TextField();
+                AddLectureGrid.add(ProjL04Text, 6, 45);
+
+                TextField PortfolioNumbText = new TextField();
+                AddLectureGrid.add (PortfolioNumbText, 1, 46);
+
+                TextField PortfolioWeiText = new TextField();
+                AddLectureGrid.add(PortfolioWeiText, 2, 46);
+
+                TextField PortfolioL01Text = new TextField();
+                AddLectureGrid.add(PortfolioL01Text, 3, 46);
+
+                TextField PortfolioL02Text = new TextField();
+                AddLectureGrid.add(PortfolioL02Text, 4, 46);
+
+                TextField PortfolioL03Text = new TextField();
+                AddLectureGrid.add(PortfolioL03Text, 5, 46);
+
+                TextField PortfolioL04Text = new TextField();
+                AddLectureGrid.add(PortfolioL04Text, 6, 46);
+
+                TextField SemNumbText = new TextField();
+                AddLectureGrid.add(SemNumbText, 1, 47);
+
+                TextField SemWeiText = new TextField();
+                AddLectureGrid.add(SemWeiText, 2, 47);
+
+                TextField SemL01Text = new TextField();
+                AddLectureGrid.add(SemL01Text, 3, 47);
+
+                TextField SemL02Text = new TextField();
+                AddLectureGrid.add(SemL02Text, 4, 47);
+
+                TextField SemL03Text = new TextField();
+                AddLectureGrid.add(SemL03Text, 5, 47);
+
+                TextField SemL04Text = new TextField();
+                AddLectureGrid.add(SemL04Text, 6, 47);
+
+                TextField OralNumbText = new TextField();
+                AddLectureGrid.add(OralNumbText, 1, 48);
+
+                TextField OralWeiText = new TextField();
+                AddLectureGrid.add(OralWeiText, 2, 48);
+
+                TextField OralL01Text = new TextField();
+                AddLectureGrid.add(OralL01Text, 3, 48);
+
+                TextField OralL02Text = new TextField();
+                AddLectureGrid.add(OralL02Text, 4, 48);
+
+                TextField OralL03Text = new TextField();
+                AddLectureGrid.add(OralL03Text, 5, 48);
+
+                TextField OralL04Text = new TextField();
+                AddLectureGrid.add(OralL04Text, 6, 48);
+
+                TextField MidtermNumbText = new TextField();
+                AddLectureGrid.add(MidtermNumbText, 1, 49);
+
+                TextField MidtermWeiText = new TextField();
+                AddLectureGrid.add(MidtermWeiText, 2, 49);
+
+                TextField MidtermL01Text = new TextField();
+                AddLectureGrid.add(MidtermL01Text, 3, 49);
+
+                TextField MidtermL02Text = new TextField();
+                AddLectureGrid.add(MidtermL02Text, 4, 49);
+
+                TextField MidtermL03Text = new TextField();
+                AddLectureGrid.add(MidtermL03Text, 5, 49);
+
+                TextField MidtermL04Text = new TextField();
+                AddLectureGrid.add(MidtermL04Text, 6, 49);
+
+                TextField FinalNumbText = new TextField();
+                AddLectureGrid.add(FinalNumbText, 1, 50);
+
+                TextField FinalWeiText = new TextField();
+                AddLectureGrid.add(FinalWeiText, 2, 50);
+
+                TextField FinalL01Text = new TextField();
+                AddLectureGrid.add(FinalL01Text, 3, 50);
+
+                TextField FinalL02Text = new TextField();
+                AddLectureGrid.add(FinalL02Text, 4, 50);
+
+                TextField FinalL03Text = new TextField();
+                AddLectureGrid.add(FinalL03Text, 5, 50);
+
+                TextField FinalL04Text = new TextField();
+                AddLectureGrid.add(FinalL04Text, 6, 50);
+
                 TextField CourseHourDurText = new TextField();
-                AddLectureGrid.add(CourseHourDurText, 2, 111);
+                AddLectureGrid.add(CourseHourDurText, 2, 52);
 
                 TextField CourseHourWorkText = new TextField();
-                AddLectureGrid.add(CourseHourWorkText, 3, 111);
+                AddLectureGrid.add(CourseHourWorkText, 3, 52);
 
                 TextField LabHoursDurText = new TextField();
-                AddLectureGrid.add(LabHoursDurText, 2, 112);
+                AddLectureGrid.add(LabHoursDurText, 2, 53);
 
                 TextField LabHoursWorkText = new TextField();
-                AddLectureGrid.add(LabHoursWorkText, 3, 112);
+                AddLectureGrid.add(LabHoursWorkText, 3, 53);
 
                 TextField StudyHoursoutofClassNumText = new TextField();
-                AddLectureGrid.add(StudyHoursoutofClassNumText, 1, 113);
+                AddLectureGrid.add(StudyHoursoutofClassNumText, 1, 54);
 
                 TextField StudyHoursoutofClassDurText = new TextField();
-                AddLectureGrid.add(StudyHoursoutofClassDurText, 2, 113);
+                AddLectureGrid.add(StudyHoursoutofClassDurText, 2, 54);
 
                 TextField StudyHoursoutofClassWorkText = new TextField();
-                AddLectureGrid.add(StudyHoursoutofClassWorkText, 3, 113);
+                AddLectureGrid.add(StudyHoursoutofClassWorkText, 3, 54);
 
                 TextField FieldWorkNumText = new TextField();
-                AddLectureGrid.add(FieldWorkNumText, 1, 114);
+                AddLectureGrid.add(FieldWorkNumText, 1, 55);
 
                 TextField FieldWorkDurText = new TextField();
-                AddLectureGrid.add(FieldWorkDurText, 2, 114);
+                AddLectureGrid.add(FieldWorkDurText, 2, 55);
 
                 TextField FieldWorkWorkText = new TextField();
-                AddLectureGrid.add(FieldWorkWorkText, 3, 114);
+                AddLectureGrid.add(FieldWorkWorkText, 3, 55);
 
                 TextField QuizNumText = new TextField();
-                AddLectureGrid.add(QuizNumText, 1, 115);
+                AddLectureGrid.add(QuizNumText, 1, 56);
 
                 TextField QuizWorkText = new TextField();
-                AddLectureGrid.add(QuizWorkText, 3, 115);
+                AddLectureGrid.add(QuizWorkText, 3, 56);
 
                 TextField QuizDurText = new TextField();
-                AddLectureGrid.add(QuizDurText, 2, 115);
+                AddLectureGrid.add(QuizDurText, 2, 56);
 
                 TextField HWNumText = new TextField();
-                AddLectureGrid.add(HWNumText, 1, 116);
+                AddLectureGrid.add(HWNumText, 1, 57);
 
                 TextField HWDurText = new TextField();
-                AddLectureGrid.add(HWDurText, 2, 116);
+                AddLectureGrid.add(HWDurText, 2, 57);
 
                 TextField HWWorkText = new TextField();
-                AddLectureGrid.add(HWWorkText, 3, 116);
+                AddLectureGrid.add(HWWorkText, 3, 57);
 
                 TextField PresentationNumText = new TextField();
-                AddLectureGrid.add(PresentationNumText, 1, 117);
+                AddLectureGrid.add(PresentationNumText, 1, 58);
 
                 TextField PresentationDurText = new TextField();
-                AddLectureGrid.add(PresentationDurText, 2, 117);
+                AddLectureGrid.add(PresentationDurText, 2, 58);
 
                 TextField PresentationWorkText = new TextField();
-                AddLectureGrid.add(PresentationWorkText, 3, 117);
+                AddLectureGrid.add(PresentationWorkText, 3, 58);
 
                 TextField ProjectNumText = new TextField();
-                AddLectureGrid.add(ProjectNumText, 1, 118);
+                AddLectureGrid.add(ProjectNumText, 1, 59);
 
                 TextField ProjectDurText = new TextField();
-                AddLectureGrid.add(ProjectDurText, 2, 118);
+                AddLectureGrid.add(ProjectDurText, 2, 59);
 
                 TextField ProjectWorkText = new TextField();
-                AddLectureGrid.add(ProjectWorkText, 3, 118);
+                AddLectureGrid.add(ProjectWorkText, 3, 59);
 
                 TextField PortfolioNumText = new TextField();
-                AddLectureGrid.add(PortfolioNumText, 1, 119);
+                AddLectureGrid.add(PortfolioNumText, 1, 60);
 
                 TextField PortfolioDurText = new TextField();
-                AddLectureGrid.add(PortfolioDurText, 2, 119);
+                AddLectureGrid.add(PortfolioDurText, 2, 60);
 
                 TextField PortfolioWorkText = new TextField();
-                AddLectureGrid.add(PortfolioWorkText, 3, 119);
+                AddLectureGrid.add(PortfolioWorkText, 3, 60);
 
                 TextField SeminarNumText = new TextField();
-                AddLectureGrid.add(SeminarNumText, 1, 120);
+                AddLectureGrid.add(SeminarNumText, 1, 61);
 
                 TextField SeminarDurText = new TextField();
-                AddLectureGrid.add(SeminarDurText, 2, 120);
+                AddLectureGrid.add(SeminarDurText, 2, 61);
 
                 TextField SeminarWorkText = new TextField();
-                AddLectureGrid.add(SeminarWorkText, 3, 120);
+                AddLectureGrid.add(SeminarWorkText, 3, 61);
 
                 TextField OralExamNumText = new TextField();
-                AddLectureGrid.add(OralExamNumText, 1, 121);
+                AddLectureGrid.add(OralExamNumText, 1, 62);
 
                 TextField OralExamDurText = new TextField();
-                AddLectureGrid.add(OralExamDurText, 2, 121);
+                AddLectureGrid.add(OralExamDurText, 2, 62);
 
                 TextField OralExamWorkText = new TextField();
-                AddLectureGrid.add(OralExamWorkText, 3, 121);
+                AddLectureGrid.add(OralExamWorkText, 3, 62);
 
                 TextField MidtermNumText = new TextField();
-                AddLectureGrid.add(MidtermNumText, 1, 122);
+                AddLectureGrid.add(MidtermNumText, 1, 63);
 
                 TextField MidtermDurText = new TextField();
-                AddLectureGrid.add(MidtermDurText, 2, 122);
+                AddLectureGrid.add(MidtermDurText, 2, 63);
 
                 TextField MidtermWorkText = new TextField();
-                AddLectureGrid.add(MidtermWorkText, 3, 122);
+                AddLectureGrid.add(MidtermWorkText, 3, 63);
 
                 TextField FinalExamNumText = new TextField();
-                AddLectureGrid.add(FinalExamNumText, 1, 123);
+                AddLectureGrid.add(FinalExamNumText, 1, 64);
 
                 TextField FinalExamDurText = new TextField();
-                AddLectureGrid.add(FinalExamDurText, 2, 123);
+                AddLectureGrid.add(FinalExamDurText, 2, 64);
 
                 TextField FinalExamWorkText = new TextField();
-                AddLectureGrid.add(FinalExamWorkText, 3, 123);
+                AddLectureGrid.add(FinalExamWorkText, 3, 64);
 
                 AddLectureButton.setOnAction(event -> {
                         String TempName = LectureNameText.getText();
@@ -1045,6 +1321,78 @@ public class MainController {
                         String TempW15req = week15ReqMatText.getText();
                         String TempCourseNotes = courseNotesAndTextBooksText.getText();
                         String TempSuggested = suggestedReadingsAndMaterialsText.getText();
+                        String TempPartNumb = partNumText.getText();
+                        String TempPartWei = partWeiText.getText();
+                        String TempPartL01 = partL01Text.getText();
+                        String TempPartL02 = partL02Text.getText();
+                        String TempPartL03 = partL03Text.getText();
+                        String TempPartL04 = partL04Text.getText();
+                        String TempLabNumb = labNumbText.getText();
+                        String TempLabWei = labWeiText.getText();
+                        String TempLabL01 = labL01Text.getText();
+                        String TempLabL02 = labL02Text.getText();
+                        String TempLabL03 = labL03Text.getText();
+                        String TempLabL04 = labL04Text.getText();
+                        String TempFWNumb = fwNumbText.getText();
+                        String TempFWWei = fwWeiText.getText();
+                        String TempFWL01 = fwL01Text.getText();
+                        String TempFWL02 = fwL02Text.getText();
+                        String TempFWL03 = fwL03Text.getText();
+                        String TempFWL04 = fwL04Text.getText();
+                        String TempQuizNumb = quizNumbText.getText();
+                        String TempQuizWei = quizWeiText.getText();
+                        String TempQuizL01 = quizL01Text.getText();
+                        String TempQuizL02 = quizL02Text.getText();
+                        String TempQuizL03 = quizL03Text.getText();
+                        String TempQuizL04 = quizL04Text.getText();
+                        String TempHWNumb = HWNumbText.getText();
+                        String TempHWWei = HWWeiText.getText();
+                        String TempHWL01 = HWL01Text.getText();
+                        String TempHWL02 = HWL02Text.getText();
+                        String TempHWL03 = HWL03Text.getText();
+                        String TempHWL04 = HWL04Text.getText();
+                        String TempPresNumb = PresNumbText.getText();
+                        String TempPresWei = PresWeiText.getText();
+                        String TempPresL01 = PresL01Text.getText();
+                        String TempPresL02 = PresL02Text.getText();
+                        String TempPresL03 = PresL03Text.getText();
+                        String TempPresL04 = PresL04Text.getText();
+                        String TempProjNumb = ProjNumbText.getText();
+                        String TempProjWei = ProjWeiText.getText();
+                        String TempProjL01 = ProjL01Text.getText();
+                        String TempProjL02 = ProjL02Text.getText();
+                        String TempProjL03 = ProjL03Text.getText();
+                        String TempProjL04 = ProjL04Text.getText();
+                        String TempPortNumb = PortfolioNumbText.getText();
+                        String TempPortWei = PortfolioWeiText.getText();
+                        String TempPortL01 = PortfolioL01Text.getText();
+                        String TempPortL02 = PortfolioL02Text.getText();
+                        String TempPortL03 = PortfolioL03Text.getText();
+                        String TempPortL04 = PortfolioL04Text.getText();
+                        String TempSEMNumb = SemNumbText.getText();
+                        String TempSEMWei = SemWeiText.getText();
+                        String TempSEML01 = SemL01Text.getText();
+                        String TempSEML02 = SemL02Text.getText();
+                        String TempSEML03 = SemL03Text.getText();
+                        String TempSEML04 = SemL04Text.getText();
+                        String TempORALNumb = OralNumbText.getText();
+                        String TempORALWei = OralWeiText.getText();
+                        String TempORALL01 = OralL01Text.getText();
+                        String TempORALL02 = OralL02Text.getText();
+                        String TempORALL03 = OralL03Text.getText();
+                        String TempORALL04 = OralL04Text.getText();
+                        String TempMIDNumb = MidtermNumbText.getText();
+                        String TempMIDWei = MidtermWeiText.getText();
+                        String TempMIDL01 = MidtermL01Text.getText();
+                        String TempMIDL02 = MidtermL02Text.getText();
+                        String TempMIDL03 = MidtermL03Text.getText();
+                        String TempMIDL04 = MidtermL04Text.getText();
+                        String TempFINALNumb = FinalNumbText.getText();
+                        String TempFINALWei = FinalWeiText.getText();
+                        String TempFINALL01 = FinalL01Text.getText();
+                        String TempFINALL02 = FinalL02Text.getText();
+                        String TempFINALL03 = FinalL03Text.getText();
+                        String TempFINALL04 = FinalL04Text.getText();
                         String TempSHOOCNum = StudyHoursoutofClassNumText.getText();
                         String TempSHOOCDur = StudyHoursoutofClassDurText.getText();
                         String TempSHOOCWork = StudyHoursoutofClassWorkText.getText();
@@ -1085,7 +1433,11 @@ public class MainController {
                                 TempLOutcome, TempLDescription, TempLCategory,TempW1sub, TempW2sub, TempW3sub, TempW4sub, TempW5sub, TempW6sub,
                                 TempW7sub, TempW8sub, TempW9sub, TempW10sub, TempW11sub, TempW12sub, TempW13sub, TempW14sub, TempW15sub, TempW1req,
                                 TempW2req, TempW3req, TempW4req, TempW5req, TempW6req, TempW7req, TempW8req, TempW9req, TempW10req, TempW11req,
-                                TempW12req, TempW13req, TempW14req, TempW15req, TempCourseNotes, TempSuggested,TempSHOOCNum, TempSHOOCDur, TempSHOOCWork, TempFWNum, TempFWDur, TempFWWork,
+                                TempW12req, TempW13req, TempW14req, TempW15req, TempCourseNotes, TempSuggested,TempSHOOCNum,
+                                TempPartNumb,TempLabNumb,TempFWNumb,TempQuizNumb,TempHWNumb,TempPresNumb,TempProjNumb,TempPortNumb,TempSEMNumb,TempORALNumb,TempMIDNumb,TempFINALNumb,TempPartWei,TempLabWei,TempFWWei,TempQuizWei,TempHWWei,TempPresWei,TempProjWei,TempPortWei,TempSEMWei,TempORALWei,TempMIDWei,TempFINALWei,
+                                TempPartL01,TempLabL01,TempFWL01,TempQuizL01,TempHWL01,TempPresL01,TempProjL01,TempPortL01,TempSEML01,TempORALL01,TempMIDL01,TempFINALL01,TempPartL02,TempLabL02,TempFWL02,TempQuizL02,TempHWL02,TempPresL02,TempProjL02,TempPortL02,TempSEML02,TempORALL02,TempMIDL02,TempFINALL02,TempPartL03,TempLabL03,TempFWL03,
+                                TempQuizL03,TempHWL03,TempPresL03,TempProjL03,TempPortL03,TempSEML03,TempORALL03,TempMIDL03,TempFINALL03,TempPartL04,TempLabL04,TempFWL04,TempQuizL04,TempHWL04,TempPresL04,TempProjL04,TempPortL04,TempSEML04,TempORALL04,TempMIDL04,TempFINALL04,
+                                TempSHOOCDur, TempSHOOCWork, TempFWNum, TempFWDur, TempFWWork,
                                 TempQuizNum, TempQuizDur, TempQuizWork, TempHWNum, TempHWDur, TempHWWork,
                                 TempPresentationNum, TempPresentationDur, TempPresentationWork, TempProjectNum,
                                 TempProjectDur, TempProjectWork, TempPortfolioNum, TempPortfolioDur, TempPortfolioWork,
@@ -1180,6 +1532,78 @@ public class MainController {
                         String TempW15req = Lecture.getWeek15ReqMat();
                         String TempCourseNotes = Lecture.getCourseNotesAndTextBooks();
                         String TempSuggested = Lecture.getSuggestedReadingsAndMaterials();
+                        String TempPartNumb = Lecture.getParticipation_Number();
+                        String TempLabNumb = Lecture.getLaboratory_or_Application_Number();
+                        String TempFieldWNumb = Lecture.getField_Work_Number();
+                        String TempQuizNumb = Lecture.getQuiz_or_StudioCritique_Number();
+                        String TempHWNumb = Lecture.getHomework_or_Assignment_Number();
+                        String TempPresentNumb = Lecture.getPresentation_or_Jury_Number();
+                        String TempProjectNumb = Lecture.getProject_Number();
+                        String TempPortNumb = Lecture.getPortfolio_Number();
+                        String TempSeminarNumb = Lecture.getSeminar_or_Workshop_Number();
+                        String TempOralNumb =  Lecture.getOral_Exam_Number();
+                        String TempMidtermNumb = Lecture.getMidterm_Number();
+                        String TempFinalNumb = Lecture.getFinal_Exam_Number();
+                        String TempPartWei = Lecture.getParticipation_Weigthing();
+                        String TempLabWei = Lecture.getLaboratory_or_Application_Weigthing();
+                        String TempFieldWWei = Lecture.getField_Work_Weigthing();
+                        String TempQuizWei = Lecture.getQuiz_or_StudioCritique_Number();
+                        String TempHWWei = Lecture.getHomework_or_Assignment_Weigthing();
+                        String TempPresentWei = Lecture.getPresentation_or_Jury_Weigthing();
+                        String TempProjectWei = Lecture.getProject_Weigthing();
+                        String TempPortWei = Lecture.getPortfolio_Weigthing();
+                        String TempSeminarWei = Lecture.getSeminar_or_Workshop_Weigthing();
+                        String TempOralWei =  Lecture.getOral_Exam_Weigthing();
+                        String TempMidtermWei = Lecture.getMidterm_Weigthing();
+                        String TempFinalWei = Lecture.getFinal_Exam_Weigthing();
+                        String TempPartL1 = Lecture.getParticipation_LO1();
+                        String TempLabL1 = Lecture.getLaboratory_or_Application_LO1();
+                        String TempFieldWL1 = Lecture.getField_Work_LO1();
+                        String TempQuizL1 = Lecture.getQuiz_or_StudioCritique_LO1();
+                        String TempHWL1 = Lecture.getHomework_or_Assignment_LO1();
+                        String TempPresentL1 = Lecture.getPresentation_or_Jury_LO1();
+                        String TempProjectL1 = Lecture.getProject_LO1();
+                        String TempPortL1 = Lecture.getPortfolio_LO1();
+                        String TempSeminarL1 = Lecture.getSeminar_or_Workshop_LO1();
+                        String TempOralL1 =  Lecture.getOral_Exam_LO1();
+                        String TempMidtermL1 = Lecture.getMidterm_LO1();
+                        String TempFinalL1 = Lecture.getFinal_Exam_LO1();
+                        String TempPartL2 = Lecture.getParticipation_LO2();
+                        String TempLabL2 = Lecture.getLaboratory_or_Application_LO2();
+                        String TempFieldWL2 = Lecture.getField_Work_LO2();
+                        String TempQuizL2 = Lecture.getQuiz_or_StudioCritique_LO2();
+                        String TempHWL2 = Lecture.getHomework_or_Assignment_LO2();
+                        String TempPresentL2 = Lecture.getPresentation_or_Jury_LO2();
+                        String TempProjectL2 = Lecture.getProject_LO2();
+                        String TempPortL2 = Lecture.getPortfolio_LO2();
+                        String TempSeminarL2 = Lecture.getSeminar_or_Workshop_LO2();
+                        String TempOralL2 =  Lecture.getOral_Exam_LO2();
+                        String TempMidtermL2 = Lecture.getMidterm_LO2();
+                        String TempFinalL2 = Lecture.getFinal_Exam_LO2();
+                        String TempPartL3 = Lecture.getParticipation_LO3();
+                        String TempLabL3 = Lecture.getLaboratory_or_Application_LO3();
+                        String TempFieldWL3 = Lecture.getField_Work_LO3();
+                        String TempQuizL3 = Lecture.getQuiz_or_StudioCritique_LO3();
+                        String TempHWL3 = Lecture.getHomework_or_Assignment_LO3();
+                        String TempPresentL3 = Lecture.getPresentation_or_Jury_LO3();
+                        String TempProjectL3 = Lecture.getProject_LO3();
+                        String TempPortL3= Lecture.getPortfolio_LO3();
+                        String TempSeminarL3 = Lecture.getSeminar_or_Workshop_LO3();
+                        String TempOralL3 =  Lecture.getOral_Exam_LO3();
+                        String TempMidtermL3 = Lecture.getMidterm_LO3();
+                        String TempFinalL3 = Lecture.getFinal_Exam_LO3();
+                        String TempPartL4 = Lecture.getParticipation_LO4();
+                        String TempLabL4 = Lecture.getLaboratory_or_Application_LO4();
+                        String TempFieldWL4 = Lecture.getField_Work_LO4();
+                        String TempQuizL4 = Lecture.getQuiz_or_StudioCritique_LO4();
+                        String TempHWL4 = Lecture.getHomework_or_Assignment_LO4();
+                        String TempPresentL4 = Lecture.getPresentation_or_Jury_LO4();
+                        String TempProjectL4 = Lecture.getProject_LO4();
+                        String TempPortL4= Lecture.getPortfolio_LO4();
+                        String TempSeminarL4 = Lecture.getSeminar_or_Workshop_LO4();
+                        String TempOralL4 =  Lecture.getOral_Exam_LO4();
+                        String TempMidtermL4 = Lecture.getMidterm_LO4();
+                        String TempFinalL4 = Lecture.getFinal_Exam_LO4();
                         String TempSHOOCNum = Lecture.getStudyHoursoutofClassNum();
                         String TempSHOOCDur = Lecture.getStudyHoursoutofClassDur();
                         String TempSHOOCWork = Lecture.getStudyHoursoutofClassWork();
@@ -1275,133 +1699,169 @@ public class MainController {
                         LectureGrid.add(course_CategoryLabel, 0, 19);
 
                         Label week1SubjectsLabel = new Label("Week 1 Subjects:");
-                        LectureGrid.add(week1SubjectsLabel, 0, 20);
+                        LectureGrid.add(week1SubjectsLabel, 0, 21);
 
                         Label week2SubjectsLabel = new Label("Week 2 Subjects:");
-                        LectureGrid.add(week2SubjectsLabel, 0, 21);
+                        LectureGrid.add(week2SubjectsLabel, 0, 22);
 
                         Label week3SubjectsLabel = new Label("Week 3 Subjects:");
-                        LectureGrid.add(week3SubjectsLabel, 0, 22);
+                        LectureGrid.add(week3SubjectsLabel, 0, 23);
 
                         Label week4SubjectsLabel = new Label("Week 4 Subjects:");
-                        LectureGrid.add(week4SubjectsLabel, 0, 23);
+                        LectureGrid.add(week4SubjectsLabel, 0, 24);
 
                         Label week5SubjectsLabel = new Label("Week 5 Subjects:");
-                        LectureGrid.add(week5SubjectsLabel, 0, 24);
+                        LectureGrid.add(week5SubjectsLabel, 0, 25);
 
                         Label week6SubjectsLabel = new Label("Week 6 Subjects:");
-                        LectureGrid.add(week6SubjectsLabel, 0, 25);
+                        LectureGrid.add(week6SubjectsLabel, 0, 26);
 
                         Label week7SubjectsLabel = new Label("Week 7 Subjects:");
-                        LectureGrid.add(week7SubjectsLabel, 0, 26);
+                        LectureGrid.add(week7SubjectsLabel, 0, 27);
 
                         Label week8SubjectsLabel = new Label("Week 8 Subjects:");
-                        LectureGrid.add(week8SubjectsLabel, 0, 27);
+                        LectureGrid.add(week8SubjectsLabel, 0, 28);
 
                         Label week9SubjectsLabel = new Label("Week 9 Subjects:");
-                        LectureGrid.add(week9SubjectsLabel, 0, 28);
+                        LectureGrid.add(week9SubjectsLabel, 0, 29);
 
                         Label week10SubjectsLabel = new Label("Week 10 Subjects:");
-                        LectureGrid.add(week10SubjectsLabel, 0, 29);
+                        LectureGrid.add(week10SubjectsLabel, 0, 30);
 
                         Label week11SubjectsLabel = new Label("Week 11 Subjects:");
-                        LectureGrid.add(week11SubjectsLabel, 0, 30);
+                        LectureGrid.add(week11SubjectsLabel, 0, 31);
 
                         Label week12SubjectsLabel = new Label("Week 12 Subjects:");
-                        LectureGrid.add(week12SubjectsLabel, 0, 31);
+                        LectureGrid.add(week12SubjectsLabel, 0, 32);
 
                         Label week13SubjectsLabel = new Label("Week 13 Subjects:");
-                        LectureGrid.add(week13SubjectsLabel, 0, 32);
+                        LectureGrid.add(week13SubjectsLabel, 0, 33);
 
                         Label week14SubjectsLabel = new Label("Week 14 Subjects:");
-                        LectureGrid.add(week14SubjectsLabel, 0, 33);
+                        LectureGrid.add(week14SubjectsLabel, 0, 34);
 
                         Label week15SubjectsLabel = new Label("Week 15 Subjects:");
-                        LectureGrid.add(week15SubjectsLabel, 0, 34);
+                        LectureGrid.add(week15SubjectsLabel, 0, 35);
 
                         Label week1ReqMatLabel = new Label("Week 1 Required Materials:");
-                        LectureGrid.add(week1ReqMatLabel, 2, 20);
+                        LectureGrid.add(week1ReqMatLabel, 2, 21);
 
                         Label week2ReqMatLabel = new Label("Week 2 Required Materials:");
-                        LectureGrid.add(week2ReqMatLabel, 2, 21);
+                        LectureGrid.add(week2ReqMatLabel, 2, 22);
 
                         Label week3ReqMatLabel = new Label("Week 3 Required Materials:");
-                        LectureGrid.add(week3ReqMatLabel, 2, 22);
+                        LectureGrid.add(week3ReqMatLabel, 2, 23);
 
                         Label week4ReqMatLabel = new Label("Week 4 Required Materials:");
-                        LectureGrid.add(week4ReqMatLabel, 2, 23);
+                        LectureGrid.add(week4ReqMatLabel, 2, 24);
 
                         Label week5ReqMatLabel = new Label("Week 5 Required Materials:");
-                        LectureGrid.add(week5ReqMatLabel, 2, 24);
+                        LectureGrid.add(week5ReqMatLabel, 2, 25);
 
                         Label week6ReqMatLabel = new Label("Week 6 Required Materials:");
-                        LectureGrid.add(week6ReqMatLabel, 2, 25);
+                        LectureGrid.add(week6ReqMatLabel, 2, 26);
 
                         Label week7ReqMatLabel = new Label("Week 7 Required Materials:");
-                        LectureGrid.add(week7ReqMatLabel, 2, 26);
+                        LectureGrid.add(week7ReqMatLabel, 2, 27);
 
                         Label week8ReqMatLabel = new Label("Week 8 Required Materials:");
-                        LectureGrid.add(week8ReqMatLabel, 2, 27);
+                        LectureGrid.add(week8ReqMatLabel, 2, 28);
 
                         Label week9ReqMatLabel = new Label("Week 9 Required Materials:");
-                        LectureGrid.add(week9ReqMatLabel, 2, 28);
+                        LectureGrid.add(week9ReqMatLabel, 2, 29);
 
                         Label week10ReqMatLabel = new Label("Week 10 Required Materials:");
-                        LectureGrid.add(week10ReqMatLabel, 2, 29);
+                        LectureGrid.add(week10ReqMatLabel, 2, 30);
 
                         Label week11ReqMatLabel = new Label("Week 11 Required Materials:");
-                        LectureGrid.add(week11ReqMatLabel, 2, 30);
+                        LectureGrid.add(week11ReqMatLabel, 2, 31);
 
                         Label week12ReqMatLabel = new Label("Week 12 Required Materials:");
-                        LectureGrid.add(week12ReqMatLabel, 2, 31);
+                        LectureGrid.add(week12ReqMatLabel, 2, 32);
 
                         Label week13ReqMatLabel = new Label("Week 13 Required Materials:");
-                        LectureGrid.add(week13ReqMatLabel, 2, 32);
+                        LectureGrid.add(week13ReqMatLabel, 2, 33);
 
                         Label week14ReqMatLabel = new Label("Week 14 Required Materials:");
-                        LectureGrid.add(week14ReqMatLabel, 2, 33);
+                        LectureGrid.add(week14ReqMatLabel, 2, 34);
 
                         Label week15ReqMatLabel = new Label("Week 15 Required Materials:");
-                        LectureGrid.add(week15ReqMatLabel, 2, 34);
+                        LectureGrid.add(week15ReqMatLabel, 2, 35);
 
                         Label courseNotesAndTextBooksLabel = new Label("Course Notes and Textbooks:");
-                        LectureGrid.add(courseNotesAndTextBooksLabel, 0, 35);
+                        LectureGrid.add(courseNotesAndTextBooksLabel, 0, 36);
 
                         Label suggestedReadingsAndMaterialsLabel = new Label("Suggested Readings and Materials:");
-                        LectureGrid.add(suggestedReadingsAndMaterialsLabel, 0, 36);
+                        LectureGrid.add(suggestedReadingsAndMaterialsLabel, 0, 37);
+
+                        Label participationNumberLabel = new Label("Participation:");
+                        LectureGrid.add(participationNumberLabel, 0, 39);
+
+                        Label labOrApplicationNumberLabel = new Label("Laboratory or Application:");
+                        LectureGrid.add(labOrApplicationNumberLabel, 0, 40);
+
+                        Label fieldWorkNumberLabel = new Label("Field Work:");
+                        LectureGrid.add(fieldWorkNumberLabel, 0, 41);
+
+                        Label quizOrStudioCritiqueNumberLabel = new Label("Quiz or Studio Critique:");
+                        LectureGrid.add(quizOrStudioCritiqueNumberLabel, 0, 42);
+
+                        Label homeworkOrAssignmentNumberLabel = new Label("Homework or Assignment:");
+                        LectureGrid.add(homeworkOrAssignmentNumberLabel, 0, 43);
+
+                        Label presentationOrJuryNumberLabel = new Label("Presentation or Jury:");
+                        LectureGrid.add(presentationOrJuryNumberLabel, 0, 44);
+
+                        Label projectNumberLabel = new Label("Project:");
+                        LectureGrid.add(projectNumberLabel, 0, 45);
+
+                        Label portfolioNumberLabel = new Label("Portfolio:");
+                        LectureGrid.add(portfolioNumberLabel, 0, 46);
+
+                        Label seminarOrWorkshopNumberLabel = new Label("Seminar or Workshop:");
+                        LectureGrid.add(seminarOrWorkshopNumberLabel, 0, 47);
+
+                        Label oralExamNumberLabel = new Label("Oral Exam:");
+                        LectureGrid.add(oralExamNumberLabel, 0, 48);
+
+                        Label midtermNumberLabel = new Label("Midterm:");
+                        LectureGrid.add(midtermNumberLabel, 0, 49);
+
+                        Label finalExamNumberLabel = new Label("Final Exam:");
+                        LectureGrid.add(finalExamNumberLabel, 0, 50);
 
                         Label StudyHoursoutofClassNumLabel = new Label("Study Hours out of Class:");
-                        LectureGrid.add(StudyHoursoutofClassNumLabel, 0, 113);
+                        LectureGrid.add(StudyHoursoutofClassNumLabel, 0, 54);
 
                         Label FieldWorkLabel = new Label("Field Work");
-                        LectureGrid.add(FieldWorkLabel, 0, 114);
+                        LectureGrid.add(FieldWorkLabel, 0, 55);
 
                         Label QuizLabel = new Label("Quiz/Studio Critique:");
-                        LectureGrid.add(QuizLabel, 0, 115);
+                        LectureGrid.add(QuizLabel, 0, 56);
 
                         Label HWLabel = new Label("Homework/Assignments:");
-                        LectureGrid.add(HWLabel, 0, 116);
+                        LectureGrid.add(HWLabel, 0, 57);
 
                         Label PresentationLabel = new Label("Presentation/Jury::");
-                        LectureGrid.add(PresentationLabel, 0, 117);
+                        LectureGrid.add(PresentationLabel, 0, 58);
 
                         Label ProjectLabel = new Label("Project:");
-                        LectureGrid.add(ProjectLabel, 0, 118);
+                        LectureGrid.add(ProjectLabel, 0, 59);
 
                         Label PortfolioLabel = new Label("Portfolio:");
-                        LectureGrid.add(PortfolioLabel, 0, 119);
+                        LectureGrid.add(PortfolioLabel, 0, 60);
 
                         Label SeminarLabel = new Label("Seminar/Workshop:");
-                        LectureGrid.add(SeminarLabel, 0,120);
+                        LectureGrid.add(SeminarLabel, 0,61);
 
                         Label OralExamLabel = new Label("Oral Exam:");
-                        LectureGrid.add(OralExamLabel, 0, 121);
+                        LectureGrid.add(OralExamLabel, 0, 62);
 
                         Label MidtermLabel = new Label("Midterm:");
-                        LectureGrid.add(MidtermLabel, 0, 122);
+                        LectureGrid.add(MidtermLabel, 0, 63);
 
                         Label FinalLabel = new Label("Final Exam:");
-                        LectureGrid.add(FinalLabel, 0, 123);
+                        LectureGrid.add(FinalLabel, 0, 64);
 
                         Label LectureIDtext = new Label(TempID);
                         LectureGrid.add(LectureIDtext, 2, 0);
@@ -1464,199 +1924,318 @@ public class MainController {
                         LectureGrid.add(course_CategoryText, 1, 19);
 
                         Label week1SubjectsText = new Label(TempW1sub);
-                        LectureGrid.add(week1SubjectsText, 1, 20);
+                        LectureGrid.add(week1SubjectsText, 1, 21);
 
                         Label week2SubjectsText = new Label(TempW2sub);
-                        LectureGrid.add(week2SubjectsText, 1, 21);
+                        LectureGrid.add(week2SubjectsText, 1, 22);
 
                         Label week3SubjectsText = new Label(TempW3sub);
-                        LectureGrid.add(week3SubjectsText, 1, 22);
+                        LectureGrid.add(week3SubjectsText, 1, 23);
 
                         Label week4SubjectsText = new Label(TempW4sub);
-                        LectureGrid.add(week4SubjectsText, 1, 23);
+                        LectureGrid.add(week4SubjectsText, 1, 24);
 
                         Label week5SubjectsText = new Label(TempW5sub);
-                        LectureGrid.add(week5SubjectsText, 1, 24);
+                        LectureGrid.add(week5SubjectsText, 1, 25);
 
                         Label week6SubjectsText = new Label(TempW6sub);
-                        LectureGrid.add(week6SubjectsText, 1, 25);
+                        LectureGrid.add(week6SubjectsText, 1, 26);
 
                         Label week7SubjectsText = new Label(TempW7sub);
-                        LectureGrid.add(week7SubjectsText, 1, 26);
+                        LectureGrid.add(week7SubjectsText, 1, 27);
 
                         Label week8SubjectsText = new Label(TempW8sub);
-                        LectureGrid.add(week8SubjectsText, 1, 27);
+                        LectureGrid.add(week8SubjectsText, 1, 28);
 
                         Label week9SubjectsText = new Label(TempW9sub);
-                        LectureGrid.add(week9SubjectsText, 1, 28);
+                        LectureGrid.add(week9SubjectsText, 1, 29);
 
                         Label week10SubjectsText = new Label(TempW10sub);
-                        LectureGrid.add(week10SubjectsText, 1, 29);
+                        LectureGrid.add(week10SubjectsText, 1, 30);
 
                         Label week11SubjectsText =new Label(TempW11sub);
-                        LectureGrid.add(week11SubjectsText, 1, 30);
+                        LectureGrid.add(week11SubjectsText, 1, 31);
 
                         Label week12SubjectsText = new Label(TempW12sub);
-                        LectureGrid.add(week12SubjectsText, 1, 31);
+                        LectureGrid.add(week12SubjectsText, 1, 32);
 
                         Label week13SubjectsText = new Label(TempW13sub);
-                        LectureGrid.add(week13SubjectsText, 1, 32);
+                        LectureGrid.add(week13SubjectsText, 1, 33);
 
                         Label week14SubjectsText = new Label(TempW14sub);
-                        LectureGrid.add(week14SubjectsText, 1, 33);
+                        LectureGrid.add(week14SubjectsText, 1, 34);
 
                         Label week15SubjectsText =new Label(TempW15sub);
-                        LectureGrid.add(week15SubjectsText, 1, 34);
+                        LectureGrid.add(week15SubjectsText, 1, 35);
 
                         Label week1ReqMatText = new Label(TempW1req);
-                        LectureGrid.add(week1ReqMatText, 3, 20);
+                        LectureGrid.add(week1ReqMatText, 3, 21);
 
                         Label week2ReqMatText = new Label(TempW2req);
-                        LectureGrid.add(week2ReqMatText, 3, 21);
+                        LectureGrid.add(week2ReqMatText, 3, 22);
 
                         Label week3ReqMatText = new Label(TempW3req);
-                        LectureGrid.add(week3ReqMatText, 3, 22);
+                        LectureGrid.add(week3ReqMatText, 3, 23);
 
                         Label week4ReqMatText = new Label(TempW4req);
-                        LectureGrid.add(week4ReqMatText, 3, 23);
+                        LectureGrid.add(week4ReqMatText, 3, 24);
 
                         Label week5ReqMatText = new Label(TempW5req);
-                        LectureGrid.add(week5ReqMatText, 3, 24);
+                        LectureGrid.add(week5ReqMatText, 3, 25);
 
                         Label week6ReqMatText = new Label(TempW6req);
-                        LectureGrid.add(week6ReqMatText, 3, 25);
+                        LectureGrid.add(week6ReqMatText, 3, 26);
 
                         Label week7ReqMatText = new Label(TempW7req);
-                        LectureGrid.add(week7ReqMatText, 3, 26);
+                        LectureGrid.add(week7ReqMatText, 3, 27);
 
                         Label week8ReqMatText = new Label(TempW8req);
-                        LectureGrid.add(week8ReqMatText, 3, 27);
+                        LectureGrid.add(week8ReqMatText, 3, 28);
 
                         Label week9ReqMatText = new Label(TempW9req);
-                        LectureGrid.add(week9ReqMatText, 3, 28);
+                        LectureGrid.add(week9ReqMatText, 3, 29);
 
                         Label week10ReqMatText = new Label(TempW10req);
-                        LectureGrid.add(week10ReqMatText, 3, 29);
+                        LectureGrid.add(week10ReqMatText, 3, 30);
 
                         Label week11ReqMatText = new Label(TempW11req);
-                        LectureGrid.add(week11ReqMatText, 3, 30);
+                        LectureGrid.add(week11ReqMatText, 3, 31);
 
                         Label week12ReqMatText = new Label(TempW12req);
-                        LectureGrid.add(week12ReqMatText, 3, 31);
+                        LectureGrid.add(week12ReqMatText, 3, 32);
 
                         Label week13ReqMatText = new Label(TempW13req);
-                        LectureGrid.add(week13ReqMatText, 3, 32);
+                        LectureGrid.add(week13ReqMatText, 3, 33);
 
                         Label week14ReqMatText = new Label(TempW14req);
-                        LectureGrid.add(week14ReqMatText, 3, 33);
+                        LectureGrid.add(week14ReqMatText, 3, 34);
 
                         Label week15ReqMatText = new Label(TempW15req);
-                        LectureGrid.add(week15ReqMatText, 3, 34);
+                        LectureGrid.add(week15ReqMatText, 3, 35);
 
                         Label courseNotesAndTextBooksText = new Label(TempCourseNotes);
-                        LectureGrid.add(courseNotesAndTextBooksText, 1, 35);
+                        LectureGrid.add(courseNotesAndTextBooksText, 1, 36);
 
                         Label suggestedReadingsAndMaterialsText = new Label(TempSuggested);
-                        LectureGrid.add(suggestedReadingsAndMaterialsText, 1, 36);
+                        LectureGrid.add(suggestedReadingsAndMaterialsText, 1, 37);
 
-                        Label StudyHoursoutofClassNuMText = new Label(TempSHOOCNum);
-                        LectureGrid.add(StudyHoursoutofClassNuMText, 1, 113);
+                        Label partNumText = new Label(TempPartNumb);LectureGrid.add(partNumText, 1, 39);
 
-                        Label StudyHoursoutofClassDurText = new Label(TempSHOOCDur);
-                        LectureGrid.add(StudyHoursoutofClassDurText, 2, 113);
+                        Label partWeiText = new Label(TempPartWei);LectureGrid.add(partWeiText, 2, 39);
 
-                        Label StudyHoursoutofClassWorkText = new Label(TempSHOOCWork);
-                        LectureGrid.add(StudyHoursoutofClassWorkText, 3, 113);
+                        Label partL01Text = new Label(TempPartL1);LectureGrid.add(partL01Text, 3, 39);
 
-                        Label FieldWorkNumText = new Label(TempFWNum);
-                        LectureGrid.add(FieldWorkNumText, 1, 114);
+                        Label partL02Text = new Label(TempPartL2);LectureGrid.add(partL02Text, 4, 39);
 
-                        Label FieldWorkDurText = new Label(TempFWDur);
-                        LectureGrid.add(FieldWorkDurText, 2, 114);
+                        Label partL03Text = new Label(TempPartL3);LectureGrid.add(partL03Text, 5, 39);
 
-                        Label FieldWorkWorkText = new Label(TempFWWork);
-                        LectureGrid.add(FieldWorkWorkText, 3, 114);
+                        Label partL04Text = new Label(TempPartL4);LectureGrid.add(partL04Text, 6, 39);
 
-                        Label QuizNumText = new Label(TempQuizNum);
-                        LectureGrid.add(QuizNumText, 1, 115);
+                        Label labNumbText = new Label(TempLabNumb);LectureGrid.add(labNumbText, 1, 40);
 
-                        Label QuizDurText = new Label(TempQuizDur);
-                        LectureGrid.add(QuizDurText, 2, 115);
+                        Label labWeiText = new Label(TempLabWei);LectureGrid.add(labWeiText, 2, 40);
 
-                        Label QuizWorkText = new Label(TempQuizWork);
-                        LectureGrid.add(QuizWorkText, 3, 115);
+                        Label labL01Text = new Label(TempLabL1);LectureGrid.add(labL01Text, 3, 40);
 
-                        Label HWNumText = new Label(TempHWNum);
-                        LectureGrid.add(HWNumText, 1, 116);
+                        Label labL02Text = new Label(TempLabL2);LectureGrid.add(labL02Text, 4, 40);
 
-                        Label HWDurText = new Label(TempHWDur);
-                        LectureGrid.add(HWDurText, 2, 116);
+                        Label labL03Text = new Label(TempLabL3);LectureGrid.add(labL03Text, 5, 40);
 
-                        Label HWWorkText = new Label(TempHWWork);
-                        LectureGrid.add(HWWorkText, 3, 116);
+                        Label labL04Text = new Label(TempLabL4);LectureGrid.add(labL04Text, 6, 40);
 
-                        Label PresentationNumText = new Label(TempPresentationNum);
-                        LectureGrid.add(PresentationNumText, 1, 117);
+                        Label fwNumbText = new Label(TempFieldWNumb);LectureGrid.add(fwNumbText, 1, 41);
 
-                        Label PresentationDurText = new Label(TempPresentationDur);
-                        LectureGrid.add(PresentationDurText, 2, 117);
+                        Label fwWeiText = new Label(TempFieldWWei);LectureGrid.add(fwWeiText, 2, 41);
 
-                        Label PresentationWorkText = new Label(TempPresentationWork);
-                        LectureGrid.add(PresentationWorkText, 3, 117);
+                        Label fwL01Text = new Label(TempFieldWL1);LectureGrid.add(fwL01Text, 3, 41);
 
-                        Label ProjectNumText = new Label(TempProjectNum);
-                        LectureGrid.add(ProjectNumText, 1, 118);
+                        Label fwL02Text = new Label(TempFieldWL2);LectureGrid.add(fwL02Text, 4, 41);
 
-                        Label ProjectDurText = new Label(TempProjectDur);
-                        LectureGrid.add(ProjectDurText, 2, 118);
+                        Label fwL03Text = new Label(TempFieldWL3);LectureGrid.add(fwL03Text, 5, 41);
 
-                        Label ProjectWorkText = new Label(TempProjectWork);
-                        LectureGrid.add(ProjectWorkText, 3, 118);
+                        Label fwL04Text = new Label(TempFieldWL4);LectureGrid.add(fwL04Text, 6, 41);
 
-                        Label PortfolioNumText = new Label(TempPortfolioNum);
-                        LectureGrid.add(PortfolioNumText, 1, 119);
+                        Label quizNumbText = new Label(TempQuizNumb);LectureGrid.add(quizNumbText, 1, 42);
 
-                        Label PortfolioDurText = new Label(TempPortfolioDur);
-                        LectureGrid.add(PortfolioDurText, 2, 119);
+                        Label quizWeiText = new Label(TempQuizWei);LectureGrid.add(quizWeiText, 2, 42);
 
-                        Label PortfolioWorkText = new Label(TempPortfolioWork);
-                        LectureGrid.add(PortfolioWorkText, 3, 119);
+                        Label quizL01Text = new Label(TempQuizL1);LectureGrid.add(quizL01Text, 3, 42);
 
-                        Label SeminarNumText = new Label(TempSeminarNum);
-                        LectureGrid.add(SeminarNumText, 1,120);
+                        Label quizL02Text = new Label(TempQuizL2);LectureGrid.add(quizL02Text, 4, 42);
 
-                        Label SeminarDurText = new Label(TempSeminarDur);
-                        LectureGrid.add(SeminarDurText, 2,120);
+                        Label quizL03Text = new Label(TempQuizL3);LectureGrid.add(quizL03Text, 5, 42);
 
-                        Label SeminarWorkText = new Label(TempSeminarWork);
-                        LectureGrid.add(SeminarWorkText, 3,120);
+                        Label quizL04Text = new Label(TempQuizL4);LectureGrid.add(quizL04Text, 6, 42);
 
-                        Label OralExamNumText = new Label(TempOralNum);
-                        LectureGrid.add(OralExamNumText, 1, 121);
+                        Label HWNumbText = new Label(TempHWNumb);LectureGrid.add(HWNumbText, 1, 43);
 
-                        Label OralExamDurText = new Label(TempOralDur);
-                        LectureGrid.add(OralExamDurText, 2, 121);
+                        Label HWWeiText = new Label(TempHWWei);LectureGrid.add(HWWeiText, 2, 43);
 
-                        Label OralExamWorkText = new Label(TempOralWork);
-                        LectureGrid.add(OralExamWorkText, 3, 121);
+                        Label HWL01Text = new Label(TempHWL1);LectureGrid.add(HWL01Text, 3, 43);
 
-                        Label MidtermNumText = new Label(TempMidtermNum);
-                        LectureGrid.add(MidtermNumText, 1, 122);
+                        Label HWL02Text = new Label(TempHWL2);LectureGrid.add(HWL02Text, 4, 43);
 
-                        Label MidtermDurText = new Label(TempMidtermDur);
-                        LectureGrid.add(MidtermDurText, 2, 122);
+                        Label HWL03Text = new Label(TempHWL3);LectureGrid.add(HWL03Text, 5, 43);
 
-                        Label MidtermWorkText = new Label(TempMidtermWork);
-                        LectureGrid.add(MidtermWorkText, 3, 122);
+                        Label HWL04Text = new Label(TempHWL4);LectureGrid.add(HWL04Text, 6, 43);
 
-                        Label FinalNumText = new Label(TempFinalNum);
-                        LectureGrid.add(FinalNumText, 1, 123);
+                        Label PresNumbText = new Label(TempPresentNumb);LectureGrid.add(PresNumbText, 1, 44);
 
-                        Label FinalDurText = new Label(TempFinalDur);
-                        LectureGrid.add(FinalDurText, 2, 123);
+                        Label PresWeiText = new Label(TempPresentWei);LectureGrid.add(PresWeiText, 2, 44);
 
-                        Label FinalWorkText = new Label(TempFinalWork);
-                        LectureGrid.add(FinalWorkText, 3, 123);
+                        Label PresL01Text = new Label(TempPresentL1);LectureGrid.add(PresL01Text, 3, 44);
+
+                        Label PresL02Text = new Label(TempPresentL2);LectureGrid.add(PresL02Text, 4, 44);
+
+                        Label PresL03Text = new Label(TempPresentL3);LectureGrid.add(PresL03Text, 5, 44);
+
+                        Label PresL04Text = new Label(TempPresentL4);LectureGrid.add(PresL04Text, 6, 44);
+
+                        Label ProjNumbText = new Label(TempProjectNumb);LectureGrid.add (ProjNumbText, 1, 45);
+
+                        Label ProjWeiText = new Label(TempProjectWei);LectureGrid.add(ProjWeiText, 2, 45);
+
+                        Label ProjL01Text = new Label(TempProjectL1);LectureGrid.add(ProjL01Text, 3, 45);
+
+                        Label ProjL02Text = new Label(TempProjectL2);LectureGrid.add(ProjL02Text, 4, 45);
+
+                        Label ProjL03Text = new Label(TempProjectL3);LectureGrid.add(ProjL03Text, 5, 45);
+
+                        Label ProjL04Text = new Label(TempProjectL4);LectureGrid.add(ProjL04Text, 6, 45);
+
+                        Label PortfolioNumbText = new Label(TempPortNumb);LectureGrid.add (PortfolioNumbText, 1, 46);
+
+                        Label PortfolioWeiText = new Label(TempPortWei);LectureGrid.add(PortfolioWeiText, 2, 46);
+
+                        Label PortfolioL01Text = new Label(TempPortL1);LectureGrid.add(PortfolioL01Text, 3, 46);
+
+                        Label PortfolioL02Text = new Label(TempPortL2);LectureGrid.add(PortfolioL02Text, 4, 46);
+
+                        Label PortfolioL03Text = new Label(TempPortL3);LectureGrid.add(PortfolioL03Text, 5, 46);
+
+                        Label PortfolioL04Text = new Label(TempPortL4);LectureGrid.add(PortfolioL04Text, 6, 46);
+
+                        Label SemNumbText = new Label(TempSeminarNumb);LectureGrid.add(SemNumbText, 1, 47);
+
+                        Label SemWeiText = new Label(TempSeminarWei);LectureGrid.add(SemWeiText, 2, 47);
+
+                        Label SemL01Text = new Label(TempSeminarL1);LectureGrid.add(SemL01Text, 3, 47);
+
+                        Label SemL02Text = new Label(TempSeminarL2);LectureGrid.add(SemL02Text, 4, 47);
+
+                        Label SemL03Text = new Label(TempSeminarL3);LectureGrid.add(SemL03Text, 5, 47);
+
+                        Label SemL04Text = new Label(TempSeminarL4);LectureGrid.add(SemL04Text, 6, 47);
+
+                        Label OralNumbText = new Label(TempOralNumb);LectureGrid.add(OralNumbText, 1, 48);
+
+                        Label OralWeiText = new Label(TempOralWei);LectureGrid.add(OralWeiText, 2, 48);
+
+                        Label OralL01Text = new Label(TempOralL1);LectureGrid.add(OralL01Text, 3, 48);
+
+                        Label OralL02Text = new Label(TempOralL2);LectureGrid.add(OralL02Text, 4, 48);
+
+                        Label OralL03Text = new Label(TempOralL3);LectureGrid.add(OralL03Text, 5, 48);
+
+                        Label OralL04Text = new Label(TempOralL4);LectureGrid.add(OralL04Text, 6, 48);
+
+                        Label MidtermNumbText = new Label(TempMidtermNumb);LectureGrid.add(MidtermNumbText, 1, 49);
+
+                        Label MidtermWeiText = new Label(TempMidtermWei);LectureGrid.add(MidtermWeiText, 2, 49);
+
+                        Label MidtermL01Text = new Label(TempMidtermL1);LectureGrid.add(MidtermL01Text, 3, 49);
+
+                        Label MidtermL02Text = new Label(TempMidtermL2);LectureGrid.add(MidtermL02Text, 4, 49);
+
+                        Label MidtermL03Text = new Label(TempMidtermL3);LectureGrid.add(MidtermL03Text, 5, 49);
+
+                        Label MidtermL04Text = new Label(TempMidtermL4);LectureGrid.add(MidtermL04Text, 6, 49);
+
+                        Label FinalNumbText = new Label(TempFinalNumb);LectureGrid.add(FinalNumbText, 1, 50);
+
+                        Label FinalWeiText = new Label(TempFinalWei);LectureGrid.add(FinalWeiText, 2, 50);
+
+                        Label FinalL01Text = new Label(TempFinalL1);LectureGrid.add(FinalL01Text, 3, 50);
+
+                        Label FinalL02Text = new Label(TempFinalL2);LectureGrid.add(FinalL02Text, 4, 50);
+
+                        Label FinalL03Text = new Label(TempFinalL3);LectureGrid.add(FinalL03Text, 5, 50);
+
+                        Label FinalL04Text = new Label(TempFinalL4);LectureGrid.add(FinalL04Text, 6, 50);
+
+                        Label CourseHourDurText = new Label();LectureGrid.add(CourseHourDurText, 2, 52);
+
+                        Label CourseHourWorkText = new Label();LectureGrid.add(CourseHourWorkText, 3, 52);
+
+                        Label LabHoursDurText = new Label();LectureGrid.add(LabHoursDurText, 2, 53);
+
+                        Label LabHoursWorkText = new Label();LectureGrid.add(LabHoursWorkText, 3, 53);
+
+                        Label StudyHoursoutofClassNumText = new Label(TempSHOOCNum);LectureGrid.add(StudyHoursoutofClassNumText, 1, 54);
+
+                        Label StudyHoursoutofClassDurText = new Label(TempSHOOCDur);LectureGrid.add(StudyHoursoutofClassDurText, 2, 54);
+
+                        Label StudyHoursoutofClassWorkText = new Label(TempSHOOCWork);LectureGrid.add(StudyHoursoutofClassWorkText, 3, 54);
+
+                        Label FieldWorkNumText = new Label(TempFWNum);LectureGrid.add(FieldWorkNumText, 1, 55);
+
+                        Label FieldWorkDurText = new Label(TempFWDur);LectureGrid.add(FieldWorkDurText, 2, 55);
+
+                        Label FieldWorkWorkText = new Label(TempFWWork);LectureGrid.add(FieldWorkWorkText, 3, 55);
+
+                        Label QuizNumText = new Label(TempQuizNum);LectureGrid.add(QuizNumText, 1, 56);
+
+                        Label QuizWorkText = new Label(TempQuizDur);LectureGrid.add(QuizWorkText, 3, 56);
+
+                        Label QuizDurText = new Label(TempQuizWork);LectureGrid.add(QuizDurText, 2, 56);
+
+                        Label HWNumText = new Label(TempHWNum);LectureGrid.add(HWNumText, 1, 57);
+
+                        Label HWDurText = new Label(TempHWDur);LectureGrid.add(HWDurText, 2, 57);
+
+                        Label HWWorkText = new Label(TempHWWork);LectureGrid.add(HWWorkText, 3, 57);
+
+                        Label PresentationNumText = new Label(TempPresentationNum);LectureGrid.add(PresentationNumText, 1, 58);
+
+                        Label PresentationDurText = new Label(TempPresentationDur);LectureGrid.add(PresentationDurText, 2, 58);
+
+                        Label PresentationWorkText = new Label(TempPresentationWork);LectureGrid.add(PresentationWorkText, 3, 58);
+
+                        Label ProjectNumText = new Label(TempProjectNum);LectureGrid.add(ProjectNumText, 1, 59);
+
+                        Label ProjectDurText = new Label(TempProjectDur);LectureGrid.add(ProjectDurText, 2, 59);
+
+                        Label ProjectWorkText = new Label(TempProjectWork);LectureGrid.add(ProjectWorkText, 3, 59);
+
+                        Label PortfolioNumText = new Label(TempPortfolioNum);LectureGrid.add(PortfolioNumText, 1, 60);
+
+                        Label PortfolioDurText = new Label(TempPortfolioDur);LectureGrid.add(PortfolioDurText, 2, 60);
+
+                        Label PortfolioWorkText = new Label(TempPortfolioWork);LectureGrid.add(PortfolioWorkText, 3, 60);
+
+                        Label SeminarNumText = new Label(TempSeminarNum);LectureGrid.add(SeminarNumText, 1, 61);
+
+                        Label SeminarDurText = new Label(TempSeminarDur);LectureGrid.add(SeminarDurText, 2, 61);
+
+                        Label SeminarWorkText = new Label(TempSeminarWork);LectureGrid.add(SeminarWorkText, 3, 61);
+
+                        Label OralExamNumText = new Label(TempOralNum);LectureGrid.add(OralExamNumText, 1, 62);
+
+                        Label OralExamDurText = new Label(TempOralDur);LectureGrid.add(OralExamDurText, 2, 62);
+
+                        Label OralExamWorkText = new Label(TempOralWork);LectureGrid.add(OralExamWorkText, 3, 62);
+
+                        Label MidtermNumText = new Label(TempMidtermNum);LectureGrid.add(MidtermNumText, 1, 63);
+
+                        Label MidtermDurText = new Label(TempMidtermDur);LectureGrid.add(MidtermDurText, 2, 63);
+
+                        Label MidtermWorkText = new Label(TempMidtermWork);LectureGrid.add(MidtermWorkText, 3, 63);
+
+                        Label FinalExamNumText = new Label(TempFinalNum);LectureGrid.add(FinalExamNumText, 1, 64);
+
+                        Label FinalExamDurText = new Label(TempFinalDur);LectureGrid.add(FinalExamDurText, 2, 64);
+
+                        Label FinalExamWorkText = new Label(TempFinalWork);LectureGrid.add(FinalExamWorkText, 3, 64);
 
                 }
         }

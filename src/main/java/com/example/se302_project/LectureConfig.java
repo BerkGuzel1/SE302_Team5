@@ -1,14 +1,12 @@
 package com.example.se302_project;
 
-
-
 public class LectureConfig {
     private int lecture_id;
     private String lecture_Name;
     private String lecturer_Name;
     private String lecture_Code;
     public String semester;
-    private String  theory_Hour_In_Week;
+    private String theory_Hour_In_Week;
     private String application_or_Lab_Hour_In_Week;
     private String local_Credits;
     private String ECTS;
@@ -38,7 +36,6 @@ public class LectureConfig {
     private String week13Subjects;
     private String week14Subjects;
     private String week15Subjects;
-
     private String week1ReqMat;
     private String week2ReqMat;
     private String week3ReqMat;
@@ -56,16 +53,17 @@ public class LectureConfig {
     private String week15ReqMat;
     private String courseNotesAndTextBooks;
     private String suggestedReadingsAndMaterials;
-   /* private String Participation_Number;
+    private String Participation_Number;
     private String Laboratory_or_Application_Number;
     private String Field_Work_Number;
     private String Quiz_or_StudioCritique_Number;
     private String Homework_or_Assignment_Number;
     private String Presentation_or_Jury_Number;
-    private String Project_Number ;
+    private String Project_Number;
+    private String Portfolio_Number;
     private String Seminar_or_Workshop_Number;
     private String Oral_Exam_Number;
-    private String Midterm_Number ;
+    private String Midterm_Number;
     private String Final_Exam_Number;
     private String Participation_Weigthing;
     private String Laboratory_or_Application_Weigthing;
@@ -73,10 +71,11 @@ public class LectureConfig {
     private String Quiz_or_StudioCritique_Weigthing;
     private String Homework_or_Assignment_Weigthing;
     private String Presentation_or_Jury_Weigthing;
-    private String Project_Weigthing ;
+    private String Project_Weigthing;
+    private String Portfolio_Weigthing;
     private String Seminar_or_Workshop_Weigthing;
     private String Oral_Exam_Weigthing;
-    private String Midterm_Weigthing ;
+    private String Midterm_Weigthing;
     private String Final_Exam_Weigthing;
     private String Participation_LO1;
     private String Laboratory_or_Application_LO1;
@@ -84,34 +83,35 @@ public class LectureConfig {
     private String Quiz_or_StudioCritique_LO1;
     private String Homework_or_Assignment_LO1;
     private String Presentation_or_Jury_LO1;
-    private String Project_LO1 ;
+    private String Project_LO1;
+    private String Portfolio_LO1;
     private String Seminar_or_Workshop_LO1;
     private String Oral_Exam_LO1;
-    private String Midterm_LO1 ;
+    private String Midterm_LO1;
     private String Final_Exam_LO1;
-
     private String Participation_LO2;
     private String Laboratory_or_Application_LO2;
     private String Field_Work_LO2;
     private String Quiz_or_StudioCritique_LO2;
     private String Homework_or_Assignment_LO2;
     private String Presentation_or_Jury_LO2;
-    private String Project_LO2 ;
+    private String Project_LO2;
+    private String Portfolio_LO2;
     private String Seminar_or_Workshop_LO2;
     private String Oral_Exam_LO2;
-    private String Midterm_LO2 ;
+    private String Midterm_LO2;
     private String Final_Exam_LO2;
-
     private String Participation_LO3;
     private String Laboratory_or_Application_LO3;
     private String Field_Work_LO3;
     private String Quiz_or_StudioCritique_LO3;
     private String Homework_or_Assignment_LO3;
     private String Presentation_or_Jury_LO3;
-    private String Project_LO3 ;
+    private String Project_LO3;
+    private String Portfolio_LO3;
     private String Seminar_or_Workshop_LO3;
     private String Oral_Exam_LO3;
-    private String Midterm_LO3 ;
+    private String Midterm_LO3;
     private String Final_Exam_LO3;
     private String Participation_LO4;
     private String Laboratory_or_Application_LO4;
@@ -119,11 +119,12 @@ public class LectureConfig {
     private String Quiz_or_StudioCritique_LO4;
     private String Homework_or_Assignment_LO4;
     private String Presentation_or_Jury_LO4;
-    private String Project_LO4 ;
+    private String Project_LO4;
+    private String Portfolio_LO4;
     private String Seminar_or_Workshop_LO4;
     private String Oral_Exam_LO4;
-    private String Midterm_LO4 ;
-    private String Final_Exam_LO4;*/
+    private String Midterm_LO4;
+    private String Final_Exam_LO4;
     private String StudyHoursoutofClassNum;
     private String StudyHoursoutofClassDur;
     private String StudyHoursoutofClassWork;
@@ -205,7 +206,7 @@ public class LectureConfig {
         this.local_Credits = local_Credits;
     }
 
-    public String  getECTS() {
+    public String getECTS() {
         return ECTS;
     }
 
@@ -586,7 +587,7 @@ public class LectureConfig {
         return suggestedReadingsAndMaterials;
     }
 
-  /*  public String getParticipation_Number() {
+    public String getParticipation_Number() {
         return Participation_Number;
     }
 
@@ -1112,7 +1113,7 @@ public class LectureConfig {
 
     public void setFinal_Exam_LO4(String final_Exam_LO4) {
         Final_Exam_LO4 = final_Exam_LO4;
-    }*/
+    }
 
     public void setSuggestedReadingsAndMaterials(String suggestedReadingsAndMaterials) {
         this.suggestedReadingsAndMaterials = suggestedReadingsAndMaterials;
@@ -1155,7 +1156,7 @@ public class LectureConfig {
     }
 
     public void setFieldWorkDur(String fieldWorkDur) {
-        FieldWorkDur = fieldWorkDur;
+        this.FieldWorkDur = fieldWorkDur;
     }
 
     public String getFieldWorkWork() {
@@ -1163,7 +1164,7 @@ public class LectureConfig {
     }
 
     public void setFieldWorkWork(String fieldWorkWork) {
-        FieldWorkWork = fieldWorkWork;
+        this.FieldWorkWork = fieldWorkWork;
     }
 
     public String getQuizNum() {
@@ -1171,7 +1172,7 @@ public class LectureConfig {
     }
 
     public void setQuizNum(String quizNum) {
-        QuizNum = quizNum;
+        this.QuizNum = quizNum;
     }
 
     public String getQuizDur() {
@@ -1179,7 +1180,7 @@ public class LectureConfig {
     }
 
     public void setQuizDur(String quizDur) {
-        QuizDur = quizDur;
+        this.QuizDur = quizDur;
     }
 
     public String getQuizWork() {
@@ -1187,7 +1188,7 @@ public class LectureConfig {
     }
 
     public void setQuizWork(String quizWork) {
-        QuizWork = quizWork;
+        this.QuizWork = quizWork;
     }
 
     public String getHWNum() {
@@ -1219,7 +1220,7 @@ public class LectureConfig {
     }
 
     public void setPresentationNum(String presentationNum) {
-        PresentationNum = presentationNum;
+        this.PresentationNum = presentationNum;
     }
 
     public String getPresentationDur() {
@@ -1227,7 +1228,7 @@ public class LectureConfig {
     }
 
     public void setPresentationDur(String presentationDur) {
-        PresentationDur = presentationDur;
+        this.PresentationDur = presentationDur;
     }
 
     public String getPresentationWork() {
@@ -1235,7 +1236,7 @@ public class LectureConfig {
     }
 
     public void setPresentationWork(String presentationWork) {
-        PresentationWork = presentationWork;
+        this.PresentationWork = presentationWork;
     }
 
     public String getProjectNum() {
@@ -1243,7 +1244,7 @@ public class LectureConfig {
     }
 
     public void setProjectNum(String projectNum) {
-        ProjectNum = projectNum;
+        this.ProjectNum = projectNum;
     }
 
     public String getProjectDur() {
@@ -1251,7 +1252,7 @@ public class LectureConfig {
     }
 
     public void setProjectDur(String projectDur) {
-        ProjectDur = projectDur;
+        this.ProjectDur = projectDur;
     }
 
     public String getProjectWork() {
@@ -1259,7 +1260,7 @@ public class LectureConfig {
     }
 
     public void setProjectWork(String projectWork) {
-        ProjectWork = projectWork;
+        this.ProjectWork = projectWork;
     }
 
     public String getPortfolioNum() {
@@ -1267,7 +1268,7 @@ public class LectureConfig {
     }
 
     public void setPortfolioNum(String portfolioNum) {
-        PortfolioNum = portfolioNum;
+        this.PortfolioNum = portfolioNum;
     }
 
     public String getPortfolioDur() {
@@ -1275,7 +1276,7 @@ public class LectureConfig {
     }
 
     public void setPortfolioDur(String portfolioDur) {
-        PortfolioDur = portfolioDur;
+        this.PortfolioDur = portfolioDur;
     }
 
     public String getPortfolioWork() {
@@ -1283,7 +1284,7 @@ public class LectureConfig {
     }
 
     public void setPortfolioWork(String portfolioWork) {
-        PortfolioWork = portfolioWork;
+        this.PortfolioWork = portfolioWork;
     }
 
     public String getSeminarNum() {
@@ -1291,7 +1292,7 @@ public class LectureConfig {
     }
 
     public void setSeminarNum(String seminarNum) {
-        SeminarNum = seminarNum;
+        this.SeminarNum = seminarNum;
     }
 
     public String getSeminarDur() {
@@ -1299,7 +1300,7 @@ public class LectureConfig {
     }
 
     public void setSeminarDur(String seminarDur) {
-        SeminarDur = seminarDur;
+        this.SeminarDur = seminarDur;
     }
 
     public String getSeminarWork() {
@@ -1307,7 +1308,7 @@ public class LectureConfig {
     }
 
     public void setSeminarWork(String seminarWork) {
-        SeminarWork = seminarWork;
+        this.SeminarWork = seminarWork;
     }
 
     public String getOralExamNum() {
@@ -1315,7 +1316,7 @@ public class LectureConfig {
     }
 
     public void setOralExamNum(String oralExamNum) {
-        OralExamNum = oralExamNum;
+        this.OralExamNum = oralExamNum;
     }
 
     public String getOralExamDur() {
@@ -1323,7 +1324,7 @@ public class LectureConfig {
     }
 
     public void setOralExamDur(String oralExamDur) {
-        OralExamDur = oralExamDur;
+        this.OralExamDur = oralExamDur;
     }
 
     public String getOralExamWork() {
@@ -1331,7 +1332,7 @@ public class LectureConfig {
     }
 
     public void setOralExamWork(String oralExamWork) {
-        OralExamWork = oralExamWork;
+        this.OralExamWork = oralExamWork;
     }
 
     public String getMidtermNum() {
@@ -1339,7 +1340,7 @@ public class LectureConfig {
     }
 
     public void setMidtermNum(String midtermNum) {
-        MidtermNum = midtermNum;
+        this.MidtermNum = midtermNum;
     }
 
     public String getMidterDur() {
@@ -1347,7 +1348,7 @@ public class LectureConfig {
     }
 
     public void setMidterDur(String midterDur) {
-        MidterDur = midterDur;
+        this.MidterDur = midterDur;
     }
 
     public String getMidterWork() {
@@ -1355,7 +1356,7 @@ public class LectureConfig {
     }
 
     public void setMidterWork(String midterWork) {
-        MidterWork = midterWork;
+        this.MidterWork = midterWork;
     }
 
     public String getFinalExamNum() {
@@ -1363,7 +1364,7 @@ public class LectureConfig {
     }
 
     public void setFinalExamNum(String finalExamNum) {
-        FinalExamNum = finalExamNum;
+        this.FinalExamNum = finalExamNum;
     }
 
     public String getFinalExamDur() {
@@ -1371,7 +1372,7 @@ public class LectureConfig {
     }
 
     public void setFinalExamDur(String finalExamDur) {
-        FinalExamDur = finalExamDur;
+        this.FinalExamDur = finalExamDur;
     }
 
     public String getFinalExamWork() {
@@ -1379,10 +1380,58 @@ public class LectureConfig {
     }
 
     public void setFinalExamWork(String finalExamWork) {
-        FinalExamWork = finalExamWork;
+        this.FinalExamWork = finalExamWork;
     }
 
-    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name, String lecture_Code, String semester, String theory_Hour_In_Week, String application_or_Lab_Hour_In_Week, String local_Credits, String ECTS, String prerequisites, String course_Language, String course_Type, String course_Level, String teaching_Methods_and_Techniques, String course_Coordinator, String assistant, String course_Objectives, String learning_Outcomes, String course_Description, String course_Category, String week1Subjects, String week2Subjects, String week3Subjects, String week4Subjects, String week5Subjects, String week6Subjects, String week7Subjects, String week8Subjects, String week9Subjects, String week10Subjects, String week11Subjects, String week12Subjects, String week13Subjects, String week14Subjects, String week15Subjects, String week1ReqMat, String week2ReqMat, String week3ReqMat, String week4ReqMat, String week5ReqMat, String week6ReqMat, String week7ReqMat, String week8ReqMat, String week9ReqMat, String week10ReqMat, String week11ReqMat, String week12ReqMat, String week13ReqMat, String week14ReqMat, String week15ReqMat, String courseNotesAndTextBooks, String suggestedReadingsAndMaterials) {
+    public String getPortfolio_Number() {
+        return Portfolio_Number;
+    }
+
+    public void setPortfolio_Number(String portfolio_Number) {
+        Portfolio_Number = portfolio_Number;
+    }
+
+    public String getPortfolio_Weigthing() {
+        return Portfolio_Weigthing;
+    }
+
+    public void setPortfolio_Weigthing(String portfolio_Weigthing) {
+        Portfolio_Weigthing = portfolio_Weigthing;
+    }
+
+    public String getPortfolio_LO1() {
+        return Portfolio_LO1;
+    }
+
+    public void setPortfolio_LO1(String portfolio_LO1) {
+        Portfolio_LO1 = portfolio_LO1;
+    }
+
+    public String getPortfolio_LO2() {
+        return Portfolio_LO2;
+    }
+
+    public void setPortfolio_LO2(String portfolio_LO2) {
+        Portfolio_LO2 = portfolio_LO2;
+    }
+
+    public String getPortfolio_LO3() {
+        return Portfolio_LO3;
+    }
+
+    public void setPortfolio_LO3(String portfolio_LO3) {
+        Portfolio_LO3 = portfolio_LO3;
+    }
+
+    public String getPortfolio_LO4() {
+        return Portfolio_LO4;
+    }
+
+    public void setPortfolio_LO4(String portfolio_LO4) {
+        Portfolio_LO4 = portfolio_LO4;
+    }
+
+    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name, String lecture_Code, String semester, String theory_Hour_In_Week, String application_or_Lab_Hour_In_Week, String local_Credits, String ECTS, String prerequisites, String course_Language, String course_Type, String course_Level, String teaching_Methods_and_Techniques, String course_Coordinator, String assistant, String course_Objectives, String learning_Outcomes, String course_Description, String course_Category, String week1Subjects, String week2Subjects, String week3Subjects, String week4Subjects, String week5Subjects, String week6Subjects, String week7Subjects, String week8Subjects, String week9Subjects, String week10Subjects, String week11Subjects, String week12Subjects, String week13Subjects, String week14Subjects, String week15Subjects, String week1ReqMat, String week2ReqMat, String week3ReqMat, String week4ReqMat, String week5ReqMat, String week6ReqMat, String week7ReqMat, String week8ReqMat, String week9ReqMat, String week10ReqMat, String week11ReqMat, String week12ReqMat, String week13ReqMat, String week14ReqMat, String week15ReqMat, String courseNotesAndTextBooks, String suggestedReadingsAndMaterials, String participation_Number, String laboratory_or_Application_Number, String field_Work_Number, String quiz_or_StudioCritique_Number, String homework_or_Assignment_Number, String presentation_or_Jury_Number, String project_Number, String portfolio_Number, String seminar_or_Workshop_Number, String oral_Exam_Number, String midterm_Number, String final_Exam_Number, String participation_Weigthing, String laboratory_or_Application_Weigthing, String field_Work_Weigthing, String quiz_or_StudioCritique_Weigthing, String homework_or_Assignment_Weigthing, String presentation_or_Jury_Weigthing, String project_Weigthing, String portfolio_Weigthing, String seminar_or_Workshop_Weigthing, String oral_Exam_Weigthing, String midterm_Weigthing, String final_Exam_Weigthing, String participation_LO1, String laboratory_or_Application_LO1, String field_Work_LO1, String quiz_or_StudioCritique_LO1, String homework_or_Assignment_LO1, String presentation_or_Jury_LO1, String project_LO1, String portfolio_LO1, String seminar_or_Workshop_LO1, String oral_Exam_LO1, String midterm_LO1, String final_Exam_LO1, String participation_LO2, String laboratory_or_Application_LO2, String field_Work_LO2, String quiz_or_StudioCritique_LO2, String homework_or_Assignment_LO2, String presentation_or_Jury_LO2, String project_LO2, String portfolio_LO2, String seminar_or_Workshop_LO2, String oral_Exam_LO2, String midterm_LO2, String final_Exam_LO2, String participation_LO3, String laboratory_or_Application_LO3, String field_Work_LO3, String quiz_or_StudioCritique_LO3, String homework_or_Assignment_LO3, String presentation_or_Jury_LO3, String project_LO3, String portfolio_LO3, String seminar_or_Workshop_LO3, String oral_Exam_LO3, String midterm_LO3, String final_Exam_LO3, String participation_LO4, String laboratory_or_Application_LO4, String field_Work_LO4, String quiz_or_StudioCritique_LO4, String homework_or_Assignment_LO4, String presentation_or_Jury_LO4, String project_LO4, String portfolio_LO4, String seminar_or_Workshop_LO4, String oral_Exam_LO4, String midterm_LO4, String final_Exam_LO4, String studyHoursoutofClassNum, String studyHoursoutofClassDur, String studyHoursoutofClassWork, String fieldWorkNum, String fieldWorkDur, String fieldWorkWork, String quizNum, String quizDur, String quizWork, String HWNum, String HWDur, String HWWork, String presentationNum, String presentationDur, String presentationWork, String projectNum, String projectDur, String projectWork, String portfolioNum, String portfolioDur, String portfolioWork, String seminarNum, String seminarDur, String seminarWork, String oralExamNum, String oralExamDur, String oralExamWork, String midtermNum, String midterDur, String midterWork, String finalExamNum, String finalExamDur, String finalExamWork) {
         this.lecture_id = lecture_id;
         this.lecture_Name = lecture_Name;
         this.lecturer_Name = lecturer_Name;
@@ -1435,160 +1484,111 @@ public class LectureConfig {
         this.week15ReqMat = week15ReqMat;
         this.courseNotesAndTextBooks = courseNotesAndTextBooks;
         this.suggestedReadingsAndMaterials = suggestedReadingsAndMaterials;
-    }
-
-    public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name, String lecture_Code, String semester, String theory_Hour_In_Week, String application_or_Lab_Hour_In_Week, String local_Credits, String ECTS, String prerequisites, String course_Language, String course_Type, String course_Level, String teaching_Methods_and_Techniques, String course_Coordinator, String assistant, String course_Objectives, String learning_Outcomes, String course_Description, String course_Category, String week1Subjects, String week2Subjects, String week3Subjects, String week4Subjects, String week5Subjects, String week6Subjects, String week7Subjects, String week8Subjects, String week9Subjects, String week10Subjects, String week11Subjects, String week12Subjects, String week13Subjects, String week14Subjects, String week15Subjects, String week1ReqMat, String week2ReqMat, String week3ReqMat, String week4ReqMat, String week5ReqMat, String week6ReqMat, String week7ReqMat, String week8ReqMat, String week9ReqMat, String week10ReqMat, String week11ReqMat, String week12ReqMat, String week13ReqMat, String week14ReqMat, String week15ReqMat, String courseNotesAndTextBooks, String suggestedReadingsAndMaterials, String studyHoursoutofClassNum, String studyHoursoutofClassDur, String studyHoursoutofClassWork, String fieldWorkNum, String fieldWorkDur, String fieldWorkWork, String quizNum, String quizDur, String quizWork, String HWNum, String HWDur, String HWWork, String presentationNum, String presentationDur, String presentationWork, String projectNum, String projectDur, String projectWork, String portfolioNum, String portfolioDur, String portfolioWork, String seminarNum, String seminarDur, String seminarWork, String oralExamNum, String oralExamDur, String oralExamWork, String midtermNum, String midterDur, String midterWork, String finalExamNum, String finalExamDur, String finalExamWork) {
-        this.lecture_id = lecture_id;
-        this.lecture_Name = lecture_Name;
-        this.lecturer_Name = lecturer_Name;
-        this.lecture_Code = lecture_Code;
-        this.semester = semester;
-        this.theory_Hour_In_Week = theory_Hour_In_Week;
-        this.application_or_Lab_Hour_In_Week = application_or_Lab_Hour_In_Week;
-        this.local_Credits = local_Credits;
-        this.ECTS = ECTS;
-        this.prerequisites = prerequisites;
-        this.course_Language = course_Language;
-        this.course_Type = course_Type;
-        this.course_Level = course_Level;
-        this.teaching_Methods_and_Techniques = teaching_Methods_and_Techniques;
-        this.course_Coordinator = course_Coordinator;
-        this.assistant = assistant;
-        this.course_Objectives = course_Objectives;
-        this.learning_Outcomes = learning_Outcomes;
-        this.course_Description = course_Description;
-        this.course_Category = course_Category;
-        this.week1Subjects = week1Subjects;
-        this.week2Subjects = week2Subjects;
-        this.week3Subjects = week3Subjects;
-        this.week4Subjects = week4Subjects;
-        this.week5Subjects = week5Subjects;
-        this.week6Subjects = week6Subjects;
-        this.week7Subjects = week7Subjects;
-        this.week8Subjects = week8Subjects;
-        this.week9Subjects = week9Subjects;
-        this.week10Subjects = week10Subjects;
-        this.week11Subjects = week11Subjects;
-        this.week12Subjects = week12Subjects;
-        this.week13Subjects = week13Subjects;
-        this.week14Subjects = week14Subjects;
-        this.week15Subjects = week15Subjects;
-        this.week1ReqMat = week1ReqMat;
-        this.week2ReqMat = week2ReqMat;
-        this.week3ReqMat = week3ReqMat;
-        this.week4ReqMat = week4ReqMat;
-        this.week5ReqMat = week5ReqMat;
-        this.week6ReqMat = week6ReqMat;
-        this.week7ReqMat = week7ReqMat;
-        this.week8ReqMat = week8ReqMat;
-        this.week9ReqMat = week9ReqMat;
-        this.week10ReqMat = week10ReqMat;
-        this.week11ReqMat = week11ReqMat;
-        this.week12ReqMat = week12ReqMat;
-        this.week13ReqMat = week13ReqMat;
-        this.week14ReqMat = week14ReqMat;
-        this.week15ReqMat = week15ReqMat;
-        this.courseNotesAndTextBooks = courseNotesAndTextBooks;
-        this.suggestedReadingsAndMaterials = suggestedReadingsAndMaterials;
-       /* this.Participation_Number = participation_Number;
-        this.Laboratory_or_Application_Number = laboratory_or_Application_Number;
-        this.Field_Work_Number = field_Work_Number;
-        this.Quiz_or_StudioCritique_Number = quiz_or_StudioCritique_Number;
-        this.Homework_or_Assignment_Number = homework_or_Assignment_Number;
-        this.Presentation_or_Jury_Number = presentation_or_Jury_Number;
-        this.Project_Number = project_Number;
-        this.Seminar_or_Workshop_Number = seminar_or_Workshop_Number;
-        this.Oral_Exam_Number = oral_Exam_Number;
-        this.Midterm_Number = midterm_Number;
-        this.Final_Exam_Number = final_Exam_Number;
-        this.Participation_Weigthing = participation_Weigthing;
-        this.Laboratory_or_Application_Weigthing = laboratory_or_Application_Weigthing;
-        this.Field_Work_Weigthing = field_Work_Weigthing;
-        this.Quiz_or_StudioCritique_Weigthing = quiz_or_StudioCritique_Weigthing;
-        this.Homework_or_Assignment_Weigthing = homework_or_Assignment_Weigthing;
-        this.Presentation_or_Jury_Weigthing = presentation_or_Jury_Weigthing;
-        this.Project_Weigthing = project_Weigthing;
-        this.Seminar_or_Workshop_Weigthing = seminar_or_Workshop_Weigthing;
-        this.Oral_Exam_Weigthing = oral_Exam_Weigthing;
-        this.Midterm_Weigthing = midterm_Weigthing;
-        this.Final_Exam_Weigthing = final_Exam_Weigthing;
-        this.Participation_LO1 = participation_LO1;
-        this.Laboratory_or_Application_LO1 = laboratory_or_Application_LO1;
-        this.Field_Work_LO1 = field_Work_LO1;
-        this.Quiz_or_StudioCritique_LO1 = quiz_or_StudioCritique_LO1;
-        this.Homework_or_Assignment_LO1 = homework_or_Assignment_LO1;
-        this.Presentation_or_Jury_LO1 = presentation_or_Jury_LO1;
-        this.Project_LO1 = project_LO1;
-        this.Seminar_or_Workshop_LO1 = seminar_or_Workshop_LO1;
-        this.Oral_Exam_LO1 = oral_Exam_LO1;
-        this.Midterm_LO1 = midterm_LO1;
-        this.Final_Exam_LO1 = final_Exam_LO1;
-        this.Participation_LO2 = participation_LO2;
-       this.Laboratory_or_Application_LO2 = laboratory_or_Application_LO2;
-        this.Field_Work_LO2 = field_Work_LO2;
-        this.Quiz_or_StudioCritique_LO2 = quiz_or_StudioCritique_LO2;
-        this.Homework_or_Assignment_LO2 = homework_or_Assignment_LO2;
-        this.Presentation_or_Jury_LO2 = presentation_or_Jury_LO2;
-        this. Project_LO2 = project_LO2;
-        this.Seminar_or_Workshop_LO2 = seminar_or_Workshop_LO2;
-        this. Oral_Exam_LO2 = oral_Exam_LO2;
-        this. Midterm_LO2 = midterm_LO2;
-        this. Final_Exam_LO2 = final_Exam_LO2;
-        this. Participation_LO3 = participation_LO3;
-        this.Laboratory_or_Application_LO3 = laboratory_or_Application_LO3;
-      this.  Field_Work_LO3 = field_Work_LO3;
-       this. Quiz_or_StudioCritique_LO3 = quiz_or_StudioCritique_LO3;
-        this. Homework_or_Assignment_LO3 = homework_or_Assignment_LO3;
-        this.Presentation_or_Jury_LO3 = presentation_or_Jury_LO3;
-        this.Project_LO3 = project_LO3;
-        this.Seminar_or_Workshop_LO3 = seminar_or_Workshop_LO3;
-        this.Oral_Exam_LO3 = oral_Exam_LO3;
-        this.Midterm_LO3 = midterm_LO3;
-        this.Final_Exam_LO3 = final_Exam_LO3;
-        this.Participation_LO4 = participation_LO4;
-        this.Laboratory_or_Application_LO4 = laboratory_or_Application_LO4;
-        this.Field_Work_LO4 = field_Work_LO4;
-        this.Quiz_or_StudioCritique_LO4 = quiz_or_StudioCritique_LO4;
-        this.Homework_or_Assignment_LO4 = homework_or_Assignment_LO4;
-        this.Presentation_or_Jury_LO4 = presentation_or_Jury_LO4;
-        this.Project_LO4 = project_LO4;
-        this.Seminar_or_Workshop_LO4 = seminar_or_Workshop_LO4;
-        this.Oral_Exam_LO4 = oral_Exam_LO4;
-        this.Midterm_LO4 = midterm_LO4;
-        this.Final_Exam_LO4 = final_Exam_LO4;*/
-        this.StudyHoursoutofClassNum = studyHoursoutofClassNum;
-        this.StudyHoursoutofClassDur = studyHoursoutofClassDur;
-        this.StudyHoursoutofClassWork = studyHoursoutofClassWork;
-        this.FieldWorkNum = fieldWorkNum;
-        this.FieldWorkDur = fieldWorkDur;
-        this.FieldWorkWork = fieldWorkWork;
-        this.QuizNum = quizNum;
-        this.QuizDur = quizDur;
-        this.QuizWork = quizWork;
+        Participation_Number = participation_Number;
+        Laboratory_or_Application_Number = laboratory_or_Application_Number;
+        Field_Work_Number = field_Work_Number;
+        Quiz_or_StudioCritique_Number = quiz_or_StudioCritique_Number;
+        Homework_or_Assignment_Number = homework_or_Assignment_Number;
+        Presentation_or_Jury_Number = presentation_or_Jury_Number;
+        Project_Number = project_Number;
+        Portfolio_Number = portfolio_Number;
+        Seminar_or_Workshop_Number = seminar_or_Workshop_Number;
+        Oral_Exam_Number = oral_Exam_Number;
+        Midterm_Number = midterm_Number;
+        Final_Exam_Number = final_Exam_Number;
+        Participation_Weigthing = participation_Weigthing;
+        Laboratory_or_Application_Weigthing = laboratory_or_Application_Weigthing;
+        Field_Work_Weigthing = field_Work_Weigthing;
+        Quiz_or_StudioCritique_Weigthing = quiz_or_StudioCritique_Weigthing;
+        Homework_or_Assignment_Weigthing = homework_or_Assignment_Weigthing;
+        Presentation_or_Jury_Weigthing = presentation_or_Jury_Weigthing;
+        Project_Weigthing = project_Weigthing;
+        Portfolio_Weigthing = portfolio_Weigthing;
+        Seminar_or_Workshop_Weigthing = seminar_or_Workshop_Weigthing;
+        Oral_Exam_Weigthing = oral_Exam_Weigthing;
+        Midterm_Weigthing = midterm_Weigthing;
+        Final_Exam_Weigthing = final_Exam_Weigthing;
+        Participation_LO1 = participation_LO1;
+        Laboratory_or_Application_LO1 = laboratory_or_Application_LO1;
+        Field_Work_LO1 = field_Work_LO1;
+        Quiz_or_StudioCritique_LO1 = quiz_or_StudioCritique_LO1;
+        Homework_or_Assignment_LO1 = homework_or_Assignment_LO1;
+        Presentation_or_Jury_LO1 = presentation_or_Jury_LO1;
+        Project_LO1 = project_LO1;
+        Portfolio_LO1 = portfolio_LO1;
+        Seminar_or_Workshop_LO1 = seminar_or_Workshop_LO1;
+        Oral_Exam_LO1 = oral_Exam_LO1;
+        Midterm_LO1 = midterm_LO1;
+        Final_Exam_LO1 = final_Exam_LO1;
+        Participation_LO2 = participation_LO2;
+        Laboratory_or_Application_LO2 = laboratory_or_Application_LO2;
+        Field_Work_LO2 = field_Work_LO2;
+        Quiz_or_StudioCritique_LO2 = quiz_or_StudioCritique_LO2;
+        Homework_or_Assignment_LO2 = homework_or_Assignment_LO2;
+        Presentation_or_Jury_LO2 = presentation_or_Jury_LO2;
+        Project_LO2 = project_LO2;
+        Portfolio_LO2 = portfolio_LO2;
+        Seminar_or_Workshop_LO2 = seminar_or_Workshop_LO2;
+        Oral_Exam_LO2 = oral_Exam_LO2;
+        Midterm_LO2 = midterm_LO2;
+        Final_Exam_LO2 = final_Exam_LO2;
+        Participation_LO3 = participation_LO3;
+        Laboratory_or_Application_LO3 = laboratory_or_Application_LO3;
+        Field_Work_LO3 = field_Work_LO3;
+        Quiz_or_StudioCritique_LO3 = quiz_or_StudioCritique_LO3;
+        Homework_or_Assignment_LO3 = homework_or_Assignment_LO3;
+        Presentation_or_Jury_LO3 = presentation_or_Jury_LO3;
+        Project_LO3 = project_LO3;
+        Portfolio_LO3 = portfolio_LO3;
+        Seminar_or_Workshop_LO3 = seminar_or_Workshop_LO3;
+        Oral_Exam_LO3 = oral_Exam_LO3;
+        Midterm_LO3 = midterm_LO3;
+        Final_Exam_LO3 = final_Exam_LO3;
+        Participation_LO4 = participation_LO4;
+        Laboratory_or_Application_LO4 = laboratory_or_Application_LO4;
+        Field_Work_LO4 = field_Work_LO4;
+        Quiz_or_StudioCritique_LO4 = quiz_or_StudioCritique_LO4;
+        Homework_or_Assignment_LO4 = homework_or_Assignment_LO4;
+        Presentation_or_Jury_LO4 = presentation_or_Jury_LO4;
+        Project_LO4 = project_LO4;
+        Portfolio_LO4 = portfolio_LO4;
+        Seminar_or_Workshop_LO4 = seminar_or_Workshop_LO4;
+        Oral_Exam_LO4 = oral_Exam_LO4;
+        Midterm_LO4 = midterm_LO4;
+        Final_Exam_LO4 = final_Exam_LO4;
+        StudyHoursoutofClassNum = studyHoursoutofClassNum;
+        StudyHoursoutofClassDur = studyHoursoutofClassDur;
+        StudyHoursoutofClassWork = studyHoursoutofClassWork;
+        FieldWorkNum = fieldWorkNum;
+        FieldWorkDur = fieldWorkDur;
+        FieldWorkWork = fieldWorkWork;
+        QuizNum = quizNum;
+        QuizDur = quizDur;
+        QuizWork = quizWork;
         this.HWNum = HWNum;
         this.HWDur = HWDur;
         this.HWWork = HWWork;
-        this.PresentationNum = presentationNum;
-        this.PresentationDur = presentationDur;
-        this.PresentationWork = presentationWork;
-        this.ProjectNum = projectNum;
-        this.ProjectDur = projectDur;
-        this.ProjectWork = projectWork;
-        this.PortfolioNum = portfolioNum;
-        this.PortfolioDur = portfolioDur;
-        this.PortfolioWork = portfolioWork;
-        this.SeminarNum = seminarNum;
-        this.SeminarDur = seminarDur;
-        this.SeminarWork = seminarWork;
-        this.OralExamNum = oralExamNum;
-        this.OralExamDur = oralExamDur;
-        this.OralExamWork = oralExamWork;
-        this.MidtermNum = midtermNum;
-        this.MidterDur = midterDur;
-        this.MidterWork = midterWork;
-        this.FinalExamNum = finalExamNum;
-        this.FinalExamDur = finalExamDur;
-        this.FinalExamWork = finalExamWork;
+        PresentationNum = presentationNum;
+        PresentationDur = presentationDur;
+        PresentationWork = presentationWork;
+        ProjectNum = projectNum;
+        ProjectDur = projectDur;
+        ProjectWork = projectWork;
+        PortfolioNum = portfolioNum;
+        PortfolioDur = portfolioDur;
+        PortfolioWork = portfolioWork;
+        SeminarNum = seminarNum;
+        SeminarDur = seminarDur;
+        SeminarWork = seminarWork;
+        OralExamNum = oralExamNum;
+        OralExamDur = oralExamDur;
+        OralExamWork = oralExamWork;
+        MidtermNum = midtermNum;
+        MidterDur = midterDur;
+        MidterWork = midterWork;
+        FinalExamNum = finalExamNum;
+        FinalExamDur = finalExamDur;
+        FinalExamWork = finalExamWork;
     }
 
     public LectureConfig(int lecture_id, String lecture_Name, String lecturer_Name) {
