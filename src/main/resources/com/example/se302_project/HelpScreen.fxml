@@ -12,43 +12,34 @@
    <children>
       <ImageView fitHeight="601.0" fitWidth="800.0" pickOnBounds="true" visible="false">
          <image>
-            <Image url="@images/help/MainPageLecturesScreen.png" />
+            <Image url="@images/help/Entrance.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
          <image>
-            <Image url="@images/help/LectureAddPage.png" />
+            <Image url="@images/help/ADD (2).png" />
          </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
          <image>
-            <Image url="@images/help/LectureEditPage.png" />
+            <Image url="@images/help/EditSyllabus.png" />
+         </image>
+         <image>
+            <Image url="@images/help/import.png" />
+         </image>
+         <image>
+            <Image url="@images/help/export.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@images/help/ProgrammingLanguagesScreen.png" />
-         </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@images/help/ProgrammingLanguageAdd.png" />
-         </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@images/help/ProgrammingLanguageEdit.png" />
-         </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@images/help/ProjectsScreen.png" />
-         </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@images/help/ProjectAddScreen.png" />
-         </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
          <image>
@@ -56,9 +47,6 @@
          </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@images/help/DetailedEvaluation.png" />
-         </image>
       </ImageView>
       <HBox alignment="BOTTOM_CENTER" prefHeight="76.0" prefWidth="837.0" spacing="10.0">
          <children>
