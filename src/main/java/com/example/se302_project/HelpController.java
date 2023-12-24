@@ -31,25 +31,13 @@ public class HelpController {
         button1.setOnAction(event -> swap(button1, 0));
         button2.setOnAction(event -> swap(button2, 1));
         button3.setOnAction(event -> swap(button3, 2));
-        button4.setOnAction(event -> swap(button4, 3));
-        button5.setOnAction(event -> swap(button5, 4));
-        button6.setOnAction(event -> swap(button6, 5));
-        button7.setOnAction(event -> swap(button7, 6));
-        button7.setOnAction(event -> swap(button8, 7));
-        button7.setOnAction(event -> swap(button9, 8));
-        button7.setOnAction(event -> swap(button10, 9));
+
 
         prevButton = button1;
         buttons[0] = button1;
         buttons[1] = button2;
         buttons[2] = button3;
         buttons[3] = button4;
-        buttons[4] = button5;
-        buttons[5] = button6;
-        buttons[6] = button7;
-        buttons[7] = button8;
-        buttons[8] = button9;
-        buttons[9] = button10;
 
     }
 

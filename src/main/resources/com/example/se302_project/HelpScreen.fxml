@@ -12,23 +12,17 @@
    <children>
       <ImageView fitHeight="601.0" fitWidth="800.0" pickOnBounds="true" visible="false">
          <image>
-            <Image url="@images/help/Entrance.png" />
+            <Image url="@images/help/AddSyllabus.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
          <image>
-            <Image url="@images/help/ADD (2).png" />
+            <Image url="@images/help/EditHelp.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
          <image>
-            <Image url="@images/help/EditSyllabus.png" />
-         </image>
-         <image>
-            <Image url="@images/help/import.png" />
-         </image>
-         <image>
-            <Image url="@images/help/export.png" />
+            <Image url="@images/help/MainScreen.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
@@ -42,9 +36,6 @@
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@images/help/StudentGrades.png" />
-         </image>
       </ImageView>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" visible="false">
       </ImageView>
@@ -53,13 +44,6 @@
             <Button fx:id="button1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: black; -fx-background-radius: 20;" />
             <Button fx:id="button2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
             <Button fx:id="button3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
-            <Button fx:id="button4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
-            <Button fx:id="button5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
-            <Button fx:id="button6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
-            <Button fx:id="button7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
-            <Button fx:id="button8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
-            <Button fx:id="button9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
-            <Button fx:id="button10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20;" />
          </children>
          <padding>
             <Insets bottom="25.0" />
