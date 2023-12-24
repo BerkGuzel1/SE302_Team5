@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: com.example.se302_project.App
+Class-Path: javafx-controls-19.jar javafx-media-19.jar sqlite-jdbc-3.41.
+ 2.2.jar javafx-media-19-win.jar javafx-fxml-19.jar javafx-graphics-19.j
+ ar javafx-fxml-19-win.jar gson-2.10.1.jar javafx-base-19-win.jar contro
+ lsfx-11.1.0.jar javafx-graphics-19-win.jar javafx-base-19.jar javafx-co
+ ntrols-19-win.jar
+
