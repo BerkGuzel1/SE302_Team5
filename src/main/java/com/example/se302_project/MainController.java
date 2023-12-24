@@ -80,120 +80,25 @@ public class MainController {
         @FXML
         private HBox mediaHbox;
 
-
-        @FXML
-        private Button AddAttribute;
-        @FXML
-        private Button SmallLectureButton;
-        @FXML
-        private Button SmallPLButton;
         @FXML
         private HBox AddLectureBox;
         @FXML
         private HBox EditLectureHBox;
-        @FXML
-        private GridPane EditLectureGrid;
-        @FXML
-        private GridPane ArgumentsProjectGrid;
-
-        @FXML
-        private HBox EditProjectHBox;
-
-        @FXML
-        private HBox DetailedEvaluationHbox;
-
-        @FXML
-        private TableView DetailedEvaluationTable;
-
-        @FXML
-        private TableColumn inputColumn;
-
-
-        @FXML
-        private TableColumn poutputColumn;
-
-
-        @FXML
-        private TableColumn EvaluationRunStatus;
-
-
-        @FXML
-        private TableColumn EvaluationRunOutput;
-
-        @FXML
-        private HBox EditProgLangHBox;
-
-        @FXML
-        private HBox StudentsHbox;
 
         @FXML
         private Button AddLectureButton;
 
         @FXML
         private GridPane AddLectureGrid;
-
-        @FXML
-        private HBox AddPLBox;
-
-        @FXML
-        private Button AddPLButton;
-
-        @FXML
-        private GridPane AddPLGrid;
-
-        @FXML
-        private HBox AddProjectBox;
-
-        @FXML
-        private Button AddProjectButton;
-
-        @FXML
-        private Button EditProgLangButton;
-
-
-        @FXML
-        private GridPane AddProjectGrid;
-
-        @FXML
-        private Button GoToAddLectureButton;
-
-        @FXML
-        private Button GoToAddPLButton;
-        @FXML
-        private Button StudentOpenZip;
-        @FXML
-        private Button StudentRun;
-
-        @FXML
-        private Button GoToAddProjectButton;
-
-        @FXML
-        private Button LectureButton;
-
         @FXML
         private Button EditLectureConfirm;
-
-        @FXML
-        private Button EditLectureButton;
-
         @FXML
         private Button CloseEditLecture;
-
-        @FXML
-        private Button CloseEditProgLang;
-        @FXML
-        private Button EditProgLangConfirm;
-
-        @FXML
-        private Label StudentIDLabel;
-
         @FXML
         private TableColumn LectureGoColumn;
 
         @FXML
         private GridPane LectureGrid;
-        @FXML
-        private GridPane StudentGrid;
         @FXML
         private GridPane EditLectureoldvalue;
         @FXML
@@ -212,142 +117,22 @@ public class MainController {
         private HBox LecturesHBox;
 
         @FXML
-        private TableColumn PLGoColumn;
-
-        @FXML
-        private GridPane PLGrid;
-
-        @FXML
-        private TableColumn PLNameColumn;
-
-        @FXML
-        private TableView PLTableView;
-
-        @FXML
-        private TableColumn PLTrashColumn;
-
-        @FXML
-        private HBox PL_HBox;
-
-        @FXML
-        private Button ProgrammingLanguageButton;
-
-        @FXML
-        private TableColumn ProjectGoColumn;
-
-        @FXML
-        private GridPane ProjectGrid;
-
-
-        @FXML
-        private GridPane EditProgLangnewvalue;
-
-
-        @FXML
-        private GridPane EditProgLangoldvalue;
-
-
-        @FXML
-        private TableColumn ProjectNameColumn;
-
-        @FXML
-        private TableView ProjectTableView;
-
-        @FXML
-        private TableColumn ProjectTrashColumn;
-
-        @FXML
-        private HBox ProjectsHBox;
-
-        @FXML
         private HBox allHbox;
-
-        @FXML
-        private VBox drawerLong;
-
-        @FXML
-        private VBox drawerShort;
-
-        @FXML
-        private StackPane drawerStackPane;
-
-        @FXML
-        private ImageView ellipse1;
-
-        @FXML
-        private ImageView ellipse2;
 
         @FXML
         private HBox firstEllipses;
 
         @FXML
-        private Button leftBarButton;
-
-        @FXML
-        private Button leftBarButton1;
-
-        @FXML
-        private VBox originalResumeVBox;
-
-        @FXML
-        private VBox originalResumeVBox1;
-
-        @FXML
-        private VBox originalResumeVBox2;
-
-        @FXML
         private HBox secondEllipses;
-
-        @FXML
-        private VBox templateAttributeView;
-
-        @FXML
-        private VBox templateAttributeView1;
-
-        @FXML
-        private VBox templateAttributeView11;
-
-        @FXML
-        private VBox templateAttributeView2;
-
-        @FXML
-        private VBox templateNameVBox;
-
-        @FXML
-        private VBox templateNameVBox1;
-
-        @FXML
-        private VBox templateNameVBox2;
-
-        @FXML
-        private VBox templatePane;
-
-        @FXML
-        private VBox templatePane1;
-
-        @FXML
-        private VBox templatePane2;
 
         @FXML
         private HBox thirdEllipses;
 
         @FXML
-        private TableView StudentTableView;
-        @FXML
-        private TableColumn StudentIDColumn;
-        @FXML
-        private TableColumn StudentNameColumn;
-        @FXML
-        private TableColumn StudentGradeColumn;
-        @FXML
-        private TableColumn StudentGoColumn;
-
-        @FXML
         private ScrollPane generatedResumeScrollPane2;
 
         int lec_id = -1;
-        int pl_id = -1;
-        int project_id = -1;
+
         private Media media;
         private MediaPlayer mediaPlayer;
 
@@ -387,12 +172,6 @@ public class MainController {
                         openLectureScreen();
                 }
 
-                firstEllipses.widthProperty().addListener((obs, oldVal, newVal) -> {
-                        if (firstEllipses.getWidth() < 1400)
-                                shortDrawer();
-                        else
-                                longDrawer();
-                });
 
                 LectureTableView.getSelectionModel().selectedItemProperty().addListener((observable, oldvalue, newValue) -> {
                         try {
@@ -409,22 +188,18 @@ public class MainController {
         @FXML
         public void openLectureScreen() {
                 LecturesHBox.setVisible(true);
-                ProjectsHBox.setVisible(false);
-                LecturesHBox.setEffect(null);
-                StudentsHbox.setVisible(false);
-                EditProgLangHBox.setVisible(false);
+
+
+
+
                 EditLectureHBox.setVisible(false);
 
-                PL_HBox.setVisible(false);
-                AddProjectBox.setVisible(false);
-                AddLectureBox.setVisible(false);
-                AddPLBox.setVisible(false);
 
-                firstEllipses.setVisible(false);
-                secondEllipses.setVisible(true);
-                thirdEllipses.setVisible(false);
+
+                AddLectureBox.setVisible(false);
+
+
                 mediaHbox.setVisible(false);
-                DetailedEvaluationHbox.setVisible(false);
 
 
                 String path = "images/trash.png";
@@ -452,19 +227,10 @@ public class MainController {
 
                 LecturesHBox.setVisible(true);
                 LecturesHBox.setEffect(null);
-                ProjectsHBox.setVisible(false);
-                AddProjectBox.setVisible(false);
-                AddLectureBox.setVisible(true);
-                BoxBlur blur = new BoxBlur();
-                blur.setWidth(15);
-                blur.setHeight(15);
-                blur.setIterations(3);
-                LecturesHBox.setEffect(blur);
 
-                firstEllipses.setVisible(false);
-                secondEllipses.setVisible(false);
-                thirdEllipses.setVisible(false);
-                DetailedEvaluationHbox.setVisible(false);
+                AddLectureBox.setVisible(true);
+
+
                 generatedResumeScrollPane2.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
 
 
@@ -2904,14 +2670,14 @@ public class MainController {
                 lec_id = ts.getId();
 
                 LecturesHBox.setVisible(true);
-                ProjectsHBox.setVisible(false);
+
                 EditLectureHBox.setVisible(true);
-                PL_HBox.setVisible(false);
-                AddProjectBox.setVisible(false);
-                AddPLBox.setVisible(false);
+
+
+
                 AddLectureBox.setVisible(false);
-                ProjectsHBox.setEffect(null);
-                StudentsHbox.setVisible(false);
+
+
 
                 BoxBlur blur = new BoxBlur();
                 blur.setWidth(10);
@@ -2919,9 +2685,9 @@ public class MainController {
                 blur.setIterations(3);
                 LecturesHBox.setEffect(blur);
 
-                firstEllipses.setVisible(false);
-                secondEllipses.setVisible(false);
-                thirdEllipses.setVisible(false);
+
+
+
 
 
                 LectureConfig Lecture = DBConnector.getInstance().getLectureConfigObject(lec_id);
@@ -3650,16 +3416,16 @@ public class MainController {
                         EditLectureHBox.setVisible(false);
                         LecturesHBox.setVisible(true);
                         LecturesHBox.setEffect(null);
-                        ProjectsHBox.setVisible(false);
-                        PL_HBox.setVisible(false);
-                        AddProjectBox.setVisible(false);
-                        AddPLBox.setVisible(false);
+
+
+
+
                         AddLectureBox.setVisible(false);
-                        ProjectsHBox.setEffect(null);
-                        StudentsHbox.setVisible(false);
-                        firstEllipses.setVisible(false);
-                        secondEllipses.setVisible(true);
-                        thirdEllipses.setVisible(false);
+
+
+
+
+
                         openLectureScreen();
                 });
 
@@ -3667,16 +3433,16 @@ public class MainController {
                         EditLectureHBox.setVisible(false);
                         LecturesHBox.setVisible(true);
                         LecturesHBox.setEffect(null);
-                        ProjectsHBox.setVisible(false);
-                        PL_HBox.setVisible(false);
-                        AddProjectBox.setVisible(false);
-                        AddPLBox.setVisible(false);
+
+
+
+
                         AddLectureBox.setVisible(false);
-                        ProjectsHBox.setEffect(null);
-                        StudentsHbox.setVisible(false);
-                        firstEllipses.setVisible(false);
-                        secondEllipses.setVisible(true);
-                        thirdEllipses.setVisible(false);
+
+
+
+
+
                         openLectureScreen();
                 });
 
@@ -3690,17 +3456,14 @@ public class MainController {
         @FXML
         public void openPLScreen() {
                 LecturesHBox.setVisible(false);
-                ProjectsHBox.setVisible(false);
-                PL_HBox.setVisible(true);
-                PL_HBox.setEffect(null);
-                AddProjectBox.setVisible(false);
+
                 AddLectureBox.setVisible(false);
-                AddPLBox.setVisible(false);
+
                 firstEllipses.setVisible(false);
                 secondEllipses.setVisible(false);
                 thirdEllipses.setVisible(true);
-                StudentsHbox.setVisible(false);
-                DetailedEvaluationHbox.setVisible(false);
+
+
 
                 String path = "images/trash.png";
                 String path2="images/Go.png";
@@ -3711,10 +3474,9 @@ public class MainController {
                 ObservableList<TableShow> ProgrammingLanguageList = FXCollections
                         .observableArrayList();
 
-                PLNameColumn.setCellValueFactory(new PropertyValueFactory<TableShow, String>("name"));
 
 
-                PLTrashColumn.setCellValueFactory(new PropertyValueFactory<TableShow, ImageView>("image"));
+
 
 
 
@@ -3726,148 +3488,25 @@ public class MainController {
                 }
 
 
-                //PLTableView.setItems(ProgrammingLanguageList);
 
 
-                @FXML
-                public void openAddProgLangScreen() throws SQLException {
-
-                        LecturesHBox.setVisible(false);
-                        ProjectsHBox.setVisible(false);
-                        PL_HBox.setVisible(true);
-                        AddProjectBox.setVisible(false);
-                        AddLectureBox.setVisible(false);
-                        AddPLBox.setVisible(true);
-
-                        firstEllipses.setVisible(false);
-                        secondEllipses.setVisible(false);
-                        thirdEllipses.setVisible(false);
-                        BoxBlur blur = new BoxBlur();
-                        blur.setWidth(10);
-                        blur.setHeight(10);
-                        blur.setIterations(3);
-                        PL_HBox.setEffect(blur);
-
-                        int ProgLangIDTEMP = (PLTableView.getItems().size())+1;
-                        String SatırsayısıtoString=Integer.toString(ProgLangIDTEMP);
-                        ObservableList<TableShow> dataList = PLTableView.getItems();
-
-
-                        Label l1 = new Label("Programming Language ID :");
-
-                        TextField l2 = new TextField();
-                        l2.setEditable(false);
-
-                        int PL_id;
-        // Son elemanın nameColumnundan names değerini al
-                        if (dataList.size() > 0) { // veriler varsa
-                                int lastIndex = dataList.size() - 1;
-                                TableColumn<TableShow, String> nameColumn = (TableColumn<TableShow, String>) PLTableView.getColumns().get(1); // nameColumn sütunu
-                                String   lastNamesValue = nameColumn.getCellData(lastIndex); // son elemanın names değeri
-                             //   PLConfig  programminglanguage = DBConnector.getInstance().getPL(lastNamesValue);
-                               // System.out.println(programminglanguage.getId());
-                               // PL_id=(programminglanguage.getId())+1;
-
-                                //l2.setText("");
-                                //l2.setText(Integer.toString((programminglanguage.getId())+1));
-
-                        }
-                        else{
-                                PL_id=ProgLangIDTEMP;
-                                l2.setText(SatırsayısıtoString);}
-
-                        Label ProgLangName = new Label("Programming Langugage Name  : ");
-                        Label ProgLangVersion = new Label("Programming Language Version  : ");
-                        Label ProgLangNeedCompiler = new Label("Need Compiler  : ");
-                        Label ProgLangCompileİns = new Label(" Compile İnstructions : ");
-                        Label ProgLangRunİns = new Label("Run İnstructions  : ");
-                        Label ProgLangVersionCheck = new Label("Version Check command  : ");
-                        Label ProgLangVersionExtractPattern = new Label("Version Extract Pattern  : ");
-
-                        TextField selectedPL_Name=new TextField();
-                        TextField selectedPL_Version = new TextField();
-                        TextField selectedPL_Compiler=new TextField();
-                        TextField selectedPL_Compileİns = new TextField();
-                        TextField selectedPL_Runİns=new TextField();
-                        TextField selectedPL_VersionCheck=new TextField();
-                        TextField selectedPL_VersionExtractPattern=new TextField();
-
-
-                        AddPLGrid.add(l1,0,0);
-                        AddPLGrid.add(ProgLangName,0,1);
-                        AddPLGrid.add(ProgLangVersion,0,2);
-                        AddPLGrid.add(ProgLangNeedCompiler,0,3);
-                        AddPLGrid.add(ProgLangCompileİns,0,4);
-                        AddPLGrid.add(ProgLangRunİns,0,5);
-                        AddPLGrid.add(ProgLangVersionCheck,0,6);
-                        AddPLGrid.add(ProgLangVersionExtractPattern,0,7);
-
-                        AddPLGrid.add(l2,1,0);
-                        AddPLGrid.add(selectedPL_Name ,1,1);
-                        AddPLGrid.add(selectedPL_Version,1,2);
-                        AddPLGrid.add(selectedPL_Compiler,1,3);
-                        AddPLGrid.add(selectedPL_Compileİns,1,4);
-                        AddPLGrid.add(selectedPL_Runİns,1,5);
-                        AddPLGrid.add(selectedPL_VersionCheck,1,6);
-                        AddPLGrid.add(selectedPL_VersionExtractPattern,1,7);
-
-                        selectedPL_Name.textProperty().addListener((observable, oldValue, newValue) -> {
-                                if (Objects.equals(selectedPL_Name.getText(), "Python")){
-                                        selectedPL_Compiler.setText("false");
-                                        selectedPL_Compileİns.setText("null");
-                                        selectedPL_Runİns.setText("python <PARENT_DIRECTORY>/<FILENAME>.py <ARGS>");
-                                        selectedPL_VersionCheck.setText("python --version");
-                                        selectedPL_VersionExtractPattern.setText("Python (\\d+\\.\\d+\\.\\d+)");
-                                } else if (Objects.equals(selectedPL_Name.getText(), "Java")) {
-                                        selectedPL_Compiler.setText("true");
-                                        selectedPL_Compileİns.setText("javac <PARENT_DIRECTORY>/<FILENAME>.java");
-                                        selectedPL_Runİns.setText("java -classpath <PARENT_DIRECTORY> <FILENAME> <ARGS>");
-                                        selectedPL_VersionCheck.setText("java --version");
-                                        selectedPL_VersionExtractPattern.setText("java (\\d+\\.\\d+\\.\\d+\\.\\d+)");
-
-                                }
-                        });
-                        AddPLButton.setOnAction(event -> {
-
-
-                                String TempPL_Name =selectedPL_Name.getText();
-                                String TempPL_Version=selectedPL_Version.getText();
-                                Boolean TempPL_NeedCompiler =Boolean.parseBoolean(selectedPL_Compiler.getText());
-                                String TempPL_Compilerİns=selectedPL_Compileİns.getText();
-                                String TempPL_Runİns=selectedPL_Runİns.getText();
-                                String TempPL_VersionCheck=selectedPL_VersionCheck.getText();
-                        
-                        
-                                String TempPL_VersionExtractPattern=selectedPL_VersionExtractPattern.getText();
-                                String pattern = TempPL_VersionExtractPattern;
-
-
-                                PL_HBox.setEffect(null);
-                                AddPLBox.setVisible(false);
-                                PL_HBox.setVisible(true);
-                                ObservableList<Node> children = AddPLGrid.getChildren();
-                                children.clear();
-                                openPLScreen();
-
-                        });
-                }
 
         @FXML
         public void openImportScreen() {
                 LecturesHBox.setVisible(false);
-                ProjectsHBox.setVisible(false);
-                PL_HBox.setVisible(false);
-                PL_HBox.setEffect(null);
-                AddProjectBox.setVisible(false);
-                DetailedEvaluationHbox.setVisible(false);
+
+
+
+
+
 
                 AddLectureBox.setVisible(false);
-                AddPLBox.setVisible(false);
-                firstEllipses.setVisible(false);
-                secondEllipses.setVisible(false);
-                thirdEllipses.setVisible(true);
-                StudentsHbox.setVisible(false);
-                DetailedEvaluationHbox.setVisible(false);
+
+
+
+
+
+
 
                 FileChooser fileChooser = new FileChooser();
                 fileChooser.setTitle("Open Configuration File");
@@ -3904,18 +3543,18 @@ public class MainController {
         @FXML
         public void openExportScreen() {
                 LecturesHBox.setVisible(false);
-                ProjectsHBox.setVisible(false);
-                PL_HBox.setVisible(false);
-                PL_HBox.setEffect(null);
-                AddProjectBox.setVisible(false);
-                DetailedEvaluationHbox.setVisible(false);
+
+
+
+
+
 
                 AddLectureBox.setVisible(false);
-                AddPLBox.setVisible(false);
-                firstEllipses.setVisible(false);
-                secondEllipses.setVisible(false);
-                thirdEllipses.setVisible(true);
-                StudentsHbox.setVisible(false);
+
+
+
+
+
 
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();
                 JsonArray jsonArray = new JsonArray();
@@ -3949,249 +3588,6 @@ public class MainController {
                 openLectureScreen();
         }
 
-
-
-        @FXML
-        public void openEditProgLang() throws UnsupportedSelectionException {
-                ObservableList<TableShow> ts_list = PLTableView.getSelectionModel().getSelectedItems();
-                try {
-                        TableShow ts = ts_list.get(0);
-                } catch (Exception e) {
-                        AlertUtil.showUnsupportedSelectionAlert();
-                        openPLScreen();
-                        throw new UnsupportedSelectionException("Unsupported Selection");
-
-                }
-
-
-                TableShow ts = ts_list.get(0);
-                pl_id = ts.getId();
-
-                LecturesHBox.setVisible(false);
-                ProjectsHBox.setVisible(false);
-                EditLectureHBox.setVisible(false);
-                EditProgLangHBox.setVisible(true);
-                PL_HBox.setVisible(true);
-                AddProjectBox.setVisible(false);
-                AddPLBox.setVisible(false);
-                AddLectureBox.setVisible(false);
-                ProjectsHBox.setEffect(null);
-                StudentsHbox.setVisible(false);
-
-                BoxBlur blur = new BoxBlur();
-                blur.setWidth(10);
-                blur.setHeight(10);
-                blur.setIterations(3);
-                PL_HBox.setEffect(blur);
-
-                firstEllipses.setVisible(false);
-                secondEllipses.setVisible(false);
-                thirdEllipses.setVisible(false);
-
-
-                Label ProgLangID = new Label("Programming Language ID :");
-                EditProgLangoldvalue.add(ProgLangID, 0, 0);
-
-                Label ProgLangName = new Label("Programming Langugage Name  : ");
-                EditProgLangoldvalue.add(ProgLangName, 0, 1);
-
-                Label ProgLangVersion = new Label("Programming Language Version  : ");
-                EditProgLangoldvalue.add(ProgLangVersion, 0, 2);
-
-                Label ProgLangNeedCompiler = new Label("Need Compiler  : ");
-                EditProgLangoldvalue.add(ProgLangNeedCompiler, 0, 3);
-
-
-                Label ProgLangCompileInstructions = new Label(" Compile İnstructions : ");
-                EditProgLangoldvalue.add(ProgLangCompileInstructions, 0, 4);
-
-
-                Label ProgLangRunInstructions = new Label("Run İnstructions  : ");
-                EditProgLangoldvalue.add(ProgLangRunInstructions, 0, 5);
-
-
-                Label ProgLangVersionCheckCommand = new Label("Version Check command  : ");
-                EditProgLangoldvalue.add(ProgLangVersionCheckCommand, 0, 6);
-
-                Label ProgLangVersionExtractPattern = new Label("Version Extract Pattern  : ");
-                EditProgLangoldvalue.add(ProgLangVersionExtractPattern, 0, 7);
-
-
-                Label NewProgLangID = new Label("Programming Language ID :");
-                EditProgLangnewvalue.add(NewProgLangID, 0, 0);
-
-                Label NewProgLangName = new Label("Programming Langugage Name  : ");
-                EditProgLangnewvalue.add(NewProgLangName, 0, 1);
-
-                Label NewProgLangVersion = new Label("Programming Language Version  : ");
-                EditProgLangnewvalue.add(NewProgLangVersion, 0, 2);
-
-                Label NewProgLangNeedCompiler = new Label("Need Compiler  : ");
-                EditProgLangnewvalue.add(NewProgLangNeedCompiler, 0, 3);
-
-
-                Label NewProgLangCompileInstructions = new Label(" Compile İnstructions : ");
-                EditProgLangnewvalue.add(NewProgLangCompileInstructions, 0, 4);
-
-
-                Label NewProgLangRunInstructions = new Label("Run İnstructions  : ");
-                EditProgLangnewvalue.add(NewProgLangRunInstructions, 0, 5);
-
-
-                Label NewProgLangVersionCheckCommand = new Label("Version Check command  : ");
-                EditProgLangnewvalue.add(NewProgLangVersionCheckCommand, 0, 6);
-
-                Label NewProgLangVersionExtractPattern = new Label("Version Extract Pattern  : ");
-                EditProgLangnewvalue.add(NewProgLangVersionExtractPattern, 0, 7);
-
-
-                TextField NewProgLangNameText = new TextField();
-                EditProgLangnewvalue.add(NewProgLangNameText, 1, 1);
-
-                TextField NewProgLangVersionText = new TextField();
-                EditProgLangnewvalue.add(NewProgLangVersionText, 1, 2);
-
-                TextField NewProgLangNeedCompilerText = new TextField();
-                EditProgLangnewvalue.add(NewProgLangNeedCompilerText, 1, 3);
-
-                TextField NewProgLangCompileInstructionsText = new TextField();
-                EditProgLangnewvalue.add(NewProgLangCompileInstructionsText, 1, 4);
-
-                TextField NewProgLangRunInstructionsText = new TextField();
-                EditProgLangnewvalue.add(NewProgLangRunInstructionsText, 1, 5);
-
-                TextField NewProgLangVersionCheckCommandText = new TextField();
-                EditProgLangnewvalue.add(NewProgLangVersionCheckCommandText, 1, 6);
-
-
-                EditProgLangConfirm.setOnAction(event -> {
-
-
-                        EditLectureHBox.setVisible(false);
-                        EditProgLangHBox.setVisible(false);
-                        LecturesHBox.setVisible(false);
-                        LecturesHBox.setEffect(null);
-                        ProjectsHBox.setVisible(false);
-                        PL_HBox.setVisible(true);
-                        AddProjectBox.setVisible(false);
-                        AddPLBox.setVisible(false);
-                        AddLectureBox.setVisible(false);
-                        ProjectsHBox.setEffect(null);
-                        StudentsHbox.setVisible(false);
-                        firstEllipses.setVisible(false);
-                        secondEllipses.setVisible(true);
-                        thirdEllipses.setVisible(false);
-                        openPLScreen();
-                });
-
-                CloseEditProgLang.setOnAction(event -> {
-                        EditLectureHBox.setVisible(false);
-                        EditProgLangHBox.setVisible(false);
-                        LecturesHBox.setVisible(false);
-                        LecturesHBox.setEffect(null);
-                        ProjectsHBox.setVisible(false);
-                        PL_HBox.setVisible(true);
-                        AddProjectBox.setVisible(false);
-                        AddPLBox.setVisible(false);
-                        AddLectureBox.setVisible(false);
-                        ProjectsHBox.setEffect(null);
-                        StudentsHbox.setVisible(false);
-                        firstEllipses.setVisible(false);
-                        secondEllipses.setVisible(true);
-                        thirdEllipses.setVisible(false);
-                        openPLScreen();
-                });
-
-        }
-
-
-
-
-
-        @FXML
-        private void longDrawer() {
-                drawerStackPane.setPrefWidth(275);
-                drawerShort.setVisible(false);
-                drawerLong.setVisible(true);
-        }
-
-        @FXML
-        private void shortDrawer() {
-                drawerStackPane.setPrefWidth(70);
-                drawerShort.setVisible(true);
-                drawerLong.setVisible(false);
-        }
-
-        @FXML
-        private void toggleDrawer() {
-                if (drawerShort.isVisible()) {
-                        longDrawer();
-                } else
-                        shortDrawer();
-        }
-
-
-        private String splitCamelCase(String input) {
-                Pattern pattern = Pattern.compile("(?<=[a-z])(?=[A-Z])");
-                Matcher matcher = pattern.matcher(input);
-                String result = matcher.replaceAll(" ");
-                return result;
-        }
-
-        private void deleteFolderRecursive(String destinationPath){
-                try {
-                        Path folder = Path.of(destinationPath);
-                        Files.walkFileTree(folder, new SimpleFileVisitor<>() {
-                                @Override
-                                public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                                        Files.delete(file);
-                                        return FileVisitResult.CONTINUE;
-                                }
-                
-                                @Override
-                                public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
-                                        Files.delete(dir);
-                                        return FileVisitResult.CONTINUE;
-                                }
-                        });
-                        
-                        System.out.println("Folder removed successfully.");
-                } catch (IOException e) {
-                        System.out.println("Error removing folder: " + e.getMessage());
-                }
-        }
-
-        private void extractZipFile(File zipFile, File outputDirectory) {
-                try {
-                        ZipFile zip = new ZipFile(zipFile);
-                        Enumeration<? extends ZipEntry> entries = zip.entries();
-                        
-                        byte[] buffer = new byte[1024];
-                        while (entries.hasMoreElements()) {
-                        ZipEntry entry = entries.nextElement();
-                        File entryFile = new File(outputDirectory, entry.getName());
-                        
-                        if (entry.isDirectory()) {
-                                entryFile.mkdirs();
-                        } else {
-                                entryFile.getParentFile().mkdirs();
-                                InputStream inputStream = zip.getInputStream(entry);
-                                FileOutputStream outputStream = new FileOutputStream(entryFile);
-                                int length;
-                                while ((length = inputStream.read(buffer)) > 0) {
-                                outputStream.write(buffer, 0, length);
-                                }
-                                outputStream.close();
-                                inputStream.close();
-                        }
-                        }
-                        
-                        zip.close();
-                        System.out.println("Extraction completed successfully.");
-                } catch (IOException e) {
-                        System.out.println("Error extracting zip file: " + e.getMessage());
-                }
-        }
 
         @FXML
         private void GoHelp() throws IOException {
