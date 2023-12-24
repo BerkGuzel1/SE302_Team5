@@ -526,7 +526,8 @@
                                                       </HBox>
                                                       <HBox prefHeight="201.0" prefWidth="839.0">
                                                          <children>
-                                                            <GridPane fx:id="EditLectureoldvalue" prefHeight="456.0" prefWidth="839.0" HBox.hgrow="SOMETIMES">
+                                                             <ScrollPane prefHeight="3900.0" prefWidth="1600.0">
+                                                             <GridPane fx:id="EditLectureoldvalue" prefHeight="456.0" prefWidth="839.0" HBox.hgrow="SOMETIMES">
                                                               <columnConstraints>
                                                                 <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
                                                                 <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
@@ -535,6 +536,7 @@
                                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
                                                               </rowConstraints>
                                                             </GridPane>
+                                                             </ScrollPane >
                                                          </children>
                                                       </HBox>
                                                       <HBox alignment="BASELINE_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" prefWidth="839.0">
@@ -548,6 +550,7 @@
                                                       </HBox>
                                                       <HBox prefHeight="201.0" prefWidth="839.0">
                                                          <children>
+                                                             <ScrollPane prefHeight="400.0" prefWidth="900.0">
                                                             <GridPane fx:id="EditLecturenewvalue" prefHeight="456.0" prefWidth="839.0" HBox.hgrow="ALWAYS">
                                                                <columnConstraints>
                                                                   <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
@@ -557,6 +560,7 @@
                                                                   <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
                                                                </rowConstraints>
                                                             </GridPane>
+                                                             </ScrollPane>
                                                          </children>
                                                       </HBox>
                                                       <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="48.0" prefWidth="579.0" spacing="100.0" VBox.vgrow="NEVER">

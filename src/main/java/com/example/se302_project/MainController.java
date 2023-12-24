@@ -3112,7 +3112,7 @@ public class MainController {
                 String TempID = Integer.toString(Lecture.getLecture_id());
                 String TempLectureName = Lecture.getLecture_Name();
                 String TempLecturerName = Lecture.getLecturer_Name();
-              /*  String TempLCode = Lecture.getLecture_Code();
+                String TempLCode = Lecture.getLecture_Code();
                 String TempSemester = Lecture.getSemester();
                 String TempTHour = Lecture.getTheory_Hour_In_Week();
                 String TempLHour = Lecture.getApplication_or_Lab_Hour_In_Week();
@@ -3160,7 +3160,177 @@ public class MainController {
                 String TempW14req = Lecture.getWeek14ReqMat();
                 String TempW15req = Lecture.getWeek15ReqMat();
                 String TempCourseNotes = Lecture.getCourseNotesAndTextBooks();
-                String TempSuggested = Lecture.getSuggestedReadingsAndMaterials();*/
+                String TempSuggested = Lecture.getSuggestedReadingsAndMaterials();
+                String TempPartNumb = Lecture.getParticipation_Number();
+                String TempPartWei = Lecture.getParticipation_Weigthing();
+                String TempPartL01 = Lecture.getParticipation_LO1();
+                String TempPartL02 = Lecture.getParticipation_LO2();
+                String TempPartL03 = Lecture.getParticipation_LO3();
+                String TempPartL04 = Lecture.getParticipation_LO4();
+                String TempLabNumb = Lecture.getLaboratory_or_Application_Number();
+                String TempLabWei = Lecture.getLaboratory_or_Application_Weigthing();
+                String TempLabL01 = Lecture.getLaboratory_or_Application_LO1();
+                String TempLabL02 = Lecture.getLaboratory_or_Application_LO2();
+                String TempLabL03 = Lecture.getLaboratory_or_Application_LO3();
+                String TempLabL04 = Lecture.getLaboratory_or_Application_LO4();
+                String TempFWNumb = Lecture.getField_Work_Number();
+                String TempFWWei = Lecture.getField_Work_Weigthing();
+                String TempFWL01 = Lecture.getField_Work_LO1();
+                String TempFWL02 = Lecture.getField_Work_LO2();
+                String TempFWL03 = Lecture.getField_Work_LO3();
+                String TempFWL04 = Lecture.getField_Work_LO4();
+                String TempQuizNumb = Lecture.getQuiz_or_StudioCritique_Number();
+                String TempQuizWei = Lecture.getQuiz_or_StudioCritique_Weigthing();
+                String TempQuizL01 = Lecture.getQuiz_or_StudioCritique_LO1();
+                String TempQuizL02 = Lecture.getQuiz_or_StudioCritique_LO2();
+                String TempQuizL03 = Lecture.getQuiz_or_StudioCritique_LO3();
+                String TempQuizL04 = Lecture.getQuiz_or_StudioCritique_LO4();
+                String TempHWNumb = Lecture.getHomework_or_Assignment_Number();
+                String TempHWWei = Lecture.getHomework_or_Assignment_Weigthing();
+                String TempHWL01 = Lecture.getHomework_or_Assignment_LO1();
+                String TempHWL02 = Lecture.getHomework_or_Assignment_LO2();
+                String TempHWL03 = Lecture.getHomework_or_Assignment_LO3();
+                String TempHWL04 = Lecture.getHomework_or_Assignment_LO4();
+                String TempPresNumb = Lecture.getPresentation_or_Jury_Number();
+                String TempPresWei = Lecture.getPresentation_or_Jury_Weigthing();
+                String TempPresL01 = Lecture.getPresentation_or_Jury_LO1();
+                String TempPresL02 = Lecture.getPresentation_or_Jury_LO2();
+                String TempPresL03 = Lecture.getPresentation_or_Jury_LO3();
+                String TempPresL04 = Lecture.getPresentation_or_Jury_LO4();
+                String TempProjNumb = Lecture.getProject_Number();
+                String TempProjWei = Lecture.getProject_Weigthing();
+                String TempProjL01 = Lecture.getProject_LO1();
+                String TempProjL02 = Lecture.getProject_LO2();
+                String TempProjL03 = Lecture.getProject_LO3();
+                String TempProjL04 = Lecture.getProject_LO4();
+                String TempPortNumb = Lecture.getPortfolio_Number();
+                String TempPortWei = Lecture.getPortfolio_Weigthing();
+                String TempPortL01 = Lecture.getPortfolio_LO1();
+                String TempPortL02 = Lecture.getPortfolio_LO2();
+                String TempPortL03 = Lecture.getPortfolio_LO3();
+                String TempPortL04 = Lecture.getPortfolio_LO4();
+                String TempSEMNumb = Lecture.getSeminar_or_Workshop_Number();
+                String TempSEMWei = Lecture.getSeminar_or_Workshop_Weigthing();
+                String TempSEML01 = Lecture.getSeminar_or_Workshop_LO1();
+                String TempSEML02 = Lecture.getSeminar_or_Workshop_LO2();
+                String TempSEML03 = Lecture.getSeminar_or_Workshop_LO3();
+                String TempSEML04 = Lecture.getSeminar_or_Workshop_LO4();
+                String TempORALNumb = Lecture.getOral_Exam_Number();
+                String TempORALWei = Lecture.getOral_Exam_Weigthing();
+                String TempORALL01 = Lecture.getOral_Exam_LO1();
+                String TempORALL02 = Lecture.getOral_Exam_LO2();
+                String TempORALL03 = Lecture.getOral_Exam_LO3();
+                String TempORALL04 = Lecture.getOral_Exam_LO4();
+                String TempMIDNumb = Lecture.getMidterm_Number();
+                String TempMIDWei = Lecture.getMidterm_Weigthing();
+                String TempMIDL01 = Lecture.getMidterm_LO1();
+                String TempMIDL02 = Lecture.getMidterm_LO2();
+                String TempMIDL03 =Lecture.getMidterm_LO3();
+                String TempMIDL04 = Lecture.getMidterm_LO4();
+                String TempFINALNumb = Lecture.getFinal_Exam_Number();
+                String TempFINALWei = Lecture.getFinal_Exam_Weigthing();
+                String TempFINALL01 = Lecture.getFinal_Exam_LO1();
+                String TempFINALL02 = Lecture.getFinal_Exam_LO2();
+                String TempFINALL03 = Lecture.getFinal_Exam_LO3();
+                String TempFINALL04 = Lecture.getFinal_Exam_LO4();
+                String TempSHOOCNum = Lecture.getStudyHoursoutofClassNum();
+                String TempSHOOCDur = Lecture.getStudyHoursoutofClassDur();
+                String TempSHOOCWork = Lecture.getStudyHoursoutofClassWork();
+                String TempFWNum = Lecture.getFieldWorkNum();
+                String TempFWDur = Lecture.getFieldWorkDur();
+                String TempFWWork = Lecture.getFieldWorkWork();
+                String TempQuizNum = Lecture.getQuizNum();
+                String TempQuizDur = Lecture.getQuizDur();
+                String TempQuizWork = Lecture.getQuizWork();
+                String TempHWNum = Lecture.getHWNum();
+                String TempHWDur = Lecture.getHWDur();
+                String TempHWWork = Lecture.getHWWork();
+                String TempPresentationNum = Lecture.getPresentationNum();
+                String TempPresentationDur = Lecture.getPresentationDur();
+                String TempPresentationWork = Lecture.getPresentationWork();
+                String TempProjectNum = Lecture.getProjectNum();
+                String TempProjectDur = Lecture.getProjectDur();
+                String TempProjectWork = Lecture.getProjectWork();
+                String TempPortfolioNum = Lecture.getPortfolioNum();
+                String TempPortfolioDur = Lecture.getPortfolioDur();
+                String TempPortfolioWork= Lecture.getPortfolioWork();
+                String TempSeminarNum = Lecture.getSeminarNum();
+                String TempSeminarDur = Lecture.getSeminarDur();
+                String TempSeminarWork = Lecture.getSeminarWork();
+                String TempOralNum = Lecture.getOralExamNum();
+                String TempOralDur = Lecture.getOralExamDur();
+                String TempOralWork = Lecture.getOralExamWork();
+                String TempMidtermNum = Lecture.getMidtermNum();
+                String TempMidtermDur = Lecture.getMidterDur();
+                String TempMidtermWork = Lecture.getMidterWork();
+                String TempFinalNum = Lecture.getFinalExamNum();
+                String TempFinalDur = Lecture.getFinalExamDur();
+                String TempFinalWork = Lecture.getFinalExamWork();
+                String Tempoutcome1_1 = Lecture.getOutCome1_1();
+                String Tempoutcome1_2 = Lecture.getOutCome1_2();
+                String Tempoutcome1_3 = Lecture.getOutCome1_3();
+                String Tempoutcome1_4 = Lecture.getOutCome1_4();
+                String Tempoutcome1_5 = Lecture.getOutCome1_5();
+                String Tempoutcome2_1 = Lecture.getOutCome2_1();
+                String Tempoutcome2_2 = Lecture.getOutCome2_2();
+                String Tempoutcome2_3 = Lecture.getOutCome2_3();
+                String Tempoutcome2_4 = Lecture.getOutCome2_4();
+                String Tempoutcome2_5 = Lecture.getOutCome2_5();
+                String Tempoutcome3_1 = Lecture.getOutCome3_1();
+                String Tempoutcome3_2 = Lecture.getOutCome3_2();
+                String Tempoutcome3_3 = Lecture.getOutCome3_3();
+                String Tempoutcome3_4 = Lecture.getOutCome3_4();
+                String Tempoutcome3_5 = Lecture.getOutCome3_5();
+                String Tempoutcome4_1 = Lecture.getOutCome4_1();
+                String Tempoutcome4_2 = Lecture.getOutCome4_2();
+                String Tempoutcome4_3 = Lecture.getOutCome4_3();
+                String Tempoutcome4_4 = Lecture.getOutCome4_4();
+                String Tempoutcome4_5 = Lecture.getOutCome4_5();
+                String Tempoutcome5_1 = Lecture.getOutCome5_1();
+                String Tempoutcome5_2 = Lecture.getOutCome5_2();
+                String Tempoutcome5_3 = Lecture.getOutCome5_3();
+                String Tempoutcome5_4 = Lecture.getOutCome5_4();
+                String Tempoutcome5_5 = Lecture.getOutCome5_5();
+                String Tempoutcome6_1 = Lecture.getOutCome6_1();
+                String Tempoutcome6_2 = Lecture.getOutCome6_2();
+                String Tempoutcome6_3 = Lecture.getOutCome6_3();
+                String Tempoutcome6_4 = Lecture.getOutCome6_4();
+                String Tempoutcome6_5 = Lecture.getOutCome6_5();
+                String Tempoutcome7_1 = Lecture.getOutCome7_1();
+                String Tempoutcome7_2 = Lecture.getOutCome7_2();
+                String Tempoutcome7_3 = Lecture.getOutCome7_3();
+                String Tempoutcome7_4 = Lecture.getOutCome7_4();
+                String Tempoutcome7_5 = Lecture.getOutCome7_5();
+                String Tempoutcome8_1 = Lecture.getOutCome8_1();
+                String Tempoutcome8_2 = Lecture.getOutCome8_2();
+                String Tempoutcome8_3 = Lecture.getOutCome8_3();
+                String Tempoutcome8_4 = Lecture.getOutCome8_4();
+                String Tempoutcome8_5 = Lecture.getOutCome8_5();
+                String Tempoutcome9_1 = Lecture.getOutCome9_1();
+                String Tempoutcome9_2 = Lecture.getOutCome9_2();
+                String Tempoutcome9_3 = Lecture.getOutCome9_3();
+                String Tempoutcome9_4 = Lecture.getOutCome9_4();
+                String Tempoutcome9_5 = Lecture.getOutCome9_5();
+                String Tempoutcome10_1 = Lecture.getOutCome10_1();
+                String Tempoutcome10_2 = Lecture.getOutCome10_2();
+                String Tempoutcome10_3 = Lecture.getOutCome10_3();
+                String Tempoutcome10_4 = Lecture.getOutCome10_4();
+                String Tempoutcome10_5 = Lecture.getOutCome10_5();
+                String Tempoutcome11_1 = Lecture.getOutCome11_1();
+                String Tempoutcome11_2 = Lecture.getOutCome11_2();
+                String Tempoutcome11_3 = Lecture.getOutCome11_3();
+                String Tempoutcome11_4 = Lecture.getOutCome11_4();
+                String Tempoutcome11_5 = Lecture.getOutCome11_5();
+                String Tempoutcome12_1 = Lecture.getOutCome12_1();
+                String Tempoutcome12_2 = Lecture.getOutCome12_2();
+                String Tempoutcome12_3 = Lecture.getOutCome12_3();
+                String Tempoutcome12_4 = Lecture.getOutCome12_4();
+                String Tempoutcome12_5 = Lecture.getOutCome12_5();
+                String Tempoutcome13_1 = Lecture.getOutCome13_1();
+                String Tempoutcome13_2 = Lecture.getOutCome13_2();
+                String Tempoutcome13_3 = Lecture.getOutCome13_3();
+                String Tempoutcome13_4 = Lecture.getOutCome13_4();
+                String Tempoutcome13_5 = Lecture.getOutCome13_5();
 
                 Label LectureID = new Label("Lecture ID :");
                 EditLectureoldvalue.add(LectureID, 0, 0);
@@ -3171,7 +3341,7 @@ public class MainController {
                 Label lecturerNameLabel = new Label("Lecturer's Name:");
                 EditLectureoldvalue.add(lecturerNameLabel, 0, 2);
 
-                /*Label lectureCodeLabel = new Label("Lecture Code:");
+                Label lectureCodeLabel = new Label("Lecture Code:");
                 EditLectureoldvalue.add(lectureCodeLabel, 0, 3);
 
                 Label semesterLabel = new Label("Semester:");
@@ -3268,56 +3438,567 @@ public class MainController {
                 EditLectureoldvalue.add(week15SubjectsLabel, 0, 34);
 
                 Label week1ReqMatLabel = new Label("Week 1 Required Materials:");
-                EditLectureoldvalue.add(week1ReqMatLabel, 2, 20);
+                EditLectureoldvalue.add(week1ReqMatLabel, 0, 35);
 
                 Label week2ReqMatLabel = new Label("Week 2 Required Materials:");
-                EditLectureoldvalue.add(week2ReqMatLabel, 2, 21);
+                EditLectureoldvalue.add(week2ReqMatLabel, 0, 36);
 
                 Label week3ReqMatLabel = new Label("Week 3 Required Materials:");
-                EditLectureoldvalue.add(week3ReqMatLabel, 2, 22);
+                EditLectureoldvalue.add(week3ReqMatLabel, 0, 37);
 
                 Label week4ReqMatLabel = new Label("Week 4 Required Materials:");
-                EditLectureoldvalue.add(week4ReqMatLabel, 2, 23);
+                EditLectureoldvalue.add(week4ReqMatLabel, 0, 38);
 
                 Label week5ReqMatLabel = new Label("Week 5 Required Materials:");
-                EditLectureoldvalue.add(week5ReqMatLabel, 2, 24);
+                EditLectureoldvalue.add(week5ReqMatLabel, 0, 39);
 
                 Label week6ReqMatLabel = new Label("Week 6 Required Materials:");
-                EditLectureoldvalue.add(week6ReqMatLabel, 2, 25);
+                EditLectureoldvalue.add(week6ReqMatLabel, 0, 40);
 
                 Label week7ReqMatLabel = new Label("Week 7 Required Materials:");
-                EditLectureoldvalue.add(week7ReqMatLabel, 2, 26);
+                EditLectureoldvalue.add(week7ReqMatLabel, 0, 41);
 
                 Label week8ReqMatLabel = new Label("Week 8 Required Materials:");
-                EditLectureoldvalue.add(week8ReqMatLabel, 2, 27);
+                EditLectureoldvalue.add(week8ReqMatLabel, 0, 42);
 
                 Label week9ReqMatLabel = new Label("Week 9 Required Materials:");
-                EditLectureoldvalue.add(week9ReqMatLabel, 2, 28);
+                EditLectureoldvalue.add(week9ReqMatLabel, 0, 43);
 
                 Label week10ReqMatLabel = new Label("Week 10 Required Materials:");
-                EditLectureoldvalue.add(week10ReqMatLabel, 2, 29);
+                EditLectureoldvalue.add(week10ReqMatLabel, 0, 44);
 
                 Label week11ReqMatLabel = new Label("Week 11 Required Materials:");
-                EditLectureoldvalue.add(week11ReqMatLabel, 2, 30);
+                EditLectureoldvalue.add(week11ReqMatLabel, 0, 45);
 
                 Label week12ReqMatLabel = new Label("Week 12 Required Materials:");
-                EditLectureoldvalue.add(week12ReqMatLabel, 2, 31);
+                EditLectureoldvalue.add(week12ReqMatLabel, 0,46 );
 
                 Label week13ReqMatLabel = new Label("Week 13 Required Materials:");
-                EditLectureoldvalue.add(week13ReqMatLabel, 2, 32);
+                EditLectureoldvalue.add(week13ReqMatLabel, 0, 47);
 
                 Label week14ReqMatLabel = new Label("Week 14 Required Materials:");
-                EditLectureoldvalue.add(week14ReqMatLabel, 2, 33);
+                EditLectureoldvalue.add(week14ReqMatLabel, 0, 48);
 
                 Label week15ReqMatLabel = new Label("Week 15 Required Materials:");
-                EditLectureoldvalue.add(week15ReqMatLabel, 2, 34);
+                EditLectureoldvalue.add(week15ReqMatLabel, 0, 49);
 
                 Label courseNotesAndTextBooksLabel = new Label("Course Notes and Textbooks:");
-                EditLectureoldvalue.add(courseNotesAndTextBooksLabel, 0, 35);
+                EditLectureoldvalue.add(courseNotesAndTextBooksLabel, 0, 50);
 
                 Label suggestedReadingsAndMaterialsLabel = new Label("Suggested Readings and Materials:");
-                EditLectureoldvalue.add(suggestedReadingsAndMaterialsLabel,0 , 36);*/
+                EditLectureoldvalue.add(suggestedReadingsAndMaterialsLabel, 0, 51);
 
+                Label participationNumberLabel = new Label("Participation Number:");
+                EditLectureoldvalue.add(participationNumberLabel, 0, 52);
+
+                Label  participationWeiLabel= new Label("Participation Weighting:");
+                EditLectureoldvalue.add(participationWeiLabel, 0, 53);
+
+                Label  participation01Label= new Label("Participation LO1:");
+                EditLectureoldvalue.add(participation01Label, 0, 54);
+
+                Label participation02Label = new Label("Participation LO2:");
+                EditLectureoldvalue.add(participation02Label, 0, 55);
+
+                Label participation03Label = new Label("Participation LO3:");
+                EditLectureoldvalue.add(participation03Label, 0, 56);
+
+                Label  participation04Label= new Label("Participation LO4:");
+                EditLectureoldvalue.add(participation04Label, 0, 57);
+
+                Label labOrApplicationNumberLabel = new Label("Laboratory Number:");
+                EditLectureoldvalue.add(labOrApplicationNumberLabel, 0, 58);
+
+                Label  labOrApplicationWeiLabel= new Label("Laboratory Weighting:");
+                EditLectureoldvalue.add(labOrApplicationWeiLabel, 0, 59);
+
+                Label labOrApplication01Label = new Label("Laboratory LO1:");
+                EditLectureoldvalue.add(labOrApplication01Label, 0, 60);
+
+                Label labOrApplication02Label = new Label("Laboratory LO2:");
+                EditLectureoldvalue.add(labOrApplication02Label, 0, 61);
+
+                Label labOrApplication03Label = new Label("Laboratory LO3:");
+                EditLectureoldvalue.add(labOrApplication03Label, 0, 62);
+
+                Label labOrApplication04Label = new Label("Laboratory LO4:");
+                EditLectureoldvalue.add(labOrApplication04Label, 0, 63);
+
+                Label fieldWorkNumberLabel = new Label("Field Work Number:");
+                EditLectureoldvalue.add(fieldWorkNumberLabel, 0, 64);
+
+                Label FieldWorkWeiLabel = new Label("Field Work Weighting");
+                EditLectureoldvalue.add(FieldWorkWeiLabel, 0, 65);
+
+                Label FieldWork01Label = new Label("Field Work LO1:");
+                EditLectureoldvalue.add(FieldWork01Label, 0, 66);
+
+                Label FieldWork02Label = new Label("Field Work LO2:");
+                EditLectureoldvalue.add(FieldWork02Label, 0, 67);
+
+                Label FieldWork03Label = new Label("Field Work LO3:");
+                EditLectureoldvalue.add(FieldWork03Label, 0, 68);
+
+                Label FieldWork04Label = new Label("Field Work LO4:");
+                EditLectureoldvalue.add(FieldWork04Label, 0, 69);
+
+                Label quizOrStudioCritiqueNumberLabel = new Label("Quiz Number:");
+                EditLectureoldvalue.add(quizOrStudioCritiqueNumberLabel, 0, 70);
+
+                Label quizOrStudioCritiqueWeiLabel = new Label("Quiz Weighting:");
+                EditLectureoldvalue.add(quizOrStudioCritiqueWeiLabel, 0,71);
+
+                Label quizOrStudioCritique01Label = new Label("Quiz LO1:");
+                EditLectureoldvalue.add(quizOrStudioCritique01Label, 0, 72);
+
+                Label quizOrStudioCritique02Label = new Label("Quiz LO2:");
+                EditLectureoldvalue.add(quizOrStudioCritique02Label, 0, 73);
+
+                Label quizOrStudioCritique03Label = new Label("Quiz LO3:");
+                EditLectureoldvalue.add(quizOrStudioCritique03Label, 0, 74);
+
+                Label quizOrStudioCritique04Label = new Label("Quiz LO4:");
+                EditLectureoldvalue.add(quizOrStudioCritique04Label, 0, 75);
+
+                Label homeworkOrAssignmentNumberLabel = new Label("Homework Number:");
+                EditLectureoldvalue.add(homeworkOrAssignmentNumberLabel, 0, 76);
+
+                Label homeworkOrAssignmentWeiLabel = new Label("Homework Weighting:");
+                EditLectureoldvalue.add(homeworkOrAssignmentWeiLabel, 0, 77);
+
+                Label homeworkOrAssignment01Label = new Label("Homework LO1:");
+                EditLectureoldvalue.add(homeworkOrAssignment01Label, 0, 78);
+
+                Label homeworkOrAssignment02Label = new Label("Homework LO2:");
+                EditLectureoldvalue.add(homeworkOrAssignment02Label, 0, 79);
+
+                Label homeworkOrAssignment03Label = new Label("Homework LO3:");
+                EditLectureoldvalue.add(homeworkOrAssignment03Label, 0, 80);
+
+                Label homeworkOrAssignment04Label = new Label("Homework LO4:");
+                EditLectureoldvalue.add(homeworkOrAssignment04Label, 0, 81);
+
+                Label presentationOrJuryNumberLabel = new Label("Presentation Number:");
+                EditLectureoldvalue.add(presentationOrJuryNumberLabel, 0, 82);
+
+                Label presentationOrJuryWeiLabel = new Label("Presentation Weighting:");
+                EditLectureoldvalue.add(presentationOrJuryWeiLabel, 0, 83);
+
+                Label presentationOrJury01Label = new Label("Presentation LO1:");
+                EditLectureoldvalue.add(presentationOrJury01Label, 0, 84);
+
+                Label presentationOrJury02Label = new Label("Presentation LO2:");
+                EditLectureoldvalue.add(presentationOrJury02Label, 0, 85);
+
+                Label presentationOrJury03Label = new Label("Presentation LO3:");
+                EditLectureoldvalue.add(presentationOrJury03Label, 0, 86);
+
+                Label presentationOrJury04Label = new Label("Presentation LO4:");
+                EditLectureoldvalue.add(presentationOrJury04Label, 0, 87);
+
+                Label projectNumberLabel = new Label("Project Number:");
+                EditLectureoldvalue.add(projectNumberLabel, 0, 88);
+
+                Label projectWeiLabel = new Label("Project Weighting:");
+                EditLectureoldvalue.add(projectWeiLabel, 0, 89);
+
+                Label project01Label = new Label("Project LO1:");
+                EditLectureoldvalue.add(project01Label, 0, 90);
+
+                Label project02Label = new Label("Project LO2:");
+                EditLectureoldvalue.add(project02Label, 0, 91);
+
+                Label project03Label = new Label("Project LO3:");
+                EditLectureoldvalue.add(project03Label, 0, 92);
+
+                Label project04Label = new Label("Project LO4:");
+                EditLectureoldvalue.add(project04Label, 0, 93);
+
+                Label portfolioNumberLabel = new Label("Portfolio Number:");
+                EditLectureoldvalue.add(portfolioNumberLabel, 0, 94);
+
+                Label portfolioWeiLabel = new Label("Portfolio Weighting:");
+                EditLectureoldvalue.add(portfolioWeiLabel, 0, 95);
+
+                Label portfolio01Label = new Label("Portfolio LO1:");
+                EditLectureoldvalue.add(portfolio01Label, 0, 96);
+
+                Label portfolio02Label = new Label("Portfolio LO2:");
+                EditLectureoldvalue.add(portfolio02Label, 0, 97);
+
+                Label portfolio03Label = new Label("Portfolio LO3:");
+                EditLectureoldvalue.add(portfolio03Label, 0, 98);
+
+                Label portfolio04Label = new Label("Portfolio LO4:");
+                EditLectureoldvalue.add(portfolio04Label, 0, 99);
+
+                Label seminarNumberLabel = new Label("Seminar Number:");
+                EditLectureoldvalue.add(seminarNumberLabel, 0, 100);
+
+                Label seminarWeiLabel = new Label("Seminar Weighting:");
+                EditLectureoldvalue.add(seminarWeiLabel, 0, 101);
+
+                Label seminar01Label = new Label("Seminar LO1:");
+                EditLectureoldvalue.add(seminar01Label, 0, 102);
+
+                Label seminar02Label = new Label("Seminar LO2:");
+                EditLectureoldvalue.add(seminar02Label, 0, 103);
+
+                Label seminar03Label = new Label("Seminar LO3:");
+                EditLectureoldvalue.add(seminar03Label, 0, 104);
+
+                Label seminar04Label = new Label("Seminar LO4:");
+                EditLectureoldvalue.add(seminar04Label, 0, 105);
+
+                Label oralNumberLabel = new Label("Oral Exam Number:");
+                EditLectureoldvalue.add(oralNumberLabel, 0, 106);
+
+                Label oralWeiLabel = new Label("Oral Exam Weighting:");
+                EditLectureoldvalue.add(oralWeiLabel, 0, 107);
+
+                Label oral01Label = new Label("Oral Exam LO1:");
+                EditLectureoldvalue.add(oral01Label, 0, 108);
+
+                Label oral02Label = new Label("Oral Exam LO2:");
+                EditLectureoldvalue.add(oral02Label, 0, 109);
+
+                Label oral03Label = new Label("Oral Exam LO3:");
+                EditLectureoldvalue.add(oral03Label, 0, 110);
+
+                Label oral04Label = new Label("Oral Exam LO4:");
+                EditLectureoldvalue.add(oral04Label, 0, 111);
+
+                Label midtermNumberLabel = new Label("Midterm Number:");
+                EditLectureoldvalue.add(midtermNumberLabel, 0, 112);
+
+                Label midtermWeiLabel = new Label("Midterm Weighting:");
+                EditLectureoldvalue.add(midtermWeiLabel, 0, 113);
+
+                Label midterm01Label = new Label("Midterm LO1:");
+                EditLectureoldvalue.add(midterm01Label, 0, 114);
+
+                Label midterm02Label = new Label("Midterm LO2:");
+                EditLectureoldvalue.add(midterm02Label, 0, 115);
+
+                Label midterm03Label = new Label("Midterm LO3:");
+                EditLectureoldvalue.add(midterm03Label, 0, 116);
+
+                Label midterm04Label = new Label("Midterm LO4:");
+                EditLectureoldvalue.add(midterm04Label, 0, 117);
+
+                Label finalNumberLabel = new Label("Final Exam Number:");
+                EditLectureoldvalue.add(finalNumberLabel, 0, 118);
+
+                Label finalWeiLabel = new Label("Final Exam Weighting:");
+                EditLectureoldvalue.add(finalWeiLabel, 0, 119);
+
+                Label final01Label = new Label("Final Exam LO1:");
+                EditLectureoldvalue.add(final01Label, 0, 120);
+
+                Label final02Label = new Label("Final Exam LO2:");
+                EditLectureoldvalue.add(final02Label, 0, 121);
+
+                Label final03Label = new Label("Final Exam LO3:");
+                EditLectureoldvalue.add(final03Label, 0, 122);
+
+                Label final04Label = new Label("Final Exam LO4:");
+                EditLectureoldvalue.add(final04Label, 0, 123);
+
+                Label StudyHoursoutofClassNumLabel = new Label("Study Hours out of Class Number:");
+                EditLectureoldvalue.add(StudyHoursoutofClassNumLabel, 0, 125);
+
+                Label StudyHoursoutofClassDurLabel = new Label("Study Hours out of Class Duration:");
+                EditLectureoldvalue.add(StudyHoursoutofClassDurLabel, 0, 126);
+
+                Label StudyHoursoutofClassWorkLabel = new Label("Study Hours out of Class Workload:");
+                EditLectureoldvalue.add(StudyHoursoutofClassWorkLabel, 0, 127);
+
+                Label FieldWorkNumLabel = new Label("Field Work Number");
+                EditLectureoldvalue.add(FieldWorkNumLabel, 0, 128);
+
+                Label FieldWorkDurLabel = new Label("Field Work Duration");
+                EditLectureoldvalue.add(FieldWorkDurLabel, 0, 129);
+
+                Label FieldWorkWorkLabel = new Label("Field Work Workload");
+                EditLectureoldvalue.add(FieldWorkWorkLabel, 0, 130);
+
+                Label QuizNumLabel = new Label("Quiz/Studio Critique Number:");
+                EditLectureoldvalue.add(QuizNumLabel, 0, 131);
+
+                Label QuizDurLabel = new Label("Quiz/Studio Critique Duration:");
+                EditLectureoldvalue.add(QuizDurLabel, 0, 132);
+
+                Label QuizWorkLabel = new Label("Quiz/Studio Critique Workload:");
+                EditLectureoldvalue.add(QuizWorkLabel, 0, 133);
+
+                Label HWNumLabel = new Label("Homework/Assignments Number:");
+                EditLectureoldvalue.add(HWNumLabel, 0, 134);
+
+                Label HWDurLabel = new Label("Homework/Assignments Duration:");
+                EditLectureoldvalue.add(HWDurLabel, 0, 135);
+
+                Label HWWorkLabel = new Label("Homework/Assignments Workload:");
+                EditLectureoldvalue.add(HWWorkLabel, 0, 136);
+
+                Label PresentationNumLabel = new Label("Presentation/Jury Number:");
+                EditLectureoldvalue.add(PresentationNumLabel, 0, 137);
+
+                Label PresentationDurLabel = new Label("Presentation/Jury Duration:");
+                EditLectureoldvalue.add(PresentationDurLabel, 0, 138);
+
+                Label PresentationWorkLabel = new Label("Presentation/Jury Workload:");
+                EditLectureoldvalue.add(PresentationWorkLabel, 0, 139);
+
+                Label ProjectNumLabel = new Label("Project Number:");
+                EditLectureoldvalue.add(ProjectNumLabel, 0, 140);
+
+                Label ProjectDurLabel = new Label("Project Duration:");
+                EditLectureoldvalue.add(ProjectDurLabel, 0, 141);
+
+                Label ProjectWorkLabel = new Label("Project Workload:");
+                EditLectureoldvalue.add(ProjectWorkLabel, 0, 142);
+
+                Label PortfolioNumLabel = new Label("Portfolio Number:");
+                EditLectureoldvalue.add(PortfolioNumLabel, 0, 143);
+
+                Label PortfolioDurLabel = new Label("Portfolio Duration:");
+                EditLectureoldvalue.add(PortfolioDurLabel, 0, 144);
+
+                Label PortfolioWorkLabel = new Label("Portfolio Workload:");
+                EditLectureoldvalue.add(PortfolioWorkLabel, 0, 145);
+
+                Label SeminarNumLabel = new Label("Seminar/Workshop Number:");
+                EditLectureoldvalue.add(SeminarNumLabel, 0,146);
+
+                Label SeminarDurLabel = new Label("Seminar/Workshop Duration:");
+                EditLectureoldvalue.add(SeminarDurLabel, 0,147);
+
+                Label SeminarWorkLabel = new Label("Seminar/Workshop Workload:");
+                EditLectureoldvalue.add(SeminarWorkLabel, 0,148);
+
+                Label OralExamNumLabel = new Label("Oral Exam Number:");
+                EditLectureoldvalue.add(OralExamNumLabel, 0, 149);
+
+                Label OralExamDurLabel = new Label("Oral Exam Duration:");
+                EditLectureoldvalue.add(OralExamDurLabel, 0, 150);
+
+                Label OralExamWorkLabel = new Label("Oral Exam Workload:");
+                EditLectureoldvalue.add(OralExamWorkLabel, 0, 151);
+
+                Label MidtermNumLabel = new Label("Midterm Number: ");
+                EditLectureoldvalue.add(MidtermNumLabel, 0, 152);
+
+                Label MidtermDurLabel = new Label("Midterm Duration:");
+                EditLectureoldvalue.add(MidtermDurLabel, 0, 153);
+
+                Label MidtermWorkLabel = new Label("Midterm Workload:");
+                EditLectureoldvalue.add(MidtermWorkLabel, 0, 154);
+
+                Label FinalNumLabel = new Label("Final Exam Number:");
+                EditLectureoldvalue.add(FinalNumLabel, 0, 155);
+
+                Label FinalDurLabel = new Label("Final Exam Duration:");
+                EditLectureoldvalue.add(FinalDurLabel, 0, 156);
+
+                Label FinalWorkLabel = new Label("Final Exam Workload:");
+                EditLectureoldvalue.add(FinalWorkLabel, 0, 157);
+
+                Label  outcome1_1Label= new Label("Outcome 1_1:");
+                EditLectureoldvalue.add(outcome1_1Label, 0, 159);
+
+                Label outcome1_2Label = new Label("Outcome 1_2:");
+                EditLectureoldvalue.add(outcome1_2Label, 0,  160);
+
+                Label outcome1_3Label = new Label("Outcome 1_3:");
+                EditLectureoldvalue.add(outcome1_3Label, 0, 161);
+
+                Label  outcome1_4Label= new Label("Outcome 1_4:");
+                EditLectureoldvalue.add(outcome1_4Label, 0, 162);
+
+                Label  outcome1_5Label= new Label("Outcome 1_5:");
+                EditLectureoldvalue.add(outcome1_5Label, 0, 163);
+
+                Label  outcome2_1Label= new Label("Outcome 2_1:");
+                EditLectureoldvalue.add(outcome2_1Label, 0, 164);
+
+                Label outcome2_2Label = new Label("Outcome 2_2:");
+                EditLectureoldvalue.add(outcome2_2Label, 0,  165);
+
+                Label outcome2_3Label = new Label("Outcome 2_3:");
+                EditLectureoldvalue.add(outcome2_3Label, 0, 166);
+
+                Label  outcome2_4Label= new Label("Outcome 2_4:");
+                EditLectureoldvalue.add(outcome2_4Label, 0, 167);
+
+                Label  outcome2_5Label= new Label("Outcome 2_5:");
+                EditLectureoldvalue.add(outcome2_5Label, 0, 168);
+
+                Label  outcome3_1Label= new Label("Outcome 3_1:");
+                EditLectureoldvalue.add(outcome3_1Label, 0, 169);
+
+                Label outcome3_2Label = new Label("Outcome 3_2:");
+                EditLectureoldvalue.add(outcome3_2Label, 0,  170);
+
+                Label outcome3_3Label = new Label("Outcome 3_3:");
+                EditLectureoldvalue.add(outcome3_3Label, 0, 171);
+
+                Label  outcome3_4Label= new Label("Outcome 3_4:");
+                EditLectureoldvalue.add(outcome3_4Label, 0, 172);
+
+                Label  outcome3_5Label= new Label("Outcome 3_5:");
+                EditLectureoldvalue.add(outcome3_5Label, 0, 173);
+
+                Label  outcome4_1Label= new Label("Outcome 4_1:");
+                EditLectureoldvalue.add(outcome4_1Label, 0, 174);
+
+                Label outcome4_2Label = new Label("Outcome 4_2:");
+                EditLectureoldvalue.add(outcome4_2Label, 0,  175);
+
+                Label outcome4_3Label = new Label("Outcome 4_3:");
+                EditLectureoldvalue.add(outcome4_3Label, 0, 176);
+
+                Label  outcome4_4Label= new Label("Outcome 4_4:");
+                EditLectureoldvalue.add(outcome4_4Label, 0, 177);
+
+                Label  outcome4_5Label= new Label("Outcome 4_5:");
+                EditLectureoldvalue.add(outcome4_5Label, 0, 178);
+
+                Label  outcome5_1Label= new Label("Outcome 5_1:");
+                EditLectureoldvalue.add(outcome5_1Label, 0, 179);
+
+                Label outcome5_2Label = new Label("Outcome 5_2:");
+                EditLectureoldvalue.add(outcome5_2Label, 0,  180);
+
+                Label outcome5_3Label = new Label("Outcome 5_3:");
+                EditLectureoldvalue.add(outcome5_3Label, 0, 181);
+
+                Label  outcome5_4Label= new Label("Outcome 5_4:");
+                EditLectureoldvalue.add(outcome5_4Label, 0, 182);
+
+                Label  outcome5_5Label= new Label("Outcome 5_5:");
+                EditLectureoldvalue.add(outcome5_5Label, 0, 183);
+
+                Label  outcome6_1Label= new Label("Outcome 6_1:");
+                EditLectureoldvalue.add(outcome6_1Label, 0, 184);
+
+                Label outcome6_2Label = new Label("Outcome 6_2:");
+                EditLectureoldvalue.add(outcome6_2Label, 0,  185);
+
+                Label outcome6_3Label = new Label("Outcome 6_3:");
+                EditLectureoldvalue.add(outcome6_3Label, 0, 186);
+
+                Label  outcome6_4Label= new Label("Outcome 6_4:");
+                EditLectureoldvalue.add(outcome6_4Label, 0, 187);
+
+                Label  outcome6_5Label= new Label("Outcome 6_5:");
+                EditLectureoldvalue.add(outcome6_5Label, 0, 188);
+
+                Label  outcome7_1Label= new Label("Outcome 7_1:");
+                EditLectureoldvalue.add(outcome7_1Label, 0, 189);
+
+                Label outcome7_2Label = new Label("Outcome 7_2:");
+                EditLectureoldvalue.add(outcome7_2Label, 0,  190);
+
+                Label outcome7_3Label = new Label("Outcome 7_3:");
+                EditLectureoldvalue.add(outcome7_3Label, 0, 191);
+
+                Label  outcome7_4Label= new Label("Outcome 7_4:");
+                EditLectureoldvalue.add(outcome7_4Label, 0, 192);
+
+                Label  outcome7_5Label= new Label("Outcome 7_5:");
+                EditLectureoldvalue.add(outcome7_5Label, 0, 193);
+
+                Label  outcome8_1Label= new Label("Outcome 8_1:");
+                EditLectureoldvalue.add(outcome8_1Label, 0, 194);
+
+                Label outcome8_2Label = new Label("Outcome 8_2:");
+                EditLectureoldvalue.add(outcome8_2Label, 0,  195);
+
+                Label outcome8_3Label = new Label("Outcome 8_3:");
+                EditLectureoldvalue.add(outcome8_3Label, 0, 196);
+
+                Label  outcome8_4Label= new Label("Outcome 8_4:");
+                EditLectureoldvalue.add(outcome8_4Label, 0, 197);
+
+                Label  outcome8_5Label= new Label("Outcome 8_5:");
+                EditLectureoldvalue.add(outcome8_5Label, 0, 198);
+
+                Label  outcome9_1Label= new Label("Outcome 9_1:");
+                EditLectureoldvalue.add(outcome9_1Label, 0, 199);
+
+                Label outcome9_2Label = new Label("Outcome 9_2:");
+                EditLectureoldvalue.add(outcome9_2Label, 0,  200);
+
+                Label outcome9_3Label = new Label("Outcome 9_3:");
+                EditLectureoldvalue.add(outcome9_3Label, 0, 201);
+
+                Label  outcome9_4Label= new Label("Outcome 9_4:");
+                EditLectureoldvalue.add(outcome9_4Label, 0, 202);
+
+                Label  outcome9_5Label= new Label("Outcome 9_5:");
+                EditLectureoldvalue.add(outcome9_5Label, 0, 203);
+
+                Label  outcome10_1Label= new Label("Outcome 10_1:");
+                EditLectureoldvalue.add(outcome10_1Label, 0, 204);
+
+                Label outcome10_2Label = new Label("Outcome 10_2:");
+                EditLectureoldvalue.add(outcome10_2Label, 0,  205);
+
+                Label outcome10_3Label = new Label("Outcome 10_3:");
+                EditLectureoldvalue.add(outcome10_3Label, 0, 206);
+
+                Label  outcome10_4Label= new Label("Outcome 10_4:");
+                EditLectureoldvalue.add(outcome10_4Label, 0, 207);
+
+                Label  outcome10_5Label= new Label("Outcome 10_5:");
+                EditLectureoldvalue.add(outcome10_5Label, 0, 208);
+
+                Label  outcome11_1Label= new Label("Outcome 11_1:");
+                EditLectureoldvalue.add(outcome11_1Label, 0, 209);
+
+                Label outcome11_2Label = new Label("Outcome 11_2:");
+                EditLectureoldvalue.add(outcome11_2Label, 0,  210);
+
+                Label outcome11_3Label = new Label("Outcome 11_3:");
+                EditLectureoldvalue.add(outcome11_3Label, 0, 211);
+
+                Label  outcome11_4Label= new Label("Outcome 11_4:");
+                EditLectureoldvalue.add(outcome11_4Label, 0, 212);
+
+                Label  outcome11_5Label= new Label("Outcome 11_5:");
+                EditLectureoldvalue.add(outcome11_5Label, 0, 213);
+
+                Label  outcome12_1Label= new Label("Outcome 12_1:");
+                EditLectureoldvalue.add(outcome12_1Label, 0, 214);
+
+                Label outcome12_2Label = new Label("Outcome 12_2:");
+                EditLectureoldvalue.add(outcome12_2Label, 0,  215);
+
+                Label outcome12_3Label = new Label("Outcome 12_3:");
+                EditLectureoldvalue.add(outcome12_3Label, 0, 216);
+
+                Label  outcome12_4Label= new Label("Outcome 12_4:");
+                EditLectureoldvalue.add(outcome12_4Label, 0, 217);
+
+                Label  outcome12_5Label= new Label("Outcome 12_5:");
+                EditLectureoldvalue.add(outcome12_5Label, 0, 218);
+
+                Label  outcome13_1Label= new Label("Outcome 13_1:");
+                EditLectureoldvalue.add(outcome13_1Label, 0, 219);
+
+                Label outcome13_2Label = new Label("Outcome 13_2:");
+                EditLectureoldvalue.add(outcome13_2Label, 0,  220);
+
+                Label outcome13_3Label = new Label("Outcome 13_3:");
+                EditLectureoldvalue.add(outcome13_3Label, 0, 221);
+
+                Label  outcome13_4Label= new Label("Outcome 13_4:");
+                EditLectureoldvalue.add(outcome13_4Label, 0, 222);
+
+                Label  outcome13_5Label= new Label("Outcome 13_5:");
+                EditLectureoldvalue.add(outcome13_5Label, 0, 223);
+
+                /*---------------------------------------------------------*/
                 Label LectureIDtext = new Label(TempID);
                 EditLectureoldvalue.add(LectureIDtext, 1, 0);
 
@@ -3327,508 +4008,2046 @@ public class MainController {
                 Label LecturersNameText = new Label(TempLecturerName);
                 EditLectureoldvalue.add(LecturersNameText, 1, 2);
 
-               /* Label lectureCodeText = new Label(TempLCode);
-                LectureGrid.add(lectureCodeText, 1, 3);
+                Label lectureCodeLabelText = new Label(TempLCode);
+                EditLectureoldvalue.add(lectureCodeLabelText, 1, 3);
 
-                Label semesterText = new Label(TempSemester);
-                LectureGrid.add(semesterText, 1, 4);
+                Label semesterLabelText = new Label(TempSemester);
+                EditLectureoldvalue.add(semesterLabelText, 1, 4);
 
-                Label theoryHourText = new Label(TempTHour);
-                LectureGrid.add(theoryHourText, 1, 5);
+                Label theoryHourLabelText = new Label(TempTHour);
+                EditLectureoldvalue.add(theoryHourLabelText, 1, 5);
 
-                Label labHourText = new Label(TempLHour);
-                LectureGrid.add(labHourText, 1, 6);
+                Label labHourLabelText = new Label(TempLHour);
+                EditLectureoldvalue.add(labHourLabelText, 1, 6);
 
-                Label localCreditText = new Label(TempLCredit);
-                LectureGrid.add(localCreditText, 1, 7);
+                Label localCreditLabelText = new Label(TempLCredit);
+                EditLectureoldvalue.add(localCreditLabelText, 1, 7);
 
-                Label ECTSText = new Label(TempEcts);
-                LectureGrid.add(ECTSText, 1, 8);
+                Label ECTSLabelText= new Label(TempEcts);
+                EditLectureoldvalue.add(ECTSLabelText, 1, 8);
 
-                Label prerequisitesText = new Label(TempPrereq);
-                LectureGrid.add(prerequisitesText, 1, 9);
+                Label prerequisitesLabelText = new Label(TempPrereq);
+                EditLectureoldvalue.add(prerequisitesLabelText, 1, 9);
 
-                Label course_LanguageText = new Label(TempLLang);
-                LectureGrid.add(course_LanguageText, 1, 10);
+                Label course_LanguageLabelText= new Label(TempLLang);
+                EditLectureoldvalue.add(course_LanguageLabelText, 1, 10);
 
-                Label course_TypeText = new Label(TempLType);
-                LectureGrid.add(course_TypeText, 1, 11);
+                Label course_TypeLabelText = new Label(TempLType);
+                EditLectureoldvalue.add(course_TypeLabelText, 1, 11);
 
-                Label course_LevelText = new Label(TempLLevel);
-                LectureGrid.add(course_LevelText, 1, 12);
+                Label course_LevelLabelText = new Label(TempLLevel);
+                EditLectureoldvalue.add(course_LevelLabelText, 1, 12);
 
-                Label teaching_MethodsText = new Label(TempTMethod);
-                LectureGrid.add(teaching_MethodsText, 1, 13);
+                Label teaching_MethodsLabelText = new Label(TempTMethod);
+                EditLectureoldvalue.add(teaching_MethodsLabelText, 1, 13);
 
-                Label course_CoordinatorText = new Label(TempLCoordinator);
-                LectureGrid.add(course_CoordinatorText, 1, 14);
+                Label course_CoordinatorLabelText = new Label(TempLCoordinator);
+                EditLectureoldvalue.add(course_CoordinatorLabelText, 1, 14);
 
-                Label assistantText = new Label(TempAssistant);
-                LectureGrid.add(assistantText, 1, 15);
+                Label assistantLabelText = new Label(TempAssistant);
+                EditLectureoldvalue.add(assistantLabelText, 1, 15);
 
-                Label course_ObjectivesText = new Label(TempLObjective);
-                LectureGrid.add(course_ObjectivesText, 1, 16);
+                Label course_ObjectivesLabelText = new Label(TempLObjective);
+                EditLectureoldvalue.add(course_ObjectivesLabelText, 1, 16);
 
-                Label learning_OutcomesText = new Label(TempLOutcome);
-                LectureGrid.add(learning_OutcomesText, 1, 17);
+                Label learning_OutcomesLabelText = new Label(TempLOutcome);
+                EditLectureoldvalue.add(learning_OutcomesLabelText, 1, 17);
 
-                Label course_DescriptionText = new Label(TempLDescription);
-                LectureGrid.add(course_DescriptionText, 1, 18);
+                Label course_DescriptionLabelText = new Label(TempLDescription);
+                EditLectureoldvalue.add(course_DescriptionLabelText, 1,18);
 
-                Label course_CategoryText = new Label(TempLCategory);
-                LectureGrid.add(course_CategoryText, 1, 19);
+                Label course_CategoryLabelText = new Label(TempLCategory);
+                EditLectureoldvalue.add(course_CategoryLabelText, 1, 19);
 
-                Label week1SubjectsText = new Label(TempW1sub);
-                LectureGrid.add(week1SubjectsText, 1, 20);
+                Label week1SubjectsLabelText = new Label(TempW1sub);
+                EditLectureoldvalue.add(week1SubjectsLabelText, 1, 20);
 
-                Label week2SubjectsText = new Label(TempW2sub);
-                LectureGrid.add(week2SubjectsText, 1, 21);
+                Label week2SubjectsLabelText = new Label(TempW2sub);
+                EditLectureoldvalue.add(week2SubjectsLabelText, 1, 21);
 
-                Label week3SubjectsText = new Label(TempW3sub);
-                LectureGrid.add(week3SubjectsText, 1, 22);
+                Label week3SubjectsLabelText = new Label(TempW3sub);
+                EditLectureoldvalue.add(week3SubjectsLabelText, 1, 22);
 
-                Label week4SubjectsText = new Label(TempW4sub);
-                LectureGrid.add(week4SubjectsText, 1, 23);
+                Label week4SubjectsLabelText = new Label(TempW4sub);
+                EditLectureoldvalue.add(week4SubjectsLabelText, 1, 23);
 
-                Label week5SubjectsText = new Label(TempW5sub);
-                LectureGrid.add(week5SubjectsText, 1, 24);
+                Label week5SubjectsLabelText = new Label(TempW5sub);
+                EditLectureoldvalue.add(week5SubjectsLabelText, 1, 24);
 
-                Label week6SubjectsText = new Label(TempW6sub);
-                LectureGrid.add(week6SubjectsText, 1, 25);
+                Label week6SubjectsLabelText = new Label(TempW6sub);
+                EditLectureoldvalue.add(week6SubjectsLabelText, 1, 25);
 
-                Label week7SubjectsText = new Label(TempW7sub);
-                LectureGrid.add(week7SubjectsText, 1, 26);
+                Label week7SubjectsLabelText = new Label(TempW7sub);
+                EditLectureoldvalue.add(week7SubjectsLabelText, 1, 26);
 
-                Label week8SubjectsText = new Label(TempW8sub);
-                LectureGrid.add(week8SubjectsText, 1, 27);
+                Label week8SubjectsLabelText = new Label(TempW8sub);
+                EditLectureoldvalue.add(week8SubjectsLabelText, 1, 27);
 
-                Label week9SubjectsText = new Label(TempW9sub);
-                LectureGrid.add(week9SubjectsText, 1, 28);
+                Label week9SubjectsLabelText = new Label(TempW9sub);
+                EditLectureoldvalue.add(week9SubjectsLabelText, 1, 28);
 
-                Label week10SubjectsText = new Label(TempW10sub);
-                LectureGrid.add(week10SubjectsText, 1, 29);
+                Label week10SubjectsLabelText = new Label(TempW10sub);
+                EditLectureoldvalue.add(week10SubjectsLabelText, 1, 29);
 
-                Label week11SubjectsText =new Label(TempW11sub);
-                LectureGrid.add(week11SubjectsText, 1, 30);
+                Label week11SubjectsLabelText = new Label(TempW11sub);
+                EditLectureoldvalue.add(week11SubjectsLabelText, 1, 30);
 
-                Label week12SubjectsText = new Label(TempW12sub);
-                LectureGrid.add(week12SubjectsText, 1, 31);
+                Label week12SubjectsLabelText = new Label(TempW12sub);
+                EditLectureoldvalue.add(week12SubjectsLabelText, 1, 31);
 
-                Label week13SubjectsText = new Label(TempW13sub);
-                LectureGrid.add(week13SubjectsText, 1, 32);
+                Label week13SubjectsLabelText = new Label(TempW13sub);
+                EditLectureoldvalue.add(week13SubjectsLabelText, 1, 32);
 
-                Label week14SubjectsText = new Label(TempW14sub);
-                LectureGrid.add(week14SubjectsText, 1, 33);
+                Label week14SubjectsLabelText = new Label(TempW14sub);
+                EditLectureoldvalue.add(week14SubjectsLabelText, 1, 33);
 
-                Label week15SubjectsText =new Label(TempW15sub);
-                LectureGrid.add(week15SubjectsText, 1, 34);
+                Label week15SubjectsLabelText = new Label(TempW15sub);
+                EditLectureoldvalue.add(week15SubjectsLabelText, 1, 34);
 
-                Label week1ReqMatText = new Label(TempW1req);
-                LectureGrid.add(week1ReqMatText, 3, 20);
+                Label week1ReqMatLabelText = new Label(TempW1req);
+                EditLectureoldvalue.add(week1ReqMatLabelText, 1, 36);
 
-                Label week2ReqMatText = new Label(TempW2req);
-                LectureGrid.add(week2ReqMatText, 3, 21);
+                Label week2ReqMatLabelText = new Label(TempW2req);
+                EditLectureoldvalue.add(week2ReqMatLabelText, 1, 37);
 
-                Label week3ReqMatText = new Label(TempW3req);
-                LectureGrid.add(week3ReqMatText, 3, 22);
+                Label week3ReqMatLabelText = new Label(TempW3req);
+                EditLectureoldvalue.add(week3ReqMatLabelText, 1, 38);
 
-                Label week4ReqMatText = new Label(TempW4req);
-                LectureGrid.add(week4ReqMatText, 3, 23);
+                Label week4ReqMatLabelText = new Label(TempW4req);
+                EditLectureoldvalue.add(week4ReqMatLabelText, 1, 39);
 
-                Label week5ReqMatText = new Label(TempW5req);
-                LectureGrid.add(week5ReqMatText, 3, 24);
+                Label week5ReqMatLabelText = new Label(TempW5req);
+                EditLectureoldvalue.add(week5ReqMatLabelText, 1, 40);
 
-                Label week6ReqMatText = new Label(TempW6req);
-                LectureGrid.add(week6ReqMatText, 3, 25);
+                Label week6ReqMatLabelText = new Label(TempW6req);
+                EditLectureoldvalue.add(week6ReqMatLabelText, 1, 41);
 
-                Label week7ReqMatText = new Label(TempW7req);
-                LectureGrid.add(week7ReqMatText, 3, 26);
+                Label week7ReqMatLabelText = new Label(TempW7req);
+                EditLectureoldvalue.add(week7ReqMatLabelText, 1, 42);
 
-                Label week8ReqMatText = new Label(TempW8req);
-                LectureGrid.add(week8ReqMatText, 3, 27);
+                Label week8ReqMatLabelText = new Label(TempW8req);
+                EditLectureoldvalue.add(week8ReqMatLabelText, 1, 43);
 
-                Label week9ReqMatText = new Label(TempW9req);
-                LectureGrid.add(week9ReqMatText, 3, 28);
+                Label week9ReqMatLabelText = new Label(TempW9req);
+                EditLectureoldvalue.add(week9ReqMatLabelText, 1, 44);
 
-                Label week10ReqMatText = new Label(TempW10req);
-                LectureGrid.add(week10ReqMatText, 3, 29);
+                Label week10ReqMatLabelText = new Label(TempW10req);
+                EditLectureoldvalue.add(week10ReqMatLabelText, 1, 45);
 
-                Label week11ReqMatText = new Label(TempW11req);
-                LectureGrid.add(week11ReqMatText, 3, 30);
+                Label week11ReqMatLabelText = new Label(TempW11req);
+                EditLectureoldvalue.add(week11ReqMatLabelText, 1, 46);
 
-                Label week12ReqMatText = new Label(TempW12req);
-                LectureGrid.add(week12ReqMatText, 3, 31);
+                Label week12ReqMatLabelText = new Label(TempW12req);
+                EditLectureoldvalue.add(week12ReqMatLabelText, 1, 47);
 
-                Label week13ReqMatText = new Label(TempW13req);
-                LectureGrid.add(week13ReqMatText, 3, 32);
+                Label week13ReqMatLabelText = new Label(TempW13req);
+                EditLectureoldvalue.add(week13ReqMatLabelText, 1, 48);
 
-                Label week14ReqMatText = new Label(TempW14req);
-                LectureGrid.add(week14ReqMatText, 3, 33);
+                Label week14ReqMatLabelText = new Label(TempW14req);
+                EditLectureoldvalue.add(week14ReqMatLabelText, 1, 49);
 
-                Label week15ReqMatText = new Label(TempW15req);
-                LectureGrid.add(week15ReqMatText, 3, 34);
+                Label week15ReqMatLabelText= new Label(TempW15req);
+                EditLectureoldvalue.add(week15ReqMatLabelText, 1, 50);
 
-                Label courseNotesAndTextBooksText = new Label(TempCourseNotes);
-                LectureGrid.add(courseNotesAndTextBooksText, 1, 35);
+                Label courseNotesAndTextBooksLabelText = new Label(TempCourseNotes);
+                EditLectureoldvalue.add(courseNotesAndTextBooksLabelText, 1, 51);
 
-                Label suggestedReadingsAndMaterialsText = new Label(TempSuggested);
-                LectureGrid.add(suggestedReadingsAndMaterialsText, 1, 36);*/
+                Label suggestedReadingsAndMaterialsLabelText = new Label(TempSuggested);
+                EditLectureoldvalue.add(suggestedReadingsAndMaterialsLabelText, 1, 52);
 
-                Label NewLectureID = new Label("Lecture ID :");
-                EditLecturenewvalue.add(NewLectureID, 0, 0);
+                Label participationNumberLabelText = new Label(TempPartNumb);
+                EditLectureoldvalue.add(participationNumberLabelText, 1, 53);
 
-                Label NewlectureNameLabel = new Label("Lecture Name:");
-                EditLecturenewvalue.add(NewlectureNameLabel, 0, 1);
+                Label  participationWeiLabelText= new Label(TempPartWei);
+                EditLectureoldvalue.add(participationWeiLabelText, 1, 54);
 
-                Label NewlecturerNameLabel = new Label("Lecturer's Name:");
-                EditLecturenewvalue.add(NewlecturerNameLabel, 0, 2);
+                Label  participation01LabelText= new Label(TempPartL01);
+                EditLectureoldvalue.add(participation01LabelText, 1, 55);
 
-               /* Label NewlectureCodeLabel = new Label("Lecture Code:");
-                EditLectureoldvalue.add(NewlectureCodeLabel, 0, 3);
+                Label participation02LabelText = new Label(TempPartL02);
+                EditLectureoldvalue.add(participation02LabelText, 1, 56);
 
-                Label NewsemesterLabel = new Label("Semester:");
-                EditLectureoldvalue.add(NewsemesterLabel, 0, 4);
+                Label participation03LabelText = new Label(TempPartL03);
+                EditLectureoldvalue.add(participation03LabelText, 1, 57);
 
-                Label NewtheoryHourLabel = new Label("Theory Hour:");
-                EditLectureoldvalue.add(NewtheoryHourLabel, 0, 5);
+                Label  participation04LabelText= new Label(TempPartL04);
+                EditLectureoldvalue.add(participation04LabelText, 1, 58);
 
-                Label NewlabHourLabel = new Label("Lab Hour:");
-                EditLectureoldvalue.add(NewlabHourLabel, 0, 6);
+                Label labOrApplicationNumberLabelText = new Label(TempLabNumb);
+                EditLectureoldvalue.add(labOrApplicationNumberLabelText, 1, 59);
 
-                Label NewlocalCreditLabel = new Label("Local Credit:");
-                EditLectureoldvalue.add(NewlocalCreditLabel, 0, 7);
+                Label  labOrApplicationWeiLabelText= new Label(TempLabWei);
+                EditLectureoldvalue.add(labOrApplicationWeiLabelText, 1, 60);
 
-                Label NewECTSLabel = new Label("Ects:");
-                EditLectureoldvalue.add(NewECTSLabel, 0, 8);
+                Label labOrApplication01LabelText = new Label(TempLabL01);
+                EditLectureoldvalue.add(labOrApplication01LabelText, 1, 61);
 
-                Label NewprerequisitesLabel = new Label("Prerequisites:");
-                EditLectureoldvalue.add(NewprerequisitesLabel, 0, 9);
+                Label labOrApplication02LabelText = new Label(TempLabL02);
+                EditLectureoldvalue.add(labOrApplication02LabelText, 1, 62);
 
-                Label Newcourse_LanguageLabel = new Label("Lecture Language:");
-                EditLectureoldvalue.add(Newcourse_LanguageLabel, 0, 10);
+                Label labOrApplication03LabelText = new Label(TempLabL03);
+                EditLectureoldvalue.add(labOrApplication03LabelText, 1, 63);
 
-                Label Newcourse_TypeLabel = new Label("Lecture Type:");
-                EditLectureoldvalue.add(Newcourse_TypeLabel, 0, 11);
+                Label labOrApplication04LabelText = new Label(TempLabL04);
+                EditLectureoldvalue.add(labOrApplication04LabelText, 1, 64);
 
-                Label Newcourse_LevelLabel = new Label("Lecture Level:");
-                EditLectureoldvalue.add(Newcourse_LevelLabel, 0, 12);
+                Label fieldWorkNumberLabelText = new Label(TempFWNumb);
+                EditLectureoldvalue.add(fieldWorkNumberLabelText, 1, 65);
 
-                Label Newteaching_MethodsLabel = new Label("Teaching Method:");
-                EditLectureoldvalue.add(Newteaching_MethodsLabel, 0, 13);
+                Label FieldWorkWeiLabelText = new Label(TempFWWei);
+                EditLectureoldvalue.add(FieldWorkWeiLabelText, 1, 66);
 
-                Label Newcourse_CoordinatorLabel = new Label("Lecture Coordinator:");
-                EditLectureoldvalue.add(Newcourse_CoordinatorLabel, 0, 14);
+                Label FieldWork01LabelText = new Label(TempFWL01);
+                EditLectureoldvalue.add(FieldWork01LabelText, 1, 67);
 
-                Label NewassistantLabel = new Label("Lecture Assistant:");
-                EditLectureoldvalue.add(NewassistantLabel, 0, 15);
+                Label FieldWork02LabelText = new Label(TempFWL02);
+                EditLectureoldvalue.add(FieldWork02LabelText, 1, 68);
 
-                Label Newcourse_ObjectivesLabel = new Label("Lecture Objectives:");
-                EditLectureoldvalue.add(Newcourse_ObjectivesLabel, 0, 16);
+                Label FieldWork03LabelText = new Label(TempFWL03);
+                EditLectureoldvalue.add(FieldWork03LabelText, 1, 69);
 
-                Label Newlearning_OutcomesLabel = new Label("Learning Outcome:");
-                EditLectureoldvalue.add(Newlearning_OutcomesLabel, 0, 17);
+                Label FieldWork04LabelText = new Label(TempFWL04);
+                EditLectureoldvalue.add(FieldWork04LabelText, 1, 70);
 
-                Label Newcourse_DescriptionLabel = new Label("Lecture Description:");
-                EditLectureoldvalue.add(Newcourse_DescriptionLabel, 0,18);
+                Label quizOrStudioCritiqueNumberLabelText = new Label(TempQuizNumb);
+                EditLectureoldvalue.add(quizOrStudioCritiqueNumberLabelText, 1, 71);
 
-                Label Newcourse_CategoryLabel = new Label("Lecture Category:");
-                EditLectureoldvalue.add(Newcourse_CategoryLabel, 0, 19);
+                Label quizOrStudioCritiqueWeiLabelText = new Label(TempQuizWei);
+                EditLectureoldvalue.add(quizOrStudioCritiqueWeiLabelText, 1,72);
 
-                Label Newweek1SubjectsLabel = new Label("Week 1 Subjects:");
-                EditLectureoldvalue.add(Newweek1SubjectsLabel, 0, 20);
+                Label quizOrStudioCritique01LabelText = new Label(TempQuizL01);
+                EditLectureoldvalue.add(quizOrStudioCritique01LabelText, 1, 73);
 
-                Label Newweek2SubjectsLabel = new Label("Week 2 Subjects:");
-                EditLectureoldvalue.add(Newweek2SubjectsLabel, 0, 21);
+                Label quizOrStudioCritique02LabelText = new Label(TempQuizL02);
+                EditLectureoldvalue.add(quizOrStudioCritique02LabelText, 1, 74);
 
-                Label Newweek3SubjectsLabel = new Label("Week 3 Subjects:");
-                EditLectureoldvalue.add(Newweek3SubjectsLabel, 0, 22);
+                Label quizOrStudioCritique03LabelText = new Label(TempQuizL03);
+                EditLectureoldvalue.add(quizOrStudioCritique03LabelText, 1, 75);
 
-                Label Newweek4SubjectsLabel = new Label("Week 4 Subjects:");
-                EditLectureoldvalue.add(Newweek4SubjectsLabel, 0, 23);
+                Label quizOrStudioCritique04LabelText = new Label(TempQuizL04);
+                EditLectureoldvalue.add(quizOrStudioCritique04LabelText, 1, 76);
 
-                Label Newweek5SubjectsLabel = new Label("Week 5 Subjects:");
-                EditLectureoldvalue.add(Newweek5SubjectsLabel, 0, 24);
+                Label homeworkOrAssignmentNumberLabelText = new Label(TempHWNumb);
+                EditLectureoldvalue.add(homeworkOrAssignmentNumberLabelText, 1, 77);
 
-                Label Newweek6SubjectsLabel = new Label("Week 6 Subjects:");
-                EditLectureoldvalue.add(Newweek6SubjectsLabel, 0, 25);
+                Label homeworkOrAssignmentWeiLabelText = new Label(TempHWWei);
+                EditLectureoldvalue.add(homeworkOrAssignmentWeiLabelText, 1, 78);
 
-                Label Newweek7SubjectsLabel = new Label("Week 7 Subjects:");
-                EditLectureoldvalue.add(Newweek7SubjectsLabel, 0, 26);
+                Label homeworkOrAssignment01LabelText = new Label(TempHWL01);
+                EditLectureoldvalue.add(homeworkOrAssignment01LabelText, 1, 79);
 
-                Label Newweek8SubjectsLabel = new Label("Week 8 Subjects:");
-                EditLectureoldvalue.add(Newweek8SubjectsLabel, 0, 27);
+                Label homeworkOrAssignment02LabelText = new Label(TempHWL02);
+                EditLectureoldvalue.add(homeworkOrAssignment02LabelText, 1, 80);
 
-                Label Newweek9SubjectsLabel = new Label("Week 9 Subjects:");
-                EditLectureoldvalue.add(Newweek9SubjectsLabel, 0, 28);
+                Label homeworkOrAssignment03LabelText = new Label(TempHWL03);
+                EditLectureoldvalue.add(homeworkOrAssignment03LabelText, 1, 81);
 
-                Label Newweek10SubjectsLabel = new Label("Week 10 Subjects:");
-                EditLectureoldvalue.add(Newweek10SubjectsLabel, 0, 29);
+                Label homeworkOrAssignment04LabelText = new Label(TempHWL04);
+                EditLectureoldvalue.add(homeworkOrAssignment04LabelText, 1, 82);
 
-                Label Newweek11SubjectsLabel = new Label("Week 11 Subjects:");
-                EditLectureoldvalue.add(Newweek11SubjectsLabel, 0, 30);
+                Label presentationOrJuryNumberLabelText = new Label(TempPresNumb);
+                EditLectureoldvalue.add(presentationOrJuryNumberLabelText, 1, 83);
 
-                Label Newweek12SubjectsLabel = new Label("Week 12 Subjects:");
-                EditLectureoldvalue.add(Newweek12SubjectsLabel, 0, 31);
+                Label presentationOrJuryWeiLabelText = new Label(TempPresWei);
+                EditLectureoldvalue.add(presentationOrJuryWeiLabelText, 1, 84);
 
-                Label Newweek13SubjectsLabel = new Label("Week 13 Subjects:");
-                EditLectureoldvalue.add(Newweek13SubjectsLabel, 0, 32);
+                Label presentationOrJury01LabelText = new Label(TempPresL01);
+                EditLectureoldvalue.add(presentationOrJury01LabelText, 1, 85);
 
-                Label Newweek14SubjectsLabel = new Label("Week 14 Subjects:");
-                EditLectureoldvalue.add(Newweek14SubjectsLabel, 0, 33);
+                Label presentationOrJury02LabelText = new Label(TempPresL02);
+                EditLectureoldvalue.add(presentationOrJury02LabelText, 1, 86);
 
-                Label Newweek15SubjectsLabel = new Label("Week 15 Subjects:");
-                EditLectureoldvalue.add(Newweek15SubjectsLabel, 0, 34);
+                Label presentationOrJury03LabelText = new Label(TempPresL03);
+                EditLectureoldvalue.add(presentationOrJury03LabelText, 1, 87);
 
-                Label Newweek1ReqMatLabel = new Label("Week 1 Required Materials:");
-                EditLectureoldvalue.add(Newweek1ReqMatLabel, 2, 20);
+                Label presentationOrJury04LabelText = new Label(TempPresL04);
+                EditLectureoldvalue.add(presentationOrJury04LabelText, 1, 88);
 
-                Label Newweek2ReqMatLabel = new Label("Week 2 Required Materials:");
-                EditLectureoldvalue.add(Newweek2ReqMatLabel, 2, 21);
+                Label projectNumberLabelText = new Label(TempProjNumb);
+                EditLectureoldvalue.add(projectNumberLabelText, 1, 89);
 
-                Label Newweek3ReqMatLabel = new Label("Week 3 Required Materials:");
-                EditLectureoldvalue.add(Newweek3ReqMatLabel, 2, 22);
+                Label projectWeiLabelText = new Label(TempProjWei);
+                EditLectureoldvalue.add(projectWeiLabelText, 1, 90);
 
-                Label Newweek4ReqMatLabel = new Label("Week 4 Required Materials:");
-                EditLectureoldvalue.add(Newweek4ReqMatLabel, 2, 23);
+                Label project01LabelText= new Label(TempProjL01);
+                EditLectureoldvalue.add(project01LabelText, 1, 91);
 
-                Label Newweek5ReqMatLabel = new Label("Week 5 Required Materials:");
-                EditLectureoldvalue.add(Newweek5SubjectsLabel, 2, 24);
+                Label project02LabelText= new Label(TempProjL02);
+                EditLectureoldvalue.add(project02LabelText, 1, 92);
 
-                Label Newweek6ReqMatLabel = new Label("Week 6 Required Materials:");
-                EditLectureoldvalue.add(Newweek6ReqMatLabel, 2, 25);
+                Label project03LabelText = new Label(TempProjL03);
+                EditLectureoldvalue.add(project03LabelText, 1, 93);
 
-                Label Newweek7ReqMatLabel = new Label("Week 7 Required Materials:");
-                EditLectureoldvalue.add(Newweek7ReqMatLabel, 2, 26);
+                Label project04LabelText = new Label(TempProjL04);
+                EditLectureoldvalue.add(project04LabelText, 1, 94);
 
-                Label Newweek8ReqMatLabel = new Label("Week 8 Required Materials:");
-                EditLectureoldvalue.add(Newweek8ReqMatLabel, 2, 27);
+                Label portfolioNumberLabelText = new Label(TempPortNumb);
+                EditLectureoldvalue.add(portfolioNumberLabelText, 1, 95);
 
-                Label Newweek9ReqMatLabel = new Label("Week 9 Required Materials:");
-                EditLectureoldvalue.add(Newweek9ReqMatLabel, 2, 28);
+                Label portfolioWeiLabelText = new Label(TempPortWei);
+                EditLectureoldvalue.add(portfolioWeiLabelText, 1, 96);
 
-                Label Newweek10ReqMatLabel = new Label("Week 10 Required Materials:");
-                EditLectureoldvalue.add(Newweek10ReqMatLabel, 2, 29);
+                Label portfolio01LabelText = new Label(TempPortL01);
+                EditLectureoldvalue.add(portfolio01LabelText, 1, 97);
 
-                Label Newweek11ReqMatLabel = new Label("Week 11 Required Materials:");
-                EditLectureoldvalue.add(Newweek11ReqMatLabel, 2, 30);
+                Label portfolio02LabelText = new Label(TempPortL02);
+                EditLectureoldvalue.add(portfolio02LabelText, 1, 98);
 
-                Label Newweek12ReqMatLabel = new Label("Week 12 Required Materials:");
-                EditLectureoldvalue.add(Newweek12ReqMatLabel, 2, 31);
+                Label portfolio03LabelText = new Label(TempPortL03);
+                EditLectureoldvalue.add(portfolio03LabelText, 1, 99);
 
-                Label Newweek13ReqMatLabel = new Label("Week 13 Required Materials:");
-                EditLectureoldvalue.add(Newweek13ReqMatLabel, 2, 32);
+                Label portfolio04LabelText = new Label(TempPortL04);
+                EditLectureoldvalue.add(portfolio04LabelText, 1, 100);
 
-                Label Newweek14ReqMatLabel = new Label("Week 14 Required Materials:");
-                EditLectureoldvalue.add(Newweek14ReqMatLabel, 2, 33);
+                Label seminarNumberLabelText = new Label(TempSEMNumb);
+                EditLectureoldvalue.add(seminarNumberLabelText, 1, 101);
 
-                Label Newweek15ReqMatLabel = new Label("Week 15 Required Materials:");
-                EditLectureoldvalue.add(Newweek15ReqMatLabel, 2, 34);
+                Label seminarWeiLabelText = new Label(TempSEMWei);
+                EditLectureoldvalue.add(seminarWeiLabelText, 1, 102);
 
-                Label NewcourseNotesAndTextBooksLabel = new Label("Course Notes and Textbooks:");
-                EditLectureoldvalue.add(NewcourseNotesAndTextBooksLabel, 0, 35);
+                Label seminar01LabelText = new Label(TempSEML01);
+                EditLectureoldvalue.add(seminar01LabelText, 1, 103);
 
-                Label NewsuggestedReadingsAndMaterialsLabel = new Label("Suggested Readings and Materials:");
-                EditLectureoldvalue.add(NewsuggestedReadingsAndMaterialsLabel,0 , 36);*/
+                Label seminar02LabelText = new Label(TempSEML02);
+                EditLectureoldvalue.add(seminar02LabelText, 1, 104);
 
+                Label seminar03LabelText = new Label(TempSEML03);
+                EditLectureoldvalue.add(seminar03LabelText, 1, 105);
 
+                Label seminar04LabelText = new Label(TempSEML04);
+                EditLectureoldvalue.add(seminar04LabelText, 1, 106);
+
+                Label  oralNumberLabelText = new Label(TempORALNumb);
+                EditLectureoldvalue.add(oralNumberLabelText, 1, 107);
+
+                Label oralWeiLabelText = new Label(TempORALWei);
+                EditLectureoldvalue.add(oralWeiLabelText, 1, 108);
+
+                Label oral01LabelText = new Label(TempORALL01);
+                EditLectureoldvalue.add(oral01LabelText, 1, 109);
+
+                Label oral02LabelText = new Label(TempORALL02);
+                EditLectureoldvalue.add(oral02LabelText, 1, 110);
+
+                Label oral03LabelText = new Label(TempORALL03);
+                EditLectureoldvalue.add(oral03LabelText, 1, 111);
+
+                Label oral04LabelText = new Label(TempORALL04);
+                EditLectureoldvalue.add(oral04LabelText, 1, 112);
+
+                Label midtermNumberLabelText = new Label(TempMIDNumb);
+                EditLectureoldvalue.add(midtermNumberLabelText, 1, 113);
+
+                Label midtermWeiLabelText = new Label(TempMIDWei);
+                EditLectureoldvalue.add(midtermWeiLabelText, 1, 114);
+
+                Label midterm01LabelText = new Label(TempMIDL01);
+                EditLectureoldvalue.add(midterm01LabelText, 1, 115);
+
+                Label midterm02LabelText = new Label(TempMIDL02);
+                EditLectureoldvalue.add(midterm02LabelText, 1, 116);
+
+                Label midterm03LabelText = new Label(TempMIDL03);
+                EditLectureoldvalue.add(midterm03LabelText, 1, 117);
+
+                Label midterm04LabelText = new Label(TempMIDL04);
+                EditLectureoldvalue.add(midterm04LabelText, 1, 118);
+
+                Label finalNumberLabelText= new Label(TempFINALNumb);
+                EditLectureoldvalue.add(finalNumberLabelText, 1, 119);
+
+                Label finalWeiLabelText = new Label(TempFINALWei);
+                EditLectureoldvalue.add(finalWeiLabelText, 1, 120);
+
+                Label final01LabelText = new Label(TempFINALL01);
+                EditLectureoldvalue.add(final01LabelText, 1, 121);
+
+                Label final02LabelText = new Label(TempFINALL02);
+                EditLectureoldvalue.add(final02LabelText, 1, 123);
+
+                Label final03LabelText = new Label(TempFINALL03);
+                EditLectureoldvalue.add(final03LabelText, 1, 124);
+
+                Label final04LabelText = new Label(TempFINALL04);
+                EditLectureoldvalue.add(final04LabelText, 1, 125);
+
+                Label StudyHoursoutofClassNumLabelText = new Label(TempSHOOCNum);
+                EditLectureoldvalue.add(StudyHoursoutofClassNumLabelText, 1, 126);
+
+                Label StudyHoursoutofClassDurLabelText = new Label(TempSHOOCDur);
+                EditLectureoldvalue.add(StudyHoursoutofClassDurLabelText, 1, 126);
+
+                Label StudyHoursoutofClassWorkLabelText = new Label(TempSHOOCWork);
+                EditLectureoldvalue.add(StudyHoursoutofClassWorkLabelText, 1, 127);
+
+                Label FieldWorkNumLabelText = new Label(TempFWNum);
+                EditLectureoldvalue.add(FieldWorkNumLabelText, 1, 128);
+
+                Label FieldWorkDurLabelText = new Label(TempFWDur);
+                EditLectureoldvalue.add(FieldWorkDurLabelText, 1, 129);
+
+                Label FieldWorkWorkLabelText = new Label(TempFWWork);
+                EditLectureoldvalue.add(FieldWorkWorkLabelText, 1, 130);
+
+                Label QuizNumLabelText = new Label(TempQuizNum);
+                EditLectureoldvalue.add(QuizNumLabelText, 1, 131);
+
+                Label QuizDurLabelText = new Label(TempQuizDur);
+                EditLectureoldvalue.add(QuizDurLabelText, 1, 132);
+
+                Label QuizWorkLabelText = new Label(TempQuizWork);
+                EditLectureoldvalue.add(QuizWorkLabelText, 1, 133);
+
+                Label HWNumLabelText = new Label(TempHWNum);
+                EditLectureoldvalue.add(HWNumLabelText, 1, 134);
+
+                Label HWDurLabelText = new Label(TempHWDur);
+                EditLectureoldvalue.add(HWDurLabelText, 1, 135);
+
+                Label HWWorkLabelText = new Label(TempHWWork);
+                EditLectureoldvalue.add(HWWorkLabelText, 1, 136);
+
+                Label PresentationNumLabelText = new Label(TempPresentationNum);
+                EditLectureoldvalue.add(PresentationNumLabelText, 1, 137);
+
+                Label PresentationDurLabelText = new Label(TempPresentationDur);
+                EditLectureoldvalue.add(PresentationDurLabelText, 1, 138);
+
+                Label PresentationWorkLabelText = new Label(TempPresentationWork);
+                EditLectureoldvalue.add(PresentationWorkLabelText, 1, 139);
+
+                Label ProjectNumLabelText = new Label(TempProjectNum);
+                EditLectureoldvalue.add(ProjectNumLabelText, 1, 140);
+
+                Label ProjectDurLabelText = new Label(TempProjectDur);
+                EditLectureoldvalue.add(ProjectDurLabelText, 1, 141);
+
+                Label ProjectWorkLabelText = new Label(TempProjectWork);
+                EditLectureoldvalue.add(ProjectWorkLabelText, 1, 142);
+
+                Label PortfolioNumLabelText = new Label(TempPortfolioNum);
+                EditLectureoldvalue.add(PortfolioNumLabelText, 1, 143);
+
+                Label PortfolioDurLabelText = new Label(TempPortfolioDur);
+                EditLectureoldvalue.add(PortfolioDurLabelText, 1, 144);
+
+                Label PortfolioWorkLabelText = new Label(TempPortfolioWork);
+                EditLectureoldvalue.add(PortfolioWorkLabelText, 1, 145);
+
+                Label SeminarNumLabelText = new Label(TempSeminarNum);
+                EditLectureoldvalue.add(SeminarNumLabelText, 1,146);
+
+                Label SeminarDurLabelText = new Label(TempSeminarDur);
+                EditLectureoldvalue.add(SeminarDurLabelText, 1,147);
+
+                Label SeminarWorkLabelText = new Label(TempSeminarWork);
+                EditLectureoldvalue.add(SeminarWorkLabelText, 1,148);
+
+                Label OralExamNumLabelText = new Label(TempOralNum);
+                EditLectureoldvalue.add(OralExamNumLabelText, 1, 149);
+
+                Label OralExamDurLabelText = new Label(TempOralDur);
+                EditLectureoldvalue.add(OralExamDurLabelText, 1, 150);
+
+                Label OralExamWorkLabelText = new Label(TempOralWork);
+                EditLectureoldvalue.add(OralExamWorkLabelText, 1, 151);
+
+                Label MidtermNumLabelText = new Label(TempMidtermNum);
+                EditLectureoldvalue.add(MidtermNumLabelText, 1, 152);
+
+                Label MidtermDurLabelText = new Label(TempMidtermDur);
+                EditLectureoldvalue.add(MidtermDurLabelText, 1, 153);
+
+                Label MidtermWorkLabelText = new Label(TempMidtermWork);
+                EditLectureoldvalue.add(MidtermWorkLabelText, 1, 154);
+
+                Label FinalNumLabelText = new Label(TempFinalNum);
+                EditLectureoldvalue.add(FinalNumLabelText, 1, 155);
+
+                Label FinalDurLabelText = new Label(TempFinalDur);
+                EditLectureoldvalue.add(FinalDurLabelText, 1, 156);
+
+                Label FinalWorkLabelText = new Label(TempFinalWork);
+                EditLectureoldvalue.add(FinalWorkLabelText, 1, 157);
+
+                Label outcome1_1LabelText = new Label(Tempoutcome1_1);
+                EditLectureoldvalue.add(outcome1_1LabelText, 1,  159);
+
+                Label outcome1_2LabelText = new Label(Tempoutcome1_2);
+                EditLectureoldvalue.add(outcome1_2LabelText, 1,  160);
+
+                Label outcome1_3LabelText = new Label(Tempoutcome1_3);
+                EditLectureoldvalue.add(outcome1_3LabelText, 1, 161);
+
+                Label  outcome1_4LabelText= new Label(Tempoutcome1_4);
+                EditLectureoldvalue.add(outcome1_4LabelText, 1, 162);
+
+                Label  outcome1_5LabelText= new Label(Tempoutcome1_5);
+                EditLectureoldvalue.add(outcome1_5LabelText, 1, 163);
+
+                Label  outcome2_1LabelText= new Label( Tempoutcome2_1);
+                EditLectureoldvalue.add(outcome2_1LabelText, 1, 164);
+
+                Label outcome2_2LabelText = new Label(Tempoutcome2_2);
+                EditLectureoldvalue.add(outcome2_2LabelText, 1,  165);
+
+                Label outcome2_3LabelText= new Label(Tempoutcome2_3);
+                EditLectureoldvalue.add(outcome2_3LabelText, 1, 166);
+
+                Label  outcome2_4LabelText= new Label(Tempoutcome2_4);
+                EditLectureoldvalue.add(outcome2_4LabelText, 1, 167);
+
+                Label  outcome2_5LabelText= new Label(Tempoutcome2_5);
+                EditLectureoldvalue.add(outcome2_5LabelText, 1, 168);
+
+                Label  outcome3_1LabelText= new Label(Tempoutcome3_1);
+                EditLectureoldvalue.add(outcome3_1LabelText, 1, 169);
+
+                Label outcome3_2LabelText = new Label(Tempoutcome3_2);
+                EditLectureoldvalue.add(outcome3_2LabelText, 1,  170);
+
+                Label outcome3_3LabelText = new Label(Tempoutcome3_3);
+                EditLectureoldvalue.add(outcome3_3LabelText, 1, 171);
+
+                Label  outcome3_4LabelText= new Label(Tempoutcome3_4);
+                EditLectureoldvalue.add(outcome3_4LabelText, 1, 172);
+
+                Label  utcome3_5LabelText= new Label(Tempoutcome3_5);
+                EditLectureoldvalue.add(utcome3_5LabelText, 1, 173);
+
+                Label  outcome4_1LabelText= new Label(Tempoutcome4_1);
+                EditLectureoldvalue.add(outcome4_1LabelText, 1, 174);
+
+                Label outcome4_2LabelText = new Label(Tempoutcome4_2);
+                EditLectureoldvalue.add(outcome4_2LabelText, 1,  175);
+
+                Label outcome4_3LabelText= new Label(Tempoutcome4_3);
+                EditLectureoldvalue.add(outcome4_3LabelText, 1, 176);
+
+                Label  outcome4_4LabelText= new Label(Tempoutcome4_4);
+                EditLectureoldvalue.add(outcome4_4LabelText, 1, 177);
+
+                Label  outcome4_5LabelText= new Label(Tempoutcome4_5);
+                EditLectureoldvalue.add(outcome4_5LabelText, 1, 178);
+
+                Label  outcome5_1LabelText= new Label(Tempoutcome5_1);
+                EditLectureoldvalue.add(outcome5_1LabelText, 1, 179);
+
+                Label outcome5_2LabelText = new Label(Tempoutcome5_2);
+                EditLectureoldvalue.add(outcome5_2LabelText, 1,  180);
+
+                Label outcome5_3LabelText= new Label(Tempoutcome5_3);
+                EditLectureoldvalue.add(outcome5_3LabelText, 1, 181);
+
+                Label  outcome5_4LabelText= new Label(Tempoutcome5_4);
+                EditLectureoldvalue.add(outcome5_4LabelText, 1, 182);
+
+                Label  outcome5_5LabelText= new Label(Tempoutcome5_5);
+                EditLectureoldvalue.add(outcome5_5LabelText, 1, 183);
+
+                Label  outcome6_1LabelText= new Label(Tempoutcome6_1);
+                EditLectureoldvalue.add(outcome6_1LabelText, 1, 184);
+
+                Label outcome6_2LabelText = new Label(Tempoutcome6_2);
+                EditLectureoldvalue.add(outcome6_2LabelText, 1,  185);
+
+                Label utcome6_3LabelText = new Label(Tempoutcome6_3);
+                EditLectureoldvalue.add(utcome6_3LabelText, 1, 186);
+
+                Label  outcome6_4LabelText= new Label(Tempoutcome6_4);
+                EditLectureoldvalue.add(outcome6_4LabelText, 1, 187);
+
+                Label  outcome6_5LabelText= new Label(Tempoutcome6_5);
+                EditLectureoldvalue.add(outcome6_5LabelText, 1, 188);
+
+                Label  outcome7_1LabelText= new Label(Tempoutcome7_1);
+                EditLectureoldvalue.add(outcome7_1LabelText, 1, 189);
+
+                Label outcome7_2LabelText = new Label(Tempoutcome7_2);
+                EditLectureoldvalue.add(outcome7_2LabelText, 1,  190);
+
+                Label outcome7_3LabelText = new Label(Tempoutcome7_3);
+                EditLectureoldvalue.add(outcome7_3LabelText, 1, 191);
+
+                Label  outcome7_4LabelText= new Label(Tempoutcome7_4);
+                EditLectureoldvalue.add(outcome7_4LabelText, 1, 192);
+
+                Label  outcome7_5LabelText= new Label(Tempoutcome7_5);
+                EditLectureoldvalue.add(outcome7_5LabelText, 1, 193);
+
+                Label  outcome8_1LabelText= new Label(Tempoutcome8_1);
+                EditLectureoldvalue.add(outcome8_1LabelText, 1, 194);
+
+                Label utcome8_2LabelText= new Label(Tempoutcome8_2);
+                EditLectureoldvalue.add(utcome8_2LabelText, 1,  195);
+
+                Label outcome8_3LabelText = new Label(Tempoutcome8_3);
+                EditLectureoldvalue.add(outcome8_3LabelText, 1, 196);
+
+                Label  outcome8_4LabelText= new Label(Tempoutcome8_4);
+                EditLectureoldvalue.add(outcome8_4LabelText, 1, 197);
+
+                Label  outcome8_5LabelText= new Label(Tempoutcome8_5);
+                EditLectureoldvalue.add(outcome8_5LabelText, 1, 198);
+
+                Label  outcome9_1LabelText= new Label(Tempoutcome9_1);
+                EditLectureoldvalue.add(outcome9_1LabelText, 1, 199);
+
+                Label outcome9_2LabelText= new Label(Tempoutcome9_2);
+                EditLectureoldvalue.add(outcome9_2LabelText, 1,  200);
+
+                Label outcome9_3LabelText= new Label(Tempoutcome9_3);
+                EditLectureoldvalue.add(outcome9_3LabelText, 1, 201);
+
+                Label outcome9_4LabelText= new Label(Tempoutcome9_4);
+                EditLectureoldvalue.add(outcome9_4LabelText, 1, 202);
+
+                Label  outcome9_5LabelText= new Label(Tempoutcome9_5);
+                EditLectureoldvalue.add(outcome9_5LabelText, 1, 203);
+
+                Label  outcome10_1LabelText= new Label(Tempoutcome10_1);
+                EditLectureoldvalue.add(outcome10_1LabelText, 1, 204);
+
+                Label outcome10_2LabelText= new Label(Tempoutcome10_2);
+                EditLectureoldvalue.add(outcome10_2LabelText, 1,  205);
+
+                Label outcome10_3LabelText= new Label(Tempoutcome10_3);
+                EditLectureoldvalue.add(outcome10_3LabelText, 1, 206);
+
+                Label  outcome10_4LabelText= new Label(Tempoutcome10_4);
+                EditLectureoldvalue.add(outcome10_4LabelText, 1, 207);
+
+                Label  outcome10_5LabelText= new Label(Tempoutcome10_5);
+                EditLectureoldvalue.add(outcome10_5LabelText, 1, 208);
+
+                Label  outcome11_1LabelText= new Label(Tempoutcome11_1);
+                EditLectureoldvalue.add(outcome11_1LabelText, 1, 209);
+
+                Label outcome11_2LabelText = new Label(Tempoutcome11_2);
+                EditLectureoldvalue.add(outcome11_2LabelText, 1,  210);
+
+                Label outcome11_3LabelText = new Label(Tempoutcome11_3);
+                EditLectureoldvalue.add(outcome11_3LabelText, 1, 211);
+
+                Label  outcome11_4LabelText= new Label(Tempoutcome11_4);
+                EditLectureoldvalue.add(outcome11_4LabelText, 1, 212);
+
+                Label  outcome11_5LabelText= new Label(Tempoutcome11_5);
+                EditLectureoldvalue.add(outcome11_5LabelText, 1, 213);
+
+                Label  outcome12_1LabelText= new Label(Tempoutcome12_1);
+                EditLectureoldvalue.add(outcome12_1LabelText, 1, 214);
+
+                Label outcome12_2LabelText = new Label(Tempoutcome12_2);
+                EditLectureoldvalue.add(outcome12_2LabelText, 1,  215);
+
+                Label outcome12_3LabelText = new Label(Tempoutcome12_3);
+                EditLectureoldvalue.add(outcome12_3LabelText, 1, 216);
+
+                Label  outcome12_4LabelText= new Label(Tempoutcome12_4);
+                EditLectureoldvalue.add(outcome12_4LabelText, 1, 217);
+
+                Label  outcome12_5LabelText= new Label(Tempoutcome12_5);
+                EditLectureoldvalue.add(outcome12_5LabelText, 1, 218);
+
+                Label  outcome13_1LabelText= new Label(Tempoutcome13_1);
+                EditLectureoldvalue.add(outcome13_1LabelText, 1, 219);
+
+                Label outcome13_2LabelText = new Label(Tempoutcome13_2);
+                EditLectureoldvalue.add(outcome13_2LabelText, 1,  220);
+
+                Label outcome13_3LabelText = new Label(Tempoutcome13_3);
+                EditLectureoldvalue.add(outcome13_3LabelText, 1, 221);
+
+                Label  outcome13_4LabelText= new Label(Tempoutcome13_4);
+                EditLectureoldvalue.add(outcome13_4LabelText, 1, 222);
+
+                Label  outcome13_5LabelText= new Label(Tempoutcome13_5);
+                EditLectureoldvalue.add(outcome13_5LabelText, 1, 223);
+
+                Label NEWLectureID = new Label("Lecture ID :");
+                EditLecturenewvalue.add(NEWLectureID, 0, 0);
+
+                Label NEWlectureNameLabel = new Label("Lecture Name:");
+                EditLecturenewvalue.add(NEWlectureNameLabel, 0, 1);
+
+                Label NEWlecturerNameLabel = new Label("Lecturer's Name:");
+                EditLecturenewvalue.add(NEWlecturerNameLabel, 0, 2);
+
+                Label NEWlectureCodeLabel = new Label("Lecture Code:");
+                EditLecturenewvalue.add(NEWlectureCodeLabel, 0, 3);
+
+                Label NEWsemesterLabel = new Label("Semester:");
+                EditLecturenewvalue.add(NEWsemesterLabel, 0, 4);
+
+                Label NEWtheoryHourLabel = new Label("Theory Hour:");
+                EditLecturenewvalue.add(NEWtheoryHourLabel, 0, 5);
+
+                Label NEWlabHourLabel = new Label("Lab Hour:");
+                EditLectureoldvalue.add(NEWlabHourLabel, 0, 6);
+
+                Label NEWlocalCreditLabel = new Label("Local Credit:");
+                EditLecturenewvalue.add(NEWlocalCreditLabel, 0, 7);
+
+                Label NEWECTSLabel = new Label("Ects:");
+                EditLecturenewvalue.add(NEWECTSLabel, 0, 8);
+
+                Label NEWprerequisitesLabel = new Label("Prerequisites:");
+                EditLecturenewvalue.add(NEWprerequisitesLabel, 0, 9);
+
+                Label NEWcourse_LanguageLabel = new Label("Lecture Language:");
+                EditLecturenewvalue.add(NEWcourse_LanguageLabel, 0, 10);
+
+                Label NEWcourse_TypeLabel = new Label("Lecture Type:");
+                EditLecturenewvalue.add(NEWcourse_TypeLabel, 0, 11);
+
+                Label NEWcourse_LevelLabel = new Label("Lecture Level:");
+                EditLecturenewvalue.add(NEWcourse_LevelLabel, 0, 12);
+
+                Label NEWteaching_MethodsLabel = new Label("Teaching Method:");
+                EditLecturenewvalue.add(NEWteaching_MethodsLabel, 0, 13);
+
+                Label NEWcourse_CoordinatorLabel = new Label("Lecture Coordinator:");
+                EditLecturenewvalue.add(NEWcourse_CoordinatorLabel, 0, 14);
+
+                Label NEWassistantLabel = new Label("Lecture Assistant:");
+                EditLecturenewvalue.add(NEWassistantLabel, 0, 15);
+
+                Label NEWcourse_ObjectivesLabel = new Label("Lecture Objectives:");
+                EditLecturenewvalue.add(NEWcourse_ObjectivesLabel, 0, 16);
+
+                Label NEWlearning_OutcomesLabel = new Label("Learning Outcome:");
+                EditLecturenewvalue.add(NEWlearning_OutcomesLabel, 0, 17);
+
+                Label NEWcourse_DescriptionLabel = new Label("Lecture Description:");
+                EditLecturenewvalue.add(NEWcourse_DescriptionLabel, 0,18);
+
+                Label NEWcourse_CategoryLabel = new Label("Lecture Category:");
+                EditLecturenewvalue.add(NEWcourse_CategoryLabel, 0, 19);
+
+                Label NEWweek1SubjectsLabel = new Label("Week 1 Subjects:");
+                EditLecturenewvalue.add(NEWweek1SubjectsLabel, 0, 20);
+
+                Label NEWweek2SubjectsLabel = new Label("Week 2 Subjects:");
+                EditLecturenewvalue.add(NEWweek2SubjectsLabel, 0, 21);
+
+                Label NEWweek3SubjectsLabel = new Label("Week 3 Subjects:");
+                EditLecturenewvalue.add(NEWweek3SubjectsLabel, 0, 22);
+
+                Label NEWweek4SubjectsLabel = new Label("Week 4 Subjects:");
+                EditLecturenewvalue.add(NEWweek4SubjectsLabel, 0, 23);
+
+                Label NEWweek5SubjectsLabel = new Label("Week 5 Subjects:");
+                EditLecturenewvalue.add(NEWweek5SubjectsLabel, 0, 24);
+
+                Label NEWweek6SubjectsLabel = new Label("Week 6 Subjects:");
+                EditLecturenewvalue.add(NEWweek6SubjectsLabel, 0, 25);
+
+                Label NEWweek7SubjectsLabel = new Label("Week 7 Subjects:");
+                EditLecturenewvalue.add(NEWweek7SubjectsLabel, 0, 26);
+
+                Label NEWweek8SubjectsLabel = new Label("Week 8 Subjects:");
+                EditLecturenewvalue.add(NEWweek8SubjectsLabel, 0, 27);
+
+                Label NEWweek9SubjectsLabel = new Label("Week 9 Subjects:");
+                EditLecturenewvalue.add(NEWweek9SubjectsLabel, 0, 28);
+
+                Label NEWweek10SubjectsLabel = new Label("Week 10 Subjects:");
+                EditLecturenewvalue.add(NEWweek10SubjectsLabel, 0, 29);
+
+                Label NEWweek11SubjectsLabel = new Label("Week 11 Subjects:");
+                EditLecturenewvalue.add(NEWweek11SubjectsLabel, 0, 30);
+
+                Label NEWweek12SubjectsLabel = new Label("Week 12 Subjects:");
+                EditLecturenewvalue.add(NEWweek12SubjectsLabel, 0, 31);
+
+                Label NEWweek13SubjectsLabel = new Label("Week 13 Subjects:");
+                EditLecturenewvalue.add(NEWweek13SubjectsLabel, 0, 32);
+
+                Label NEWweek14SubjectsLabel = new Label("Week 14 Subjects:");
+                EditLecturenewvalue.add(NEWweek14SubjectsLabel, 0, 33);
+
+                Label NEWweek15SubjectsLabel = new Label("Week 15 Subjects:");
+                EditLecturenewvalue.add(NEWweek15SubjectsLabel, 0, 34);
+
+                Label NEWweek1ReqMatLabel = new Label("Week 1 Required Materials:");
+                EditLecturenewvalue.add(NEWweek1ReqMatLabel, 0, 36);
+
+                Label NEWweek2ReqMatLabel = new Label("Week 2 Required Materials:");
+                EditLecturenewvalue.add(NEWweek2ReqMatLabel, 0, 37);
+
+                Label NEWweek3ReqMatLabel = new Label("Week 3 Required Materials:");
+                EditLecturenewvalue.add(NEWweek3ReqMatLabel, 0, 38);
+
+                Label NEWweek4ReqMatLabel = new Label("Week 4 Required Materials:");
+                EditLecturenewvalue.add(NEWweek4ReqMatLabel, 0, 39);
+
+                Label NEWweek5ReqMatLabel = new Label("Week 5 Required Materials:");
+                EditLecturenewvalue.add(NEWweek5ReqMatLabel, 0, 40);
+
+                Label NEWweek6ReqMatLabel = new Label("Week 6 Required Materials:");
+                EditLecturenewvalue.add(NEWweek6ReqMatLabel, 0, 41);
+
+                Label NEWweek7ReqMatLabel = new Label("Week 7 Required Materials:");
+                EditLecturenewvalue.add(NEWweek7ReqMatLabel, 0, 42);
+
+                Label NEWweek8ReqMatLabel = new Label("Week 8 Required Materials:");
+                EditLecturenewvalue.add(NEWweek8ReqMatLabel, 0, 43);
+
+                Label NEWweek9ReqMatLabel = new Label("Week 9 Required Materials:");
+                EditLecturenewvalue.add(NEWweek9ReqMatLabel, 0, 44);
+
+                Label NEWweek10ReqMatLabel = new Label("Week 10 Required Materials:");
+                EditLecturenewvalue.add(NEWweek10ReqMatLabel, 0, 45);
+
+                Label NEWweek11ReqMatLabel = new Label("Week 11 Required Materials:");
+                EditLecturenewvalue.add(NEWweek11ReqMatLabel, 0, 46);
+
+                Label NEWweek12ReqMatLabel = new Label("Week 12 Required Materials:");
+                EditLecturenewvalue.add(NEWweek12ReqMatLabel, 0, 47);
+
+                Label NEWweek13ReqMatLabel = new Label("Week 13 Required Materials:");
+                EditLecturenewvalue.add(NEWweek13ReqMatLabel, 0, 48);
+
+                Label NEWweek14ReqMatLabel = new Label("Week 14 Required Materials:");
+                EditLecturenewvalue.add(NEWweek14ReqMatLabel, 0, 49);
+
+                Label NEWweek15ReqMatLabel = new Label("Week 15 Required Materials:");
+                EditLecturenewvalue.add(NEWweek15ReqMatLabel, 0, 50);
+
+                Label NEWcourseNotesAndTextBooksLabel = new Label("Course Notes and Textbooks:");
+                EditLecturenewvalue.add(NEWcourseNotesAndTextBooksLabel, 0, 51);
+
+                Label NEWsuggestedReadingsAndMaterialsLabel = new Label("Suggested Readings and Materials:");
+                EditLecturenewvalue.add(NEWsuggestedReadingsAndMaterialsLabel, 0, 52);
+
+                Label NEWparticipationNumberLabel = new Label("Participation Number:");
+                EditLecturenewvalue.add(NEWparticipationNumberLabel, 0, 53);
+
+                Label  NEWparticipationWeiLabel= new Label("Participation Weighting:");
+                EditLecturenewvalue.add(NEWparticipationWeiLabel, 0, 54);
+
+                Label  NEWparticipation01Label= new Label("Participation LO1:");
+                EditLecturenewvalue.add(NEWparticipation01Label, 0, 55);
+
+                Label NEWparticipation02Label = new Label("Participation LO2:");
+                EditLecturenewvalue.add(NEWparticipation02Label, 0, 56);
+
+                Label NEWparticipation03Label = new Label("Participation LO3:");
+                EditLecturenewvalue.add(NEWparticipation03Label, 0, 57);
+
+                Label  NEWparticipation04Label= new Label("Participation LO4:");
+                EditLecturenewvalue.add(NEWparticipation04Label, 0, 58);
+
+                Label NEWlabOrApplicationNumberLabel = new Label("Laboratory Number:");
+                EditLecturenewvalue.add(NEWlabOrApplicationNumberLabel, 0, 59);
+
+                Label  NEWlabOrApplicationWeiLabel= new Label("Laboratory Weighting:");
+                EditLecturenewvalue.add(NEWlabOrApplicationWeiLabel, 0, 60);
+
+                Label NEWlabOrApplication01Label = new Label("Laboratory LO1:");
+                EditLecturenewvalue.add(NEWlabOrApplication01Label, 0, 61);
+
+                Label NEWlabOrApplication02Label = new Label("Laboratory LO2:");
+                EditLecturenewvalue.add(NEWlabOrApplication02Label, 0, 62);
+
+                Label NEWlabOrApplication03Label = new Label("Laboratory LO3:");
+                EditLecturenewvalue.add(NEWlabOrApplication03Label, 0, 63);
+
+                Label NEWlabOrApplication04Label = new Label("Laboratory LO4:");
+                EditLecturenewvalue.add(NEWlabOrApplication04Label, 0, 64);
+
+                Label NEWfieldWorkNumberLabel = new Label("Field Work Number:");
+                EditLecturenewvalue.add(NEWfieldWorkNumberLabel, 0, 65);
+
+                Label NEWFieldWorkWeiLabel = new Label("Field Work Weighting");
+                EditLecturenewvalue.add(NEWFieldWorkWeiLabel, 0, 66);
+
+                Label NEWFieldWork01Label = new Label("Field Work LO1:");
+                EditLecturenewvalue.add(NEWFieldWork01Label, 0, 67);
+
+                Label NEWFieldWork02Label = new Label("Field Work LO2:");
+                EditLecturenewvalue.add(NEWFieldWork02Label, 0, 68);
+
+                Label NEWFieldWork03Label = new Label("Field Work LO3:");
+                EditLecturenewvalue.add(NEWFieldWork03Label, 0, 69);
+
+                Label NEWFieldWork04Label = new Label("Field Work LO4:");
+                EditLecturenewvalue.add(NEWFieldWork04Label, 0, 70);
+
+                Label NEWquizOrStudioCritiqueNumberLabel = new Label("Quiz Number:");
+                EditLecturenewvalue.add(NEWquizOrStudioCritiqueNumberLabel, 0, 71);
+
+                Label NEWquizOrStudioCritiqueWeiLabel = new Label("Quiz Weighting:");
+                EditLecturenewvalue.add(NEWquizOrStudioCritiqueWeiLabel, 0,72);
+
+                Label NEWquizOrStudioCritique01Label = new Label("Quiz LO1:");
+                EditLecturenewvalue.add(NEWquizOrStudioCritique01Label, 0, 73);
+
+                Label NEWquizOrStudioCritique02Label = new Label("Quiz LO2:");
+                EditLecturenewvalue.add(NEWquizOrStudioCritique02Label, 0, 74);
+
+                Label NEWquizOrStudioCritique03Label = new Label("Quiz LO3:");
+                EditLecturenewvalue.add(NEWquizOrStudioCritique03Label, 0, 75);
+
+                Label NEWquizOrStudioCritique04Label = new Label("Quiz LO4:");
+                EditLecturenewvalue.add(NEWquizOrStudioCritique04Label, 0, 76);
+
+                Label NEWhomeworkOrAssignmentNumberLabel = new Label("Homework Number:");
+                EditLecturenewvalue.add(NEWhomeworkOrAssignmentNumberLabel, 0, 77);
+
+                Label NEWhomeworkOrAssignmentWeiLabel = new Label("Homework Weighting:");
+                EditLecturenewvalue.add(NEWhomeworkOrAssignmentWeiLabel, 0, 78);
+
+                Label NEWhomeworkOrAssignment01Label = new Label("Homework LO1:");
+                EditLecturenewvalue.add(NEWhomeworkOrAssignment01Label, 0, 79);
+
+                Label NEWhomeworkOrAssignment02Label = new Label("Homework LO2:");
+                EditLecturenewvalue.add(NEWhomeworkOrAssignment02Label, 0, 80);
+
+                Label NEWhomeworkOrAssignment03Label = new Label("Homework LO3:");
+                EditLecturenewvalue.add(NEWhomeworkOrAssignment03Label, 0, 81);
+
+                Label NEWhomeworkOrAssignment04Label = new Label("Homework LO4:");
+                EditLecturenewvalue.add(NEWhomeworkOrAssignment04Label, 0, 82);
+
+                Label NEWpresentationOrJuryNumberLabel = new Label("Presentation Number:");
+                EditLecturenewvalue.add(NEWpresentationOrJuryNumberLabel, 0, 83);
+
+                Label NEWpresentationOrJuryWeiLabel = new Label("Presentation Weighting:");
+                EditLecturenewvalue.add(NEWpresentationOrJuryWeiLabel, 0, 84);
+
+                Label NEWpresentationOrJury01Label = new Label("Presentation LO1:");
+                EditLecturenewvalue.add(NEWpresentationOrJury01Label, 0, 85);
+
+                Label NEWpresentationOrJury02Label = new Label("Presentation LO2:");
+                EditLecturenewvalue.add(NEWpresentationOrJury02Label, 0, 86);
+
+                Label NEWpresentationOrJury03Label = new Label("Presentation LO3:");
+                EditLecturenewvalue.add(NEWpresentationOrJury03Label, 0, 87);
+
+                Label NEWpresentationOrJury04Label = new Label("Presentation LO4:");
+                EditLecturenewvalue.add(NEWpresentationOrJury04Label, 0, 88);
+
+                Label NEWprojectNumberLabel = new Label("Project Number:");
+                EditLecturenewvalue.add(NEWprojectNumberLabel, 0, 89);
+
+                Label NEWprojectWeiLabel = new Label("Project Weighting:");
+                EditLecturenewvalue.add(NEWprojectWeiLabel, 0, 90);
+
+                Label NEWproject01Label = new Label("Project LO1:");
+                EditLecturenewvalue.add(NEWproject01Label, 0, 91);
+
+                Label NEWproject02Label = new Label("Project LO2:");
+                EditLecturenewvalue.add(NEWproject02Label, 0, 92);
+
+                Label NEWproject03Label = new Label("Project LO3:");
+                EditLecturenewvalue.add(NEWproject03Label, 0, 93);
+
+                Label NEWproject04Label = new Label("Project LO4:");
+                EditLecturenewvalue.add(NEWproject04Label, 0, 94);
+
+                Label NEWportfolioNumberLabel = new Label("Portfolio Number:");
+                EditLecturenewvalue.add(NEWportfolioNumberLabel, 0, 95);
+
+                Label NEWportfolioWeiLabel = new Label("Portfolio Weighting:");
+                EditLecturenewvalue.add(NEWportfolioWeiLabel, 0, 96);
+
+                Label NEWportfolio01Label = new Label("Portfolio LO1:");
+                EditLecturenewvalue.add(NEWportfolio01Label, 0, 97);
+
+                Label NEWportfolio02Label = new Label("Portfolio LO2:");
+                EditLecturenewvalue.add(NEWportfolio02Label, 0, 98);
+
+                Label NEWportfolio03Label = new Label("Portfolio LO3:");
+                EditLecturenewvalue.add(NEWportfolio03Label, 0, 99);
+
+                Label NEWportfolio04Label = new Label("Portfolio LO4:");
+                EditLecturenewvalue.add(NEWportfolio04Label, 0, 100);
+
+                Label NEWseminarNumberLabel = new Label("Seminar Number:");
+                EditLecturenewvalue.add(NEWseminarNumberLabel, 0, 101);
+
+                Label NEWseminarWeiLabel = new Label("Seminar Weighting:");
+                EditLecturenewvalue.add(NEWseminarWeiLabel, 0, 102);
+
+                Label NEWseminar01Label = new Label("Seminar LO1:");
+                EditLecturenewvalue.add(NEWseminar01Label, 0, 103);
+
+                Label NEWseminar02Label = new Label("Seminar LO2:");
+                EditLecturenewvalue.add(NEWseminar02Label, 0, 104);
+
+                Label NEWseminar03Label = new Label("Seminar LO3:");
+                EditLecturenewvalue.add(NEWseminar03Label, 0, 105);
+
+                Label NEWseminar04Label = new Label("Seminar LO4:");
+                EditLecturenewvalue.add(NEWseminar04Label, 0, 106);
+
+                Label NEWoralNumberLabel = new Label("Oral Exam Number:");
+                EditLecturenewvalue.add(NEWoralNumberLabel, 0, 107);
+
+                Label NEWoralWeiLabel = new Label("Oral Exam Weighting:");
+                EditLecturenewvalue.add(NEWoralWeiLabel, 0, 108);
+
+                Label NEWoral01Label = new Label("Oral Exam LO1:");
+                EditLecturenewvalue.add(NEWoral01Label, 0, 109);
+
+                Label NEWoral02Label = new Label("Oral Exam LO2:");
+                EditLecturenewvalue.add(NEWoral02Label, 0, 110);
+
+                Label NEWoral03Label = new Label("Oral Exam LO3:");
+                EditLecturenewvalue.add(NEWoral03Label, 0, 111);
+
+                Label NEWoral04Label = new Label("Oral Exam LO4:");
+                EditLecturenewvalue.add(NEWoral04Label, 0, 112);
+
+                Label NEWmidtermNumberLabel = new Label("Midterm Number:");
+                EditLecturenewvalue.add(NEWmidtermNumberLabel, 0, 113);
+
+                Label NEWmidtermWeiLabel = new Label("Midterm Weighting:");
+                EditLecturenewvalue.add(NEWmidtermWeiLabel, 0, 114);
+
+                Label NEWmidterm01Label = new Label("Midterm LO1:");
+                EditLecturenewvalue.add(NEWmidterm01Label, 0, 115);
+
+                Label NEWmidterm02Label = new Label("Midterm LO2:");
+                EditLecturenewvalue.add(NEWmidterm02Label, 0, 116);
+
+                Label NEWmidterm03Label = new Label("Midterm LO3:");
+                EditLecturenewvalue.add(NEWmidterm03Label, 0, 117);
+
+                Label NEWmidterm04Label = new Label("Midterm LO4:");
+                EditLecturenewvalue.add(NEWmidterm04Label, 0, 118);
+
+                Label NEWfinalNumberLabel = new Label("Final Exam Number:");
+                EditLecturenewvalue.add(NEWfinalNumberLabel, 0, 119);
+
+                Label NEWfinalWeiLabel = new Label("Final Exam Weighting:");
+                EditLecturenewvalue.add(NEWfinalWeiLabel, 0, 120);
+
+                Label NEWfinal01Label = new Label("Final Exam LO1:");
+                EditLecturenewvalue.add(NEWfinal01Label, 0, 121);
+
+                Label NEWfinal02Label = new Label("Final Exam LO2:");
+                EditLecturenewvalue.add(NEWfinal02Label, 0, 123);
+
+                Label NEWfinal03Label = new Label("Final Exam LO3:");
+                EditLecturenewvalue.add(NEWfinal03Label, 0, 124);
+
+                Label NEWfinal04Label = new Label("Final Exam LO4:");
+                EditLecturenewvalue.add(NEWfinal04Label, 0, 125);
+
+                Label NEWStudyHoursoutofClassDurLabel = new Label("Study Hours out of Class Duration:");
+                EditLecturenewvalue.add(NEWStudyHoursoutofClassDurLabel, 0, 126);
+
+                Label NEWStudyHoursoutofClassWorkLabel = new Label("Study Hours out of Class Workload:");
+                EditLecturenewvalue.add(NEWStudyHoursoutofClassWorkLabel, 0, 127);
+
+                Label NEWFieldWorkNumLabel = new Label("Field Work Number");
+                EditLecturenewvalue.add(NEWFieldWorkNumLabel, 0, 128);
+
+                Label NEWFieldWorkDurLabel = new Label("Field Work Duration");
+                EditLecturenewvalue.add(NEWFieldWorkDurLabel, 0, 129);
+
+                Label NEWFieldWorkWorkLabel = new Label("Field Work Workload");
+                EditLecturenewvalue.add(NEWFieldWorkWorkLabel, 0, 130);
+
+                Label NEWQuizNumLabel = new Label("Quiz/Studio Critique Number:");
+                EditLecturenewvalue.add(NEWQuizNumLabel, 0, 131);
+
+                Label NEWQuizDurLabel = new Label("Quiz/Studio Critique Duration:");
+                EditLecturenewvalue.add(NEWQuizDurLabel, 0, 132);
+
+                Label NEWQuizWorkLabel = new Label("Quiz/Studio Critique Workload:");
+                EditLecturenewvalue.add(NEWQuizWorkLabel, 0, 133);
+
+                Label NEWHWNumLabel = new Label("Homework/Assignments Number:");
+                EditLecturenewvalue.add(NEWHWNumLabel, 0, 134);
+
+                Label NEWHWDurLabel = new Label("Homework/Assignments Duration:");
+                EditLecturenewvalue.add(NEWHWDurLabel, 0, 135);
+
+                Label NEWHWWorkLabel = new Label("Homework/Assignments Workload:");
+                EditLecturenewvalue.add(NEWHWWorkLabel, 0, 136);
+
+                Label NEWPresentationNumLabel = new Label("Presentation/Jury Number:");
+                EditLecturenewvalue.add(NEWPresentationNumLabel, 0, 137);
+
+                Label NEWPresentationDurLabel = new Label("Presentation/Jury Duration:");
+                EditLecturenewvalue.add(NEWPresentationDurLabel, 0, 138);
+
+                Label NEWPresentationWorkLabel = new Label("Presentation/Jury Workload:");
+                EditLecturenewvalue.add(NEWPresentationWorkLabel, 0, 139);
+
+                Label NEWProjectNumLabel = new Label("Project Number:");
+                EditLecturenewvalue.add(NEWProjectNumLabel, 0, 140);
+
+                Label NEWProjectDurLabel = new Label("Project Duration:");
+                EditLecturenewvalue.add(NEWProjectDurLabel, 0, 141);
+
+                Label NEWProjectWorkLabel = new Label("Project Workload:");
+                EditLecturenewvalue.add(NEWProjectWorkLabel, 0, 142);
+
+                Label NEWPortfolioNumLabel = new Label("Portfolio Number:");
+                EditLecturenewvalue.add(NEWPortfolioNumLabel, 0, 143);
+
+                Label NEWPortfolioDurLabel = new Label("Portfolio Duration:");
+                EditLecturenewvalue.add(NEWPortfolioDurLabel, 0, 144);
+
+                Label NEWPortfolioWorkLabel = new Label("Portfolio Workload:");
+                EditLecturenewvalue.add(NEWPortfolioWorkLabel, 0, 145);
+
+                Label NEWSeminarNumLabel = new Label("Seminar/Workshop Number:");
+                EditLecturenewvalue.add(NEWSeminarNumLabel, 0,146);
+
+                Label NEWSeminarDurLabel = new Label("Seminar/Workshop Duration:");
+                EditLecturenewvalue.add(NEWSeminarDurLabel, 0,147);
+
+                Label NEWSeminarWorkLabel = new Label("Seminar/Workshop Workload:");
+                EditLecturenewvalue.add(NEWSeminarWorkLabel, 0,148);
+
+                Label NEWOralExamNumLabel = new Label("Oral Exam Number:");
+                EditLecturenewvalue.add(NEWOralExamNumLabel, 0, 149);
+
+                Label NEWOralExamDurLabel = new Label("Oral Exam Duration:");
+                EditLecturenewvalue.add(NEWOralExamDurLabel, 0, 150);
+
+                Label NEWOralExamWorkLabel = new Label("Oral Exam Workload:");
+                EditLecturenewvalue.add(NEWOralExamWorkLabel, 0, 151);
+
+                Label NEWMidtermNumLabel = new Label("Midterm Number: ");
+                EditLecturenewvalue.add(NEWMidtermNumLabel, 0, 152);
+
+                Label NEWMidtermDurLabel = new Label("Midterm Duration:");
+                EditLecturenewvalue.add(NEWMidtermDurLabel, 0, 153);
+
+                Label NEWMidtermWorkLabel = new Label("Midterm Workload:");
+                EditLecturenewvalue.add(NEWMidtermWorkLabel, 0, 154);
+
+                Label NEWFinalNumLabel = new Label("Final Exam Number:");
+                EditLecturenewvalue.add(NEWFinalNumLabel, 0, 155);
+
+                Label NEWFinalDurLabel = new Label("Final Exam Duration:");
+                EditLecturenewvalue.add(NEWFinalDurLabel, 0, 156);
+
+                Label NEWFinalWorkLabel = new Label("Final Exam Workload:");
+                EditLecturenewvalue.add(NEWFinalWorkLabel, 0, 157);
+
+                Label NEWoutcome1_1Label = new Label("Outcome1_1");
+                EditLecturenewvalue.add(NEWoutcome1_1Label,0,159);
+
+                Label NEWoutcome1_2Label = new Label("Outcome 1_2:");
+                EditLecturenewvalue.add(NEWoutcome1_2Label, 0,  160);
+
+                Label NEWoutcome1_3Label = new Label("Outcome 1_3:");
+                EditLecturenewvalue.add(NEWoutcome1_3Label, 0, 161);
+
+                Label  NEWoutcome1_4Label= new Label("Outcome 1_4:");
+                EditLecturenewvalue.add(NEWoutcome1_4Label, 0, 162);
+
+                Label  NEWoutcome1_5Label= new Label("Outcome 1_5:");
+                EditLecturenewvalue.add(NEWoutcome1_5Label, 0, 163);
+
+                Label  NEWoutcome2_1Label= new Label("Outcome 2_1:");
+                EditLecturenewvalue.add(NEWoutcome2_1Label, 0, 164);
+
+                Label NEWoutcome2_2Label = new Label("Outcome 2_2:");
+                EditLecturenewvalue.add(NEWoutcome2_2Label, 0,  165);
+
+                Label NEWoutcome2_3Label = new Label("Outcome 2_3:");
+                EditLecturenewvalue.add(NEWoutcome2_3Label, 0, 166);
+
+                Label  NEWoutcome2_4Label= new Label("Outcome 2_4:");
+                EditLecturenewvalue.add(NEWoutcome2_4Label, 0, 167);
+
+                Label  NEWoutcome2_5Label= new Label("Outcome 2_5:");
+                EditLecturenewvalue.add(NEWoutcome2_5Label, 0, 168);
+
+                Label  NEWoutcome3_1Label= new Label("Outcome 3_1:");
+                EditLecturenewvalue.add(NEWoutcome3_1Label, 0, 169);
+
+                Label NEWoutcome3_2Label = new Label("Outcome 3_2:");
+                EditLecturenewvalue.add(NEWoutcome3_2Label, 0,  170);
+
+                Label NEWoutcome3_3Label = new Label("Outcome 3_3:");
+                EditLecturenewvalue.add(NEWoutcome3_3Label, 0, 171);
+
+                Label  NEWoutcome3_4Label= new Label("Outcome 3_4:");
+                EditLecturenewvalue.add(NEWoutcome3_4Label, 0, 172);
+
+                Label  NEWoutcome3_5Label= new Label("Outcome 3_5:");
+                EditLecturenewvalue.add(NEWoutcome3_5Label, 0, 173);
+
+                Label  NEWoutcome4_1Label= new Label("Outcome 4_1:");
+                EditLecturenewvalue.add(NEWoutcome4_1Label, 0, 174);
+
+                Label NEWoutcome4_2Label = new Label("Outcome 4_2:");
+                EditLecturenewvalue.add(NEWoutcome4_2Label, 0,  175);
+
+                Label NEWoutcome4_3Label = new Label("Outcome 4_3:");
+                EditLecturenewvalue.add(NEWoutcome4_3Label, 0, 176);
+
+                Label  NEWoutcome4_4Label= new Label("Outcome 4_4:");
+                EditLecturenewvalue.add(NEWoutcome4_4Label, 0, 177);
+
+                Label  NEWoutcome4_5Label= new Label("Outcome 4_5:");
+                EditLecturenewvalue.add(NEWoutcome4_5Label, 0, 178);
+
+                Label  NEWoutcome5_1Label= new Label("Outcome 5_1:");
+                EditLecturenewvalue.add(NEWoutcome5_1Label, 0, 179);
+
+                Label NEWoutcome5_2Label = new Label("Outcome 5_2:");
+                EditLecturenewvalue.add(NEWoutcome5_2Label, 0,  180);
+
+                Label NEWoutcome5_3Label = new Label("Outcome 5_3:");
+                EditLecturenewvalue.add(NEWoutcome5_3Label, 0, 181);
+
+                Label  NEWoutcome5_4Label= new Label("Outcome 5_4:");
+                EditLecturenewvalue.add(NEWoutcome5_4Label, 0, 182);
+
+                Label  NEWoutcome5_5Label= new Label("Outcome 5_5:");
+                EditLecturenewvalue.add(NEWoutcome5_5Label, 0, 183);
+
+                Label  NEWoutcome6_1Label= new Label("Outcome 6_1:");
+                EditLecturenewvalue.add(NEWoutcome6_1Label, 0, 184);
+
+                Label NEWoutcome6_2Label = new Label("Outcome 6_2:");
+                EditLecturenewvalue.add(NEWoutcome6_2Label, 0,  185);
+
+                Label NEWoutcome6_3Label = new Label("Outcome 6_3:");
+                EditLecturenewvalue.add(NEWoutcome6_3Label, 0, 186);
+
+                Label  NEWoutcome6_4Label= new Label("Outcome 6_4:");
+                EditLecturenewvalue.add(NEWoutcome6_4Label, 0, 187);
+
+                Label  NEWoutcome6_5Label= new Label("Outcome 6_5:");
+                EditLecturenewvalue.add(NEWoutcome6_5Label, 0, 188);
+
+                Label  NEWoutcome7_1Label= new Label("Outcome 7_1:");
+                EditLecturenewvalue.add(NEWoutcome7_1Label, 0, 189);
+
+                Label NEWoutcome7_2Label = new Label("Outcome 7_2:");
+                EditLecturenewvalue.add(NEWoutcome7_2Label, 0,  190);
+
+                Label NEWoutcome7_3Label = new Label("Outcome 7_3:");
+                EditLecturenewvalue.add(NEWoutcome7_3Label, 0, 191);
+
+                Label  NEWoutcome7_4Label= new Label("Outcome 7_4:");
+                EditLecturenewvalue.add(NEWoutcome7_4Label, 0, 192);
+
+                Label  NEWoutcome7_5Label= new Label("Outcome 7_5:");
+                EditLecturenewvalue.add(NEWoutcome7_5Label, 0, 193);
+
+                Label  NEWoutcome8_1Label= new Label("Outcome 8_1:");
+                EditLecturenewvalue.add(NEWoutcome8_1Label, 0, 194);
+
+                Label NEWoutcome8_2Label = new Label("Outcome 8_2:");
+                EditLecturenewvalue.add(NEWoutcome8_2Label, 0,  195);
+
+                Label NEWoutcome8_3Label = new Label("Outcome 8_3:");
+                EditLecturenewvalue.add(NEWoutcome8_3Label, 0, 196);
+
+                Label  NEWoutcome8_4Label= new Label("Outcome 8_4:");
+                EditLecturenewvalue.add(NEWoutcome8_4Label, 0, 197);
+
+                Label  NEWoutcome8_5Label= new Label("Outcome 8_5:");
+                EditLecturenewvalue.add(NEWoutcome8_5Label, 0, 198);
+
+                Label  NEWoutcome9_1Label= new Label("Outcome 9_1:");
+                EditLecturenewvalue.add(NEWoutcome9_1Label, 0, 199);
+
+                Label NEWoutcome9_2Label = new Label("Outcome 9_2:");
+                EditLecturenewvalue.add(NEWoutcome9_2Label, 0,  200);
+
+                Label NEWoutcome9_3Label = new Label("Outcome 9_3:");
+                EditLecturenewvalue.add(NEWoutcome9_3Label, 0, 201);
+
+                Label NEWoutcome9_4Label= new Label("Outcome 9_4:");
+                EditLecturenewvalue.add(NEWoutcome9_4Label, 0, 202);
+
+                Label  NEWoutcome9_5Label= new Label("Outcome 9_5:");
+                EditLecturenewvalue.add(NEWoutcome9_5Label, 0, 203);
+
+                Label  NEWoutcome10_1Label= new Label("Outcome 10_1:");
+                EditLecturenewvalue.add(NEWoutcome10_1Label, 0, 204);
+
+                Label NEWoutcome10_2Label = new Label("Outcome 10_2:");
+                EditLecturenewvalue.add(NEWoutcome10_2Label, 0,  205);
+
+                Label NEWoutcome10_3Label = new Label("Outcome 10_3:");
+                EditLecturenewvalue.add(NEWoutcome10_3Label, 0, 206);
+
+                Label  NEWoutcome10_4Label= new Label("Outcome 10_4:");
+                EditLecturenewvalue.add(NEWoutcome10_4Label, 0, 207);
+
+                Label  NEWoutcome10_5Label= new Label("Outcome 10_5:");
+                EditLecturenewvalue.add(NEWoutcome10_5Label, 0, 208);
+
+                Label  NEWoutcome11_1Label= new Label("Outcome 11_1:");
+                EditLecturenewvalue.add(NEWoutcome11_1Label, 0, 209);
+
+                Label NEWoutcome11_2Label = new Label("Outcome 11_2:");
+                EditLecturenewvalue.add(NEWoutcome11_2Label, 0,  210);
+
+                Label NEWoutcome11_3Label = new Label("Outcome 11_3:");
+                EditLecturenewvalue.add(NEWoutcome11_3Label, 0, 211);
+
+                Label  NEWoutcome11_4Label= new Label("Outcome 11_4:");
+                EditLecturenewvalue.add(NEWoutcome11_4Label, 0, 212);
+
+                Label  NEWoutcome11_5Label= new Label("Outcome 11_5:");
+                EditLecturenewvalue.add(NEWoutcome11_5Label, 0, 213);
+
+                Label  NEWoutcome12_1Label= new Label("Outcome 12_1:");
+                EditLecturenewvalue.add(NEWoutcome12_1Label, 0, 214);
+
+                Label NEWoutcome12_2Label = new Label("Outcome 12_2:");
+                EditLecturenewvalue.add(NEWoutcome12_2Label, 0,  215);
+
+                Label NEWoutcome12_3Label = new Label("Outcome 12_3:");
+                EditLecturenewvalue.add(NEWoutcome12_3Label, 0, 216);
+
+                Label  NEWoutcome12_4Label= new Label("Outcome 12_4:");
+                EditLecturenewvalue.add(NEWoutcome12_4Label, 0, 217);
+
+                Label  NEWoutcome12_5Label= new Label("Outcome 12_5:");
+                EditLecturenewvalue.add(NEWoutcome12_5Label, 0, 218);
+
+                Label  NEWoutcome13_1Label= new Label("Outcome 13_1:");
+                EditLecturenewvalue.add(NEWoutcome13_1Label, 0, 219);
+
+                Label NEWoutcome13_2Label = new Label("Outcome 13_2:");
+                EditLecturenewvalue.add(NEWoutcome13_2Label, 0,  220);
+
+                Label NEWoutcome13_3Label = new Label("Outcome 13_3:");
+                EditLecturenewvalue.add(NEWoutcome13_3Label, 0, 221);
+
+                Label  NEWoutcome13_4Label= new Label("Outcome 13_4:");
+                EditLecturenewvalue.add(NEWoutcome13_4Label, 0, 222);
+
+                Label  NEWoutcome13_5Label= new Label("Outcome 13_5:");
+                EditLecturenewvalue.add(NEWoutcome13_5Label, 0, 223);
+
+
+                //--------------------------------------------------------
                 TextField NewLectureIDtext = new TextField(TempID);
                 NewLectureIDtext.setEditable(false);
                 EditLecturenewvalue.add(NewLectureIDtext, 1, 0);
 
-                TextField NewLectureNameText = new TextField();
-                EditLecturenewvalue.add(NewLectureNameText, 1, 1);
+                TextField NEWLectureNameText = new TextField(TempLectureName);
+                EditLecturenewvalue.add(NEWLectureNameText, 1, 1);
 
-                TextField NewLecturersNameText = new TextField();
-                EditLecturenewvalue.add(NewLecturersNameText, 1, 2);
+                TextField NEWLecturersNameText = new TextField(TempLecturerName);
+                EditLecturenewvalue.add(NEWLecturersNameText, 1, 2);
 
-               /* TextField NewLectureCodeText = new TextField();
-                EditLecturenewvalue.add(NewLectureCodeText, 1, 3);
+                TextField NEWlectureCodeLabelText = new TextField(TempLCode);
+                EditLecturenewvalue.add(NEWlectureCodeLabelText, 1, 3);
 
-                TextField NewSemesterText = new TextField();
-                EditLecturenewvalue.add(NewSemesterText, 1, 4);
+                TextField NEWsemesterLabelText = new TextField(TempSemester);
+                EditLecturenewvalue.add(NEWsemesterLabelText, 1, 4);
 
-                TextField NewTheoryHourText = new TextField();
-                EditLecturenewvalue.add(NewTheoryHourText, 1, 5);
+                TextField NEWtheoryHourLabelText = new TextField(TempTHour);
+                EditLecturenewvalue.add(NEWtheoryHourLabelText, 1, 5);
 
-                TextField NewLabHourText = new TextField();
-                EditLecturenewvalue.add(NewLabHourText, 1, 6);
+                TextField NEWlabHourLabelText = new TextField(TempLHour);
+                EditLectureoldvalue.add(NEWlabHourLabelText, 1, 6);
 
-                TextField NewLocalCreditText = new TextField();
-                EditLecturenewvalue.add(NewLocalCreditText, 1, 7);
+                TextField NEWlocalCreditLabelText = new TextField(TempLCredit);
+                EditLecturenewvalue.add(NEWlocalCreditLabelText, 1, 7);
 
-                TextField NewEctsText = new TextField();
-                EditLecturenewvalue.add(NewEctsText, 1, 8);
+                TextField NEWECTSLabelText= new TextField(TempEcts);
+                EditLecturenewvalue.add(NEWECTSLabelText, 1, 8);
 
-                TextField NewPrerequisitesText = new TextField();
-                EditLecturenewvalue.add(NewPrerequisitesText, 1, 9);
+                TextField NEWprerequisitesLabelText = new TextField(TempPrereq);
+                EditLecturenewvalue.add(NEWprerequisitesLabelText, 1, 9);
 
-                TextField NewLectureLanguageText = new TextField();
-                EditLecturenewvalue.add(NewLectureLanguageText, 1, 10);
+                TextField NEWcourse_LanguageLabelText= new TextField(TempLLang);
+                EditLecturenewvalue.add(NEWcourse_LanguageLabelText, 1, 10);
 
-                TextField NewLectureTypeText = new TextField();
-                EditLecturenewvalue.add(NewLectureTypeText, 1, 11);
+                TextField NEWcourse_TypeLabelText = new TextField(TempLType);
+                EditLecturenewvalue.add(NEWcourse_TypeLabelText, 1, 11);
 
-                TextField NewLectureLevelText = new TextField();
-                EditLecturenewvalue.add(NewLectureLevelText, 1, 12);
+                TextField NEWcourse_LevelLabelText = new TextField(TempLLevel);
+                EditLecturenewvalue.add(NEWcourse_LevelLabelText, 1, 12);
 
-                TextField NewTeachingMethodText = new TextField();
-                EditLecturenewvalue.add(NewTeachingMethodText, 1, 13);
+                TextField NEWteaching_MethodsLabelText = new TextField(TempTMethod);
+                EditLecturenewvalue.add(NEWteaching_MethodsLabelText, 1, 13);
 
-                TextField NewLectureCoordinatorText = new TextField();
-                EditLecturenewvalue.add(NewLectureCoordinatorText, 1, 14);
+                TextField NEWcourse_CoordinatorLabelText = new TextField(TempLCoordinator);
+                EditLecturenewvalue.add(NEWcourse_CoordinatorLabelText, 1, 14);
 
-                TextField NewAssistantText = new TextField();
-                EditLecturenewvalue.add(NewAssistantText, 1, 15);
+                TextField NEWassistantLabelText = new TextField(TempAssistant);
+                EditLecturenewvalue.add(NEWassistantLabelText, 1, 15);
 
-                TextField NewLectureObjectiveText = new TextField();
-                EditLecturenewvalue.add(NewLectureObjectiveText, 1, 16);
+                TextField NEWcourse_ObjectivesLabelText = new TextField(TempLObjective);
+                EditLecturenewvalue.add(NEWcourse_ObjectivesLabelText, 1, 16);
 
-                TextField NewLearningOutcomeText = new TextField();
-                EditLecturenewvalue.add(NewLearningOutcomeText, 1, 17);
+                TextField NEWlearning_OutcomesLabelText = new TextField(TempLOutcome);
+                EditLecturenewvalue.add(NEWlearning_OutcomesLabelText, 1, 17);
 
-                TextField NewLectureDescriptionText = new TextField();
-                EditLecturenewvalue.add(NewLectureDescriptionText, 1, 18);
+                TextField NEWcourse_DescriptionLabelText = new TextField(TempLDescription);
+                EditLecturenewvalue.add(NEWcourse_DescriptionLabelText, 1,18);
 
-                TextField NewLectureCategoryText = new TextField();
-                EditLecturenewvalue.add(NewLectureCategoryText, 1, 19);
+                TextField NEWcourse_CategoryLabelText = new TextField(TempLCategory);
+                EditLecturenewvalue.add(NEWcourse_CategoryLabelText, 1, 19);
 
-                TextField Newweek1SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek1SubjectsText, 1, 20);
+                TextField NEWweek1SubjectsLabelText = new TextField(TempW1sub);
+                EditLecturenewvalue.add(NEWweek1SubjectsLabelText, 1, 20);
 
-                TextField Newweek2SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek2SubjectsText, 1, 21);
+                TextField NEWweek2SubjectsLabelText = new TextField(TempW2sub);
+                EditLecturenewvalue.add(NEWweek2SubjectsLabelText, 1, 21);
 
-                TextField Newweek3SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek3SubjectsText, 1, 22);
+                TextField NEWweek3SubjectsLabelText = new TextField(TempW3sub);
+                EditLecturenewvalue.add(NEWweek3SubjectsLabelText, 1, 22);
 
-                TextField Newweek4SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek4SubjectsText, 1, 23);
+                TextField NEWweek4SubjectsLabelText = new TextField(TempW4sub);
+                EditLecturenewvalue.add(NEWweek4SubjectsLabelText, 1, 23);
 
-                TextField Newweek5SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek5SubjectsText, 1, 24);
+                TextField NEWweek5SubjectsLabelText = new TextField(TempW5sub);
+                EditLecturenewvalue.add(NEWweek5SubjectsLabelText, 1, 24);
 
-                TextField Newweek6SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek6SubjectsText, 1, 25);
+                TextField NEWweek6SubjectsLabelText = new TextField(TempW6sub);
+                EditLecturenewvalue.add(NEWweek6SubjectsLabelText, 1, 25);
 
-                TextField Newweek7SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek7SubjectsText, 1, 26);
+                TextField NEWweek7SubjectsLabelText = new TextField(TempW7sub);
+                EditLecturenewvalue.add(NEWweek7SubjectsLabelText, 1, 26);
 
-                TextField Newweek8SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek8SubjectsText, 1, 27);
+                TextField NEWweek8SubjectsLabelText = new TextField(TempW8sub);
+                EditLecturenewvalue.add(NEWweek8SubjectsLabelText, 1, 27);
 
-                TextField Newweek9SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek9SubjectsText, 1, 28);
+                TextField NEWweek9SubjectsLabelText = new TextField(TempW9sub);
+                EditLecturenewvalue.add(NEWweek9SubjectsLabelText, 1, 28);
 
-                TextField Newweek10SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek10SubjectsText, 1, 29);
+                TextField NEWweek10SubjectsLabelText = new TextField(TempW10sub);
+                EditLecturenewvalue.add(NEWweek10SubjectsLabelText, 1, 29);
 
-                TextField Newweek11SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek11SubjectsText, 1, 30);
+                TextField NEWweek11SubjectsLabelText = new TextField(TempW11sub);
+                EditLecturenewvalue.add(NEWweek11SubjectsLabelText, 1, 30);
 
-                TextField Newweek12SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek12SubjectsText, 1, 31);
+                TextField NEWweek12SubjectsLabelText = new TextField(TempW12sub);
+                EditLecturenewvalue.add(NEWweek12SubjectsLabelText, 1, 31);
 
-                TextField Newweek13SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek13SubjectsText, 1, 32);
+                TextField NEWweek13SubjectsLabelText = new TextField(TempW13sub);
+                EditLecturenewvalue.add(NEWweek13SubjectsLabelText, 1, 32);
 
-                TextField Newweek14SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek14SubjectsText, 1, 33);
+                TextField NEWweek14SubjectsLabelText = new TextField(TempW14sub);
+                EditLecturenewvalue.add(NEWweek14SubjectsLabelText, 1, 33);
 
-                TextField Newweek15SubjectsText = new TextField();
-                EditLecturenewvalue.add(Newweek15SubjectsText, 1, 34);
+                TextField NEWweek15SubjectsLabelText = new TextField(TempW15sub);
+                EditLecturenewvalue.add(NEWweek15SubjectsLabelText, 1, 34);
 
-                TextField Newweek1ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek1ReqMatText, 3, 20);
+                TextField NEWweek1ReqMatLabelText = new TextField(TempW1req);
+                EditLecturenewvalue.add(NEWweek1ReqMatLabelText, 1, 36);
 
-                TextField Newweek2ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek2ReqMatText, 3, 21);
+                TextField NEWweek2ReqMatLabelText = new TextField(TempW2req);
+                EditLecturenewvalue.add(NEWweek2ReqMatLabelText, 1, 37);
 
-                TextField Newweek3ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek3ReqMatText, 3, 22);
+                TextField NEWweek3ReqMatLabelText = new TextField(TempW3req);
+                EditLecturenewvalue.add(NEWweek3ReqMatLabelText, 1, 38);
 
-                TextField Newweek4ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek4ReqMatText, 3, 23);
+                TextField NEWweek4ReqMatLabelText = new TextField(TempW4req);
+                EditLecturenewvalue.add(NEWweek4ReqMatLabelText, 1, 39);
 
-                TextField Newweek5ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek5ReqMatText, 3, 24);
+                TextField NEWweek5ReqMatLabelText = new TextField(TempW5req);
+                EditLecturenewvalue.add(NEWweek5ReqMatLabelText, 1, 40);
 
-                TextField Newweek6ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek6ReqMatText ,3, 25);
+                TextField NEWweek6ReqMatLabelText = new TextField(TempW6req);
+                EditLecturenewvalue.add(NEWweek6ReqMatLabelText, 1, 41);
 
-                TextField Newweek7ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek7ReqMatText, 3, 26);
+                TextField NEWweek7ReqMatLabelText = new TextField(TempW7req);
+                EditLecturenewvalue.add(NEWweek7ReqMatLabelText, 1, 42);
 
-                TextField Newweek8ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek8ReqMatText, 3, 27);
+                TextField NEWweek8ReqMatLabelText = new TextField(TempW8req);
+                EditLecturenewvalue.add(NEWweek8ReqMatLabelText, 1, 43);
 
-                TextField Newweek9ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek9ReqMatText, 3, 28);
+                TextField NEWweek9ReqMatLabelText = new TextField(TempW9req);
+                EditLecturenewvalue.add(NEWweek9ReqMatLabelText, 1, 44);
 
-                TextField Newweek10ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek10ReqMatText, 3, 29);
+                TextField NEWweek10ReqMatLabelText = new TextField(TempW10req);
+                EditLecturenewvalue.add(NEWweek10ReqMatLabelText, 1, 45);
 
-                TextField Newweek11ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek11ReqMatText, 3, 30);
+                TextField NEWweek11ReqMatLabelText = new TextField(TempW11req);
+                EditLecturenewvalue.add(NEWweek11ReqMatLabelText, 1, 46);
 
-                TextField Newweek12ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek12ReqMatText, 3, 31);
+                TextField NEWweek12ReqMatLabelText = new TextField(TempW12req);
+                EditLecturenewvalue.add(NEWweek12ReqMatLabelText, 1, 47);
 
-                TextField Newweek13ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek13ReqMatText, 3, 32);
+                TextField NEWweek13ReqMatLabelText = new TextField(TempW13req);
+                EditLecturenewvalue.add(NEWweek13ReqMatLabelText, 1, 48);
 
-                TextField Newweek14ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek14ReqMatText, 3, 33);
+                TextField NEWweek14ReqMatLabelText = new TextField(TempW14req);
+                EditLecturenewvalue.add(NEWweek14ReqMatLabelText, 1, 49);
 
-                TextField Newweek15ReqMatText = new TextField();
-                EditLecturenewvalue.add(Newweek15ReqMatText, 3, 34);
+                TextField NEWweek15ReqMatLabelText= new TextField(TempW15req);
+                EditLecturenewvalue.add(NEWweek15ReqMatLabelText, 1, 50);
 
-                TextField NewcourseNotesAndTextBooksText = new TextField();
-                EditLecturenewvalue.add(NewcourseNotesAndTextBooksText, 1, 35);
+                TextField NEWcourseNotesAndTextBooksLabelText = new TextField(TempCourseNotes);
+                EditLecturenewvalue.add(NEWcourseNotesAndTextBooksLabelText, 1, 51);
 
-                TextField NewsuggestedReadingsAndMaterialsText = new TextField();
-                EditLecturenewvalue.add(NewsuggestedReadingsAndMaterialsText, 1, 36);*/
+                TextField NEWsuggestedReadingsAndMaterialsLabelText = new TextField(TempSuggested);
+                EditLecturenewvalue.add(NEWsuggestedReadingsAndMaterialsLabelText, 1, 52);
 
+                TextField NEWparticipationNumberLabelText = new TextField(TempPartNumb);
+                EditLecturenewvalue.add(NEWparticipationNumberLabelText, 1, 53);
+
+                TextField  NEWparticipationWeiLabelText= new TextField(TempPartWei);
+                EditLecturenewvalue.add(NEWparticipationWeiLabelText, 1, 54);
+
+                TextField  NEWparticipation01LabelText= new TextField(TempPartL01);
+                EditLecturenewvalue.add(NEWparticipation01LabelText, 1, 55);
+
+                TextField NEWparticipation02LabelText = new TextField(TempPartL02);
+                EditLecturenewvalue.add(NEWparticipation02LabelText, 1, 56);
+
+                TextField NEWparticipation03LabelText = new TextField(TempPartL03);
+                EditLecturenewvalue.add(NEWparticipation03LabelText, 1, 57);
+
+                TextField  NEWparticipation04LabelText= new TextField(TempPartL04);
+                EditLecturenewvalue.add(NEWparticipation04LabelText, 1, 58);
+
+                TextField NEWlabOrApplicationNumberLabelText = new TextField(TempLabNumb);
+                EditLecturenewvalue.add(NEWlabOrApplicationNumberLabelText, 1, 59);
+
+                TextField  NEWlabOrApplicationWeiLabelText= new TextField(TempLabWei);
+                EditLecturenewvalue.add(NEWlabOrApplicationWeiLabelText, 1, 60);
+
+                TextField NEWlabOrApplication01LabelText = new TextField(TempLabL01);
+                EditLecturenewvalue.add(NEWlabOrApplication01LabelText, 1, 61);
+
+                TextField NEWlabOrApplication02LabelText = new TextField(TempLabL02);
+                EditLecturenewvalue.add(NEWlabOrApplication02LabelText, 1, 62);
+
+                TextField NEWlabOrApplication03LabelText = new TextField(TempLabL03);
+                EditLecturenewvalue.add(NEWlabOrApplication03LabelText, 1, 63);
+
+                TextField NEWlabOrApplication04LabelText = new TextField(TempLabL04);
+                EditLecturenewvalue.add(NEWlabOrApplication04LabelText, 1, 64);
+
+                TextField NEWfieldWorkNumberLabelText = new TextField(TempFWNumb);
+                EditLecturenewvalue.add(NEWfieldWorkNumberLabelText, 1, 65);
+
+                TextField NEWFieldWorkWeiLabelText = new TextField(TempFWWei);
+                EditLecturenewvalue.add(NEWFieldWorkWeiLabelText, 1, 66);
+
+                TextField NEWFieldWork01LabelText = new TextField(TempFWL01);
+                EditLecturenewvalue.add(NEWFieldWork01LabelText, 1, 67);
+
+                TextField NEWFieldWork02LabelText = new TextField(TempFWL02);
+                EditLecturenewvalue.add(NEWFieldWork02LabelText, 1, 68);
+
+                TextField NEWFieldWork03LabelText = new TextField(TempFWL03);
+                EditLecturenewvalue.add(NEWFieldWork03LabelText, 1, 69);
+
+                TextField NEWFieldWork04LabelText = new TextField(TempFWL04);
+                EditLecturenewvalue.add(NEWFieldWork04LabelText, 1, 70);
+
+                TextField NEWquizOrStudioCritiqueNumberLabelText = new TextField(TempQuizNumb);
+                EditLecturenewvalue.add(NEWquizOrStudioCritiqueNumberLabelText, 1, 71);
+
+                TextField NEWquizOrStudioCritiqueWeiLabelText = new TextField(TempQuizWei);
+                EditLecturenewvalue.add(NEWquizOrStudioCritiqueWeiLabelText, 1,72);
+
+                TextField NEWquizOrStudioCritique01LabelText = new TextField(TempQuizL01);
+                EditLecturenewvalue.add(NEWquizOrStudioCritique01LabelText, 1, 73);
+
+                TextField NEWquizOrStudioCritique02LabelText = new TextField(TempQuizL02);
+                EditLecturenewvalue.add(NEWquizOrStudioCritique02LabelText, 1, 74);
+
+                TextField NEWquizOrStudioCritique03LabelText = new TextField(TempQuizL03);
+                EditLecturenewvalue.add(NEWquizOrStudioCritique03LabelText, 1, 75);
+
+                TextField NEWquizOrStudioCritique04LabelText = new TextField(TempQuizL04);
+                EditLecturenewvalue.add(NEWquizOrStudioCritique04LabelText, 1, 76);
+
+                TextField NEWhomeworkOrAssignmentNumberLabelText = new TextField(TempHWNumb);
+                EditLecturenewvalue.add(NEWhomeworkOrAssignmentNumberLabelText, 1, 77);
+
+                TextField NEWhomeworkOrAssignmentWeiLabelText = new TextField(TempHWWei);
+                EditLecturenewvalue.add(NEWhomeworkOrAssignmentWeiLabelText, 1, 78);
+
+                TextField NEWhomeworkOrAssignment01LabelText = new TextField(TempHWL01);
+                EditLecturenewvalue.add(NEWhomeworkOrAssignment01LabelText, 1, 79);
+
+                TextField NEWhomeworkOrAssignment02LabelText = new TextField(TempHWL02);
+                EditLecturenewvalue.add(NEWhomeworkOrAssignment02LabelText, 1, 80);
+
+                TextField NEWhomeworkOrAssignment03LabelText = new TextField(TempHWL03);
+                EditLecturenewvalue.add(NEWhomeworkOrAssignment03LabelText, 1, 81);
+
+                TextField NEWhomeworkOrAssignment04LabelText = new TextField(TempHWL04);
+                EditLecturenewvalue.add(NEWhomeworkOrAssignment04LabelText, 1, 82);
+
+                TextField NEWpresentationOrJuryNumberLabelText = new TextField(TempPresNumb);
+                EditLecturenewvalue.add(NEWpresentationOrJuryNumberLabelText, 1, 83);
+
+                TextField NEWpresentationOrJuryWeiLabelText = new TextField(TempPresWei);
+                EditLecturenewvalue.add(NEWpresentationOrJuryWeiLabelText, 1, 84);
+
+                TextField NEWpresentationOrJury01LabelText = new TextField(TempPresL01);
+                EditLecturenewvalue.add(NEWpresentationOrJury01LabelText, 1, 85);
+
+                TextField NEWpresentationOrJury02LabelText = new TextField(TempPresL02);
+                EditLecturenewvalue.add(NEWpresentationOrJury02LabelText, 1, 86);
+
+                TextField NEWpresentationOrJury03LabelText = new TextField(TempPresL03);
+                EditLecturenewvalue.add(NEWpresentationOrJury03LabelText, 1, 87);
+
+                TextField NEWpresentationOrJury04LabelText = new TextField(TempPresL04);
+                EditLecturenewvalue.add(NEWpresentationOrJury04LabelText, 1, 88);
+
+                TextField NEWprojectNumberLabelText = new TextField(TempProjNumb);
+                EditLecturenewvalue.add(NEWprojectNumberLabelText, 1, 89);
+
+                TextField NEWprojectWeiLabelText = new TextField(TempProjWei);
+                EditLecturenewvalue.add(NEWprojectWeiLabelText, 1, 90);
+
+                TextField NEWproject01LabelText= new TextField(TempProjL01);
+                EditLecturenewvalue.add(NEWproject01LabelText, 1, 91);
+
+                TextField NEWproject02LabelText= new TextField(TempProjL02);
+                EditLecturenewvalue.add(NEWproject02LabelText, 1, 92);
+
+                TextField NEWproject03LabelText = new TextField(TempProjL03);
+                EditLecturenewvalue.add(NEWproject03LabelText, 1, 93);
+
+                TextField NEWproject04LabelText = new TextField(TempProjL04);
+                EditLecturenewvalue.add(NEWproject04LabelText, 1, 94);
+
+                TextField NEWportfolioNumberLabelText = new TextField(TempPortNumb);
+                EditLecturenewvalue.add(NEWportfolioNumberLabelText, 1, 95);
+
+                TextField NEWportfolioWeiLabelText = new TextField(TempPortWei);
+                EditLecturenewvalue.add(NEWportfolioWeiLabelText, 1, 96);
+
+                TextField NEWportfolio01LabelText = new TextField(TempPortL01);
+                EditLecturenewvalue.add(NEWportfolio01LabelText, 1, 97);
+
+                TextField NEWportfolio02LabelText = new TextField(TempPortL02);
+                EditLecturenewvalue.add(NEWportfolio02LabelText, 1, 98);
+
+                TextField NEWportfolio03LabelText = new TextField(TempPortL03);
+                EditLecturenewvalue.add(NEWportfolio03LabelText, 1, 99);
+
+                TextField NEWportfolio04LabelText = new TextField(TempPortL04);
+                EditLecturenewvalue.add(NEWportfolio04LabelText, 1, 100);
+
+                TextField NEWseminarNumberLabelText = new TextField(TempSEMNumb);
+                EditLecturenewvalue.add(NEWseminarNumberLabelText, 1, 101);
+
+                TextField NEWseminarWeiLabelText = new TextField(TempSEMWei);
+                EditLecturenewvalue.add(NEWseminarWeiLabelText, 1, 102);
+
+                TextField NEWseminar01LabelText = new TextField(TempSEML01);
+                EditLecturenewvalue.add(NEWseminar01LabelText, 1, 103);
+
+                TextField NEWseminar02LabelText = new TextField(TempSEML02);
+                EditLecturenewvalue.add(NEWseminar02LabelText, 1, 104);
+
+                TextField NEWseminar03LabelText = new TextField(TempSEML03);
+                EditLecturenewvalue.add(NEWseminar03LabelText, 1, 105);
+
+                TextField NEWseminar04LabelText = new TextField(TempSEML04);
+                EditLecturenewvalue.add(NEWseminar04LabelText, 1, 106);
+
+                TextField NEWoralNumberLabelText = new TextField(TempORALNumb);
+                EditLecturenewvalue.add(NEWoralNumberLabelText, 1, 107);
+
+                TextField NEWoralWeiLabelText = new TextField(TempORALWei);
+                EditLecturenewvalue.add(NEWoralWeiLabelText, 1, 108);
+
+                TextField NEWoral01LabelText = new TextField(TempORALL01);
+                EditLecturenewvalue.add(NEWoral01LabelText, 1, 109);
+
+                TextField NEWoral02LabelText = new TextField(TempORALL02);
+                EditLecturenewvalue.add(NEWoral02LabelText, 1, 110);
+
+                TextField NEWoral03LabelText = new TextField(TempORALL03);
+                EditLecturenewvalue.add(NEWoral03LabelText, 1, 111);
+
+                TextField NEWoral04LabelText = new TextField(TempORALL04);
+                EditLecturenewvalue.add(NEWoral04LabelText, 1, 112);
+
+                TextField NEWmidtermNumberLabelText = new TextField(TempMIDNumb);
+                EditLecturenewvalue.add(NEWmidtermNumberLabelText, 1, 113);
+
+                TextField NEWmidtermWeiLabelText = new TextField(TempMIDWei);
+                EditLecturenewvalue.add(NEWmidtermWeiLabelText, 1, 114);
+
+                TextField NEWmidterm01LabelText = new TextField(TempMIDL01);
+                EditLecturenewvalue.add(NEWmidterm01LabelText, 1, 115);
+
+                TextField NEWmidterm02LabelText = new TextField(TempMIDL02);
+                EditLecturenewvalue.add(NEWmidterm02LabelText, 1, 116);
+
+                TextField NEWmidterm03LabelText = new TextField(TempMIDL03);
+                EditLecturenewvalue.add(NEWmidterm03LabelText, 1, 117);
+
+                TextField NEWmidterm04LabelText = new TextField(TempMIDL04);
+                EditLecturenewvalue.add(NEWmidterm04LabelText, 1, 118);
+
+                TextField NEWfinalNumberLabelText= new TextField(TempFINALNumb);
+                EditLecturenewvalue.add(NEWfinalNumberLabelText, 1, 119);
+
+                TextField NEWfinalWeiLabelText = new TextField(TempFINALWei);
+                EditLecturenewvalue.add(NEWfinalWeiLabelText, 1, 120);
+
+                TextField NEWfinal01LabelText = new TextField(TempFINALL01);
+                EditLecturenewvalue.add(NEWfinal01LabelText, 1, 121);
+
+                TextField NEWfinal02LabelText = new TextField(TempFINALL02);
+                EditLecturenewvalue.add(NEWfinal02LabelText, 1, 123);
+
+                TextField NEWfinal03LabelText = new TextField(TempFINALL03);
+                EditLecturenewvalue.add(NEWfinal03LabelText, 1, 124);
+
+                TextField NEWfinal04LabelText = new TextField(TempFINALL04);
+                EditLecturenewvalue.add(NEWfinal04LabelText, 1, 125);
+
+                TextField NEWStudyHoursoutofClassNumLabelText = new TextField(TempSHOOCNum);
+                LectureGrid.add(NEWStudyHoursoutofClassNumLabelText, 1, 126);
+
+                TextField NEWStudyHoursoutofClassDurLabelText = new TextField(TempSHOOCDur);
+                LectureGrid.add(NEWStudyHoursoutofClassDurLabelText, 1, 126);
+
+                TextField NEWStudyHoursoutofClassWorkLabelText = new TextField(TempSHOOCWork);
+                EditLecturenewvalue.add(NEWStudyHoursoutofClassWorkLabelText, 1, 127);
+
+                TextField NEWFieldWorkNumLabelText = new TextField(TempFWNum);
+                EditLecturenewvalue.add(NEWFieldWorkNumLabelText, 1, 128);
+
+                TextField NEWFieldWorkDurLabelText = new TextField(TempFWDur);
+                EditLecturenewvalue.add(NEWFieldWorkDurLabelText, 1, 129);
+
+                TextField NEWFieldWorkWorkLabelText = new TextField(TempFWWork);
+                EditLecturenewvalue.add(NEWFieldWorkWorkLabelText, 1, 130);
+
+                TextField NEWQuizNumLabelText = new TextField(TempQuizNum);
+                EditLecturenewvalue.add(NEWQuizNumLabelText, 1, 131);
+
+                TextField NEWQuizDurLabelText = new TextField(TempQuizDur);
+                EditLecturenewvalue.add(NEWQuizDurLabelText, 1, 132);
+
+                TextField NEWQuizWorkLabelText = new TextField(TempQuizWork);
+                EditLecturenewvalue.add(NEWQuizWorkLabelText, 1, 133);
+
+                TextField NEWHWNumLabelText = new TextField(TempHWNum);
+                EditLecturenewvalue.add(NEWHWNumLabelText, 1, 134);
+
+                TextField NEWHWDurLabelText = new TextField(TempHWDur);
+                EditLecturenewvalue.add(NEWHWDurLabelText, 1, 135);
+
+                TextField NEWHWWorkLabelText = new TextField(TempHWWork);
+                EditLecturenewvalue.add(NEWHWWorkLabelText, 1, 136);
+
+                TextField NEWPresentationNumLabelText = new TextField(TempPresentationNum);
+                EditLecturenewvalue.add(NEWPresentationNumLabelText, 1, 137);
+
+                TextField NEWPresentationDurLabelText = new TextField(TempPresentationDur);
+                EditLecturenewvalue.add(NEWPresentationDurLabelText, 1, 138);
+
+                TextField NEWPresentationWorkLabelText = new TextField(TempPresentationWork);
+                EditLecturenewvalue.add(NEWPresentationWorkLabelText, 1, 139);
+
+                TextField NEWProjectNumLabelText = new TextField(TempProjectNum);
+                EditLecturenewvalue.add(NEWProjectNumLabelText, 1, 140);
+
+                TextField NEWProjectDurLabelText = new TextField(TempProjectDur);
+                EditLecturenewvalue.add(NEWProjectDurLabelText, 1, 141);
+
+                TextField NEWProjectWorkLabelText = new TextField(TempProjectWork);
+                EditLecturenewvalue.add(NEWProjectWorkLabelText, 1, 142);
+
+                TextField NEWPortfolioNumLabelText = new TextField(TempPortfolioNum);
+                EditLecturenewvalue.add(NEWPortfolioNumLabelText, 1, 143);
+
+                TextField NEWPortfolioDurLabelText = new TextField(TempPortfolioDur);
+                EditLecturenewvalue.add(NEWPortfolioDurLabelText, 1, 144);
+
+                TextField NEWPortfolioWorkLabelText = new TextField(TempPortfolioWork);
+                EditLecturenewvalue.add(NEWPortfolioWorkLabelText, 1, 145);
+
+                TextField NEWSeminarNumLabelText = new TextField(TempSeminarNum);
+                EditLecturenewvalue.add(NEWSeminarNumLabelText, 1,146);
+
+                TextField NEWSeminarDurLabelText = new TextField(TempSeminarDur);
+                EditLecturenewvalue.add(NEWSeminarDurLabelText, 1,147);
+
+                TextField NEWSeminarWorkLabelText = new TextField(TempSeminarWork);
+                EditLecturenewvalue.add(NEWSeminarWorkLabelText, 1,148);
+
+                TextField NEWOralExamNumLabelText = new TextField(TempOralNum);
+                EditLecturenewvalue.add(NEWOralExamNumLabelText, 1, 149);
+
+                TextField NEWOralExamDurLabelText = new TextField(TempOralDur);
+                EditLecturenewvalue.add(NEWOralExamDurLabelText, 1, 150);
+
+                TextField NEWOralExamWorkLabelText = new TextField(TempOralWork);
+                EditLecturenewvalue.add(NEWOralExamWorkLabelText, 1, 151);
+
+                TextField NEWMidtermNumLabelText = new TextField(TempMidtermNum);
+                EditLecturenewvalue.add(NEWMidtermNumLabelText, 1, 152);
+
+                TextField NEWMidtermDurLabelText = new TextField(TempMidtermDur);
+                EditLecturenewvalue.add(NEWMidtermDurLabelText, 1, 153);
+
+                TextField NEWMidtermWorkLabelText = new TextField(TempMidtermWork);
+                EditLecturenewvalue.add(NEWMidtermWorkLabelText, 1, 154);
+
+                TextField NEWFinalNumLabelText = new TextField(TempFinalNum);
+                EditLecturenewvalue.add(NEWFinalNumLabelText, 1, 155);
+
+                TextField NEWFinalDurLabelText = new TextField(TempFinalDur);
+                EditLecturenewvalue.add(NEWFinalDurLabelText, 1, 156);
+
+                TextField NEWFinalWorkLabelText = new TextField(TempFinalWork);
+                EditLecturenewvalue.add(NEWFinalWorkLabelText, 1, 157);
+
+                TextField NEWoutcome1_1LabelText = new TextField(Tempoutcome1_1);
+                EditLecturenewvalue.add(NEWoutcome1_1LabelText, 1,  159);
+
+                TextField NEWoutcome1_2LabelText = new TextField(Tempoutcome1_2);
+                EditLecturenewvalue.add(NEWoutcome1_2LabelText, 1,  160);
+
+                TextField NEWoutcome1_3LabelText = new TextField(Tempoutcome1_3);
+                EditLecturenewvalue.add(NEWoutcome1_3LabelText, 1, 161);
+
+                TextField  NEWoutcome1_4LabelText= new TextField(Tempoutcome1_4);
+                EditLecturenewvalue.add(NEWoutcome1_4LabelText, 1, 162);
+
+                TextField  NEWoutcome1_5LabelText= new TextField(Tempoutcome1_5);
+                EditLecturenewvalue.add(NEWoutcome1_5LabelText, 1, 163);
+
+                TextField  NEWoutcome2_1LabelText= new TextField( Tempoutcome2_1);
+                EditLecturenewvalue.add(NEWoutcome2_1LabelText, 1, 164);
+
+                TextField NEWoutcome2_2LabelText = new TextField(Tempoutcome2_2);
+                EditLecturenewvalue.add(NEWoutcome2_2LabelText, 1,  165);
+
+                TextField NEWoutcome2_3LabelText= new TextField(Tempoutcome2_3);
+                EditLecturenewvalue.add(NEWoutcome2_3LabelText, 1, 166);
+
+                TextField  NEWoutcome2_4LabelText= new TextField(Tempoutcome2_4);
+                EditLecturenewvalue.add(NEWoutcome2_4LabelText, 1, 167);
+
+                TextField  NEWoutcome2_5LabelText= new TextField(Tempoutcome2_5);
+                EditLecturenewvalue.add(NEWoutcome2_5LabelText, 1, 168);
+
+                TextField  NEWoutcome3_1LabelText= new TextField(Tempoutcome3_1);
+                EditLecturenewvalue.add(NEWoutcome3_1LabelText, 1, 169);
+
+                TextField NEWoutcome3_2LabelText = new TextField(Tempoutcome3_2);
+                EditLecturenewvalue.add(NEWoutcome3_2LabelText, 1,  170);
+
+                TextField NEWoutcome3_3LabelText = new TextField(Tempoutcome3_3);
+                EditLecturenewvalue.add(NEWoutcome3_3LabelText, 1, 171);
+
+                TextField  NEWoutcome3_4LabelText= new TextField(Tempoutcome3_4);
+                EditLecturenewvalue.add(NEWoutcome3_4LabelText, 1, 172);
+
+                TextField  NEWoutcome3_5LabelText= new TextField(Tempoutcome3_5);
+                EditLecturenewvalue.add(NEWoutcome3_5LabelText, 1, 173);
+
+                TextField  NEWoutcome4_1LabelText= new TextField(Tempoutcome4_1);
+                EditLecturenewvalue.add(NEWoutcome4_1LabelText, 1, 174);
+
+                TextField NEWoutcome4_2LabelText = new TextField(Tempoutcome4_2);
+                EditLecturenewvalue.add(NEWoutcome4_2LabelText, 1,  175);
+
+                TextField NEWoutcome4_3LabelText= new TextField(Tempoutcome4_3);
+                EditLecturenewvalue.add(NEWoutcome4_3LabelText, 1, 176);
+
+                TextField  NEWoutcome4_4LabelText= new TextField(Tempoutcome4_4);
+                EditLecturenewvalue.add(NEWoutcome4_4LabelText, 1, 177);
+
+                TextField  NEWoutcome4_5LabelText= new TextField(Tempoutcome4_5);
+                EditLecturenewvalue.add(NEWoutcome4_5LabelText, 1, 178);
+
+                TextField  NEWoutcome5_1LabelText= new TextField(Tempoutcome5_1);
+                EditLecturenewvalue.add(NEWoutcome5_1LabelText, 1, 179);
+
+                TextField NEWoutcome5_2LabelText = new TextField(Tempoutcome5_2);
+                EditLecturenewvalue.add(NEWoutcome5_2LabelText, 1,  180);
+
+                TextField NEWoutcome5_3LabelText= new TextField(Tempoutcome5_3);
+                EditLecturenewvalue.add(NEWoutcome5_3LabelText, 1, 181);
+
+                TextField  NEWoutcome5_4LabelText= new TextField(Tempoutcome5_4);
+                EditLecturenewvalue.add(NEWoutcome5_4LabelText, 1, 182);
+
+                TextField  NEWoutcome5_5LabelText= new TextField(Tempoutcome5_5);
+                EditLecturenewvalue.add(NEWoutcome5_5LabelText, 1, 183);
+
+                TextField  NEWoutcome6_1LabelText= new TextField(Tempoutcome6_1);
+                EditLecturenewvalue.add(NEWoutcome6_1LabelText, 1, 184);
+
+                TextField NEWoutcome6_2LabelText = new TextField(Tempoutcome6_2);
+                EditLecturenewvalue.add(NEWoutcome6_2LabelText, 1,  185);
+
+                TextField NEWoutcome6_3LabelText = new TextField(Tempoutcome6_3);
+                EditLecturenewvalue.add(NEWoutcome6_3LabelText, 1, 186);
+
+                TextField  NEWoutcome6_4LabelText= new TextField(Tempoutcome6_4);
+                EditLecturenewvalue.add(NEWoutcome6_4LabelText, 1, 187);
+
+                TextField  NEWoutcome6_5LabelText= new TextField(Tempoutcome6_5);
+                EditLecturenewvalue.add(NEWoutcome6_5LabelText, 1, 188);
+
+                TextField  NEWoutcome7_1LabelText= new TextField(Tempoutcome7_1);
+                EditLecturenewvalue.add(NEWoutcome7_1LabelText, 1, 189);
+
+                TextField NEWoutcome7_2LabelText = new TextField(Tempoutcome7_2);
+                EditLecturenewvalue.add(NEWoutcome7_2LabelText, 1,  190);
+
+                TextField NEWoutcome7_3LabelText = new TextField(Tempoutcome7_3);
+                EditLecturenewvalue.add(NEWoutcome7_3LabelText, 1, 191);
+
+                TextField  NEWoutcome7_4LabelText= new TextField(Tempoutcome7_4);
+                EditLecturenewvalue.add(NEWoutcome7_4LabelText, 1, 192);
+
+                TextField  NEWoutcome7_5LabelText= new TextField(Tempoutcome7_5);
+                EditLecturenewvalue.add(NEWoutcome7_5LabelText, 1, 193);
+
+                TextField  NEWoutcome8_1LabelText= new TextField(Tempoutcome8_1);
+                EditLecturenewvalue.add(NEWoutcome8_1LabelText, 1, 194);
+
+                TextField NEWoutcome8_2LabelText= new TextField(Tempoutcome8_2);
+                EditLecturenewvalue.add(NEWoutcome8_2LabelText, 1,  195);
+
+                TextField NEWoutcome8_3LabelText = new TextField(Tempoutcome8_3);
+                EditLecturenewvalue.add(NEWoutcome8_3LabelText, 1, 196);
+
+                TextField  NEWoutcome8_4LabelText= new TextField(Tempoutcome8_4);
+                EditLecturenewvalue.add(NEWoutcome8_4LabelText, 1, 197);
+
+                TextField  NEWoutcome8_5LabelText= new TextField(Tempoutcome8_5);
+                EditLecturenewvalue.add(NEWoutcome8_5LabelText, 1, 198);
+
+                TextField  NEWoutcome9_1LabelText= new TextField(Tempoutcome9_1);
+                EditLecturenewvalue.add(NEWoutcome9_1LabelText, 1, 199);
+
+                TextField NEWoutcome9_2LabelText= new TextField(Tempoutcome9_2);
+                EditLecturenewvalue.add(NEWoutcome9_2LabelText, 1,  200);
+
+                TextField NEWoutcome9_3LabelText= new TextField(Tempoutcome9_3);
+                EditLecturenewvalue.add(NEWoutcome9_3LabelText, 1, 201);
+
+                TextField NEWoutcome9_4LabelText= new TextField(Tempoutcome9_4);
+                EditLecturenewvalue.add(NEWoutcome9_4LabelText, 1, 202);
+
+                TextField  NEWoutcome9_5LabelText= new TextField(Tempoutcome9_5);
+                EditLecturenewvalue.add(NEWoutcome9_5LabelText, 1, 203);
+
+                TextField  NEWoutcome10_1LabelText= new TextField(Tempoutcome10_1);
+                EditLecturenewvalue.add(NEWoutcome10_1LabelText, 1, 204);
+
+                TextField NEWoutcome10_2LabelText= new TextField(Tempoutcome10_2);
+                EditLecturenewvalue.add(NEWoutcome10_2LabelText, 1,  205);
+
+                TextField NEWoutcome10_3LabelText= new TextField(Tempoutcome10_3);
+                EditLecturenewvalue.add(NEWoutcome10_3LabelText, 1, 206);
+
+                TextField  NEWoutcome10_4LabelText= new TextField(Tempoutcome10_4);
+                EditLecturenewvalue.add(NEWoutcome10_4LabelText, 1, 207);
+
+                TextField  NEWoutcome10_5LabelText= new TextField(Tempoutcome10_5);
+                EditLecturenewvalue.add(NEWoutcome10_5LabelText, 1, 208);
+
+                TextField  NEWoutcome11_1LabelText= new TextField(Tempoutcome11_1);
+                EditLecturenewvalue.add(NEWoutcome11_1LabelText, 1, 209);
+
+                TextField NEWoutcome11_2LabelText = new TextField(Tempoutcome11_2);
+                EditLecturenewvalue.add(NEWoutcome11_2LabelText, 1,  210);
+
+                TextField NEWoutcome11_3LabelText = new TextField(Tempoutcome11_3);
+                EditLecturenewvalue.add(NEWoutcome11_3LabelText, 1, 211);
+
+                TextField  NEWoutcome11_4LabelText= new TextField(Tempoutcome11_4);
+                EditLecturenewvalue.add(NEWoutcome11_4LabelText, 1, 212);
+
+                TextField  NEWoutcome11_5LabelText= new TextField(Tempoutcome11_5);
+                EditLecturenewvalue.add(NEWoutcome11_5LabelText, 1, 213);
+
+                TextField  NEWoutcome12_1LabelText= new TextField(Tempoutcome12_1);
+                EditLecturenewvalue.add(NEWoutcome12_1LabelText, 1, 214);
+
+                TextField NEWoutcome12_2LabelText = new TextField(Tempoutcome12_2);
+                EditLecturenewvalue.add(NEWoutcome12_2LabelText, 1,  215);
+
+                TextField NEWoutcome12_3LabelText = new TextField(Tempoutcome12_3);
+                EditLecturenewvalue.add(NEWoutcome12_3LabelText, 1, 216);
+
+                TextField  NEWoutcome12_4LabelText= new TextField(Tempoutcome12_4);
+                EditLecturenewvalue.add(NEWoutcome12_4LabelText, 1, 217);
+
+                TextField  NEWoutcome12_5LabelText= new TextField(Tempoutcome12_5);
+                EditLecturenewvalue.add(NEWoutcome12_5LabelText, 1, 218);
+
+                TextField  NEWoutcome13_1LabelText= new TextField(Tempoutcome13_1);
+                EditLecturenewvalue.add(NEWoutcome13_1LabelText, 1, 219);
+
+                TextField NEWoutcome13_2LabelText = new TextField(Tempoutcome13_2);
+                EditLecturenewvalue.add(NEWoutcome13_2LabelText, 1,  220);
+
+                TextField NEWoutcome13_3LabelText = new TextField(Tempoutcome13_3);
+                EditLecturenewvalue.add(NEWoutcome13_3LabelText, 1, 221);
+
+                TextField  NEWoutcome13_4LabelText= new TextField(Tempoutcome13_4);
+                EditLecturenewvalue.add(NEWoutcome13_4LabelText, 1, 222);
+
+                TextField  NEWoutcome13_5LabelText= new TextField(Tempoutcome13_5);
+                EditLecturenewvalue.add(NEWoutcome13_5LabelText, 1, 223);
 
 
                 EditLectureConfirm.setOnAction(event -> {
-                        LectureConfig LectureNew = new LectureConfig(lec_id, NewLectureNameText.getText(), NewLecturersNameText.getText());/* NewLectureCodeText.getText(),NewSemesterText.getText(),NewTheoryHourText.getText(),NewLabHourText.getText(), NewLocalCreditText.getText(), NewEctsText.getText(), NewPrerequisitesText.getText(), NewLectureLanguageText.getText(),
-                                NewLectureTypeText.getText(), NewLectureLevelText.getText(), NewTeachingMethodText.getText(), NewLectureCoordinatorText.getText(),NewAssistantText.getText(),
-                                NewLectureObjectiveText.getText(),
-                                NewLearningOutcomeText.getText(),
-                                NewLectureDescriptionText.getText(),
-                                NewLectureCategoryText.getText(),
-                                Newweek1SubjectsText.getText(),
-                                Newweek2SubjectsText.getText(),
-                                Newweek3SubjectsText.getText(),
-                                Newweek4SubjectsText.getText(),
-                                Newweek5SubjectsText.getText(),
-                                Newweek6SubjectsText.getText(),
-                                Newweek7SubjectsText.getText(),
-                                Newweek8SubjectsText.getText(),
-                                Newweek9SubjectsText.getText(),
-                                Newweek10SubjectsText.getText(),
-                                Newweek11SubjectsText.getText(),
-                                Newweek12SubjectsText.getText(),
-                                Newweek13SubjectsText.getText(),
-                                Newweek14SubjectsText.getText(),
-                                Newweek15SubjectsText.getText(),
-                                Newweek1ReqMatText.getText(),
-                                Newweek2ReqMatText.getText(),
-                                Newweek3ReqMatText.getText(),
-                                Newweek4ReqMatText.getText(),
-                                Newweek5ReqMatText.getText(),
-                                Newweek6ReqMatText.getText(),
-                                Newweek7ReqMatText.getText(),
-                                Newweek8ReqMatText.getText(),
-                                Newweek9ReqMatText.getText(),
-                                Newweek10ReqMatText.getText(),
-                                Newweek11ReqMatText.getText(),
-                                Newweek12ReqMatText.getText(),
-                                Newweek13ReqMatText.getText(),
-                                Newweek14ReqMatText.getText(),
-                                Newweek15ReqMatText.getText(),
-                                NewcourseNotesAndTextBooksText.getText(),
-                                NewsuggestedReadingsAndMaterialsText.getText());*/
+                        LectureConfig LectureNew = new LectureConfig(lec_id,NEWLectureNameText.getText(),NEWLecturersNameText.getText(),NEWlectureCodeLabelText.getText(),NEWsemesterLabelText.getText(),NEWtheoryHourLabelText.getText(),NEWlabOrApplication01LabelText.getText(),NEWlabOrApplication02LabelText.getText(),NEWlabOrApplication03LabelText.getText(),NEWlabOrApplication04LabelText.getText(),
+                                NEWcourse_LanguageLabelText.getText(),NEWcourse_TypeLabelText.getText(),NEWcourse_LevelLabelText.getText(),NEWcourse_CategoryLabel.getText(),NEWcourse_CategoryLabel.getText(),NEWassistantLabelText.getText(),NEWcourse_ObjectivesLabelText.getText(),NEWlearning_OutcomesLabelText.getText(),NEWcourse_DescriptionLabelText.getText(),NEWcourse_CategoryLabelText.getText(),NEWweek1SubjectsLabel.getText(),NEWweek2SubjectsLabelText.getText(),NEWweek3SubjectsLabelText.getText(),NEWweek4SubjectsLabelText.getText(),NEWweek5SubjectsLabelText.getText(),NEWweek6SubjectsLabelText.getText(),NEWweek7SubjectsLabelText.getText(),NEWweek8SubjectsLabelText.getText(),NEWweek9SubjectsLabelText.getText(),NEWweek10SubjectsLabelText.getText(),NEWweek11SubjectsLabelText.getText(),NEWweek12SubjectsLabelText.getText(),
+                                NEWweek13SubjectsLabelText.getText(),NEWweek14SubjectsLabelText.getText(),NEWweek15SubjectsLabelText.getText(),NEWweek1ReqMatLabelText.getText(),NEWweek2ReqMatLabelText.getText(),NEWweek3ReqMatLabelText.getText(),NEWweek4ReqMatLabelText.getText(),NEWweek5ReqMatLabelText.getText(),NEWweek6ReqMatLabelText.getText(),NEWweek7ReqMatLabelText.getText(),NEWweek8ReqMatLabelText.getText(),NEWweek9ReqMatLabelText.getText(),NEWweek10ReqMatLabelText.getText(),NEWweek11ReqMatLabelText.getText(),NEWweek12ReqMatLabelText.getText(),NEWweek13ReqMatLabelText.getText(),NEWweek14ReqMatLabelText.getText(),NEWweek15ReqMatLabelText.getText(),NEWcourseNotesAndTextBooksLabelText.getText(),NEWsuggestedReadingsAndMaterialsLabelText.getText(),NEWparticipationNumberLabelText.getText(),NEWlabOrApplicationNumberLabelText.getText(),
+                                NEWFieldWorkNumLabelText.getText(),NEWquizOrStudioCritiqueNumberLabelText.getText(),NEWhomeworkOrAssignmentNumberLabelText.getText(),NEWpresentationOrJuryNumberLabelText.getText(),NEWprojectNumberLabelText.getText(),NEWPortfolioWorkLabelText.getText(),NEWSeminarNumLabelText.getText(),NEWOralExamNumLabelText.getText(),
+                                NEWmidtermNumberLabelText.getText(),NEWfinalNumberLabelText.getText(),NEWparticipationWeiLabelText.getText(),NEWlabOrApplicationWeiLabelText.getText(),NEWFieldWorkWeiLabelText.getText(),
+                                NEWquizOrStudioCritiqueWeiLabelText.getText(),NEWhomeworkOrAssignmentWeiLabelText.getText(),NEWpresentationOrJuryWeiLabelText.getText(),NEWprojectWeiLabelText.getText(),NEWportfolioWeiLabelText.getText(),
+                                NEWSeminarWorkLabelText.getText(),NEWOralExamWorkLabelText.getText(),NEWmidtermWeiLabelText.getText(),NEWfinalWeiLabelText.getText(),         NEWparticipation01LabelText.getText(),NEWlabOrApplication01LabelText.getText(),NEWFieldWork01LabelText.getText(),NEWquizOrStudioCritique01LabelText.getText(),NEWhomeworkOrAssignment01LabelText.getText(),
+                                NEWpresentationOrJury01LabelText.getText(),NEWproject01LabelText.getText(),NEWportfolio01LabelText.getText(),
+                                NEWseminar01LabelText.getText(),NEWoral01LabelText.getText(),NEWmidterm01LabelText.getText(),NEWfinal01LabelText.getText(),
+                                NEWparticipation02LabelText.getText(),
+                                NEWlabOrApplication02LabelText.getText(),NEWFieldWork02LabelText.getText(),NEWquizOrStudioCritique02LabelText.getText(),NEWhomeworkOrAssignment02LabelText.getText(),
+                                NEWpresentationOrJury02LabelText.getText(),NEWproject02LabelText.getText(),NEWportfolio02LabelText.getText(),
+                                NEWseminar02LabelText.getText(),NEWoral02LabelText.getText(),NEWmidterm02LabelText.getText(),NEWfinal02LabelText.getText(),
+                                NEWparticipation03LabelText.getText(),
+                                NEWlabOrApplication03LabelText.getText(),NEWFieldWork03LabelText.getText(),NEWquizOrStudioCritique03LabelText.getText(),NEWhomeworkOrAssignment03LabelText.getText(),
+                                NEWpresentationOrJury03LabelText.getText(),NEWproject03LabelText.getText(),NEWportfolio03LabelText.getText(),
+                                NEWseminar03LabelText.getText(),NEWoral03LabelText.getText(),NEWmidterm03LabelText.getText(),NEWfinal03LabelText.getText(),
+                                NEWparticipation04LabelText.getText(),
+                                NEWlabOrApplication04LabelText.getText(),NEWFieldWork04LabelText.getText(),NEWquizOrStudioCritique04LabelText.getText(),NEWhomeworkOrAssignment04LabelText.getText(),
+                                NEWpresentationOrJury04LabelText.getText(),NEWproject04LabelText.getText(),NEWportfolio04LabelText.getText(),
+                                NEWseminar04LabelText.getText(),NEWoral04LabelText.getText(),NEWmidterm04LabelText.getText(),NEWfinal04LabelText.getText(),
+                                NEWStudyHoursoutofClassNumLabelText.getText(),NEWStudyHoursoutofClassDurLabelText.getText(),NEWStudyHoursoutofClassWorkLabelText.getText(),
+                                NEWFieldWorkNumLabelText.getText(),NEWFieldWorkDurLabelText.getText(),NEWFieldWorkWorkLabelText.getText(),
+                                NEWQuizNumLabelText.getText(),NEWQuizDurLabelText.getText(),NEWQuizWorkLabelText.getText(),
+                                NEWHWNumLabelText.getText(),NEWHWDurLabelText.getText(),NEWHWWorkLabelText.getText(),
+                                NEWPresentationNumLabelText.getText(),NEWPresentationDurLabelText.getText(),NEWPresentationWorkLabelText.getText(),
+                                NEWProjectNumLabelText.getText(),NEWProjectDurLabelText.getText(),NEWProjectWorkLabelText.getText(),
+                                NEWPortfolioNumLabelText.getText(),NEWPortfolioDurLabelText.getText(),NEWPortfolioWorkLabelText.getText(),
+                                NEWSeminarNumLabelText.getText(),NEWSeminarDurLabelText.getText(),NEWSeminarWorkLabelText.getText(),
+                                NEWOralExamNumLabelText.getText(),NEWOralExamDurLabelText.getText(),NEWOralExamWorkLabelText.getText(),
+                                NEWMidtermNumLabelText.getText(),NEWMidtermDurLabelText.getText(),NEWMidtermWorkLabelText.getText(),
+                                NEWFinalNumLabelText.getText(),NEWFinalDurLabelText.getText(),NEWFinalWorkLabelText.getText(),
+                                NEWoutcome1_1LabelText.getText(), NEWoutcome1_2LabelText.getText(), NEWoutcome1_3LabelText.getText(),
+                                NEWoutcome1_4LabelText.getText(), NEWoutcome1_5LabelText.getText(), NEWoutcome2_1LabelText.getText(), NEWoutcome2_2LabelText.getText(),
+                                NEWoutcome2_3LabelText.getText(), NEWoutcome2_4LabelText.getText(), NEWoutcome2_5LabelText.getText(), NEWoutcome3_1LabelText.getText(),
+                                NEWoutcome3_2LabelText.getText(), NEWoutcome3_3LabelText.getText(), NEWoutcome3_4LabelText.getText(),
+                                NEWoutcome3_5LabelText.getText(), NEWoutcome4_1LabelText.getText(), NEWoutcome4_2LabelText.getText(), NEWoutcome4_3LabelText.getText(),
+                                NEWoutcome4_4LabelText.getText(), NEWoutcome4_5LabelText.getText(), NEWoutcome5_1LabelText.getText(), NEWoutcome5_2LabelText.getText(),
+                                NEWoutcome5_3LabelText.getText(), NEWoutcome5_4LabelText.getText(), NEWoutcome5_5LabelText.getText(), NEWoutcome6_1LabelText.getText(),
+                                NEWoutcome6_2LabelText.getText(), NEWoutcome6_3LabelText.getText(), NEWoutcome6_4LabelText.getText(), NEWoutcome6_5LabelText.getText(),
+                                NEWoutcome7_1LabelText.getText(), NEWoutcome7_2LabelText.getText(), NEWoutcome7_3LabelText.getText(), NEWoutcome7_4LabelText.getText(),
+                                NEWoutcome7_5LabelText.getText(), NEWoutcome8_1LabelText.getText(), NEWoutcome8_2LabelText.getText(), NEWoutcome8_3LabelText.getText(),
+                                NEWoutcome8_4LabelText.getText(), NEWoutcome8_5LabelText.getText(), NEWoutcome9_1LabelText.getText(), NEWoutcome9_2LabelText.getText(),
+                                NEWoutcome9_3LabelText.getText(), NEWoutcome9_4LabelText.getText(), NEWoutcome9_5LabelText.getText(), NEWoutcome10_1LabelText.getText(),
+                                NEWoutcome10_2LabelText.getText(), NEWoutcome10_3LabelText.getText(), NEWoutcome10_4LabelText.getText(), NEWoutcome10_5LabelText.getText(),
+                                NEWoutcome11_1LabelText.getText(), NEWoutcome11_2LabelText.getText(), NEWoutcome11_3LabelText.getText(), NEWoutcome11_4LabelText.getText(),
+                                NEWoutcome11_5LabelText.getText(), NEWoutcome12_1LabelText.getText(), NEWoutcome12_2LabelText.getText(), NEWoutcome12_3LabelText.getText(),
+                                NEWoutcome12_4LabelText.getText(), NEWoutcome12_5LabelText.getText(), NEWoutcome13_1LabelText.getText(), NEWoutcome13_2LabelText.getText(),
+                                NEWoutcome13_3LabelText.getText(), NEWoutcome13_4LabelText.getText(), NEWoutcome13_5LabelText.getText());
                         DBConnector.getInstance().updateLecture(LectureNew);
 
                         EditLectureHBox.setVisible(false);
