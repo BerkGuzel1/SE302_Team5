@@ -266,12 +266,6 @@ public class DBConnector {
                         "STUDENT_ID TEXT PRIMARY KEY," +
                         "STUDENT_NAME TEXT)");
 
-                stmt.executeUpdate("CREATE TABLE IF NOT EXISTS Detailed_Evaluation_Table (" +
-                        "ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                        "EVALUATION_ID INTEGER, " +
-                        "RUN_STATUS INTEGER, " +
-                        "RUN_OUTPUT TEXT, " +
-                        "STUDENT_ID TEXT)");
 */
 
 
@@ -1019,7 +1013,7 @@ public class DBConnector {
                     Field_Work_Weigthing, Quiz_or_StudioCritique_Weigthing, Homework_or_Assignment_Weigthing, Presentation_or_Jury_Weigthing, Project_Weigthing, Portfolio_Weigthing, Seminar_or_Workshop_Weigthing, Oral_Exam_Weigthing, Midterm_Weigthing, Final_Exam_Weigthing, Participation_LO1, Laboratory_or_Application_LO1, Field_Work_LO1, Quiz_or_StudioCritique_LO1, Homework_or_Assignment_LO1, Presentation_or_Jury_LO1,
                     Project_LO1, Portfolio_L01, Seminar_or_Workshop_LO1, Oral_Exam_LO1, Midterm_LO1, Final_Exam_LO1, Participation_LO2, Laboratory_or_Application_LO2, Field_Work_LO2, Quiz_or_StudioCritique_LO2, Homework_or_Assignment_LO2, Presentation_or_Jury_LO2, Project_LO2, Portfolio_L02, Seminar_or_Workshop_LO2, Oral_Exam_LO2, Midterm_LO2, Final_Exam_LO2, Participation_LO3, Laboratory_or_Application_LO3, Field_Work_LO3,
                     Quiz_or_StudioCritique_LO3, Homework_or_Assignment_LO3, Presentation_or_Jury_LO3, Project_LO3, Portfolio_LO3, Seminar_or_Workshop_LO3, Oral_Exam_LO3, Midterm_LO3, Final_Exam_LO3, Participation_LO4, Laboratory_or_Application_LO4, Field_Work_LO4, Quiz_or_StudioCritique_LO4, Homework_or_Assignment_LO4, Presentation_or_Jury_LO4, Project_LO4, Portfolio_LO4, Seminar_or_Workshop_LO4, Oral_Exam_LO4, Midterm_LO4, Final_Exam_LO4, SHOOCNum, SHOOCDur, SHOOCWork, FWNum, FWDur, FWWork, QuizNum, QuizDur, QuizWork, HWNum, HWDur, HWWork, PresentationNum, PresentationDur, PresentationWork, ProjectNum, ProjectDur, ProjectWork, PortfolioNum, PortfolioDur, PortfolioWork, SeminarNum,
-                    SeminarDur, SeminarWork, OralNum, OralDur, OralWork, MidtermNum, MidtermDur, MidtermWork, FinalNum, FinalDur, FinalWork,outcome1_1,outcome1_2,outcome1_3,outcome1_4,outcome1_5,outcome2_1,outcome2_2,outcome2_3,outcome2_4,outcome2_5,outcome3_1,outcome3_2,outcome3_3,outcome3_4,outcome3_5,outcome4_1,outcome4_2,outcome4_3,outcome4_4,outcome4_5,outcome5_1,outcome5_2,outcome5_3,outcome5_4,outcome5_5,outcome6_1,outcome6_2,outcome6_3,outcome6_4,outcome6_5,outcome7_1,outcome7_2,outcome7_3,outcome7_4,outcome7_5,outcome8_1,outcome8_2,outcome8_3,outcome8_4,outcome8_5,outcome9_1,outcome9_2,outcome9_3,outcome9_4,outcome9_5,outcome10_1,outcome10_2,outcome10_3,outcome10_4,outcome10_5,outcome11_1,outcome11_2,outcome11_3,outcome11_4,outcome11_5,outcome12_1,outcome12_2,outcome2_3,outcome12_4,outcome12_5,outcome13_1,outcome13_2,outcome13_3,outcome13_4,outcome13_5);
+                    SeminarDur, SeminarWork, OralNum, OralDur, OralWork, MidtermNum, MidtermDur, MidtermWork, FinalNum, FinalDur, FinalWork,outcome1_1,outcome1_2,outcome1_3,outcome1_4,outcome1_5,outcome2_1,outcome2_2,outcome2_3,outcome2_4,outcome2_5,outcome3_1,outcome3_2,outcome3_3,outcome3_4,outcome3_5,outcome4_1,outcome4_2,outcome4_3,outcome4_4,outcome4_5,outcome5_1,outcome5_2,outcome5_3,outcome5_4,outcome5_5,outcome6_1,outcome6_2,outcome6_3,outcome6_4,outcome6_5,outcome7_1,outcome7_2,outcome7_3,outcome7_4,outcome7_5,outcome8_1,outcome8_2,outcome8_3,outcome8_4,outcome8_5,outcome9_1,outcome9_2,outcome9_3,outcome9_4,outcome9_5,outcome10_1,outcome10_2,outcome10_3,outcome10_4,outcome10_5,outcome11_1,outcome11_2,outcome11_3,outcome11_4,outcome11_5,outcome12_1,outcome12_2,outcome12_3,outcome12_4,outcome12_5,outcome13_1,outcome13_2,outcome13_3,outcome13_4,outcome13_5);
 
             return config;
 
