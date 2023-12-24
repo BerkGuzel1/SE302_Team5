@@ -760,6 +760,62 @@ public class MainController {
                 Label FinalLabel = new Label("Final Exam:");
                 AddLectureGrid.add(FinalLabel, 0, 64);
 
+                Label COURSEPROGRAMOUTCOMEMATRIX = new Label("5.COURSE/PROGRAM OUTCOME MATRIX");
+                COURSEPROGRAMOUTCOMEMATRIX.setStyle("-fx-background-color: orange; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 15px;");
+                AddLectureGrid.add(COURSEPROGRAMOUTCOMEMATRIX,0,65);
+
+                Label o1 = new Label("To have adequate knowledge in Mathematics,Science and Computer Engineering; to be able to use theoretical and applied information in these areas on complex engineering problems");
+                o1.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o1, 0, 66);
+
+                Label o2 = new Label("To be able to identify, define, formulate, and solve complex Computer Engineering problems; to be able to select and apply proper analysis and modeling methods for this purpose.");
+                o2.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o2, 0, 67);
+
+                Label o3 = new Label("To be able to design a complex system, process, device or product under realistic constraints and conditions, in such a way as to meet the requirements; to be able to apply modern design methods for this purpose.");
+                o3.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o3, 0, 68);
+
+                Label o4 = new Label("To be able to devise, select, and use modern techniques and tools needed for analysis and solution of complex problems in Computer Engineering applications; to be able to use information technologies effectively.");
+                o4.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o4, 0, 69);
+
+                Label o5 = new Label("To be able to design and conduct experiments, gather data, analyze, and interpret results for investigating complex engineering problems or Computer Engineering research topics.");
+                o5.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o5, 0, 70);
+
+                Label o6 = new Label("To be able to work efficiently in Computer Engineering disciplinary and multi-disciplinary teams;to be able to work individually.\n");
+                o6.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o6, 0, 71);
+
+                Label o7 = new Label("To be able to communicate effectively in Turkish,both orally and in writing; to be able to author and comprehend written reports, to be able to prepare design and implementation reports, to present effectively, to be able to give and receive clear and comprehensible instructions.");
+                o7.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o7, 0, 72);
+
+                Label o8 = new Label("To have knowledge about global and social impact of Computer Engineering practices on health, environment, and safety; to have knowledge about contemporary issues as they pertain to engineering; to be aware of the legal ramifications of Computer Engineering solutions.");
+                o8.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o8, 0, 73);
+
+                Label o9 = new Label("To be aware of ethical behavior, professional and ethical responsibility; to have knowledge about standards utilized in engineering applications.");
+                o9.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o9, 0, 74);
+
+                Label o10 = new Label("To have knowledge about industrial practices such as project management, risk management, and change management; to have awareness of entrepreneurship and innovation; to have knowledge about sustainable development.");
+                o10.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o10, 0, 75);
+
+                Label o11 = new Label("To be able to collect data in the area of Computer Engineering, and to be able to communicate with colleagues in a foreign language. (European Language Portfolio Global Scale, Level B1)");
+                o11.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o11, 0, 76);
+
+                Label o12 = new Label("To be able to speak a second foreign language at a medium level of fluency efficiently.\n");
+                o12.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o12, 0, 77);
+
+                Label o13 = new Label("To recognize the need for lifelong learning; to be able to access information, to be able to stay current with developments in science and technology; to be able to relate the knowledge accumulated throughout the human history to Computer Engineering.");
+                o13.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                AddLectureGrid.add(o13, 0, 78);
+
                 ObservableList<TableShow> dataList = LectureTableView.getItems();
 
 
@@ -1269,6 +1325,202 @@ public class MainController {
                 TextField FinalExamWorkText = new TextField();
                 AddLectureGrid.add(FinalExamWorkText, 3, 64);
 
+                TextField outcome1_1 = new TextField();
+                AddLectureGrid.add(outcome1_1, 1, 66);
+
+                TextField outcome1_2 = new TextField();
+                AddLectureGrid.add(outcome1_2, 2, 66);
+
+                TextField outcome1_3 = new TextField();
+                AddLectureGrid.add(outcome1_3, 3, 66);
+
+                TextField outcome1_4 = new TextField();
+                AddLectureGrid.add(outcome1_4, 4, 66);
+
+                TextField outcome1_5 = new TextField();
+                AddLectureGrid.add(outcome1_5, 5, 66);
+
+                TextField outcome2_1 = new TextField();
+                AddLectureGrid.add(outcome2_1, 1, 67);
+
+                TextField outcome2_2 = new TextField();
+                AddLectureGrid.add(outcome2_2, 2, 67);
+
+                TextField outcome2_3 = new TextField();
+                AddLectureGrid.add(outcome2_3, 3, 67);
+
+                TextField outcome2_4 = new TextField();
+                AddLectureGrid.add(outcome2_4, 4, 67);
+
+                TextField outcome2_5 = new TextField();
+                AddLectureGrid.add(outcome2_5, 5, 67);
+
+                TextField outcome3_1 = new TextField();
+                AddLectureGrid.add(outcome3_1, 1, 68);
+
+                TextField outcome3_2 = new TextField();
+                AddLectureGrid.add(outcome3_2, 2, 68);
+
+                TextField outcome3_3 = new TextField();
+                AddLectureGrid.add(outcome3_3, 3, 68);
+
+                TextField outcome3_4 = new TextField();
+                AddLectureGrid.add(outcome3_4, 4, 68);
+
+                TextField outcome3_5 = new TextField();
+                AddLectureGrid.add(outcome3_5, 5, 68);
+
+                TextField outcome4_1 = new TextField();
+                AddLectureGrid.add(outcome4_1, 1, 69);
+
+                TextField outcome4_2 = new TextField();
+                AddLectureGrid.add(outcome4_2, 2, 69);
+
+                TextField outcome4_3 = new TextField();
+                AddLectureGrid.add(outcome4_3, 3, 69);
+
+                TextField outcome4_4 = new TextField();
+                AddLectureGrid.add(outcome4_4, 4, 69);
+
+                TextField outcome4_5 = new TextField();
+                AddLectureGrid.add(outcome4_5, 5, 69);
+
+                TextField outcome5_1 = new TextField();
+                AddLectureGrid.add(outcome5_1, 1, 70);
+
+                TextField outcome5_2 = new TextField();
+                AddLectureGrid.add(outcome5_2, 2, 70);
+
+                TextField outcome5_3 = new TextField();
+                AddLectureGrid.add(outcome5_3, 3, 70);
+
+                TextField outcome5_4 = new TextField();
+                AddLectureGrid.add(outcome5_4, 4, 70);
+
+                TextField outcome5_5 = new TextField();
+                AddLectureGrid.add(outcome5_5, 5, 70);
+
+                TextField outcome6_1 = new TextField();
+                AddLectureGrid.add(outcome6_1, 1, 71);
+
+                TextField outcome6_2 = new TextField();
+                AddLectureGrid.add(outcome6_2, 2, 71);
+
+                TextField outcome6_3 = new TextField();
+                AddLectureGrid.add(outcome6_3, 3, 71);
+
+                TextField outcome6_4 = new TextField();
+                AddLectureGrid.add(outcome6_4, 4, 71);
+
+                TextField outcome6_5 = new TextField();
+                AddLectureGrid.add(outcome6_5, 5, 71);
+
+                TextField outcome7_1 = new TextField();
+                AddLectureGrid.add(outcome7_1, 1, 72);
+
+                TextField outcome7_2 = new TextField();
+                AddLectureGrid.add(outcome7_2, 2, 72);
+
+                TextField outcome7_3 = new TextField();
+                AddLectureGrid.add(outcome7_3, 3, 72);
+
+                TextField outcome7_4 = new TextField();
+                AddLectureGrid.add(outcome7_4, 4, 72);
+
+                TextField outcome7_5 = new TextField();
+                AddLectureGrid.add(outcome7_5, 5, 72);
+
+                TextField outcome8_1 = new TextField();
+                AddLectureGrid.add(outcome8_1, 1, 73);
+
+                TextField outcome8_2 = new TextField();
+                AddLectureGrid.add(outcome8_2, 2, 73);
+
+                TextField outcome8_3 = new TextField();
+                AddLectureGrid.add(outcome8_3, 3, 73);
+
+                TextField outcome8_4 = new TextField();
+                AddLectureGrid.add(outcome8_4, 4, 73);
+
+                TextField outcome8_5 = new TextField();
+                AddLectureGrid.add(outcome8_5, 5, 73);
+
+                TextField outcome9_1 = new TextField();
+                AddLectureGrid.add(outcome9_1, 1, 74);
+
+                TextField outcome9_2 = new TextField();
+                AddLectureGrid.add(outcome9_2, 2, 74);
+
+                TextField outcome9_3 = new TextField();
+                AddLectureGrid.add(outcome9_3, 3, 74);
+
+                TextField outcome9_4 = new TextField();
+                AddLectureGrid.add(outcome9_4, 4, 74);
+
+                TextField outcome9_5 = new TextField();
+                AddLectureGrid.add(outcome9_5, 5, 74);
+
+                TextField outcome10_1 = new TextField();
+                AddLectureGrid.add(outcome10_1, 1, 75);
+
+                TextField outcome10_2 = new TextField();
+                AddLectureGrid.add(outcome10_2, 2, 75);
+
+                TextField outcome10_3 = new TextField();
+                AddLectureGrid.add(outcome10_3, 3, 75);
+
+                TextField outcome10_4 = new TextField();
+                AddLectureGrid.add(outcome10_4, 4, 75);
+
+                TextField outcome10_5 = new TextField();
+                AddLectureGrid.add(outcome10_5, 5, 75);
+
+                TextField outcome11_1 = new TextField();
+                AddLectureGrid.add(outcome11_1, 1, 76);
+
+                TextField outcome11_2 = new TextField();
+                AddLectureGrid.add(outcome11_2, 2, 76);
+
+                TextField outcome11_3 = new TextField();
+                AddLectureGrid.add(outcome11_3, 3, 76);
+
+                TextField outcome11_4 = new TextField();
+                AddLectureGrid.add(outcome11_4, 4, 76);
+
+                TextField outcome11_5 = new TextField();
+                AddLectureGrid.add(outcome11_5, 5, 76);
+
+                TextField outcome12_1 = new TextField();
+                AddLectureGrid.add(outcome12_1, 1, 77);
+
+                TextField outcome12_2 = new TextField();
+                AddLectureGrid.add(outcome12_2, 2, 77);
+
+                TextField outcome12_3 = new TextField();
+                AddLectureGrid.add(outcome12_3, 3, 77);
+
+                TextField outcome12_4 = new TextField();
+                AddLectureGrid.add(outcome12_4, 4, 77);
+
+                TextField outcome12_5 = new TextField();
+                AddLectureGrid.add(outcome12_5, 5, 77);
+
+                TextField outcome13_1 = new TextField();
+                AddLectureGrid.add(outcome13_1, 1, 78);
+
+                TextField outcome13_2 = new TextField();
+                AddLectureGrid.add(outcome13_2, 2, 78);
+
+                TextField outcome13_3 = new TextField();
+                AddLectureGrid.add(outcome13_3, 3, 78);
+
+                TextField outcome13_4 = new TextField();
+                AddLectureGrid.add(outcome13_4, 4, 78);
+
+                TextField outcome13_5 = new TextField();
+                AddLectureGrid.add(outcome13_5, 5, 78);
+
+
                 AddLectureButton.setOnAction(event -> {
                         String TempName = LectureNameText.getText();
                         String TempLName = LecturersNameText.getText();
@@ -1426,6 +1678,71 @@ public class MainController {
                         String TempFinalNum = FinalExamNumText.getText();
                         String TempFinalDur = FinalExamDurText.getText();
                         String TempFinalWork = FinalExamWorkText.getText();
+                        String Tempoutcome1_1 = outcome1_1.getText();
+                        String Tempoutcome1_2 = outcome1_2.getText();
+                        String Tempoutcome1_3 = outcome1_3.getText();
+                        String Tempoutcome1_4 = outcome1_4.getText();
+                        String Tempoutcome1_5 = outcome1_5.getText();
+                        String Tempoutcome2_1 = outcome2_1.getText();
+                        String Tempoutcome2_2 = outcome2_2.getText();
+                        String Tempoutcome2_3 = outcome2_3.getText();
+                        String Tempoutcome2_4 = outcome2_4.getText();
+                        String Tempoutcome2_5 = outcome2_5.getText();
+                        String Tempoutcome3_1 = outcome3_1.getText();
+                        String Tempoutcome3_2 = outcome3_2.getText();
+                        String Tempoutcome3_3 = outcome3_3.getText();
+                        String Tempoutcome3_4 = outcome3_4.getText();
+                        String Tempoutcome3_5 = outcome3_5.getText();
+                        String Tempoutcome4_1 = outcome4_1.getText();
+                        String Tempoutcome4_2 = outcome4_2.getText();
+                        String Tempoutcome4_3 = outcome4_3.getText();
+                        String Tempoutcome4_4 = outcome4_4.getText();
+                        String Tempoutcome4_5 = outcome4_5.getText();
+                        String Tempoutcome5_1 = outcome5_1.getText();
+                        String Tempoutcome5_2 = outcome5_2.getText();
+                        String Tempoutcome5_3 = outcome5_3.getText();
+                        String Tempoutcome5_4 = outcome5_4.getText();
+                        String Tempoutcome5_5 = outcome5_5.getText();
+                        String Tempoutcome6_1 = outcome6_1.getText();
+                        String Tempoutcome6_2 = outcome6_2.getText();
+                        String Tempoutcome6_3 = outcome6_3.getText();
+                        String Tempoutcome6_4 = outcome6_4.getText();
+                        String Tempoutcome6_5 = outcome6_5.getText();
+                        String Tempoutcome7_1 = outcome7_1.getText();
+                        String Tempoutcome7_2 = outcome7_2.getText();
+                        String Tempoutcome7_3 = outcome7_3.getText();
+                        String Tempoutcome7_4 = outcome7_4.getText();
+                        String Tempoutcome7_5 = outcome7_5.getText();
+                        String Tempoutcome8_1 = outcome8_1.getText();
+                        String Tempoutcome8_2 = outcome8_2.getText();
+                        String Tempoutcome8_3 = outcome8_3.getText();
+                        String Tempoutcome8_4 = outcome8_4.getText();
+                        String Tempoutcome8_5 = outcome8_5.getText();
+                        String Tempoutcome9_1 = outcome9_1.getText();
+                        String Tempoutcome9_2 = outcome9_2.getText();
+                        String Tempoutcome9_3 = outcome9_3.getText();
+                        String Tempoutcome9_4 = outcome9_4.getText();
+                        String Tempoutcome9_5 = outcome9_5.getText();
+                        String Tempoutcome10_1 = outcome10_1.getText();
+                        String Tempoutcome10_2 = outcome10_2.getText();
+                        String Tempoutcome10_3 = outcome10_3.getText();
+                        String Tempoutcome10_4 = outcome10_4.getText();
+                        String Tempoutcome10_5 = outcome10_5.getText();
+                        String Tempoutcome11_1 = outcome11_1.getText();
+                        String Tempoutcome11_2 = outcome11_2.getText();
+                        String Tempoutcome11_3 = outcome11_3.getText();
+                        String Tempoutcome11_4 = outcome11_4.getText();
+                        String Tempoutcome11_5 = outcome11_5.getText();
+                        String Tempoutcome12_1 = outcome12_1.getText();
+                        String Tempoutcome12_2 = outcome12_2.getText();
+                        String Tempoutcome12_3 = outcome12_3.getText();
+                        String Tempoutcome12_4 = outcome12_4.getText();
+                        String Tempoutcome12_5 = outcome12_5.getText();
+                        String Tempoutcome13_1 = outcome13_1.getText();
+                        String Tempoutcome13_2 = outcome13_2.getText();
+                        String Tempoutcome13_3 = outcome13_3.getText();
+                        String Tempoutcome13_4 = outcome13_4.getText();
+                        String Tempoutcome13_5 = outcome13_5.getText();
 
 
                         LectureConfig Lecture = new LectureConfig(lecture_id, TempName, TempLName, TempLCode, TempSemester, TempTHour, TempLHour, TempLCredit,
@@ -1443,7 +1760,19 @@ public class MainController {
                                 TempProjectDur, TempProjectWork, TempPortfolioNum, TempPortfolioDur, TempPortfolioWork,
                                 TempSeminarNum, TempSeminarDur, TempSeminarWork, TempOralNum, TempOralDur,
                                 TempOralWork, TempMidtermNum, TempMidtermDur, TempMidtermWork, TempFinalNum,
-                                TempFinalDur, TempFinalWork);
+                                TempFinalDur, TempFinalWork,Tempoutcome1_1, Tempoutcome1_2, Tempoutcome1_3, Tempoutcome1_4, Tempoutcome1_5,
+                                Tempoutcome2_1, Tempoutcome2_2, Tempoutcome2_3, Tempoutcome2_4, Tempoutcome2_5,
+                                Tempoutcome3_1, Tempoutcome3_2, Tempoutcome3_3, Tempoutcome3_4, Tempoutcome3_5,
+                                Tempoutcome4_1, Tempoutcome4_2, Tempoutcome4_3, Tempoutcome4_4, Tempoutcome4_5,
+                                Tempoutcome5_1, Tempoutcome5_2, Tempoutcome5_3, Tempoutcome5_4, Tempoutcome5_5,
+                                Tempoutcome6_1, Tempoutcome6_2, Tempoutcome6_3, Tempoutcome6_4, Tempoutcome6_5,
+                                Tempoutcome7_1, Tempoutcome7_2, Tempoutcome7_3, Tempoutcome7_4, Tempoutcome7_5,
+                                Tempoutcome8_1, Tempoutcome8_2, Tempoutcome8_3, Tempoutcome8_4, Tempoutcome8_5,
+                                Tempoutcome9_1, Tempoutcome9_2, Tempoutcome9_3, Tempoutcome9_4, Tempoutcome9_5,
+                                Tempoutcome10_1, Tempoutcome10_2, Tempoutcome10_3, Tempoutcome10_4, Tempoutcome10_5,
+                                Tempoutcome11_1, Tempoutcome11_2, Tempoutcome11_3, Tempoutcome11_4, Tempoutcome11_5,
+                                Tempoutcome12_1, Tempoutcome12_2, Tempoutcome12_3, Tempoutcome12_4, Tempoutcome12_5,
+                                Tempoutcome13_1, Tempoutcome13_2, Tempoutcome13_3, Tempoutcome13_4, Tempoutcome13_5);
                         DBConnector.getInstance().addLecture(Lecture);
 
                         LecturesHBox.setEffect(null);
@@ -1637,6 +1966,72 @@ public class MainController {
                         String TempFinalNum = Lecture.getFinalExamNum();
                         String TempFinalDur = Lecture.getFinalExamDur();
                         String TempFinalWork = Lecture.getFinalExamWork();
+                        String outcome1_1 = Lecture.getOutCome1_1();
+                        String outcome1_2 = Lecture.getOutCome1_2();
+                        String outcome1_3 = Lecture.getOutCome1_3();
+                        String outcome1_4 = Lecture.getOutCome1_4();
+                        String outcome1_5 = Lecture.getOutCome1_5();
+                        String outcome2_1 = Lecture.getOutCome2_1();
+                        String outcome2_2 = Lecture.getOutCome2_2();
+                        String outcome2_3 = Lecture.getOutCome2_3();
+                        String outcome2_4 = Lecture.getOutCome2_4();
+                        String outcome2_5 = Lecture.getOutCome2_5();
+                        String outcome3_1 = Lecture.getOutCome3_1();
+                        String outcome3_2 = Lecture.getOutCome3_2();
+                        String outcome3_3 = Lecture.getOutCome3_3();
+                        String outcome3_4 = Lecture.getOutCome3_4();
+                        String outcome3_5 = Lecture.getOutCome3_5();
+                        String outcome4_1 = Lecture.getOutCome4_1();
+                        String outcome4_2 = Lecture.getOutCome4_2();
+                        String outcome4_3 = Lecture.getOutCome4_3();
+                        String outcome4_4 = Lecture.getOutCome4_4();
+                        String outcome4_5 = Lecture.getOutCome4_5();
+                        String outcome5_1 = Lecture.getOutCome5_1();
+                        String outcome5_2 = Lecture.getOutCome5_2();
+                        String outcome5_3 = Lecture.getOutCome5_3();
+                        String outcome5_4 = Lecture.getOutCome5_4();
+                        String outcome5_5 = Lecture.getOutCome5_5();
+                        String outcome6_1 = Lecture.getOutCome6_1();
+                        String outcome6_2 = Lecture.getOutCome6_2();
+                        String outcome6_3 = Lecture.getOutCome6_3();
+                        String outcome6_4 = Lecture.getOutCome6_4();
+                        String outcome6_5 = Lecture.getOutCome6_5();
+                        String outcome7_1 = Lecture.getOutCome7_1();
+                        String outcome7_2 = Lecture.getOutCome7_2();
+                        String outcome7_3 = Lecture.getOutCome7_3();
+                        String outcome7_4 = Lecture.getOutCome7_4();
+                        String outcome7_5 = Lecture.getOutCome7_5();
+                        String outcome8_1 = Lecture.getOutCome8_1();
+                        String outcome8_2 = Lecture.getOutCome8_2();
+                        String outcome8_3 = Lecture.getOutCome8_3();
+                        String outcome8_4 = Lecture.getOutCome8_4();
+                        String outcome8_5 = Lecture.getOutCome8_5();
+                        String outcome9_1 = Lecture.getOutCome9_1();
+                        String outcome9_2 = Lecture.getOutCome9_2();
+                        String outcome9_3 = Lecture.getOutCome9_3();
+                        String outcome9_4 = Lecture.getOutCome9_4();
+                        String outcome9_5 = Lecture.getOutCome9_5();
+                        String outcome10_1 = Lecture.getOutCome10_1();
+                        String outcome10_2 = Lecture.getOutCome10_2();
+                        String outcome10_3 = Lecture.getOutCome10_3();
+                        String outcome10_4 = Lecture.getOutCome10_4();
+                        String outcome10_5 = Lecture.getOutCome10_5();
+                        String outcome11_1 = Lecture.getOutCome11_1();
+                        String outcome11_2 = Lecture.getOutCome11_2();
+                        String outcome11_3 = Lecture.getOutCome11_3();
+                        String outcome11_4 = Lecture.getOutCome11_4();
+                        String outcome11_5 = Lecture.getOutCome11_5();
+                        String outcome12_1 = Lecture.getOutCome12_1();
+                        String outcome12_2 = Lecture.getOutCome12_2();
+                        String outcome12_3 = Lecture.getOutCome12_3();
+                        String outcome12_4 = Lecture.getOutCome12_4();
+                        String outcome12_5 = Lecture.getOutCome12_5();
+                        String outcome13_1 = Lecture.getOutCome13_1();
+                        String outcome13_2 = Lecture.getOutCome13_2();
+                        String outcome13_3 = Lecture.getOutCome13_3();
+                        String outcome13_4 = Lecture.getOutCome13_4();
+                        String outcome13_5 = Lecture.getOutCome13_5();
+
 
                         Label LectureID = new Label("Lecture ID :");
                         LectureGrid.add(LectureID, 1, 0);
@@ -1862,6 +2257,62 @@ public class MainController {
 
                         Label FinalLabel = new Label("Final Exam:");
                         LectureGrid.add(FinalLabel, 0, 64);
+
+                        Label COURSEPROGRAMOUTCOMEMATRIX = new Label("5.COURSE/PROGRAM OUTCOME MATRIX");
+                        COURSEPROGRAMOUTCOMEMATRIX.setStyle("-fx-background-color: orange; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 15px;");
+                        LectureGrid.add(COURSEPROGRAMOUTCOMEMATRIX,0,65);
+
+                        Label o1 = new Label("To have adequate knowledge in Mathematics,Science and Computer Engineering; to be able to use theoretical and applied information in these areas on complex engineering problems");
+                        o1.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o1, 0, 66);
+
+                        Label o2 = new Label("To be able to identify, define, formulate, and solve complex Computer Engineering problems; to be able to select and apply proper analysis and modeling methods for this purpose.");
+                        o2.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o2, 0, 67);
+
+                        Label o3 = new Label("To be able to design a complex system, process, device or product under realistic constraints and conditions, in such a way as to meet the requirements; to be able to apply modern design methods for this purpose.");
+                        o3.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o3, 0, 68);
+
+                        Label o4 = new Label("To be able to devise, select, and use modern techniques and tools needed for analysis and solution of complex problems in Computer Engineering applications; to be able to use information technologies effectively.");
+                        o4.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o4, 0, 69);
+
+                        Label o5 = new Label("To be able to design and conduct experiments, gather data, analyze, and interpret results for investigating complex engineering problems or Computer Engineering research topics.");
+                        o5.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o5, 0, 70);
+
+                        Label o6 = new Label("To be able to work efficiently in Computer Engineering disciplinary and multi-disciplinary teams;to be able to work individually.\n");
+                        o6.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o6, 0, 71);
+
+                        Label o7 = new Label("To be able to communicate effectively in Turkish,both orally and in writing; to be able to author and comprehend written reports, to be able to prepare design and implementation reports, to present effectively, to be able to give and receive clear and comprehensible instructions.");
+                        o7.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o7, 0, 72);
+
+                        Label o8 = new Label("To have knowledge about global and social impact of Computer Engineering practices on health, environment, and safety; to have knowledge about contemporary issues as they pertain to engineering; to be aware of the legal ramifications of Computer Engineering solutions.");
+                        o8.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o8, 0, 73);
+
+                        Label o9 = new Label("To be aware of ethical behavior, professional and ethical responsibility; to have knowledge about standards utilized in engineering applications.");
+                        o9.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o9, 0, 74);
+
+                        Label o10 = new Label("To have knowledge about industrial practices such as project management, risk management, and change management; to have awareness of entrepreneurship and innovation; to have knowledge about sustainable development.");
+                        o10.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o10, 0, 75);
+
+                        Label o11 = new Label("To be able to collect data in the area of Computer Engineering, and to be able to communicate with colleagues in a foreign language. (European Language Portfolio Global Scale, Level B1)");
+                        o11.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o11, 0, 76);
+
+                        Label o12 = new Label("To be able to speak a second foreign language at a medium level of fluency efficiently.\n");
+                        o12.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o12, 0, 77);
+
+                        Label o13 = new Label("To recognize the need for lifelong learning; to be able to access information, to be able to stay current with developments in science and technology; to be able to relate the knowledge accumulated throughout the human history to Computer Engineering.");
+                        o13.setStyle("-fx-background-color: white; -fx-padding: 5px;-fx-font-weight: bold;-fx-font-size: 10px;");
+                        LectureGrid.add(o13, 0, 78);
 
                         Label LectureIDtext = new Label(TempID);
                         LectureGrid.add(LectureIDtext, 2, 0);
@@ -2237,6 +2688,200 @@ public class MainController {
 
                         Label FinalExamWorkText = new Label(TempFinalWork);LectureGrid.add(FinalExamWorkText, 3, 64);
 
+                        Label outcome1_1Text = new Label(outcome1_1);
+                        LectureGrid.add(outcome1_1Text, 1, 66);
+
+                        Label outcome1_2Text = new Label(outcome2_2);
+                        LectureGrid.add(outcome1_2Text, 2, 66);
+
+                        Label outcome1_3Text = new Label(outcome1_3);
+                        LectureGrid.add(outcome1_3Text, 3, 66);
+
+                        Label outcome1_4Text = new Label(outcome1_4);
+                        LectureGrid.add(outcome1_4Text, 4, 66);
+
+                        Label outcome1_5Text = new Label(outcome1_5);
+                        LectureGrid.add(outcome1_5Text, 5, 66);
+
+                        Label outcome2_1Text = new Label(outcome2_1);
+                        LectureGrid.add(outcome2_1Text, 1, 67);
+
+                        Label outcome2_2Text = new Label(outcome2_2);
+                        LectureGrid.add(outcome2_2Text, 2, 67);
+
+                        Label outcome2_3Text =  new Label(outcome2_3);
+                        LectureGrid.add(outcome2_3Text, 3, 67);
+
+                        Label outcome2_4Text = new Label(outcome2_4);
+                        LectureGrid.add(outcome2_4Text, 4, 67);
+
+                        Label outcome2_5Text = new Label(outcome2_5);
+                        LectureGrid.add(outcome2_5Text, 5, 67);
+
+                        Label outcome3_1Text = new Label(outcome3_1);
+                        LectureGrid.add(outcome3_1Text, 1, 68);
+
+                        Label outcome3_2Text = new Label(outcome3_2);
+                        LectureGrid.add(outcome3_2Text, 2, 68);
+
+                        Label outcome3_3Text = new Label(outcome3_3);
+                        LectureGrid.add(outcome3_3Text, 3, 68);
+
+                        Label outcome3_4Text = new Label(outcome3_4);
+                        LectureGrid.add(outcome3_4Text, 4, 68);
+
+                        Label outcome3_5Text = new Label(outcome3_5);
+                        LectureGrid.add(outcome3_5Text, 5, 68);
+
+                        Label outcome4_1Text = new Label(outcome4_1);
+                        LectureGrid.add(outcome4_1Text, 1, 69);
+
+                        Label outcome4_2Text = new Label(outcome4_2);
+                        LectureGrid.add(outcome4_2Text, 2, 69);
+
+                        Label outcome4_3Text = new Label(outcome4_3);
+                        LectureGrid.add(outcome4_3Text, 3, 69);
+
+                        Label outcome4_4Text = new Label(outcome4_4);
+                        LectureGrid.add(outcome4_4Text, 4, 69);
+
+                        Label outcome4_5Text = new Label(outcome4_5);
+                        LectureGrid.add(outcome4_5Text, 5, 69);
+
+                        Label outcome5_1Text = new Label(outcome5_1);
+                        LectureGrid.add(outcome5_1Text, 1, 70);
+
+                        Label outcome5_2Text = new Label(outcome5_2);
+                        LectureGrid.add(outcome5_2Text, 2, 70);
+
+                        Label outcome5_3Text = new Label(outcome5_3);
+                        LectureGrid.add(outcome5_3Text, 3, 70);
+
+                        Label outcome5_4Text = new Label(outcome5_4);
+                        LectureGrid.add(outcome5_4Text, 4, 70);
+
+                        Label outcome5_5Text = new Label(outcome5_5);
+                        LectureGrid.add(outcome5_5Text, 5, 70);
+
+                        Label outcome6_1Text = new Label(outcome6_1);
+                        LectureGrid.add(outcome6_1Text, 1, 71);
+
+                        Label outcome6_2Text = new Label(outcome6_2);
+                        LectureGrid.add(outcome6_2Text, 2, 71);
+
+                        Label outcome6_3Text = new Label(outcome6_3);
+                        LectureGrid.add(outcome6_3Text, 3, 71);
+
+                        Label outcome6_4Text = new Label(outcome6_4);
+                        LectureGrid.add(outcome6_4Text, 4, 71);
+
+                        Label outcome6_5Text = new Label(outcome6_5);
+                        LectureGrid.add(outcome6_5Text, 5, 71);
+
+                        Label outcome7_1Text = new Label(outcome7_1);
+                        LectureGrid.add(outcome7_1Text, 1, 72);
+
+                        Label outcome7_2Text = new Label(outcome7_2);
+                        LectureGrid.add(outcome7_2Text, 2, 72);
+
+                        Label outcome7_3Text = new Label(outcome7_3);
+                        LectureGrid.add(outcome7_3Text, 3, 72);
+
+                        Label outcome7_4Text = new Label(outcome7_4);
+                        LectureGrid.add(outcome7_4Text, 4, 72);
+
+                        Label outcome7_5Text = new Label(outcome7_5);
+                        LectureGrid.add(outcome7_5Text, 5, 72);
+
+                        Label outcome8_1Text = new Label(outcome8_1);
+                        LectureGrid.add(outcome8_1Text, 1, 73);
+
+                        Label outcome8_2Text = new Label(outcome8_2);
+                        LectureGrid.add(outcome8_2Text, 2, 73);
+
+                        Label outcome8_3Text = new Label(outcome8_3);
+                        LectureGrid.add(outcome8_3Text, 3, 73);
+
+                        Label outcome8_4Text = new Label(outcome8_4);
+                        LectureGrid.add(outcome8_4Text, 4, 73);
+
+                        Label outcome8_5Text = new Label(outcome8_5);
+                        LectureGrid.add(outcome8_5Text, 5, 73);
+
+                        Label outcome9_1Text = new Label(outcome9_1);
+                        LectureGrid.add(outcome9_1Text, 1, 74);
+
+                        Label outcome9_2Text = new Label(outcome9_2);
+                        LectureGrid.add(outcome9_2Text, 2, 74);
+
+                        Label outcome9_3Text = new Label(outcome9_3);
+                        LectureGrid.add(outcome9_3Text, 3, 74);
+
+                        Label outcome9_4Text = new Label(outcome9_4);
+                        LectureGrid.add(outcome9_4Text, 4, 74);
+
+                        Label outcome9_5Text = new Label(outcome9_5);
+                        LectureGrid.add(outcome9_5Text, 5, 74);
+
+                        Label outcome10_1Text = new Label(outcome10_1);
+                        LectureGrid.add(outcome10_1Text, 1, 75);
+
+                        Label outcome10_2Text = new Label(outcome10_2);
+                        LectureGrid.add(outcome10_2Text, 2, 75);
+
+                        Label outcome10_3Text = new Label(outcome10_3);
+                        LectureGrid.add(outcome10_3Text, 3, 75);
+
+                        Label outcome10_4Text = new Label(outcome10_4);
+                        LectureGrid.add(outcome10_4Text, 4, 75);
+
+                        Label outcome10_5Text = new Label(outcome10_5);
+                        LectureGrid.add(outcome10_5Text, 5, 75);
+
+                        Label outcome11_1Text = new Label(outcome11_1);
+                        LectureGrid.add(outcome11_1Text, 1, 76);
+
+                        Label outcome11_2Text = new Label(outcome11_2);
+                        LectureGrid.add(outcome11_2Text, 2, 76);
+
+                        Label outcome11_3Text = new Label(outcome11_3);
+                        LectureGrid.add(outcome11_3Text, 3, 76);
+
+                        Label outcome11_4Text = new Label(outcome11_4);
+                        LectureGrid.add(outcome11_4Text, 4, 76);
+
+                        Label outcome11_5Text = new Label(outcome11_5);
+                        LectureGrid.add(outcome11_5Text, 5, 76);
+
+                        Label outcome12_1Text = new Label(outcome12_1);
+                        LectureGrid.add(outcome12_1Text, 1, 77);
+
+                        Label outcome12_2Text = new Label(outcome12_2);
+                        LectureGrid.add(outcome12_2Text, 2, 77);
+
+                        Label outcome12_3Text = new Label(outcome12_3);
+                        LectureGrid.add(outcome12_3Text, 3, 77);
+
+                        Label outcome12_4Text = new Label(outcome12_4);
+                        LectureGrid.add(outcome12_4Text, 4, 77);
+
+                        Label outcome12_5Text = new Label(outcome12_5);
+                        LectureGrid.add(outcome12_5Text, 5, 77);
+
+                        Label outcome13_1Text = new Label(outcome13_1);
+                        LectureGrid.add(outcome13_1Text, 1, 78);
+
+                        Label outcome13_2Text = new Label(outcome13_2);
+                        LectureGrid.add(outcome13_2Text, 2, 78);
+
+                        Label outcome13_3Text = new Label(outcome13_3);
+                        LectureGrid.add(outcome13_3Text, 3, 78);
+
+                        Label outcome13_4Text = new Label(outcome13_4);
+                        LectureGrid.add(outcome13_4Text, 4, 78);
+
+                        Label outcome13_5Text = new Label(outcome13_5);
+                        LectureGrid.add(outcome13_5Text, 5, 78);
                 }
         }
 

@@ -137,7 +137,7 @@ public class DBConnector {
                         "Homework_or_Assignment_LO3 TEXT," +
                         "Presentation_or_Jury_LO3 TEXT," +
                         "Project_LO3 TEXT," +
-                        "Portfolio_LO3 TEXT,"+
+                        "Portfolio_LO3 TEXT," +
                         "Seminar_or_Workshop_LO3 TEXT," +
                         "Oral_Exam_LO3 TEXT," +
                         "Midterm_LO3 TEXT," +
@@ -186,7 +186,72 @@ public class DBConnector {
                         "MIDTERM_WORK TEXT," +
                         "FINAL_EXAM_NUM TEXT," +
                         "FINAL_EXAM_DUR TEXT," +
-                        "FINAL_EXAM_WORK TEXT)");
+                        "FINAL_EXAM_WORK TEXT," +
+                        "OUTCOME1_1 TEXT," +
+                        "OUTCOME1_2 TEXT," +
+                        " OUTCOME1_3 TEXT," +
+                        "OUTCOME1_4 TEXT," +
+                        "OUTCOME1_5 TEXT," +
+                        "OUTCOME2_1 TEXT," +
+                        "OUTCOME2_2 TEXT," +
+                        "OUTCOME2_3 TEXT," +
+                        "OUTCOME2_4 TEXT," +
+                        "OUTCOME2_5 TEXT," +
+                        "OUTCOME3_1 TEXT," +
+                        "OUTCOME3_2 TEXT," +
+                        "OUTCOME3_3 TEXT," +
+                        "OUTCOME3_4 TEXT," +
+                        "OUTCOME3_5 TEXT," +
+                        "OUTCOME4_1 TEXT," +
+                        "OUTCOME4_2 TEXT," +
+                        "OUTCOME4_3 TEXT," +
+                        "OUTCOME4_4 TEXT," +
+                        "OUTCOME4_5 TEXT," +
+                        "OUTCOME5_1 TEXT," +
+                        "OUTCOME5_2 TEXT," +
+                        "OUTCOME5_3 TEXT," +
+                        "OUTCOME5_4 TEXT," +
+                        "OUTCOME5_5 TEXT," +
+                        "OUTCOME6_1 TEXT," +
+                        "OUTCOME6_2 TEXT," +
+                        "OUTCOME6_3 TEXT," +
+                        "OUTCOME6_4 TEXT," +
+                        "OUTCOME6_5 TEXT," +
+                        "OUTCOME7_1 TEXT," +
+                        "OUTCOME7_2 TEXT," +
+                        "OUTCOME7_3 TEXT," +
+                        "OUTCOME7_4 TEXT," +
+                        "OUTCOME7_5 TEXT," +
+                        "OUTCOME8_1 TEXT," +
+                        "OUTCOME8_2 TEXT," +
+                        "OUTCOME8_3 TEXT," +
+                        "OUTCOME8_4 TEXT," +
+                        "OUTCOME8_5 TEXT," +
+                        "OUTCOME9_1 TEXT," +
+                        "OUTCOME9_2 TEXT," +
+                        "OUTCOME9_3 TEXT," +
+                        "OUTCOME9_4 TEXT," +
+                        "OUTCOME9_5 TEXT," +
+                        "OUTCOME10_1 TEXT," +
+                        "OUTCOME10_2 TEXT," +
+                        "OUTCOME10_3 TEXT," +
+                        "OUTCOME10_4 TEXT," +
+                        "OUTCOME10_5 TEXT," +
+                        "OUTCOME11_1 TEXT," +
+                        "OUTCOME11_2 TEXT," +
+                        "OUTCOME11_3 TEXT," +
+                        "OUTCOME11_4 TEXT," +
+                        "OUTCOME11_5 TEXT," +
+                        "OUTCOME12_1 TEXT," +
+                        "OUTCOME12_2 TEXT," +
+                        "OUTCOME12_3 TEXT," +
+                        "OUTCOME12_4 TEXT," +
+                        "OUTCOME12_5 TEXT," +
+                        "OUTCOME13_1 TEXT," +
+                        "OUTCOME13_2 TEXT," +
+                        "OUTCOME13_3 TEXT," +
+                        "OUTCOME13_4 TEXT," +
+                        "OUTCOME13_5 TEXT)");
 
 
 
@@ -216,7 +281,15 @@ public class DBConnector {
             insertLecture = connection.prepareStatement("INSERT INTO Lecture (LECTURE_ID, LECTURE_NAME, LECTURER, LECTURE_CODE,SEMESTER,THEORY_HOUR_IN_WEEK,APPLICATION_OR_LAB_HOUR_IN_WEEK,LOCAL_CREDITS,ECTS,PREREQUISITES,COURSE_LANGUAGE,COURSE_TYPE,COURSE_LEVEL,TEACHING_METHODS_AND_TECHNIQUES,COURSE_COORDINATOR,ASSISTANT,COURSE_OBJECTIVES,LEARNING_OUTCOMES,COURSE_DESCRIPTION,COURSE_CATEGORY," +
                     "week1Subjects,week2Subjects,week3Subjects,week4Subjects,week5Subjects,week6Subjects,week7Subjects,week8Subjects,week9Subjects,week10Subjects,week11Subjects,week12Subjects,week13Subjects,week14Subjects,week15Subjects,week1ReqMat,week2ReqMat,week3ReqMat,week4ReqMat,week5ReqMat,week6ReqMat,week7ReqMat,week8ReqMat,week9ReqMat,week10ReqMat,week11ReqMat,week12ReqMat,week13ReqMat,week14ReqMat,week15ReqMat,courseNotesAndTextBooks,suggestedReadingsAndMaterials,Participation_Number, Laboratory_or_Application_Number, Field_Work_Number, Quiz_or_StudioCritique_Number, Homework_or_Assignment_Number, Presentation_or_Jury_Number, Project_Number,Portfolio_Number, Seminar_or_Workshop_Number, Oral_Exam_Number, Midterm_Number, Final_Exam_Number, Participation_Weigthing, Laboratory_or_Application_Weigthing, Field_Work_Weigthing, Quiz_or_StudioCritique_Weigthing, Homework_or_Assignment_Weigthing, Presentation_or_Jury_Weigthing, Project_Weigthing,Portfolio_Weigthing, Seminar_or_Workshop_Weigthing, Oral_Exam_Weigthing, Midterm_Weigthing, Final_Exam_Weigthing, Participation_LO1, Laboratory_or_Application_LO1, Field_Work_LO1, Quiz_or_StudioCritique_LO1, Homework_or_Assignment_LO1, " +
                     "Presentation_or_Jury_LO1, Project_LO1,Portfolio_LO1, Seminar_or_Workshop_LO1, Oral_Exam_LO1, Midterm_LO1, Final_Exam_LO1, Participation_LO2, Laboratory_or_Application_LO2, Field_Work_LO2,Quiz_or_StudioCritique_LO2, Homework_or_Assignment_LO2, Presentation_or_Jury_LO2, Project_LO2,Portfolio_LO2, Seminar_or_Workshop_LO2, Oral_Exam_LO2, Midterm_LO2, Final_Exam_LO2, Participation_LO3, Laboratory_or_Application_LO3, Field_Work_LO3, Quiz_or_StudioCritique_LO3, Homework_or_Assignment_LO3, Presentation_or_Jury_LO3, Project_LO3,Portfolio_LO3, Seminar_or_Workshop_LO3, Oral_Exam_LO3, Midterm_LO3, Final_Exam_LO3, Participation_LO4, Laboratory_or_Application_LO4, Field_Work_LO4, Quiz_or_StudioCritique_LO4, Homework_or_Assignment_LO4, " +
-                    "Presentation_or_Jury_LO4, Project_LO4,Portfolio_LO4, Seminar_or_Workshop_LO4, Oral_Exam_LO4, Midterm_LO4, Final_Exam_LO4,STUDY_HOURS_OUT_OF_CLASS_NUM, STUDY_HOURS_OUT_OF_CLASS_DUR, STUDY_HOURS_OUT_OF_CLASS_WORK, FIELD_WORK_NUM, FIELD_WORK_DUR, FIELD_WORK_WORK, QUIZ_NUM, QUIZ_DUR, QUIZ_WORK, HOMEWORK_NUM, HOMEWORK_DUR, HOMEWORK_WORK, PRESENTATION_NUM, PRESENTATION_DUR, PRESENTATION_WORK, PROJECT_NUM, PROJECT_DUR, PROJECT_WORK, PORTFOLIO_NUM, PORTFOLIO_DUR, PORTFOLIO_WORK, SEMINAR_NUM, SEMINAR_DUR, SEMINAR_WORK, ORAL_EXAM_NUM, ORAL_EXAM_DUR, ORAL_EXAM_WORK, MIDTERM_NUM, MIDTERM_DUR, MIDTERM_WORK, FINAL_EXAM_NUM, FINAL_EXAM_DUR, FINAL_EXAM_WORK) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                    "Presentation_or_Jury_LO4, Project_LO4,Portfolio_LO4, Seminar_or_Workshop_LO4, Oral_Exam_LO4, Midterm_LO4, Final_Exam_LO4,STUDY_HOURS_OUT_OF_CLASS_NUM, STUDY_HOURS_OUT_OF_CLASS_DUR, STUDY_HOURS_OUT_OF_CLASS_WORK, FIELD_WORK_NUM, FIELD_WORK_DUR, FIELD_WORK_WORK, QUIZ_NUM, QUIZ_DUR, QUIZ_WORK, HOMEWORK_NUM, HOMEWORK_DUR, HOMEWORK_WORK, PRESENTATION_NUM, PRESENTATION_DUR, PRESENTATION_WORK, PROJECT_NUM, PROJECT_DUR, PROJECT_WORK, PORTFOLIO_NUM, PORTFOLIO_DUR, PORTFOLIO_WORK, SEMINAR_NUM, SEMINAR_DUR, SEMINAR_WORK, ORAL_EXAM_NUM, ORAL_EXAM_DUR, ORAL_EXAM_WORK, MIDTERM_NUM, MIDTERM_DUR, MIDTERM_WORK, FINAL_EXAM_NUM, FINAL_EXAM_DUR, FINAL_EXAM_WORK,OUTCOME1_1,OUTCOME1_2,OUTCOME1_3,OUTCOME1_4, OUTCOME1_5, OUTCOME2_1, OUTCOME2_2, OUTCOME2_3, OUTCOME2_4, OUTCOME2_5,\n" +
+                    "OUTCOME3_1, OUTCOME3_2, OUTCOME3_3, OUTCOME3_4, OUTCOME3_5, OUTCOME4_1, OUTCOME4_2,\n" +
+                    "OUTCOME4_3, OUTCOME4_4, OUTCOME4_5, OUTCOME5_1, OUTCOME5_2, OUTCOME5_3, OUTCOME5_4,\n" +
+                    "OUTCOME5_5, OUTCOME6_1, OUTCOME6_2, OUTCOME6_3, OUTCOME6_4, OUTCOME6_5, OUTCOME7_1,\n" +
+                    "OUTCOME7_2, OUTCOME7_3, OUTCOME7_4, OUTCOME7_5, OUTCOME8_1, OUTCOME8_2, OUTCOME8_3,\n" +
+                    "OUTCOME8_4, OUTCOME8_5, OUTCOME9_1, OUTCOME9_2, OUTCOME9_3, OUTCOME9_4, OUTCOME9_5,\n" +
+                    "OUTCOME10_1, OUTCOME10_2, OUTCOME10_3, OUTCOME10_4, OUTCOME10_5, OUTCOME11_1, OUTCOME11_2,\n" +
+                    "OUTCOME11_3, OUTCOME11_4, OUTCOME11_5, OUTCOME12_1, OUTCOME12_2, OUTCOME2_3, OUTCOME12_4,\n" +
+                    "OUTCOME12_5, OUTCOME13_1, OUTCOME13_2, OUTCOME13_3, OUTCOME13_4, OUTCOME13_5) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
          /*   insertEvaluation = connection.prepareStatement("INSERT INTO Evaluation_Table (PROJECT_ID, P_INPUT, P_OUTPUT) VALUES (?,?,?)");
             insertDetailedEvaluation = connection.prepareStatement("INSERT INTO Detailed_Evaluation_Table(EVALUATION_ID, RUN_STATUS, RUN_OUTPUT, STUDENT_ID) VALUES (?,?,?,?)");
 */
@@ -413,6 +486,72 @@ public class DBConnector {
             String FinalNum = lecture.getFinalExamNum();
             String FinalDur = lecture.getFinalExamDur();
             String FinalWork = lecture.getFinalExamWork();
+            String outcome1_1 = lecture.getOutCome1_1();
+            String outcome1_2 = lecture.getOutCome1_2();
+            String outcome1_3 = lecture.getOutCome1_3();
+            String outcome1_4 = lecture.getOutCome1_4();
+            String outcome1_5 = lecture.getOutCome1_5();
+            String outcome2_1 = lecture.getOutCome2_1();
+            String outcome2_2 = lecture.getOutCome2_2();
+            String outcome2_3 = lecture.getOutCome2_3();
+            String outcome2_4 = lecture.getOutCome2_4();
+            String outcome2_5 = lecture.getOutCome2_5();
+            String outcome3_1 = lecture.getOutCome3_1();
+            String outcome3_2 = lecture.getOutCome3_2();
+            String outcome3_3 = lecture.getOutCome3_3();
+            String outcome3_4 = lecture.getOutCome3_4();
+            String outcome3_5 = lecture.getOutCome3_5();
+            String outcome4_1 = lecture.getOutCome4_1();
+            String outcome4_2 = lecture.getOutCome4_2();
+            String outcome4_3 = lecture.getOutCome4_3();
+            String outcome4_4 = lecture.getOutCome4_4();
+            String outcome4_5 = lecture.getOutCome4_5();
+            String outcome5_1 = lecture.getOutCome5_1();
+            String outcome5_2 = lecture.getOutCome5_2();
+            String outcome5_3 = lecture.getOutCome5_3();
+            String outcome5_4 = lecture.getOutCome5_4();
+            String outcome5_5 = lecture.getOutCome5_5();
+            String outcome6_1 = lecture.getOutCome6_1();
+            String outcome6_2 = lecture.getOutCome6_2();
+            String outcome6_3 = lecture.getOutCome6_3();
+            String outcome6_4 = lecture.getOutCome6_4();
+            String outcome6_5 = lecture.getOutCome6_5(); 
+            String outcome7_1 = lecture.getOutCome7_1();
+            String outcome7_2 = lecture.getOutCome7_2();
+            String outcome7_3 = lecture.getOutCome7_3();
+            String outcome7_4 = lecture.getOutCome7_4();
+            String outcome7_5 = lecture.getOutCome7_5(); 
+            String outcome8_1 = lecture.getOutCome8_1();
+            String outcome8_2 = lecture.getOutCome8_2();
+            String outcome8_3 = lecture.getOutCome8_3();
+            String outcome8_4 = lecture.getOutCome8_4();
+            String outcome8_5 = lecture.getOutCome8_5(); 
+            String outcome9_1 = lecture.getOutCome9_1();
+            String outcome9_2 = lecture.getOutCome9_2();
+            String outcome9_3 = lecture.getOutCome9_3();
+            String outcome9_4 = lecture.getOutCome9_4();
+            String outcome9_5 = lecture.getOutCome9_5();
+            String outcome10_1 = lecture.getOutCome10_1();
+            String outcome10_2 = lecture.getOutCome10_2();
+            String outcome10_3 = lecture.getOutCome10_3();
+            String outcome10_4 = lecture.getOutCome10_4();
+            String outcome10_5 = lecture.getOutCome10_5(); 
+            String outcome11_1 = lecture.getOutCome11_1();
+            String outcome11_2 = lecture.getOutCome11_2();
+            String outcome11_3 = lecture.getOutCome11_3();
+            String outcome11_4 = lecture.getOutCome11_4();
+            String outcome11_5 = lecture.getOutCome11_5(); 
+            String outcome12_1 = lecture.getOutCome12_1();
+            String outcome12_2 = lecture.getOutCome12_2();
+            String outcome12_3 = lecture.getOutCome12_3();
+            String outcome12_4 = lecture.getOutCome12_4();
+            String outcome12_5 = lecture.getOutCome12_5();
+            String outcome13_1 = lecture.getOutCome13_1();
+            String outcome13_2 = lecture.getOutCome13_2();
+            String outcome13_3 = lecture.getOutCome13_3();
+            String outcome13_4 = lecture.getOutCome13_4();
+            String outcome13_5 = lecture.getOutCome13_5();
+          
 
 
             insertLecture.setInt(1, lecture_id);
@@ -486,7 +625,7 @@ public class DBConnector {
             insertLecture.setString(69, Homework_or_Assignment_Weigthing);
             insertLecture.setString(70, Presentation_or_Jury_Weigthing);
             insertLecture.setString(71, Project_Weigthing);
-            insertLecture.setString(72,Portfolio_Weighting);
+            insertLecture.setString(72, Portfolio_Weighting);
             insertLecture.setString(73, Seminar_or_Workshop_Weigthing);
             insertLecture.setString(74, Oral_Exam_Weigthing);
             insertLecture.setString(75, Midterm_Weigthing);
@@ -510,7 +649,7 @@ public class DBConnector {
             insertLecture.setString(93, Homework_or_Assignment_LO2);
             insertLecture.setString(94, Presentation_or_Jury_LO2);
             insertLecture.setString(95, Project_LO2);
-            insertLecture.setString(96,Portfolio_L02);
+            insertLecture.setString(96, Portfolio_L02);
             insertLecture.setString(97, Seminar_or_Workshop_LO2);
             insertLecture.setString(98, Oral_Exam_LO2);
             insertLecture.setString(99, Midterm_LO2);
@@ -522,7 +661,7 @@ public class DBConnector {
             insertLecture.setString(105, Homework_or_Assignment_LO3);
             insertLecture.setString(106, Presentation_or_Jury_LO3);
             insertLecture.setString(107, Project_LO3);
-            insertLecture.setString(108,Portfolio_L03);
+            insertLecture.setString(108, Portfolio_L03);
             insertLecture.setString(109, Seminar_or_Workshop_LO3);
             insertLecture.setString(110, Oral_Exam_LO3);
             insertLecture.setString(111, Midterm_LO3);
@@ -534,7 +673,7 @@ public class DBConnector {
             insertLecture.setString(117, Homework_or_Assignment_LO4);
             insertLecture.setString(118, Presentation_or_Jury_LO4);
             insertLecture.setString(119, Project_LO4);
-            insertLecture.setString(120,Portfolio_LO4);
+            insertLecture.setString(120, Portfolio_LO4);
             insertLecture.setString(121, Seminar_or_Workshop_LO4);
             insertLecture.setString(122, Oral_Exam_LO4);
             insertLecture.setString(123, Midterm_LO4);
@@ -571,8 +710,72 @@ public class DBConnector {
             insertLecture.setString(154, MidtermWork);
             insertLecture.setString(155, FinalNum);
             insertLecture.setString(156, FinalDur);
-            insertLecture.setString(157, FinalWork);
-
+            insertLecture.setString(157, FinalWork); 
+            insertLecture.setString(158, outcome1_1);
+            insertLecture.setString(159, outcome1_2);
+            insertLecture.setString(160, outcome1_3);
+            insertLecture.setString(161, outcome1_4);
+            insertLecture.setString(162, outcome1_5);
+            insertLecture.setString(163, outcome2_1);
+            insertLecture.setString(164, outcome2_2);
+            insertLecture.setString(165, outcome2_3);
+            insertLecture.setString(166, outcome2_4);
+            insertLecture.setString(167, outcome2_5);
+            insertLecture.setString(168, outcome3_1);
+            insertLecture.setString(169, outcome3_2);
+            insertLecture.setString(170, outcome3_3);
+            insertLecture.setString(171, outcome3_4);
+            insertLecture.setString(172, outcome3_5);
+            insertLecture.setString(173, outcome4_1);
+            insertLecture.setString(174, outcome4_2);
+            insertLecture.setString(175, outcome4_3);
+            insertLecture.setString(176, outcome4_4);
+            insertLecture.setString(177, outcome4_5);
+            insertLecture.setString(178, outcome5_1);
+            insertLecture.setString(179, outcome5_2);
+            insertLecture.setString(180, outcome5_3);
+            insertLecture.setString(181, outcome5_4);
+            insertLecture.setString(182, outcome5_5);
+            insertLecture.setString(183, outcome6_1);
+            insertLecture.setString(184, outcome6_2);
+            insertLecture.setString(185, outcome6_3);
+            insertLecture.setString(186, outcome6_4);
+            insertLecture.setString(187, outcome6_5);
+            insertLecture.setString(188, outcome7_1);
+            insertLecture.setString(189, outcome7_2);
+            insertLecture.setString(190, outcome7_3);
+            insertLecture.setString(191, outcome7_4);
+            insertLecture.setString(192, outcome7_5);
+            insertLecture.setString(193, outcome8_1);
+            insertLecture.setString(194, outcome8_2);
+            insertLecture.setString(195, outcome8_3);
+            insertLecture.setString(196, outcome8_4);
+            insertLecture.setString(197, outcome8_5);
+            insertLecture.setString(198, outcome9_1);
+            insertLecture.setString(199, outcome9_2);
+            insertLecture.setString(200, outcome9_3);
+            insertLecture.setString(201, outcome9_4);
+            insertLecture.setString(202, outcome9_5);
+            insertLecture.setString(203, outcome10_1);
+            insertLecture.setString(204, outcome10_2);
+            insertLecture.setString(205, outcome10_3);
+            insertLecture.setString(206, outcome10_4);
+            insertLecture.setString(207, outcome10_5);
+            insertLecture.setString(208, outcome11_1);
+            insertLecture.setString(209, outcome11_2);
+            insertLecture.setString(210, outcome11_3);
+            insertLecture.setString(211, outcome11_4);
+            insertLecture.setString(212, outcome11_5);
+            insertLecture.setString(213, outcome12_1);
+            insertLecture.setString(214, outcome12_2);
+            insertLecture.setString(215, outcome12_3);
+            insertLecture.setString(216, outcome12_4);
+            insertLecture.setString(217, outcome12_5);
+            insertLecture.setString(218, outcome13_1);
+            insertLecture.setString(219, outcome13_2);
+            insertLecture.setString(220, outcome13_3);
+            insertLecture.setString(221, outcome13_4);
+            insertLecture.setString(222, outcome13_5);
             insertLecture.execute();
 
         } catch (Exception e) {
@@ -639,7 +842,7 @@ public class DBConnector {
             String week15ReqMat = rs.getString(50);
             String courseNotesAndTextBooks = rs.getString(51);
             String suggestedReadingsAndMaterials = rs.getString(52);
-            String Participation_Number =rs.getString(53);
+            String Participation_Number = rs.getString(53);
             String Laboratory_or_Application_Number = rs.getString(54);
             String Field_Work_Number = rs.getString(55);
             String Quiz_or_StudioCritique_Number = rs.getString(56);
@@ -673,7 +876,7 @@ public class DBConnector {
             String Portfolio_L01 = rs.getString(84);
             String Seminar_or_Workshop_LO1 = rs.getString(85);
             String Oral_Exam_LO1 = rs.getString(86);
-            String Midterm_LO1 =rs.getString(87);
+            String Midterm_LO1 = rs.getString(87);
             String Final_Exam_LO1 = rs.getString(88);
             String Participation_LO2 = rs.getString(89);
             String Laboratory_or_Application_LO2 = rs.getString(90);
@@ -744,14 +947,79 @@ public class DBConnector {
             String FinalNum = rs.getString(155);
             String FinalDur = rs.getString(156);
             String FinalWork = rs.getString(157);
+            String outcome1_1 = rs.getString(158);
+            String outcome1_2 = rs.getString(159);
+            String outcome1_3 = rs.getString(160);
+            String outcome1_4 = rs.getString(161);
+            String outcome1_5 = rs.getString(162);
+            String outcome2_1 = rs.getString(163);
+            String outcome2_2 = rs.getString(164);
+            String outcome2_3 = rs.getString(165);
+            String outcome2_4 = rs.getString(166);
+            String outcome2_5 = rs.getString(167);
+            String outcome3_1 = rs.getString(168);
+            String outcome3_2 = rs.getString(169);
+            String outcome3_3 = rs.getString(170);
+            String outcome3_4 = rs.getString(171);
+            String outcome3_5 = rs.getString(172);
+            String outcome4_1 = rs.getString(173);
+            String outcome4_2 = rs.getString(174);
+            String outcome4_3 = rs.getString(175);
+            String outcome4_4 = rs.getString(176);
+            String outcome4_5 = rs.getString(177);
+            String outcome5_1 = rs.getString(178);
+            String outcome5_2 = rs.getString(179);
+            String outcome5_3 = rs.getString(180);
+            String outcome5_4 = rs.getString(181);
+            String outcome5_5 = rs.getString(182);
+            String outcome6_1 = rs.getString(183);
+            String outcome6_2 = rs.getString(184);
+            String outcome6_3 = rs.getString(185);
+            String outcome6_4 = rs.getString(186);
+            String outcome6_5 = rs.getString(187);
+            String outcome7_1 = rs.getString(188);
+            String outcome7_2 = rs.getString(189);
+            String outcome7_3 = rs.getString(190);
+            String outcome7_4 = rs.getString(191);
+            String outcome7_5 = rs.getString(192);
+            String outcome8_1 = rs.getString(193);
+            String outcome8_2 = rs.getString(194);
+            String outcome8_3 = rs.getString(195);
+            String outcome8_4 = rs.getString(196);
+            String outcome8_5 = rs.getString(197);
+            String outcome9_1 = rs.getString(198);
+            String outcome9_2 = rs.getString(199);
+            String outcome9_3 = rs.getString(200);
+            String outcome9_4 = rs.getString(201);
+            String outcome9_5 = rs.getString(202);
+            String outcome10_1 = rs.getString(203);
+            String outcome10_2 = rs.getString(204);
+            String outcome10_3 = rs.getString(205);
+            String outcome10_4 = rs.getString(206);
+            String outcome10_5 = rs.getString(207);
+            String outcome11_1 = rs.getString(208);
+            String outcome11_2 = rs.getString(209);
+            String outcome11_3 = rs.getString(210);
+            String outcome11_4 = rs.getString(211);
+            String outcome11_5 = rs.getString(212);
+            String outcome12_1 = rs.getString(213);
+            String outcome12_2 = rs.getString(214);
+            String outcome12_3 = rs.getString(215);
+            String outcome12_4 = rs.getString(216);
+            String outcome12_5 = rs.getString(217);
+            String outcome13_1 = rs.getString(218);
+            String outcome13_2 = rs.getString(219);
+            String outcome13_3 = rs.getString(220);
+            String outcome13_4 = rs.getString(221);
+            String outcome13_5 = rs.getString(222);
 
 
             LectureConfig config = new LectureConfig(id, Lecturename, Lecturername, LectureCode, Semester, TheoryHour, LabHour, LocalCredit, Ects, Prereq, LectureLang, LectureType, LectureLevel, TMethod, LecturCoordinator, Assistant, LectureObjective, LectureOutcome, LectureDescription, LectureCategory, week1Subjects, week2Subjects, week3Subjects, week4Subjects, week5Subjects, week6Subjects, week7Subjects, week8Subjects, week9Subjects, week10Subjects, week11Subjects, week12Subjects, week13Subjects, week14Subjects, week15Subjects,
-                    week1ReqMat, week2ReqMat, week3ReqMat, week4ReqMat, week5ReqMat, week6ReqMat, week7ReqMat, week8ReqMat, week9ReqMat, week10ReqMat, week11ReqMat, week12ReqMat, week13ReqMat, week14ReqMat, week15ReqMat, courseNotesAndTextBooks, suggestedReadingsAndMaterials,Participation_Number, Laboratory_or_Application_Number, Field_Work_Number, Quiz_or_StudioCritique_Number, Homework_or_Assignment_Number, Presentation_or_Jury_Number,Project_Number,PortfolioNumber,Seminar_or_Workshop_Number, Oral_Exam_Number, Midterm_Number, Final_Exam_Number, Participation_Weigthing,Laboratory_or_Application_Weigthing,
-                    Field_Work_Weigthing, Quiz_or_StudioCritique_Weigthing,Homework_or_Assignment_Weigthing, Presentation_or_Jury_Weigthing, Project_Weigthing, Portfolio_Weigthing,Seminar_or_Workshop_Weigthing,Oral_Exam_Weigthing, Midterm_Weigthing, Final_Exam_Weigthing,Participation_LO1, Laboratory_or_Application_LO1,Field_Work_LO1,Quiz_or_StudioCritique_LO1, Homework_or_Assignment_LO1,Presentation_or_Jury_LO1,
-                    Project_LO1,Portfolio_L01, Seminar_or_Workshop_LO1,Oral_Exam_LO1, Midterm_LO1, Final_Exam_LO1, Participation_LO2, Laboratory_or_Application_LO2, Field_Work_LO2, Quiz_or_StudioCritique_LO2,Homework_or_Assignment_LO2, Presentation_or_Jury_LO2, Project_LO2,Portfolio_L02, Seminar_or_Workshop_LO2,  Oral_Exam_LO2,  Midterm_LO2,Final_Exam_LO2,  Participation_LO3,Laboratory_or_Application_LO3,  Field_Work_LO3,
-                    Quiz_or_StudioCritique_LO3, Homework_or_Assignment_LO3, Presentation_or_Jury_LO3, Project_LO3, Portfolio_LO3,Seminar_or_Workshop_LO3,Oral_Exam_LO3,  Midterm_LO3, Final_Exam_LO3,Participation_LO4, Laboratory_or_Application_LO4, Field_Work_LO4, Quiz_or_StudioCritique_LO4, Homework_or_Assignment_LO4, Presentation_or_Jury_LO4,  Project_LO4, Portfolio_LO4, Seminar_or_Workshop_LO4,  Oral_Exam_LO4,  Midterm_LO4, Final_Exam_LO4, SHOOCNum, SHOOCDur, SHOOCWork, FWNum, FWDur, FWWork, QuizNum, QuizDur, QuizWork, HWNum, HWDur, HWWork, PresentationNum, PresentationDur, PresentationWork, ProjectNum, ProjectDur, ProjectWork, PortfolioNum, PortfolioDur, PortfolioWork, SeminarNum,
-                    SeminarDur, SeminarWork, OralNum, OralDur, OralWork, MidtermNum, MidtermDur, MidtermWork, FinalNum, FinalDur, FinalWork);
+                    week1ReqMat, week2ReqMat, week3ReqMat, week4ReqMat, week5ReqMat, week6ReqMat, week7ReqMat, week8ReqMat, week9ReqMat, week10ReqMat, week11ReqMat, week12ReqMat, week13ReqMat, week14ReqMat, week15ReqMat, courseNotesAndTextBooks, suggestedReadingsAndMaterials, Participation_Number, Laboratory_or_Application_Number, Field_Work_Number, Quiz_or_StudioCritique_Number, Homework_or_Assignment_Number, Presentation_or_Jury_Number, Project_Number, PortfolioNumber, Seminar_or_Workshop_Number, Oral_Exam_Number, Midterm_Number, Final_Exam_Number, Participation_Weigthing, Laboratory_or_Application_Weigthing,
+                    Field_Work_Weigthing, Quiz_or_StudioCritique_Weigthing, Homework_or_Assignment_Weigthing, Presentation_or_Jury_Weigthing, Project_Weigthing, Portfolio_Weigthing, Seminar_or_Workshop_Weigthing, Oral_Exam_Weigthing, Midterm_Weigthing, Final_Exam_Weigthing, Participation_LO1, Laboratory_or_Application_LO1, Field_Work_LO1, Quiz_or_StudioCritique_LO1, Homework_or_Assignment_LO1, Presentation_or_Jury_LO1,
+                    Project_LO1, Portfolio_L01, Seminar_or_Workshop_LO1, Oral_Exam_LO1, Midterm_LO1, Final_Exam_LO1, Participation_LO2, Laboratory_or_Application_LO2, Field_Work_LO2, Quiz_or_StudioCritique_LO2, Homework_or_Assignment_LO2, Presentation_or_Jury_LO2, Project_LO2, Portfolio_L02, Seminar_or_Workshop_LO2, Oral_Exam_LO2, Midterm_LO2, Final_Exam_LO2, Participation_LO3, Laboratory_or_Application_LO3, Field_Work_LO3,
+                    Quiz_or_StudioCritique_LO3, Homework_or_Assignment_LO3, Presentation_or_Jury_LO3, Project_LO3, Portfolio_LO3, Seminar_or_Workshop_LO3, Oral_Exam_LO3, Midterm_LO3, Final_Exam_LO3, Participation_LO4, Laboratory_or_Application_LO4, Field_Work_LO4, Quiz_or_StudioCritique_LO4, Homework_or_Assignment_LO4, Presentation_or_Jury_LO4, Project_LO4, Portfolio_LO4, Seminar_or_Workshop_LO4, Oral_Exam_LO4, Midterm_LO4, Final_Exam_LO4, SHOOCNum, SHOOCDur, SHOOCWork, FWNum, FWDur, FWWork, QuizNum, QuizDur, QuizWork, HWNum, HWDur, HWWork, PresentationNum, PresentationDur, PresentationWork, ProjectNum, ProjectDur, ProjectWork, PortfolioNum, PortfolioDur, PortfolioWork, SeminarNum,
+                    SeminarDur, SeminarWork, OralNum, OralDur, OralWork, MidtermNum, MidtermDur, MidtermWork, FinalNum, FinalDur, FinalWork,outcome1_1,outcome1_2,outcome1_3,outcome1_4,outcome1_5,outcome2_1,outcome2_2,outcome2_3,outcome2_4,outcome2_5,outcome3_1,outcome3_2,outcome3_3,outcome3_4,outcome3_5,outcome4_1,outcome4_2,outcome4_3,outcome4_4,outcome4_5,outcome5_1,outcome5_2,outcome5_3,outcome5_4,outcome5_5,outcome6_1,outcome6_2,outcome6_3,outcome6_4,outcome6_5,outcome7_1,outcome7_2,outcome7_3,outcome7_4,outcome7_5,outcome8_1,outcome8_2,outcome8_3,outcome8_4,outcome8_5,outcome9_1,outcome9_2,outcome9_3,outcome9_4,outcome9_5,outcome10_1,outcome10_2,outcome10_3,outcome10_4,outcome10_5,outcome11_1,outcome11_2,outcome11_3,outcome11_4,outcome11_5,outcome12_1,outcome12_2,outcome2_3,outcome12_4,outcome12_5,outcome13_1,outcome13_2,outcome13_3,outcome13_4,outcome13_5);
 
             return config;
 
