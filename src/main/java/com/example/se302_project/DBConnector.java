@@ -267,8 +267,6 @@ public class DBConnector {
                         "STUDENT_NAME TEXT)");
 
 */
-
-
                 System.out.println("Tables have Created!!");
             }
 

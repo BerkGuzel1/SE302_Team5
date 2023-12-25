@@ -1,5 +1,4 @@
 package com.example.se302_project;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -4684,7 +4683,7 @@ public class MainController {
                 EditLecturenewvalue.add(NEWtheoryHourLabel, 0, 5);
 
                 Label NEWlabHourLabel = new Label("Lab Hour:");
-                EditLectureoldvalue.add(NEWlabHourLabel, 0, 6);
+                EditLecturenewvalue.add(NEWlabHourLabel, 0, 6);
 
                 Label NEWlocalCreditLabel = new Label("Local Credit:");
                 EditLecturenewvalue.add(NEWlocalCreditLabel, 0, 7);
@@ -5350,7 +5349,7 @@ public class MainController {
                 EditLecturenewvalue.add(NEWtheoryHourLabelText, 1, 5);
 
                 TextField NEWlabHourLabelText = new TextField(TempLHour);
-                EditLectureoldvalue.add(NEWlabHourLabelText, 1, 6);
+                EditLecturenewvalue.add(NEWlabHourLabelText, 1, 6);
 
                 TextField NEWlocalCreditLabelText = new TextField(TempLCredit);
                 EditLecturenewvalue.add(NEWlocalCreditLabelText, 1, 7);
@@ -5997,7 +5996,6 @@ public class MainController {
                 TextField  NEWoutcome13_5LabelText= new TextField(Tempoutcome13_5);
                 EditLecturenewvalue.add(NEWoutcome13_5LabelText, 1, 223);
 
-
                 EditLectureConfirm.setOnAction(event -> {
                         LectureConfig LectureNew = new LectureConfig(lec_id,NEWLectureNameText.getText(),NEWLecturersNameText.getText(),NEWlectureCodeLabelText.getText(),NEWsemesterLabelText.getText(),NEWtheoryHourLabelText.getText(),NEWlabOrApplication01LabelText.getText(),NEWlabOrApplication02LabelText.getText(),NEWlabOrApplication03LabelText.getText(),NEWlabOrApplication04LabelText.getText(),
                                 NEWcourse_LanguageLabelText.getText(),NEWcourse_TypeLabelText.getText(),NEWcourse_LevelLabelText.getText(),NEWcourse_CategoryLabel.getText(),NEWcourse_CategoryLabel.getText(),NEWassistantLabelText.getText(),NEWcourse_ObjectivesLabelText.getText(),NEWlearning_OutcomesLabelText.getText(),NEWcourse_DescriptionLabelText.getText(),NEWcourse_CategoryLabelText.getText(),NEWweek1SubjectsLabel.getText(),NEWweek2SubjectsLabelText.getText(),NEWweek3SubjectsLabelText.getText(),NEWweek4SubjectsLabelText.getText(),NEWweek5SubjectsLabelText.getText(),NEWweek6SubjectsLabelText.getText(),NEWweek7SubjectsLabelText.getText(),NEWweek8SubjectsLabelText.getText(),NEWweek9SubjectsLabelText.getText(),NEWweek10SubjectsLabelText.getText(),NEWweek11SubjectsLabelText.getText(),NEWweek12SubjectsLabelText.getText(),
@@ -6053,16 +6051,7 @@ public class MainController {
                         EditLectureHBox.setVisible(false);
                         LecturesHBox.setVisible(true);
                         LecturesHBox.setEffect(null);
-
-
-
-
                         AddLectureBox.setVisible(false);
-
-
-
-
-
                         openLectureScreen();
                 });
 
@@ -6070,16 +6059,7 @@ public class MainController {
                         EditLectureHBox.setVisible(false);
                         LecturesHBox.setVisible(true);
                         LecturesHBox.setEffect(null);
-
-
-
-
                         AddLectureBox.setVisible(false);
-
-
-
-
-
                         openLectureScreen();
                 });
 
@@ -6131,18 +6111,7 @@ public class MainController {
         @FXML
         public void openImportScreen() {
                 LecturesHBox.setVisible(false);
-
-
-
-
-
-
                 AddLectureBox.setVisible(false);
-
-
-
-
-
 
 
                 FileChooser fileChooser = new FileChooser();
@@ -6176,23 +6145,10 @@ public class MainController {
                 openLectureScreen();
         }
 
-
         @FXML
         public void openExportScreen() {
                 LecturesHBox.setVisible(false);
-
-
-
-
-
-
                 AddLectureBox.setVisible(false);
-
-
-
-
-
-
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();
                 JsonArray jsonArray = new JsonArray();
 
@@ -6203,10 +6159,7 @@ public class MainController {
                         jsonObject.addProperty("config", gson.toJson(lecture));
                         jsonArray.add(jsonObject);
                 }
-
-
                 String json = gson.toJson(jsonArray);
-
                 FileChooser fileChooser = new FileChooser();
                 fileChooser.setTitle("Save Configuration File");
                 fileChooser.setInitialFileName("data.json");
@@ -6221,11 +6174,8 @@ public class MainController {
                                 e.printStackTrace();
                         }
                 }
-
                 openLectureScreen();
         }
-
-
         @FXML
         private void GoHelp() throws IOException {
                 Stage stage = new Stage();
