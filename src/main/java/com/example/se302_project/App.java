@@ -14,7 +14,7 @@ public class App extends Application {
         String path = "images/paintedLogo.png";
         Image image = new Image(getClass().getResource(path).toExternalForm());
         stage.getIcons().add(image);
-        stage.setTitle("Syllabus Management Tool");
+        stage.setTitle("Syllabus Management System");
         stage.setMinHeight(800);
         stage.setMinWidth(1300);
         stage.setScene(scene);
